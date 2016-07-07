@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>DELETE_is_PART_OF_BEGINNING_Setting up Sales Files</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1 style="margin-left: 1.4in;">Setting up Sales Files</h1>
+                    <table cellspacing="15" width="672">
+                        <col style="width: 16.162%;" />
+                        <col style="width: 83.838%;" />
+                        <tr>
+                            <td style="vertical-align: Top;">
+                                <p style="text-align: right;font-weight: bold;">Overview</p>
+                            </td>
+                            <td style="padding-left: 4px;padding-right: 4px;padding-bottom: 4px;vertical-align: Top;" bgcolor="#EEEEEE">
+                                <p>You are still setting 
+		 up the data required by the primary Job. You have tables of customer 
+		 and product information, now you need sales data.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: Top;">
+                                <p style="font-weight: bold;text-align: right;">Create 
+		 the Job</p>
+                            </td>
+                            <td style="padding-left: 4px;padding-right: 4px;padding-bottom: 4px;vertical-align: Top;" bgcolor="#EEEEEE">
+                                <ol style="list-style: decimal;">
+                                    <li value="1">
+                                        <p>Create a generic schema named "<span style="font-weight: bold;">ShopSchema</span>" 
+			 in the <span style="font-weight: bold;">Repository</span> 
+			 for sales data with four columns: <span style="font-weight: bold;">ShopName</span>, 
+			 type String, length 10; <span style="font-weight: bold;">CustID</span>, 
+			 <span style="font-weight: bold;">ProductID</span>, and <span style="font-weight: bold;">Quantity</span>, all type Integer; 
+			 and name the metadata "ShopMetadata":</p>
+                                        <p>
+                                            <img src="../Resources/Images/StoreSchema_450x147.png" alt="" style="border: Solid 1px #c0c0c0;width: 450;height: 147;" border="1" />
+                                        </p>
+                                    </li>
+                                    <li value="2">
+                                        <p>Create a new Job, naming it "<span style="font-weight: bold;">SalesFilesPrep</span>" 
+			 or something similar.</p>
+                                    </li>
+                                    <li value="3">
+                                        <p>Add a <span style="font-weight: bold;">tRowGenerator</span> 
+			 component to the design workspace and then set the schema 
+			 to the <span style="font-weight: bold;">ShopSchema</span><span style="font-weight: bold;">Repository</span> schema 
+			 you just created:</p>
+                                    </li>
+                                    <p>
+                                        <img src="../Resources/Images/RowGenCompSchema_450x75.png" alt="" style="border: none;width: 450;height: 75;" border="0" />
+                                    </p>
+                                    <li value="4">
+                                        <p>Double-click the <span style="font-weight: bold;">tRowGenerator</span> 
+			 component and then configure it as follows:</p>
+                                        <ul>
+                                            <li style="list-style: disc;margin-left: -20px;" value="1">
+                                                <p>Create 
+				 5000 lines</p>
+                                            </li>
+                                            <li style="list-style: disc;margin-left: -20px;" value="2">
+                                                <p>Use 
+				 a custom function (the default setting in the <span style="font-weight: bold;">Functions</span> 
+				 column, labeled "...") to set the value of <span style="font-weight: bold;">ShopName</span> to "Shop1"</p>
+                                            </li>
+                                            <li style="list-style: disc;margin-left: -20px;" value="3">
+                                                <p>Generate 
+				 a random number from 1 to 100 for <span style="font-weight: bold;">CustID</span>, 
+				 from 1 to 80 for <span style="font-weight: bold;">ProductID</span>, 
+				 and from 1 to 1000 for <span style="font-weight: bold;">Quantity</span><span>(click image to enlarge)</span>:</p>
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            <img src="../Resources/Images/GeneratorConfig_450x93.png" alt="" style="border: none;width: 450;height: 93;" border="0" />
+                                        </p>
+                                    </li>
+                                    <li value="5">
+                                        <p>Connect the <span style="font-weight: bold;">tRowGenerator</span> 
+			 component to a <span style="font-weight: bold;">tFileOutputDelimited</span> 
+			 component that saves the data in a delimited file named "Shop1" 
+			 under the directory <span style="font-weight: bold;">C:/StudentFiles/Sales 
+			 Files/:</span></p>
+                                        <p>
+                                            <img src="../Resources/Images/CreateSalesFIle.png" alt="" style="border: none;" border="0" />
+                                        </p>
+                                        <p>Be sure to put the output file under the subdirectory <span style="font-weight: bold;">Sales Files</span>.</p>
+                                    </li>
+                                    <li value="6">
+                                        <p>Click on the subjob and then, click <span style="font-weight: bold;">Show 
+			 subjob title</span> in the <span style="font-weight: bold;">Basic 
+			 settings</span> tab.</p>
+                                    </li>
+                                    <li value="7">
+                                        <p>In the<span style="font-weight: bold;"> Title</span> 
+			 box, enter "Shop 1":<br /><img src="../Resources/Images/shop1_subjob_title_351x77.gif" alt="" style="border: none;width: 351;height: 77;" border="0" /></p>
+                                    </li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: Top;">
+                                <p style="font-weight: bold;text-align: right;">Run 
+		 Job</p>
+                            </td>
+                            <td style="padding-left: 4px;padding-right: 4px;padding-bottom: 4px;vertical-align: Top;" bgcolor="#EEEEEE">
+                                <ol style="list-style: decimal;">
+                                    <li value="1">
+                                        <p>Copy and paste the subjob twice.</p>
+                                    </li>
+                                    <li value="2">
+                                        <p>Change each instance of "Shop1" to "Shop2" 
+			 in the component configurations in the second subjob, and 
+			 to "Shop3" in the third. Be sure to change both 
+			 the value of the <span style="font-weight: bold;">ShopName</span> 
+			 column in the <span style="font-weight: bold;">tRowGenerator</span> 
+			 component and the name of the output file in the <span style="font-weight: bold;">tFileOutputDelimited</span> 
+			 component, along with the names of the components:</p>
+                                        <p>
+                                            <img src="../Resources/Images/ShopJob_401x340.png" alt="" style="border: none;width: 401;height: 340;" border="0" />
+                                        </p>
+                                    </li>
+                                    <li value="3">
+                                        <p>Run the Job and then verify the content and location 
+			 of the output files.</p>
+                                    </li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: Top;">
+                                <p style="font-weight: bold;text-align: right;">Next</p>
+                            </td>
+                            <td style="padding-left: 4px;padding-right: 4px;padding-bottom: 4px;vertical-align: Top;" bgcolor="#EEEEEE">
+                                <p>With sales data 
+		 from three different shops available, you can now set 
+		 up the database table to store the combined sales data.</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

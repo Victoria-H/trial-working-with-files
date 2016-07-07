@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Running Jobs Standalone">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Building a Job</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Running Jobs Standalone</a>
+                    <ul class="sub-menu">
+                        <li><a href="Overview.htm">Overview</a>
+                        </li>
+                        <li><a href="#" class="selected">Building a Job</a>
+                        </li>
+                        <li><a href="Modifying_the_Job.htm">Modifying the Job</a>
+                        </li>
+                        <li><a href="Challenges.htm">Challenges</a>
+                        </li>
+                        <li><a href="Solutions.htm">Solutions</a>
+                        </li>
+                        <li><a href="Wrap-Up.htm">Wrap-Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Running Jobs Standalone</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="selected">Building a Job</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Building a Job</h1>
+                    <h2>Overview</h2>
+                    <div class="youAreGoingTo">
+                        <p>In an earlier lesson, you exported both parent and child Jobs. These Jobs can be shared with others, but still only run within the context of the Talend Studio. In many situations, you will need to run a Talend Job independent of the Talend Studio. In order to do that, you need to build and export the Job.</p>
+                    </div>
+                    <h2>Build Job</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN&#160;THE&#160;<span class="ui-control">Build Job</span> WIZARD</p>
+                            <p>Right-click the
+                <span class="ui-control">FilterStates_tMap</span> Job in the 
+                <span class="ui-control">Repository</span> and click 
+                <span class="ui-control">Build Job</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/RJ_BuildJob.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">NOTE&#160;THE&#160;OPTIONS&#160;IN&#160;THE&#160;WIZARD</p>
+                            <p>This option allows you to export the Job in a variety of formats with several options. <br />The following wizard appears: </p>
+                            <p>
+                                <img src="../../Resources/Images/RJ_BuildJobWizard.png" class="vAlwaysOpen" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">CHOOSE&#160;THE&#160;&#160;PATH FOR&#160;THE&#160;ARCHIVE FILE&#160;YOU&#160;WILL&#160;CREATE</p>
+                            <p>Click the 
+                <span class="ui-control">Browse</span> button, navigate to 
+                <span class="ui-control">C:/StudentFiles</span> and leave
+               <span class="ui-control">Filter_States_tMap.zip</span> for the 
+                <span class="ui-control">File name</span>. Then click <span class="ui-control">Save</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/RJ_save01.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">SELECT/DESELECT THE&#160;OPTIONS&#160;YOU&#160;NEED</p>
+                            <p>Leave the 
+                <span class="ui-control">Build type</span> set to                 <span class="ui-control">Standalone Job</span> and
+                clear the 
+                <span class="ui-control">Context scripts</span> and 
+                <span class="ui-control">Java sources</span> check boxes. <br />Then click 
+                <span class="ui-control">Finish</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/RJ_save02.png" alt="" />
+                                <br />The Context scripts option is useful if you created context variables in your Job and you want to have them written in a configuration file.<br />                   The Java sources option is useful if you need the Java source files in order to recompile them outside of the Talend Studio, in another development environment. </p>
+                        </li>
+                    </ol>
+                    <h2>Extract and Run</h2>
+                    <ol>
+                        <li value="1">
+                            <p>EXTRACT&#160;THE&#160;BUILD&#160;FOLDER&#160;YOU&#160;JUST&#160;CREATED</p>
+                            <p>Using Windows Explorer, locate the file you just created, 
+                <span class="ui-control">FilterStates_tMap.zip</span>, and then extract the content.</p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">LOCATE&#160;THE&#160;WINDOWS BATCH&#160;FILE</p>
+                            <p>Locate the file 
+                <span class="ui-control">FilterStates_tMap_run.bat</span> (typically placed in a Filter_States_tMap sub-folder). </p>
+                            <p>
+                                <img src="../../Resources/Images/RJ_extractzip.png" alt="" />
+                                <br />Note that a Linux shell script file is in the same directory. <br /></p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">EXECUTE&#160;THE FILE&#160;TO&#160;RUN&#160;THE&#160;JOB</p>
+                            <p>Double-click 
+                <span class="ui-control">FilterStates_tMap_run.bat</span> to execute it.</p>
+                            <p>A command window opens briefly as the Job executes, but because the Job has no visible results, it is not easy to see what happened. <br />However, recall that this job was generating three output files : CA_Out.csv, AK_Out.csv and NY_Out.csv. Check these files have been created in the <span class="ui-control">C:/StudentFiles</span> folder, and have a date and time associated with them which correspond to the <span class="ui-control">FilterStates_tMap_run.bat</span> execution time.</p>
+                        </li>
+                    </ol>
+                    <h2>Next</h2>
+                    <p>Next you will 
+        <a href="Modifying_the_Job.htm">modify the Job </a>to explore Job versioning and to make the standalone Job more obvious.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

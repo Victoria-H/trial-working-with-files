@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Working with Databases">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Setting Up Shop Tables</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Working with Databases</a>
+                    <ul class="sub-menu">
+                        <li><a href="Overview.htm">Overview</a>
+                        </li>
+                        <li><a href="Creating_Database_Metadata.htm">Creating Database Metadata</a>
+                        </li>
+                        <li><a href="Creating_a_Database_Table.htm">Creating the Customer Table</a>
+                        </li>
+                        <li><a href="Creating_Second_Table.htm">Creating the Product Table</a>
+                        </li>
+                        <li><a href="#" class="selected">Setting Up Sales Table</a>
+                        </li>
+                        <li><a href="Reading_from_a_Database.htm">Joining the Data</a>
+                        </li>
+                        <li><a href="Performing_Calculations.htm">Finalizing the Job</a>
+                        </li>
+                        <li><a href="Wrap-Up.htm">Wrap-Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Working with Databases</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="selected">Setting Up Sales Table</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Creating the Sales Table</h1>
+                    <h2>Overview</h2>
+                    <div class="youAreGoingTo">
+                        <p>In this training scenario, you are collecting periodic sales information from individual shops to be collated and stored in a master table. First, the temporary sales data you created earlier needs to be combined into a single staging table.</p>
+                    </div>
+                    <h2>Create the Table</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">DUPLICATE A SIMILAR JOB</p>
+                            <p>Duplicate the Job                <span class="ui-control">ProductPrep2Table</span>, naming it 
+                <span class="ui-control">ShopTableSetup</span></p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE NEW JOB AND SET THE SCHEMA, NAME AND TABLE ACTION FOR <span class="ui-control">tCreateTable</span></p>
+                            <p>Open the new Job.</p>
+                            <p>Double-click the 
+              <span class="ui-control">tCreateTable</span> component, set the 
+               <span class="ui-control">Schema</span> to the Generic Schema 
+                <span class="ui-control">ShopMetadata</span> from the 
+                <span class="ui-control">Repository</span> and then set the 
+                <span class="ui-control">Table Name</span> to 
+                <span class="ui-control" style="font-weight: normal; font-style: italic;">"SalesStaging"</span>.</p>
+                            <p> Then select 
+                <span class="ui-control">Drop table if exists and create</span> for the
+                <span class="ui-control">Action on table</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_settingUpShopTable_tcreateTableConfig.png" alt="" style="border: Solid 1px #c0c0c0;" border="1" />
+                            </p>
+                            <p>Now this component creates a database table named                 <span class="ui-control">SalesStaging</span> using the 
+              <span class="ui-control">ShopMetadata</span>Generic Schema.</p>
+                        </li>
+                    </ol>
+                    <h2>Modify the Components</h2>
+                    <p>Firstly you will deal with the Shop1 data.</p>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">CHANGE THE NAME AND THE SCHEMA OF THE INPUT COMPONENT</p>
+                            <p>Change the name of the 
+                <span class="ui-control">RetailProducts</span> component to 
+               <span class="ui-control">Shop1</span>, then configure it to use the 
+                <span class="ui-control">ShopMetadata</span> schema.<br />Click 
+                <span class="ui-control">Yes</span> when asked 
+                <span class="ui-control">Would you like to propagate the changes?</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_settingUpShopTable_shop1ChangeSchema.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">UPDATE THE INPUT FILE NAME</p>
+                            <p>Set                 <span class="ui-control">Property Type</span> to
+              <span class="ui-control">Built-In</span> and then update the 
+                <span class="ui-control">File Name</span> to <span class="ui-control" style="font-weight: normal;font-style: italic;">"C:/StudentFiles/SalesFiles/shop1.csv"</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_settingUpShopTable_shop1Config.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3"><![CDATA[
+            ]]><p data-mc-conditions="vModifs.vTitles">CHANGE THE TABLE NAME IN THE OUTPUT COMPONENT</p><p>Double-click the component 
+            <span class="ui-control">LocalMySQL</span> and change the table name to
+            <span class="ui-control" style="font-weight: normal; font-style: italic;">"SalesStaging"</span>. <br />Select the 
+            <span class="ui-control">Die on error</span> check box and then select 
+            <span class="ui-control">Create Table if it does not exist</span> for the 
+            <span class="ui-control">Action on table</span></p><p><img src="../../Resources/Images/Database_settingUpShopTable_shop1ConfigAfterChange.png" alt="" style="border: Solid 1px #c0c0c0;" border="1" /></p><p>Note that the schema was propagated from the 
+            <span class="ui-control">Shop1</span> component, so there is no need to change it.</p></li>
+                    </ol>
+                    <h2>Duplicate the Subjob</h2>
+                    <p data-mc-conditions="vModifs.vTitles">You now need to repeat this for the other 2 shops.</p>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">IN THE DESIGN WORKSPACE DUPLICATE THE SUBJOB WITH THE INPUT AND OUTPUT COMPONENT FOR SHOP1</p>
+                            <p>Copy and paste the subjob:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_settingUpShopTable_shopTableSetupCopyPaste_388x259.png" alt="" style="border: none;width: 388;height: 259;" border="0" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">CHANGE THE NAME OF THE INPUT COMPONENT AND THE INPUT FILE, THEN CONNECT THE SUBJOBS</p>
+                            <p>Change the name of the 
+                <span class="ui-control">Shop1</span> component in the second subjob to 
+                <span class="ui-control">Shop2</span> and configure it to read the 
+                <span class="ui-control">shop2.csv</span> file.<br /> Then connect the two subjobs with an                 <span class="ui-control">On Subjob OK</span> trigger:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_settingUpShopTable_shop1OnSubjobOK_334x191.png" alt="" style="border: none;width: 334;height: 191;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">CREATE A SUBJOB FOR SHOP3 AND CONFIGURE IT</p>
+                            <p>Create a third copy of the subjob, this time for 
+                <span class="ui-control">Shop3</span>, and configure it as you've done for 
+                <span class="ui-control">Shop2</span>. </p>
+                            <p>
+                                <img src="../../Resources/Images/Database_settingUpShopTable_allShop.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Note: Now all three sales files will be loaded into a single database table.</p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">RUN THE JOB</p>
+                            <p><span class="ui-control">Run</span> the Job.</p>
+                        </li>
+                    </ol>
+                    <h2>Verify Results</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">QUERY THE DATABASE TABLE TO CHECK THE DATA IS THERE</p>
+                            <p>Use MySQL Workbench to run the following SQL command:</p>
+                            <p><span class="code">select * from salesstaging;</span>
+                            </p>
+                            <p>
+                                <img src="../../Resources/Images/Database_settingUpShopTable_salesstagingQuery.png" alt="" />
+                            </p>
+                            <p>If the query does not return results, double-check your work and make any necessary corrections. <br />Note that the results only show rows for Shop1. By default, the Workbench query only shows the first 1000 rows. Since they are sorted by the ShopName, only Shop1 rows are displayed.</p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">CHECK FOR SHOP2</p>
+                            <p>Now enter the following command to verify that the table holds rows for Shop2: </p>
+                        </li>
+                        <p class="ui-control"><span class="code">select * from salesstaging where ShopName = "Shop2";</span>
+                        </p>
+                        <p>
+                            <img src="../../Resources/Images/Database_settingUpShopTable_salesstagingShop2Query.png" alt="" style="border: none;" border="0" />
+                        </p>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">CHECK FOR SHOP3</p>
+                            <p>Enter another query to verify that the table holds data for Shop3.</p>
+                            <p>If any of the data is missing, double-check your work and make necessary corrections.</p>
+                        </li>
+                    </ol>
+                    <h2>Next</h2>
+                    <p>You are finally ready to 
+        <a href="Reading_from_a_Database.htm">start building the main Job</a> to join the data from the various sources.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

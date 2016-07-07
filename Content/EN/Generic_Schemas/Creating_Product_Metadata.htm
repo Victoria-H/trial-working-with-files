@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Generic Schemas">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Creating the Product Table</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Generic Schemas</a>
+                    <ul class="sub-menu">
+                        <li><a href="Overview.htm">Overview</a>
+                        </li>
+                        <li><a href="Setting_up_Sales_Files.htm">Setup Sales Data Files</a>
+                        </li>
+                        <li><a href="Creating_Customer_Metadata.htm">Creating Customer Metadata</a>
+                        </li>
+                        <li><a href="#" class="selected">Creating Product Metadata</a>
+                        </li>
+                        <li><a href="Wrap-Up.htm">Wrap-Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Generic Schemas</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="selected">Creating Product Metadata</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Create Product Metadata</h1>
+                    <h2>Overview</h2>
+                    <div class="youAreGoingTo">
+                        <p>Your next step is to create Metadata for the products file so that you can use it to configure a component. <br />You will also export Metadata information as context variables which is the best way to manage your variables.</p>
+                        <p data-mc-conditions="vModifs.vBoxAdditions">You are going to follow the same steps as for the customers file. You are going to use the file<span class="ui-control">C:/StudentFiles/refProducts.csv</span>. Look at it now.</p>
+                    </div>
+                    <h2>Create File Metadata</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">CREATE A NEW <span class="ui-control">File delimited</span> METADATA IN THE REPOSITORY</p>
+                            <p data-mc-conditions="vModifs.vTitles">Create a new 
+                <span class="ui-control">File delimited</span> metadata, naming it 
+              <span class="ui-control">RetailProducts</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_fileDelimitedContextualMenu.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">GIVE THE METADATA A NAME, PURPOSE AND DESCRIPTION<i> (Step 1 of 4)</i></p>
+                            <p>Enter 
+                <span class="ui-control">RetailProducts</span> for the 
+                <span class="ui-control">Name</span> and fill in text for 
+                <span class="ui-control">Purpose</span> and 
+                <span class="ui-control">Description</span>. <br />Then click 
+                <span class="ui-control">Next</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson7/CreateProductMetadata1.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">DEFINE THE FILE PATH AND ITS FORMAT <i>(Step 2 of 4)</i></p>
+                            <p>Configure the metadata with the following information:</p>
+                            <p>The file is 
+                <span class="ui-control">C:/StudentFiles/refProducts.csv</span> and the 
+                <span class="ui-control">Format</span> is 
+                <span class="ui-control">Windows</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson7/CreateProductMetadata2.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">ENTER THE FILE PROPRTIES AND CHECK THE PREVIEW (Step 3 of 4)</p>
+                            <p>There are no header rows to skip and no row for column names (no configuration needed for Step 3). <br />Click 
+                <span class="ui-control">Export as context</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson7/CreateProductMetadata3.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="5">
+                            <p data-mc-conditions="vModifs.vTitles">EXPORT THE INFORMATION IN A NEW CONTEXT GROUP</p>
+                            <p>In the <span class="ui-window-title">Create/Reuse a context group </span>wizard, click <b>Next</b>. <![CDATA[                ]]></p>
+                            <p>
+                                <img src="../../Resources/Images/lesson7/CreateProductContext1.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="6">
+                            <p data-mc-conditions="vModifs.vTitles">GIVE THE CONTEXT A NAME, PURPOSE AND DESCRIPTION</p>
+                            <p>Leave the 
+                <span class="ui-control">Name</span> as 
+                <span class="ui-control">RetailProducts</span> and enter the 
+                <span class="ui-control">Purpose</span> and 
+                <span class="ui-control">Description</span> and then click 
+                <span class="ui-control">Next</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson7/CreateProductContext2.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="7">
+                            <p data-mc-conditions="vModifs.vTitles">CHECK THE CONTEXT VARIABLES THAT ARE TO BE CREATED IN YOUR CONTEXT GROUP THEN FINISH</p>
+                            <p>The context variables and values are then displayed:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson7/CreateProductContext3.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Click 
+                <span class="ui-control">Finish</span> but  don't close the main wizard yet.<br />You still need  to finalize the File Delimited metadata creation, by defining the Product schema in the next section.</p>
+                        </li>
+                    </ol>
+                    <h2>Configure Product Schema</h2>
+                    <p data-mc-conditions="vModifs.vBoxAdditions"> You are now back in the metadata creation wizard. </p>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">MOVE ON TO THE NEXT STEP</p>
+                            <p>Click 
+                <span class="ui-control">Next</span> in
+               <span class="ui-control">File - Step 3 of 4</span></p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">GIVE THE METADATA A NAME AND CORRECT THE SCHEMA DERIVED BY THE STUDIO</p>
+                            <p>Set the <span class="ui-control">Name </span>to <span class="user-input-files-variables">ProductMetadata</span>. <br />Enter                 <span class="ui-control" style="font-weight: normal; font-style: italic;">id</span> for the first Column and set the <span class="ui-control">Type </span>to                 <span class="ui-control">Integer</span> with&#160;<span class="ui-control">Length </span>3.<br />Enter 
+                <span class="ui-control" style="font-weight: normal; font-style: italic;">Product</span> for the second Column, leave its <span class="ui-control">Type </span>as <span class="ui-control">String</span> with&#160;<span class="ui-control">Length </span>10.<br />Then click 
+                <span class="ui-control">Finish</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson7/CreateProductMetadata4.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">CHECK THE METADATA IN THE REPOSITORY</p>
+                            <p>Verify that the metadata has been created in the <span class="ui-control">Repository</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson7/ProductMetadata.png" alt="" />
+                                <br />
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Next</h2>
+                    <p>You have now completed this lesson. It's time to <a href="Wrap-Up.htm">Wrap-up</a>.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

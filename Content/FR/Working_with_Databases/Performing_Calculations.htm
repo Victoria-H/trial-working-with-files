@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Finalizing the Job</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Finalisation du Job</h1>
+                    <h2>Vue d'ensemble</h2>
+                    <p>Il vous reste quelques étapes pour terminer le Job avant de l'exécuter. Ces étapes permettent notamment de déterminer pourquoi certaines lignes sont rejetées et effectuer des calculs simples sur les chiffres des ventes.</p>
+                    <h2>Capture des rejets</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Dans le Job
+                <span class="ui-control">RetailSales</span>, double-cliquez sur le 
+                <span class="ui-control">tMap</span> pour le configurer.</p>
+                        </li>
+                        <li value="2">
+                            <p>Cliquez sur le bouton
+              <span class="ui-control">[+]</span> en haut, pour créer une nouvelle table de sortie et saisissez 
+                <span class="ui-control" style="font-weight: normal; font-style: italic;">Rejects</span> dans le champ
+                <span class="ui-control">New output</span>. Cliquez sur 
+                <span class="ui-control">OK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_addOutputOnTmap.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Cliquez sur l'icône 
+                <span class="ui-control">tMap settings</span><![CDATA[ 
+                ]]><img src="../../Resources/Images/Database_performingCalculations_tmapIconSetting.png" alt="" style="border: none;" border="0" />  pour capturer les rejets de la jointure Inner Join en configurant la 
+                <span class="ui-control">Value</span> à
+                <span class="ui-control">true</span> pour
+                <span class="ui-control">Catch lookup inner join reject</span>. Ensuite, mappez toutes les colonnes de la table d'entrée 
+                <span class="ui-control">Sales</span> à cette table et sauvegardez la configuration du 
+                <span class="ui-control">tMap</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_tmapRejectsTable_582x235.png" alt="" style="border: none;width: 582;height: 235;" border="0" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p>Ajoutez un composant 
+              <span class="ui-control">tSortRow</span> dans l'espace de modélisation graphique.<br />Cliquez-droit sur le 
+                <span class="ui-control">tMap</span> et sélectionnez                <span class="ui-control">Row</span> &gt;
+                <span class="ui-control">Rejects</span> pour relier les deux composants&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_tmapRejectRow_386x165.png" alt="" style="border: none;width: 386;height: 165;" border="0" />
+                            </p>
+                            <p>Comme son nom l'indique, le
+                <span class="ui-control">tSortRow</span> trie les lignes de données selon la valeur des colonnes.</p>
+                        </li>
+                        <li value="5">
+                            <p>Double-cliquez sur le
+                <span class="ui-control">tSortRow</span> pour ouvrir sa vue
+                <span class="ui-control">Component</span> et cliquez sur le bouton <b>[+]</b> en bas à gauche pour ajouter des colonnes à la table&#160;:<![CDATA[     ]]></p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_tsortConfig.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="6">
+                            <p>Sélectionnez 
+                <span class="ui-control">CustID</span> pour la première ligne, dans la colonne 
+                <span class="ui-control">Schema column</span> et
+                <span class="ui-control">ProductID</span> pour la seconde&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_trowSortAddColumn.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Avec cette configuration, les données envoyées à ce composant sont triées par la combinaison des valeurs des colonnes <span class="ui-control">CustID</span> et <span class="ui-control">ProductID</span>.</p>
+                        </li>
+                        <li value="7">
+                            <p>Ajoutez un composant 
+                <span class="ui-control">tUniqRow</span>, reliez-le au 
+                <span class="ui-control">tSortRow</span> à l'aide d'un lien <span class="ui-control">Row </span>&gt;
+                <span class="ui-control">Main</span>. <br />Dans la vue
+                <span class="ui-control">Component</span> du 
+                <span class="ui-control">tUniqRow</span>, cochez la case 
+                <span class="ui-control">Key attribute</span> des lignes 
+               <span class="ui-control">CustID</span> et<![CDATA[
+                ]]><span class="ui-control">ProductID</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_connectTuniqRow.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p><span class="ui-control">Note&#160;: </span>&#160;les lignes entrant dans ce composant sont déjà triées par l'ID client et l'ID&#160;produit via le 
+                <span class="ui-control">tSortRow</span>, le résultat final sera une ligne pour chaque combinaison unique de client et produit rejetée par la jointure Inner Join.</p>
+                        </li>
+                        <li value="8">
+                            <p>Ajoutez un composant
+                <span class="ui-control">tFileOutputDelimited</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_jobAfterAddingTFileOutputDelimited.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="9">
+                            <p>Reliez-le au <span class="ui-control">tUniqRow</span> à l'aide d'un lien 
+               <span class="ui-control">Uniques</span>, configurez-le pour qu'il stocke les résultats dans le dossier 
+                <span class="ui-control">C:/StudentFiles/out.csv</span>.</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_tFileOutputDelimitedConfig.png" alt="" />
+                                <br />Notez que vous pouvez également capturer les lignes en doublon via un composant 
+                <span class="ui-control">tUniqRow</span>, ce qui peut être utile dans d'autres situations.</p>
+                        </li>
+                        <li value="10">
+                            <p>Ouvrez la vue 
+                <span class="ui-control">Component</span> du
+                <span class="ui-control">LocalMySQL</span> et, dans la liste <span class="ui-control">Action on Table</span>, sélectionnez 
+               <span class="ui-control">Drop table if exists and create</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_tmysqlOutputChangeActionOnTable.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p><span class="ui-control">Note&#160;:</span> cela empêche les enregistrements en doublon, puisque vous avez déjà chargé la table de base de données une fois précédemment.</p>
+                        </li>
+                        <li value="11">
+                            <p>Exécutez le Job et examinez les résultats dans le fichier 
+                <span class="ui-control">C:/StudentFiles/out.csv</span>.<br /><img src="../../Resources/Images/image301.PNG" alt="" style="border: none;" width="281" height="294" border="0" /></p>
+                            <p>Notez que les valeurs de la colonne
+                <span class="ui-control">ProductID</span> dans la sortie sont toutes supérieures à 50&#160;:
+                <br />Rappelez-vous que la table des produits définit uniquement 50 produits, mais que vous avez configuré le générateur de lignes pour créer des valeurs d'ID&#160;produit jusqu'à 80. Cela explique le rejet. <br />Dans un projet réel, vous résoudriez cette différence, mais dans cette leçon, vous pouvez ignorer les rejets.</p>
+                        </li>
+                    </ol>
+                    <h2>Calculs</h2>
+                    <p>Dans cet exercice, vous allez calculer la quantité totale de chaque produit commandé.</p>
+                    <ol>
+                        <li value="1">
+                            <p>  Double-cliquez sur le composant 
+                <span class="ui-control">tMap</span> et ajoutez une table de sortie nommée 
+                <span class="ui-control">ProdSales</span>, puis cliquez sur
+                <span class="ui-control">OK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_tmapProdSalesTable.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Mappez la ligne
+                <span class="ui-control">Product</span> (produit) à la ligne
+                <span class="ui-control">Quantity</span> (quantité commandée) et sauvegardez la configuration du 
+                <span class="ui-control">tMap</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_tmapListOfOutputTable.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">Ajoutez un composant 
+            <span class="ui-control">tAggregateRow</span>, reliez-le au 
+            <span class="ui-control">tMap</span> à l'aide d'un lien
+            <span class="ui-control">ProdSales</span>&#160;: 
+            <p><img src="../../Resources/Images/Database_performingCalculations_tmapConnectToTaggregate.png" alt="" style="border: none;" border="0" /></p></li>
+                        <li value="4">
+                            <p>Dans la vue 
+                <span class="ui-control">Component</span> du 
+                <span class="ui-control">tAggregateRow</span>, cliquez sur le bouton 
+               <span class="ui-control">Sync columns</span> pour synchroniser le schéma du composant à celui du lien. </p>
+                            <p>Cliquez sur le bouton <span class="ui-control">[+]</span> pour ajouter la ligne <span class="ui-control">Product</span> à la table 
+              <span class="ui-control">Group by</span> et la ligne 
+                <span class="ui-control">Quantity</span> à la table 
+                <span class="ui-control">Operations</span>. Dans la liste
+                <span class="ui-control">Function</span>, sélectionnez 
+                <span class="ui-control">sum</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_tAggregateConfig.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Ce composant agrège la somme des valeurs de la colonne 
+                <span class="ui-control">Quantity</span> pour chaque valeur de la colonne <span class="ui-control">Product</span>.</p>
+                        </li>
+                        <li value="5">
+                            <p>Ajoutez un 
+                <span class="ui-control">tFileOutputXML</span> à l'espace de modélisation graphique et reliez le <b>tAggregateRow</b> à ce composant à l'aide d'un lien <span class="ui-control">Row</span> &gt; <b>Main</b>. </p>
+                            <p>Configurez-le pour qu'il écrive dans le fichier 
+                <span class="ui-control">C:/StudentFiles/aggregateout.xml</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_tOutputXMLConfig.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Ce composant crée un fichier de sortie au format XML, pouvant être utilisé en entrée dans un grand nombre d'autres applications logicielles.</p>
+                        </li>
+                        <li value="6">
+                            <p>Exécutez le Job et examinez le fichier 
+                <span class="ui-control">C:/StudentFiles/aggregateout.xml</span> pour voir les résultats&#160;: <br /><img src="../../Resources/Images/Database_performingCalculations_listProduct.png" alt="" style="border: none;" border="0" /></p>
+                        </li>
+                    </ol>
+                    <h2>Étape suivante</h2>
+                    <p>Vous avez terminé cette leçon. Vous pouvez passer à la <a href="Wrap-Up.htm">Conclusion</a>.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

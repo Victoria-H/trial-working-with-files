@@ -1,0 +1,1862 @@
+/*<meta />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+/*this is the style sheet 'main.css' modified by Vicky Hunt (april/may 2016). To search for my additions, ctrlF 'Vicky' should do the trick */
+/*to not show the presentation page in the navigation uncomment some lines. Find them by ctrlF vHidePresentationLink */
+
+body
+{
+	color: #404040;
+	font-family: Arial;
+	font-size: 1em;
+	line-height: 1.7em;
+}
+
+a
+{
+	color: #2d82dc;
+}
+
+a:link
+{
+	color: #2d82dc;
+}
+
+a:visited
+{
+	color: #2d82dc;
+}
+
+a:hover
+{
+	color: #c4d600;
+}
+
+ul.menu.mc-component li > a:hover
+{
+	background: #93A000;
+}
+
+.moduleNav .has-children > a:hover::before
+{
+	background-color: #93A000;
+}
+
+a.MCBreadcrumbsLink
+{
+	font-style: italic;
+	text-decoration: underline;
+}
+
+a.MCBreadcrumbsLink:visited
+{
+	color: #000000;
+}
+
+a.MCBreadcrumbsLink:hover
+{
+	color: #c4d600;
+}
+
+/* --------------
+    <Talend>
+   -------------- */
+
+.alert
+{
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+.alert > p,
+.alert > ul
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.alert-success
+{
+	color: #3c763d;
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+}
+
+.alert-info
+{
+	color: #31708f;
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+}
+
+.alert-warning
+{
+	color: #8a6d3b;
+	background-color: #fcf8e3;
+	border-color: #faebcc;
+}
+
+.alert-danger
+{
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+}
+
+/* --------------
+    </Talend>
+   -------------- */
+
+blockquote
+{
+	background-color: #e1e1e1;
+	background-image: url('../Images/QuotationMark.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+	border-bottom: none;
+	border-left-color: #b3b3b3;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #b3b3b3;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #b3b3b3;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	font-family: 'Century Gothic';
+	font-size: 0.9em;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 18px;
+	margin: 0;
+	padding-bottom: 0px;
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-top: 12px;
+}
+
+blockquote.name
+{
+	background-image: none;
+	border-bottom-color: #b3b3b3;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-top: none;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	margin-bottom: 0;
+	padding-bottom: 12px;
+	padding-right: 35px;
+	padding-top: 8px;
+	text-align: right;
+}
+
+Div.GlossaryPageDefinition
+{
+	
+}
+
+Div.GlossaryPageHeading
+{
+	
+}
+
+Div.GlossaryPageTerm
+{
+	
+}
+
+div.ImagesFloatLeft
+{
+	clear: both;
+	float: left;
+	margin-right: 10px;
+	padding: 5px;
+}
+
+div.ImagesFloatRight
+{
+	clear: both;
+	float: right;
+	margin-left: 10px;
+	padding: 5px;
+}
+
+div.TightContent
+{
+	margin: 0px;
+	padding: 0px;
+	line-height: 1em;
+}
+
+h1
+{
+	font-size: 2.0em;
+	font-weight: normal;
+	margin-bottom: 8px;
+	margin-top: 20px;
+	padding-bottom: 10px;
+	color: #005695;
+	mc-hyphenate: never;
+}
+
+h1.Appendix
+{
+	
+}
+
+h2
+{
+	font-size: 1.5em;
+	font-weight: normal;
+	margin-bottom: 4px;
+	margin-top: 20px;
+	mc-hyphenate: never;
+}
+
+h3
+{
+	font-size: 1.3em;
+	font-weight: normal;
+	margin-bottom: 4px;
+	margin-top: 16px;
+	mc-hyphenate: never;
+}
+
+img
+{
+	border: none;
+}
+
+.FiftyPercentMaxWidth
+{
+	max-width: 50%;
+}
+
+img.AbsolutePosition
+{
+	padding: 5px;
+}
+
+img.ReduceButtonSize
+{
+	max-height: 18px;
+	max-width: auto;
+}
+
+img.Thumbnail
+{
+	mc-thumbnail: popup;
+}
+
+li
+{
+	margin-bottom: 6px;
+	margin-top: 6px;
+	orphans: 2;
+	widows: 2;
+}
+
+MadCap|breadcrumbsProxy
+{
+	border-bottom: none;
+	font-size: .7em;
+	font-style: italic;
+	mc-breadcrumbs-prefix: 'You are here: ';
+}
+
+MadCap|dropDown
+{
+	margin-bottom: 6px;
+	margin-top: 6px;
+	mc-closed-image: url('../Images/DropDownClosed.png');
+	mc-disabled: false;
+	mc-open-image: url('../Images/DropDownOpen.png');
+}
+
+MadCap|dropDownBody
+{
+	border-bottom: solid 1px #c4d600;
+	mc-disabled: false;
+}
+
+MadCap|dropDownBody.Final
+{
+	border-bottom: 0px;
+}
+
+MadCap|dropDownHead
+{
+	mc-disabled: false;
+}
+
+MadCap|dropDownHotspot
+{
+	color: #404040;
+	font-size: 0.9em;
+	font-weight: bold;
+	mc-disabled: false;
+}
+
+MadCap|dropDownHotspot:hover
+{
+	color: #c4d600;
+	font-weight: bold;
+}
+
+MadCap|footnoteBlock
+{
+	
+}
+
+MadCap|footnotesBlock
+{
+	
+}
+
+MadCap|glossaryProxy
+{
+	
+}
+
+MadCap|indexProxy
+{
+	
+}
+
+MadCap|miniTocProxy
+{
+	
+}
+
+MadCap|popup
+{
+	color: #2D8DCC;
+}
+
+MadCap|popup:focus
+{
+	color: #2D8DCC;
+}
+
+MadCap|popup:hover
+{
+	color: #2D8DCC;
+}
+
+MadCap|popupHead
+{
+	color: #2D8DCC;
+	font-weight: bold;
+}
+
+MadCap|tocProxy
+{
+	
+}
+
+MadCap|xref
+{
+	color: #2D8DCC;
+	font-weight: bold;
+	mc-format: '{para}';
+	text-decoration: underline;
+}
+
+MadCap|xref:hover
+{
+	color: #c4d600;
+}
+
+MadCap|xref.IndexPageNumber
+{
+	
+}
+
+ol
+{
+	list-style-image: none;
+}
+
+ol.LowerAlpha
+{
+	list-style-type: lower-alpha;
+	margin-left: -10px;
+}
+
+ol.LowerRoman
+{
+	list-style-type: lower-roman;
+	margin-left: -10px;
+}
+
+p
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+p.CompanyInformation1
+{
+	margin-bottom: 4px;
+	margin-top: 14px;
+	font-weight: bold;
+}
+
+p.CompanyInformation2
+{
+	color: #6d6d6d;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+p.Copyright
+{
+	
+}
+
+p.CopyrightAddress
+{
+	
+}
+
+p.CopyrightHeading
+{
+	
+}
+
+p.CreatedUsingFlare
+{
+	
+}
+
+p.EmptyPageText
+{
+	
+}
+
+p.Example
+{
+	background-color: #c4d600;
+	border-bottom-color: #a4ac67;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-left-color: #a4ac67;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #a4ac67;
+	border-right-style: solid;
+	border-right-width: 1px;
+	margin-top: 0px;
+	padding-bottom: 14px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 6px;
+}
+
+p.ExampleHead
+{
+	background-color: #c4d600;
+	border-left-color: #a4ac67;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #a4ac67;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #a4ac67;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	font-size: .9em;
+	font-weight: bold;
+	letter-spacing: 5px;
+	margin-bottom: 0px;
+	margin-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 14px;
+	page-break-after: avoid;
+}
+
+p.ExampleMiddleSection
+{
+	background-color: #c4d600;
+	border-left-color: #a4ac67;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #a4ac67;
+	border-right-style: solid;
+	border-right-width: 1px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-bottom: 6px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 6px;
+}
+
+p.Figure
+{
+	
+}
+
+p.FirstPageOfChapter
+{
+	
+}
+
+p.FrameFooterText
+{
+	
+}
+
+p.FrameFooterText2
+{
+	
+}
+
+p.GlossaryPrintHead
+{
+	
+}
+
+p.IndexHeading
+{
+	
+}
+
+p.IndexPrintHead
+{
+	
+}
+
+p.ManualTitle1
+{
+	
+}
+
+p.ManualTitle2
+{
+	
+}
+
+p.ManualVersionNumber
+{
+	
+}
+
+p.MiniTOC1
+{
+	
+}
+
+p.note
+{
+	background-color: #3e3e3e;
+	background-image: url('../Images/NoteIcon.png');
+	background-repeat: no-repeat;
+	border: solid 1px #404040;
+	border-radius: 6px;
+	color: #b3b3b3;
+	mc-auto-number-format: '{b}{color #c4d600}Note: {/color}{/b}';
+	padding-bottom: 10px;
+	padding-left: 40px;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+p.noteBottom
+{
+	background-color: #3e3e3e;
+	border-bottom-color: #404040;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-left-color: #404040;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #404040;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top: 0px;
+	color: #b3b3b3;
+	margin-top: 0px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	padding-right: 10px;
+	padding-top: 0px;
+}
+
+p.noteMiddle
+{
+	background-color: #3e3e3e;
+	border-bottom: 0px;
+	border-left-color: #404040;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #404040;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top: 0px;
+	color: #b3b3b3;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-bottom: 8px;
+	padding-left: 40px;
+	padding-right: 10px;
+	padding-top: 0px;
+}
+
+p.noteTop
+{
+	background-color: #3e3e3e;
+	background-image: url('../Images/NoteIcon.png');
+	background-repeat: no-repeat;
+	border-left-color: #404040;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #404040;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #404040;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	color: #b3b3b3;
+	margin-bottom: 0;
+	mc-auto-number-format: '{b}{color #c4d600}Note: {/color}{/b}';
+	padding-bottom: 8px;
+	padding-left: 40px;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+p.TableCaption
+{
+	
+}
+
+p.TableTextCenterDark
+{
+	color: #000000;
+	margin-bottom: 2px;
+	margin-top: 8px;
+	text-align: center;
+}
+
+p.TableTextDark
+{
+	color: #000000;
+	margin-bottom: 2px;
+	margin-top: 8px;
+}
+
+p.TableTextDarkEmphasis
+{
+	color: #000000;
+	font-weight: bold;
+	margin-bottom: 2px;
+	margin-top: 8px;
+}
+
+p.TableTextHeadDark
+{
+	color: #000000;
+	font-weight: bold;
+	margin-bottom: 2px;
+	margin-top: 8px;
+}
+
+p.TableTextLightEmphasis
+{
+	color: #ffffff;
+	font-weight: bold;
+	margin-bottom: 2px;
+	margin-top: 8px;
+}
+
+p.TOCHeading
+{
+	
+}
+
+/* --------------
+    <Talend>
+   -------------- */
+
+span.Code
+{
+	font-family: "Courier New";
+	background-color: #e0e0e0;
+}
+
+span.Emphasis
+{
+	font-weight: bold;
+}
+
+span.Italic
+{
+	font-style: italic;
+}
+
+/* From Talend.css */
+
+span.bold
+{
+	font-weight: bold;
+}
+
+span.italic
+{
+	font-style: italic;
+}
+
+span.red
+{
+	color: #ff0000;
+}
+
+span.code
+{
+	font-family: "Courier New";
+}
+
+/* Typographical conventions from Documentation team, as described in downloadable PDF guides */
+/* Window and dialog box buttons and fields, keyboard keys, menus and menu options */
+
+span.ui-control
+{
+	font-weight: bold;
+}
+
+/* Window, wizard, and dialog box titles */
+
+span.ui-window-title
+{
+	font-weight: bold;
+}
+
+/*
+span.ui-window-title::before
+{
+    content: "[";
+}
+span.ui-window-title::after
+{
+    content: "]";
+}
+*/
+
+/* File, schema, column, row and variable names + all the things entered by the user in a UI component */
+
+span.user-input-files-variables
+{
+	font-style: italic;
+	font-family: 'Arial';
+	/*added this to correct Noto Sans rendering of file paths */
+}
+
+/* Commands */
+
+span.command
+{
+	font-family: "Courier New";
+	background: #e0e0e0;
+}
+
+/* --------------
+    </Talend>
+   -------------- */
+
+span.SetOffFirstLevel
+{
+	color: #5e6914;
+	font-weight: bold;
+}
+
+span.SetOffSecondLevel
+{
+	color: #445879;
+	font-weight: bold;
+}
+
+span.TableNum
+{
+	
+}
+
+td
+{
+	margin: 8px;
+	vertical-align: top;
+}
+
+th
+{
+	color: #ffffff;
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+tr
+{
+	
+}
+
+ul
+{
+	list-style-image: url('../Images/Bullet1.png');
+}
+
+ul.FirstLevelLessIndentation
+{
+	list-style-image: url('../Images/Bullet1.png');
+	margin-left: -10px;
+}
+
+ul.SecondLevel
+{
+	list-style-image: url('../Images/Bullet2.png');
+	margin-left: -10px;
+}
+
+div.sideContent
+{
+	float: right;
+	margin-left: 30px;
+	/* 10px; */
+	margin-bottom: 30px;
+	/* 10px; */
+	width: 350px;
+	/* 33.33%; */
+}
+
+html.templateTopic div.sideContent
+{
+	display: none;
+}
+
+/*-----------------*/
+/* Vicky's changes */
+/*-----------------*/
+/*STYLING PALETTE*/
+
+/*
+Talend Green #b4c401
+Darker Green #93A000 (not an official color)
+Talend Dark Blue #025497
+Talend Light Blue #5ea7cb
+font Noto Sans (Google font) 
+*/
+
+body
+{
+	margin: 0px;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 1.2vw;
+}
+
+.content
+{
+	padding: 10px;
+	padding-top: 20px;
+}
+
+@media (max-width: 1000px)
+{
+	body,
+	input,
+	textarea,
+	.moduleNav .has-children > a::before
+	{
+		font-size: 1.6vw !important;
+	}
+}
+
+@media (max-width: 800px)
+{
+	body,
+	input,
+	textarea,
+	.moduleNav .has-children > a::before
+	{
+		font-size: 2.0vw !important;
+	}
+}
+
+h1
+{
+	color: #025497;
+}
+
+h2
+{
+	color: #b4c401;
+	border-bottom: 1.5px solid #DDD;
+	padding-bottom: 5px;
+}
+
+/*list formatting*/
+/*this creates the pretty formatted numbers on the list elements in the lab guide*/
+
+ol
+{
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 1em;
+}
+
+ol > li
+{
+	counter-increment: step-counter;
+	margin-bottom: 30px;
+}
+
+ol > li::before
+{
+	content: counter(step-counter);
+	border-radius: 2em;
+	color: white;
+	background-color: #b4c401;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	margin-bottom: 5em;
+	margin-right: 0.5em;
+}
+
+p:first-child
+{
+	display: inline;
+}
+
+ol li img + p
+{
+	display: inline;
+}
+
+/* makes the images responsive*/
+
+img
+{
+	display: block;
+	margin-top: 15px;
+	max-width: 90%;
+}
+
+/*additional box formatting if desirable*/
+/*class for highlight or objective box*/
+
+.youAreGoingTo
+{
+	width: 95%;
+	margin-top: 2vw;
+	margin-left: 2%;
+	padding: 10px;
+	border: 1px solid #5ea7cb;
+	/*color 'light-blue' from website*/
+	box-sizing: border-box;
+	background-color: white;
+}
+
+/*for the open_close screen shot elements*/
+/*used with vicky.js vOpenClose()*/
+
+.shot,
+.shotClose,
+.shotA,
+.shotCloseA
+{
+	height: 1.4em;
+	width: 1.4em;
+	position: relative;
+	top: 0.6em;
+	margin: 0.3em;
+	border: 2px solid #b4c401;
+}
+
+.shot
+{
+	display: none;
+}
+
+.screenShots
+{
+	display: block;
+}
+
+.shot:hover
+{
+	border: 2px solid #93A000;
+}
+
+.shotClose:hover
+{
+	border: 2px solid #93A000;
+}
+
+.shotCloseA:hover
+{
+	border: 2px solid #93A000;
+}
+
+.shotA:hover
+{
+	border: 2px solid #93A000;
+}
+
+.closeAll
+{
+	position: fixed;
+	top: 10px;
+	right: 0px;
+	text-align: right;
+}
+
+#close,
+#open
+{
+	display: inline-block;
+	height: 1.4em;
+	width: 1.4em;
+}
+
+/*Vicky's new navigation */
+/*used with vicky.js vPoshSideNav()*/
+
+.mySideNavContent
+{
+	width: 75vw;
+	margin-left: 20vw;
+	box-sizing: border-box;
+}
+
+.vModuleNav,
+.moduleNav,
+#vTopArea
+{
+	width: 20vw;
+	height: 95vh;
+	/*I've pinched this a little*/
+	color: white;
+	position: fixed;
+	top: 10vw;
+	left: 0px;
+	margin: 0px;
+	list-style-type: none;
+	padding: 0px;
+	box-sizing: border-box;
+	background-color: #b4c401;
+}
+
+.vModuleNav
+{
+	background-color: #b4c401;
+	overflow: hidden;
+	overflow-y: scroll;
+	direction: rtl;
+}
+
+ul.moduleNav.mc-component
+{
+	position: relative;
+	min-height: 150vh;
+	/*this is important because of the fixed scorm frame height on the LMS*/
+	padding: 0px;
+	padding-top: 2vw;
+	padding-left: 0px;
+	overflow: hidden;
+	top: 0vw;
+	direction: ltr;
+}
+
+#vTopArea
+{
+	top: 0px;
+	height: 10vw;
+	z-index: 1000;
+	background-color: #93A000;
+	overflow: visible;
+	border-top-right-radius: 10vw;
+}
+
+#vTitleNav
+{
+	position: absolute;
+	z-index: 3000;
+	font-size: 2.3vw;
+	line-height: 2.3vw;
+	padding: 0.5vw;
+	padding-top: 1.3vw;
+	padding-right: 5vw;
+	width: 16vw;
+}
+
+#vLogo
+{
+	position: absolute;
+	z-index: 2000;
+	width: 50%;
+	height: auto;
+	right: 1.2vw;
+	top: 1.6vw;
+}
+
+#vPrettyScroll
+{
+	position: fixed;
+	z-index: 5000;
+	background-color: rgba(180,196,1,0.5);
+	border-right: 2px solid #93A000;
+	height: 100vh;
+	width: 17px;
+	top: 10vw;
+	left: 0px;
+	pointer-events: none;
+}
+
+.moduleNav .sub-menu
+{
+	list-style-type: none;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 50px;
+}
+
+.moduleNav .has-children
+{
+	list-style-type: none;
+	padding-right: 0px;
+}
+
+.moduleNav .has-children .selected
+{
+	width: 100%;
+	padding: 0px;
+}
+
+.moduleNav .has-children > a
+{
+	font-size: 3px;
+}
+
+.moduleNav .has-children > a::before
+{
+	content: "Introduction";
+	position: absolute;
+	width: 100%;
+	box-sizing: border-box;
+	height: 60px;
+	background-color: #b4c401;
+	line-height: 3em;
+	padding-right: 5px;
+	padding-left: 25px;
+	font-size: 1.2vw;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/*Uncomment the code below if you don't want the presentation link available (vHidePresentationLink)*/
+/*--------------------------------------------------------------------------------------------------*/
+
+/*
+
+.moduleNav .has-children > a::before {
+	content: "In the studio...";
+	pointer-events:none;
+}
+
+.moduleNav .has-children > a:hover::before
+{
+	background-color: #b4c401;
+}
+
+
+*/
+
+/*-----------------------------*/
+/*end of uncomment this....... */
+/*-----------------------------*/
+
+.moduleNav .has-children > a.selected::before
+{
+	border-right: 5px solid #5ea7cb;
+}
+
+.moduleNav .sub-menu::before
+{
+	content: "LAB";
+	background-color: #93A000;
+	padding-right: 5px;
+	padding-left: 25px;
+}
+
+.moduleNav a
+{
+	color: white;
+	text-decoration: none;
+	padding-right: 0px;
+}
+
+.moduleNav .sub-menu li
+{
+	margin: 0px;
+	padding: 1em;
+	padding-left: 25px;
+	line-height: 1.5em;
+}
+
+.moduleNav .sub-menu li:hover
+{
+	background-color: #93A000;
+}
+
+.moduleNav ul
+{
+	list-style-image: none;
+}
+
+.moduleNav ul.FirstLevelLessIndentation
+{
+	list-style-image: none;
+}
+
+.moduleNav ul.SecondLevel
+{
+	list-style-image: none;
+	margin-left: -10px;
+}
+
+.vAnchor
+{
+	margin-top: 0.5em;
+	line-height: 1.2em;
+}
+
+.vAnchor:hover
+{
+	font-weight: bold;
+}
+
+/*end of nightmare menu!!!!*/
+/*Vicky's quiz question */
+/*used with vicky.js vQuiz()*/
+
+.vQuestion
+{
+	width: 90%;
+	height: auto;
+	background-color: #025497;
+	border-radius: 10px;
+	color: white;
+	padding: 10px;
+	box-sizing: border-box;
+	position: relative;
+	margin-top: 2em;
+	left: 5%;
+}
+
+.vQuizTitle:before
+{
+	content: "QUICK QUESTION : ";
+	font-size: 1.3em;
+	color: #b4c401;
+}
+
+.vQuestion ul
+{
+	list-style-image: none;
+	list-style: none;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	padding-bottom: 1.5em;
+	padding-top: 0.5em;
+}
+
+.vQuestion ul li:before
+{
+	content: '';
+	display: block;
+	float: left;
+	height: 1.7em;
+	width: 1.7em;
+	background-image: url('../Images/OtherGraphics/tickboxEmpty.png');
+	background-size: cover;
+	margin-right: 1em;
+	opacity: 0.8;
+}
+
+.vQuestion ul li:hover:before
+{
+	opacity: 1;
+}
+
+.vQuestion ul li.vMyAnswer:before
+{
+	background-image: url('../Images/OtherGraphics/tickboxSelected.png');
+	opacity: 1;
+}
+
+.vFeedbackCorrect,
+.vFeedbackWrong
+{
+	display: block;
+}
+
+/*Vicky's Storyline frame for embedding into pages*/
+
+.vIframeWrapper
+{
+	position: relative;
+	width: 60vw;
+	left: 10vw;
+	height: 0px;
+	padding-bottom: 53vw;
+	overflow: hidden;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+#vStory
+{
+	position: absolute;
+	width: 60vw;
+	height: 53vw;
+	max-height: 80%;
+	max-width: 80%;
+	overflow: hidden;
+	top: 0px;
+	left: 0px;
+}
+
+.vComment
+{
+	font-size: 0.8em;
+	color: red;
+	font-style: italic;
+}
+
+/*schema box*/
+
+.vSchemaCont
+{
+	width: 95%;
+	/*border:1px solid black;*/
+	height: auto;
+	position: relative;
+	box-sizing: border-box;
+	margin-bottom: 2vw;
+}
+
+.vSchemaBox
+{
+	width: 100%;
+	height: auto;
+	top: 4vw;
+	background-color: #929da5;
+	border: 5px solid #5ea7cb;
+	position: relative;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.vSchemaBox img
+{
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+}
+
+.vDark
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #015695;
+	opacity: 0.5;
+	top: 0px;
+	z-index: 100;
+	display: none;
+}
+
+.vSchemaCont ul
+{
+	list-style-image: none;
+	list-style: none;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.vOverlay
+{
+	position: absolute;
+	bottom: 0px;
+	z-index: 200;
+	width: 100%;
+	height: auto;
+	pointer-events: none;
+	display: none;
+}
+
+.vSchemaCont ul li
+{
+	float: left;
+	padding: 2vw;
+	background-color: #015695;
+	padding: 1vw;
+	position: relative;
+	margin: 0px;
+	font-size: 1.2vw;
+	color: white;
+	border-top-left-radius: 1vw;
+	border-top-right-radius: 1vw;
+	margin-left: 0.5vw;
+}
+
+.vSchemaCont ul li:nth-child(2)
+{
+	background-color: #b4c401;
+	top: 0.5vw;
+}
+
+.vSchemaCont ul li:nth-child(3)
+{
+	background-color: #e86d1f;
+	top: 0.5vw;
+}
+
+/*end of Vicky's stuff*/
+
+@media print
+{
+	body
+	{
+		font-size: 8pt;
+		line-height: 13px;
+		margin: 8px;
+	}
+
+	Div.GlossaryPageDefinition
+	{
+		color: #e1e1e1;
+		font-size: 9pt;
+	}
+
+	Div.GlossaryPageHeading
+	{
+		border-bottom-color: #c4d600;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		color: #c4d600;
+		font-size: 11pt;
+	}
+
+	Div.GlossaryPageTerm
+	{
+		color: #c4d600;
+		font-size: 10pt;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+	h1
+	{
+		background-color: transparent;
+		border-bottom: none;
+		font-family: 'Century Gothic';
+		font-size: 22pt;
+		line-height: 24pt;
+		margin-bottom: 20px;
+		margin-left: 0;
+		padding-left: 0px;
+		padding-top: 0px;
+		color: #005695;
+		mc-auto-number-class: ChapAutoNum;
+	}
+
+	h1.Welcome
+	{
+		mc-auto-number-class: '';
+		mc-auto-number-format: '';
+		mc-heading-level: 0;
+	}
+
+	h2
+	{
+		font-size: 12pt;
+		font-weight: normal;
+		line-height: 14pt;
+		color: #005695;
+		page-break-before: always;
+	}
+
+	h2.Welcome
+	{
+		page-break-before: auto;
+		mc-heading-level: 0;
+	}
+
+	h3
+	{
+		font-size: 10pt;
+		font-weight: bold;
+		line-height: 12pt;
+	}
+
+	h3.Welcome
+	{
+		mc-heading-level: 0;
+	}
+
+	h4
+	{
+		font-size: 9pt;
+		font-weight: normal;
+		line-height: 11pt;
+		mc-heading-level: 0;
+	}
+
+	img
+	{
+		max-width: 100%;
+	}
+
+	img.FiftyPercentThumbnail
+	{
+		max-width: 50%;
+	}
+
+	img.SeventyFivePercent
+	{
+		max-width: 75%;
+	}
+
+	MadCap|dropDown.SecondLevel
+	{
+		background-color: transparent;
+		margin-left: 10px;
+	}
+
+	MadCap|dropDownBody
+	{
+		border-bottom: none;
+	}
+
+	MadCap|dropDownHead
+	{
+		margin-top: 16px;
+	}
+
+	MadCap|dropDownHotspot
+	{
+		font-size: 8pt;
+	}
+
+	MadCap|footnoteBlock
+	{
+		font-size: 7pt;
+	}
+
+	MadCap|footnotesBlock
+	{
+		border-top-color: #c4d600;
+	}
+
+	MadCap|glossaryProxy
+	{
+		border-top: none;
+		color: #e1e1e1;
+	}
+
+	MadCap|indexProxy
+	{
+		border-top: none;
+		color: #e1e1e1;
+	}
+
+	MadCap|miniTocProxy
+	{
+		border-top-width: 0px;
+		margin-left: 0.25in;
+		margin-right: 0.25in;
+		padding-left: 0px;
+	}
+
+	MadCap|tocProxy
+	{
+		border-top: none;
+		margin-right: 0.25in;
+	}
+
+	MadCap|xref
+	{
+		color: #404040;
+		font-weight: normal;
+		mc-format: '{quote}{para}{quote} {pageref}';
+		text-decoration: none;
+	}
+
+	MadCap|xref.IndexPageNumber
+	{
+		color: #c4d600;
+	}
+
+	ol.LowerAlpha
+	{
+		margin-left: 30px;
+	}
+
+	ol.LowerRoman
+	{
+		margin-left: 30px;
+	}
+
+	p
+	{
+		font-size: 8pt;
+	}
+
+	p.Copyright
+	{
+		margin-bottom: 8px;
+		margin-top: 8px;
+	}
+
+	p.CopyrightAddress
+	{
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+
+	p.CopyrightHeading
+	{
+		margin-top: 1in;
+		page-break-before: always;
+	}
+
+	p.CreatedUsingFlare
+	{
+		font-weight: bold;
+		margin-top: 18px;
+	}
+
+	p.EmptyPageText
+	{
+		font-size: 10pt;
+		font-weight: bold;
+	}
+
+	p.Figure
+	{
+		color: #404040;
+		font-style: italic;
+		mc-auto-number-class: FigureNum;
+		mc-auto-number-format: 'CF:Figure {chapnum}-{n+} ';
+		margin-left: 10px;
+		padding-bottom: 10px;
+	}
+
+	p.FirstPageOfChapter
+	{
+		color: #000000;
+	}
+
+	p.FrameFooterText
+	{
+		font-family: 'Century Gothic';
+		font-size: 24pt;
+	}
+
+	p.FrameFooterText2
+	{
+		color: #404040;
+		font-family: 'Century Gothic';
+		font-size: 11pt;
+	}
+
+	p.GlossaryPrintHead
+	{
+		color: #e1e1e1;
+		font-family: 'Century Gothic';
+		font-size: 90pt;
+		letter-spacing: -1px;
+		mc-heading-level: 1;
+		page-break-before: always;
+		text-align: right;
+	}
+
+	p.IndexHeading
+	{
+		font-size: 11pt;
+		padding-top: 16px;
+		text-align: left;
+	}
+
+	p.IndexPrintHead
+	{
+		color: #e1e1e1;
+		font-family: 'Century Gothic';
+		font-size: 90pt;
+		letter-spacing: -1px;
+		mc-heading-level: 1;
+		page-break-before: always;
+		text-align: right;
+	}
+
+	p.ManualTitle1
+	{
+		font-family: 'Century Gothic';
+		font-size: 22pt;
+		margin-bottom: 0;
+		margin-top: 1.00in;
+	}
+
+	p.ManualTitle2
+	{
+		color: #236192;
+		font-family: 'Century Gothic';
+		font-size: 35pt;
+		line-height: 0;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+
+	p.ManualVersionNumber
+	{
+		color: #b3b3b3;
+		font-family: 'Century Gothic';
+		font-size: 25pt;
+		margin-top: 25pt;
+	}
+
+	p.MiniTOC1
+	{
+		font-size: 9pt;
+		font-weight: normal;
+	}
+
+	p.TableCaption
+	{
+		color: #404040;
+		font-style: italic;
+		mc-auto-number-class: TableNum;
+		mc-auto-number-format: 'CT:Table {chapnum}-{n+} ';
+		padding-bottom: 0;
+		padding-top: 12px;
+	}
+
+	p.TOC1
+	{
+		font-size: 12pt;
+		font-weight: normal;
+		margin-bottom: 6px;
+		margin-top: 12px;
+		mc-leader-format: 'none';
+		mc-pagenum-display: none;
+		page-break-after: avoid;
+		color: #005595;
+	}
+
+	p.TOC2
+	{
+		font-size: 10pt;
+		font-weight: normal;
+		margin-bottom: 2px;
+		margin-left: 0.25in;
+		margin-top: 2px;
+	}
+
+	p.TOC3
+	{
+		font-size: 8pt;
+		font-weight: normal;
+		margin-bottom: 2px;
+		margin-left: 0.35in;
+		margin-top: 2px;
+	}
+
+	p.TOC4
+	{
+		font-size: 12pt;
+		font-weight: normal;
+		margin-bottom: 6px;
+		margin-left: 0;
+		margin-top: 12px;
+		color: #005595;
+	}
+
+	p.TOCHeading
+	{
+		color: #e1e1e1;
+		font-size: 90pt;
+		font-weight: normal;
+		letter-spacing: -1px;
+		line-height: 92pt;
+		margin: 0;
+		mc-heading-level: 0;
+		text-align: center;
+	}
+
+	span.ChapAutoNum
+	{
+		color: #e1e1e1;
+		font-family: 'Century Gothic';
+		font-size: 90pt;
+		letter-spacing: -1px;
+	}
+
+	span.FigureNum
+	{
+		color: #c4d600;
+		font-style: normal;
+	}
+
+	span.TableNum
+	{
+		color: #c4d600;
+		font-style: normal;
+	}
+
+	tr
+	{
+		page-break-inside: avoid;
+	}
+
+	ul
+	{
+		list-style-image: url('../Images/Bullet1Print.png');
+	}
+
+	ul.FirstLevelLessIndentation
+	{
+		list-style-image: url('../Images/Bullet1Print.png');
+		margin-left: 30px;
+	}
+
+	ul.SecondLevel
+	{
+		list-style-image: url('../Images/Bullet2Print.png');
+		margin-left: 30px;
+	}
+}
+
+img#vStory.vAlwaysOpen
+{
+	
+}
+

@@ -1,0 +1,14 @@
+﻿@import url("Main.css");
+
+@media print
+{
+	h1
+	{
+		mc-auto-number-format: 'CH:LESSON {chapnum} ';	
+	}
+
+	h1.Appendix
+	{
+		mc-auto-number-format: 'APPENDIX ';
+	}
+}

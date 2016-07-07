@@ -1,0 +1,4 @@
+var xmlHelpSystemData = "";
+xmlHelpSystemData += '<?xml version=\"1.0\" encoding=\"utf-8\"?>';
+xmlHelpSystemData += '<WebHelpSystem DefaultUrl=\"Content/EN/Getting_Started/Description.htm\" Toc=\"Data/Toc.js\" Index=\"Data/Index.js\" Concepts=\"Data/Concepts.js\" BrowseSequence=\"Data/BrowseSequence.js\" SearchDatabase=\"Data/Search.js\" Synonyms=\"Data/Synonyms.xml\" SearchUrl=\"Content/Search.htm\" Multilingual=\"false\" Skins=\"\" BuildTime=\"6/10/2016 8:51:32 AM\" BuildVersion=\"12.0.5939.19336\" TargetType=\"WebHelp2\" SkinTemplateFolder=\"Skin/\" InPreviewMode=\"false\" MoveOutputContentToRoot=\"false\" MakeFileLowerCase=\"false\" UseCustomTopicFileExtension=\"false\" PreventExternalUrls=\"false\" EnableResponsiveOutput=\"true\" IncludeGlossarySearchResults=\"true\" ResultsPerPage=\"20\" xml:lang=\"en-us\" LanguageName=\"English\" />';
+MadCap.Utilities.Xhr._FilePathToXmlStringMap.Add('HelpSystem', xmlHelpSystemData);

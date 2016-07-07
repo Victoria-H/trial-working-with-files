@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Correcting the Lookup</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Correction du flux Lookup</h1>
+                    <h2>Vue d'ensemble</h2>
+                    <p>Vous savez que la jointure échoue à cause des minuscules dans les chaînes de caractères, vous pouvez donc corriger la configuration.</p>
+                    <h2>Configuration du tMap</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Double-cliquez sur le composant 
+                <span class="ui-control">tMap</span>. Rappelez-vous que 
+                <span class="ui-control">row2</span> est la table de référence pour la jointure. Dans la table 
+                <span class="ui-control">row2</span> à gauche, cliquez sur<![CDATA[ 
+                ]]><span class="ui-control">row1.State</span> puis sur le bouton 
+                <span class="ui-control">[...]</span> pour ouvrir l'               <span class="ui-control">Expression Builder</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_correct_lookup.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Dans un exercice précédent, vous avez utilisé l'                <span class="ui-control">Expression Builder</span> pour convertir des chaînes de caractères minuscules en lettres capitales. Vous devez faire la même chose pour cette colonne, mais d'une autre manière. Après le dernier caractère de <span class="user-input-files-variables">row1.State</span>, saisissez directement <span class="user-input-files-variables">.to</span> et vous verrez les options proposées par l'autocomplétion contextuelle de l'éditeur.</p>
+                            <p>Double-cliquez sur <span class="user-input-files-variables">toUppercase():&#160;String - String</span> pour la sélectionner.</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_expressionbulid.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Cliquez sur
+                <span class="ui-control">Ok</span> pour fermer l'
+                <span class="ui-control">Expression Builder</span>. La valeur de la colonne 
+                <span class="ui-control">State</span> est convertie en lettres capitales avant comparaison à la table de référence, pour que la jointure fonctionne correctement&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_expression_final.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p>Cliquez sur
+                <span class="ui-control">Ok</span> pour fermer l'éditeur du 
+                <span class="ui-control">tMap</span>.</p>
+                        </li>
+                    </ol>
+                    <h2>Exécution du Job</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Exécutez le Job. Notez que le <span class="ui-control">tLogRow</span> n'a traité aucune ligne, car aucun rejet n'a été trouvé. Le flux de données en sortie est de 100 lignes traitées.</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_capture_final.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Examinez le contenu du fichier de sortie avec l'option <span class="ui-control">Data Preview</span> dans le Studio ou avec <span class="ui-control">Notepad++</span>, pour vous assurer que toutes les lignes comprennent le nom de l'État&#160;:
+                </p>
+                            <p>
+                                <img src="../../Resources/Images/Capture25.png" alt="" />
+                                <br />
+                            </p>
+                            <p>Vous n'avez plus besoin d'afficher les rejets, vous pouvez nettoyer le Job en supprimant le <span class="ui-control">tLogRow</span>. </p>
+                        </li>
+                    </ol>
+                    <h2>Nettoyage du Job </h2>
+                    <ol>
+                        <li value="1">
+                            <p>Cliquez-droit sur le composant 
+                <span class="ui-control">tLogRow</span> dans l'espace de modélisation graphique et sélectionnez <b>Delete</b> pour supprimer le composant&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_deletetlogrow.png" alt="" />
+                            </p>
+                            <p>Notez que vous pouvez également supprimer un composant en utilisant la touche <span class="ui-control">Suppr</span> de votre clavier.</p>
+                        </li>
+                        <li value="2">
+                            <p>Double-cliquez sur le  
+        <span class="bold">tMap</span> pour ouvrir son éditeur de mapping. <br />Cliquez sur la table 
+        <span class="bold">JoinFailures</span> à droite puis cliquez sur le bouton         <span class="bold">Remove selected output table</span>, marqué d'une croix rouge (en haut de la fenêtre).</p>
+                            <p>
+                                <img src="../../Resources/Images/removeJoinFailuresOutputTable.png" alt="" />
+                            </p>
+                            <p>Cliquez sur <span class="ui-control">OK</span> lorsqu'une boîte de dialogue vous demande de confirmer la suppression de la table <span class="ui-control">JoinFailures</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/confirmRemoveOutputTable.png" alt="" />
+                            </p>
+                            <p>Cliquez sur <span class="ui-control">Ok</span> pour fermer l'éditeur de mapping </p>
+                        </li>
+                        <li value="3">
+                            <p>Cliquez sur
+                <span class="ui-control">Clear</span> dans la vue 
+                <span class="ui-control">Run</span> afin de supprimer l'affichage de statistiques dans l'espace de modélisation graphique&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/LookupStateFinalClean.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p>Sauvegardez le Job.</p>
+                        </li>
+                    </ol>
+                    <h2>Étape suivante</h2>
+                    <p>Vous avez terminé la leçon relative à ce Job, vous pouvez passer à la <a href="Wrap-Up.htm">Conclusion</a>.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

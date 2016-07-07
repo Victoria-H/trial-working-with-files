@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Creating Database Metadata</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Création d'une métadonnée de base de données</h1>
+                    <h2>Vue d'ensemble</h2>
+                    <p>Vous pouvez créer une métadonnée relative à la connexion au serveur local de votre base de données et à votre base de données spécifique. Créer des métadonnées avec ces informations simplifie la réutilisation dans différents composants et Jobs.</p>
+                    <h2>Création d'une métadonnée de connexion à une base de données</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Dans le
+                <span class="ui-control">Repository</span>, sous
+                <span class="ui-control">Metadata</span>, cliquez-droit sur
+                <span class="ui-control">Db Connections</span> et sélectionnez 
+                <span class="ui-control">Create connection</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createDatabaseMetadata_contextualMenu.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p><span class="ui-control">Note&#160;:</span> Comme de nombreux composants dans votre projet doivent se connecter à la même base de données, stocker les informations de connexion dans le 
+                <span class="ui-control">Repository</span> vous permet de ne pas saisir ces informations pour chaque composant.</p>
+                        </li>
+                        <li value="2">
+                            <p>Saisissez <span class="user-input-files-variables">LocalMySQL</span> dans le champ 
+                <span class="ui-control">Name</span>, renseignez les champs
+                <span class="ui-control">Purpose</span> et <span class="ui-control">Description</span>. Cliquez sur 
+                <span class="ui-control">Next</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createDatabaseMetadata_newConnectionStep1_384x321.png" alt="" style="border: none;width: 384;height: 321;" border="0" />
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Configuration de la métadonnée de connexion à la base de données</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Sélectionnez 
+                <span class="ui-control">MySQL</span> dans la liste déroulante 
+                <span class="ui-control">DB Type</span>. Configurez la connexion comme suit&#160;:<br /><span class="ui-control">Login</span>&#160;: <span class="user-input-files-variables">root</span><br /><span class="ui-control">Password</span>&#160;: <span class="user-input-files-variables">root</span><br /><span class="ui-control">Server</span>&#160;: <span class="user-input-files-variables">localhost</span><br /><span class="ui-control">DataBase</span>&#160;: <span class="user-input-files-variables">training</span><br /></p>
+                            <p>Cliquez sur le bouton <span class="ui-control">Check</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createDatabaseMetadata_databaseConfig_343x404.png" alt="" style="border: none;width: 343;height: 404;" border="0" />
+                            </p>
+                            <p><span class="ui-control">Note&#160;:</span> ces informations de configuration sont spécifiques à l'environnement de formation, dans lequel une base de données MySQL est configurée pour vous. Dans votre propre environnement, vous devez fournir les informations de configuration appropriées à votre configuration.</p>
+                        </li>
+                        <li value="2">
+                            <p>La vérification de la connexion doit réussir.&#160;Cliquez sur
+              <span class="ui-control">OK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createDatabaseMetadata_checkConnection_412x117.png" alt="" style="border: none;width: 412;height: 117;" border="0" />
+                            </p>
+                            <p>Si la connexion ne s'établit pas, corrigez les informations de connexion et réessayez.</p>
+                        </li>
+                        <p><span class="ui-control">Note :</span> la première fois que vous configurez une connexion dans votre propre environnement, il vous est proposé de télécharger et installer un fichier .jar externe. Si vous voyez cette boîte de dialogue, installez le fichier et continuez. Tous les fichiers .jar requis sont déjà installés dans l'environnement de formation.
+            </p>
+                    </ol>
+                    <h2>Export en tant que contexte</h2>
+                    <p>Comme vous l'avez fait pour la métadonnée <b>RetailCustomer</b>, vous allez créer des variables de contexte avec toutes les informations relatives à votre base de données MySQL.
+        </p>
+                    <ol>
+                        <li value="1">Cliquez sur <span class="ui-control">Export as Context</span> puis sur <b>Next</b>&#160;:
+                <p><img src="../../Resources/Images/Database_createMetadata_createContextGroup_346x285.png" alt="" style="border: none;width: 346;height: 285;" border="0" /></p></li>
+                        <li value="2">Dans l'assistant <span class="ui-control">Create / Reuse a context group</span>, cliquez sur <span class="ui-control">Next</span>&#160;:<p><img src="../../Resources/Images/Database_createDatabaseMetadata_exportAsContextConfig_349x321.png" alt="" style="border: none;width: 349;height: 321;" border="0" /></p></li>
+                        <li value="3">
+                            <p>Dans l'onglet <span class="ui-control">Variables</span>, vous allez voir la liste des variables de contexte créées et, dans l'onglet <span class="ui-control">Value as Table</span>, vous allez voir la valeur par défaut de chaque variable de contexte. <br />Cliquez sur 
+                <span class="ui-control">Finish</span>&#160;:</p>
+                            <p><a href="../../Resources/Images/image228.PNG"><img src="../../Resources/Images/Database_createDatabaseMetadata_exportAsContextMetadata_340x256.png" alt="" style="border: none;width: 340;height: 256;" border="0" /></a>
+                            </p>
+                        </li>
+                        <li value="4">Retournez dans la fenêtre de connexion à la base de données, notez que, au lieu des valeurs saisies dans chaque champ, vous voyez des variables de contexte. <br />Cliquez sur <b>Finish</b>&#160;:
+                <br /><img src="../../Resources/Images/Database_createDatabaseMetadata_databaseConfigWithContext_434x418.png" alt="" style="border: none;width: 434;height: 418;" border="0" /><br /></li>
+                    </ol>
+                    <h2>Étape suivante</h2>
+                    <p>Maintenant que les informations de connexion à votre base de données MySQL locales sont configurées, vous pouvez <a href="Creating_a_Database_Table.htm">créer la première table de base de données</a>.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

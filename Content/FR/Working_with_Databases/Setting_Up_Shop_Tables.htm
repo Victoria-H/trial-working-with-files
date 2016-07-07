@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Setting Up Shop Tables</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1 xml:lang="fr">Configuration des tables de ventes</h1>
+                    <h2>Vue d'ensemble</h2>
+                    <p>Dans ce scénario, vous collectez des informations périodiques relatives à des ventes pour des magasins individuels, que vous allez rassembler et stocker dans une table maître. Tout d'abord, les données temporaires des ventes doivent être combinées dans une table de préparation.</p>
+                    <h2>Création de la table</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Dupliquez le Job <span class="ui-control">ProductPrep2Table</span>, nommez-le 
+               <span class="user-input-files-variables">ShopTableSetup</span>.</p>
+                        </li>
+                        <li value="2">
+                            <p>Ouvrez le nouveau Job.</p>
+                            <p>Double-cliquez sur le composant 
+              <span class="ui-control">tCreateTable</span>, sélectionnez le 
+               <span class="ui-control">Schema</span> générique 
+                <span class="ui-control">ShopMetadata</span> du 
+                <span class="ui-control">Repository</span> puis configurez le champ 
+                <span class="ui-control">Table Name</span> à<![CDATA[
+                ]]><span class="ui-control" style="font-weight: normal; font-style: italic;">"SalesStaging"</span>.</p>
+                            <p> Sélectionnez 
+                <span class="ui-control">Drop table if exists and create</span> dans la liste <span class="ui-control">Action on table</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_settingUpShopTable_tcreateTableConfig.png" alt="" style="border: Solid 1px #c0c0c0;" border="1" />
+                            </p>
+                            <p>Ce composant crée une table de base de données nommée <span class="ui-control">SalesStaging</span> à l'aide du schéma générique 
+              <span class="ui-control">ShopMetadata</span>.</p>
+                        </li>
+                    </ol>
+                    <h2>Modification des composants</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Modifiez le nom du composant 
+                <span class="ui-control">RetailProducts</span> en <span class="user-input-files-variables">Shop1</span>, puis configurez-le pour qu'il utilise le schéma 
+                <span class="ui-control">ShopMetadata</span>.<br />Cliquez sur
+                <span class="ui-control">Yes</span> lorsqu'une boîte de dialogue vous demande<![CDATA[
+                ]]><span class="ui-control">Would you like to propagate the changes?</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_settingUpShopTable_shop1ChangeSchema.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Dans la liste                <span class="ui-control">Property Type</span>,              sélectionnez <span class="ui-control">Built-In</span> et modifiez la valeur du champ
+                <span class="ui-control">File Name</span> à <span class="ui-control" style="font-weight: normal;font-style: italic;">"C:/StudentFiles/SalesFiles/shop1.csv"</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_settingUpShopTable_shop1Config.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">Double-cliquez sur le composant 
+            <span class="ui-control">LocalMySQL</span> et modifiez le nom de la table en
+            <span class="ui-control" style="font-weight: normal; font-style: italic;">"SalesStaging"</span>. <br />Cochez la case 
+            <span class="ui-control">Die on error</span> et sélectionnez 
+            <span class="ui-control">Create Table if it does not exist</span> dans la liste 
+            <span class="ui-control">Action on table</span>&#160;: 
+            <p><img src="../../Resources/Images/Database_settingUpShopTable_shop1ConfigAfterChange.png" alt="" style="border: Solid 1px #c0c0c0;" border="1" /></p><p>Notez que le schéma a été propagé depuis le composant 
+            <span class="ui-control">Shop1</span>, vous n'avez donc pas besoin de le modifier.</p></li>
+                    </ol>
+                    <h2>Duplication du sous-job</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Copiez-collez le sous-job&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_settingUpShopTable_shopTableSetupCopyPaste_388x259.png" alt="" style="border: none;width: 388;height: 259;" border="0" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Changez le nom du 
+                <span class="ui-control">Shop1</span> du deuxième sous-job en <span class="user-input-files-variables">Shop2</span> et configurez-le pour qu'il lise le fichier 
+                <span class="ui-control">shop2.csv</span>.<br /> Connectez les deux sous-jobs à l'aide d'un lien <span class="ui-control">Trigger </span>&gt; <span class="ui-control">OnSubjobOK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_settingUpShopTable_shop1OnSubjobOK_334x191.png" alt="" style="border: none;width: 334;height: 191;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Créez une troisième copie du sous-job, pour 
+                <span class="ui-control">Shop3</span> et configurez comme pour                 <span class="ui-control">Shop2</span>. </p>
+                            <p>
+                                <img src="../../Resources/Images/Database_settingUpShopTable_allShop.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Note&#160;: les trois fichiers de ventes seront chargés dans une table d'une base de données.</p>
+                        </li>
+                        <li value="4">
+                            <p>Exécutez le Job.</p>
+                        </li>
+                    </ol>
+                    <h2>Vérification des résultats</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Utilisez MySQL Workbench pour exécuter la commande SQL&#160;suivante&#160;:</p>
+                            <p><span class="code">select * from salesstaging;</span>
+                            </p>
+                            <p>
+                                <img src="../../Resources/Images/Database_settingUpShopTable_salesstagingQuery.png" alt="" />
+                            </p>
+                            <p>Si la requête ne retourne pas de résultat, vérifiez votre travail et effectuez les corrections nécessaires.<br />Notez que les résultats affichent uniquement les lignes pour <span class="ui-control">Shop1</span>. Par défaut, la requête du Workbench affiche uniquement les 1000 premières lignes. Puisqu'elles sont triées par nom de magasin, <span class="ui-control">ShopName</span>, seules les lignes de <span class="ui-control">Shop1</span> sont affichées.</p>
+                        </li>
+                        <li value="2">
+                            <p>Saisissez la commande suivante afin de vérifier que la table contient les lignes de <span class="ui-control">Shop2</span>&#160;: </p>
+                        </li>
+                        <p class="ui-control"><span class="code">select * from salesstaging where ShopName = "Shop2";</span>
+                        </p>
+                        <p>
+                            <img src="../../Resources/Images/Database_settingUpShopTable_salesstagingShop2Query.png" alt="" style="border: none;" border="0" />
+                        </p>
+                        <li value="3">
+                            <p>Saisissez une autre requête afin de vérifier que la table contient les données de <span class="ui-control">Shop3</span>.</p>
+                            <p>Si des données sont manquantes, vérifiez votre travail et effectuez les corrections nécessaires.</p>
+                        </li>
+                    </ol>
+                    <h2>Étape suivante</h2>
+                    <p>Vous pouvez 
+       <a href="Reading_from_a_Database.htm">commencer à construire le Job principal</a> afin de combiner les données de différentes sources.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Working with Contexts</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Gestion d'erreurs</h1>
+                    <h2>Vue d'ensemble</h2>
+                    <p>Dans un environnement de développement ou de test, vous pouvez gérer les erreurs en observant la console, mais, lorsque votre projet est déployé en production, vous voulez gérer les erreurs automatiquement.</p>
+                    <p>Au cours de cette leçon, vous allez apprendre à gérer les erreurs techniques mais aussi les erreurs métier. Vous allez également apprendre à définir les messages d'erreur ou d'avertissement. </p>
+                    <p>Voici une vue d'ensemble du Job que vous allez créer&#160;: </p>
+                    <p>
+                        <img src="../../Resources/Images/image8.png" alt="" />
+                    </p>
+                    <p>En cas d'erreur technique du composant d'entrée, le Job s'arrête immédiatement pour empêcher le Job de se terminer.</p>
+                    <p>En cas d'erreur métier du composant de sortie, un avertissement s'affiche et vous indique l'anomalie.</p>
+                    <h2>Objectifs
+        </h2>
+                    <p>Après avoir terminé cette leçon, vous pourrez&#160;:</p>
+                    <ul>
+                        <li value="1">
+                            <p>Arrêter un Job lorsqu'un composant est en erreur</p>
+                        </li>
+                        <li value="2">Implémenter un chemin d'exécution spécifique pour le Job en cas d'erreur d'un composant </li>
+                        <li value="3">Afficher un avertissement sous conditions spécifiques</li>
+                        <li value="4">Configurer le niveau de log dans la console d'exécution</li>
+                    </ul>
+                    <h2>Étape suivante
+        </h2>
+                    <p>La première étape consiste à
+        <a href="Handling_Errors.htm">arrêter un Job</a> générant une erreur. </p>
+                    <!-- Tin Can API Wrapper -->
+                    <script>/* <![CDATA[ */
+// Uncomment the following line to enable debug statements in the web console of the browser
+//TinCan.enableDebug();
+
+// Initialize a TinCan object.
+// Several properties forwarded through the Activity Provider (AP) are automatically set, like the endpoint and authentication:
+// Refer to http://scorm.com/wp-content/assets/tincandocs/Incorporating-a-Tin-Can-LRS-into-an-LMS.pdf for more details
+var tincan = new TinCan (
+	{
+		url: window.location.href,
+	}
+);
+
+// Send activity initialization statement
+// 'duration' is set to 0 seconds (pattern is "PT1H37M56.34S" = 1 hour, 37 min and 56.34 seconds)
+tincan.sendStatement(
+	{
+		verb: {
+			id: "http://adlnet.gov/expapi/verbs/attempted",
+			display: {
+				"en-US": "attempted"
+			}
+		},
+		result: {
+			duration: "PT0S"
+		}
+	}
+);
+
+// Marshall TinCan object to Local Storage for later reuse in other pages
+localStorage.setItem("tincan", JSON.stringify(tincan));
+		/* ]]> */</script>
+                    <!-- /Tin Can API Wrapper -->
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

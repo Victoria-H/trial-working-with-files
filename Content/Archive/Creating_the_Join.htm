@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>ZZ_Creating_the_Join</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1 style="margin-left: 1.4in;">Creating the Join</h1>
+                    <table cellspacing="15" width="672">
+                        <col style="width: 16.162%;" />
+                        <col style="width: 83.838%;" />
+                        <tr>
+                            <td style="vertical-align: Top;">
+                                <p style="text-align: right;"><span style="font-weight: bold;">Overview</span>
+                                </p>
+                            </td>
+                            <td style="padding-left: 4px;padding-right: 4px;padding-bottom: 4px;vertical-align: Top;" bgcolor="#EEEEEE">
+                                <p>Your Job generates 
+		 data representing purchases, now you need to join that information 
+		 with customer data to create a comprehensive sales report.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: Top;">
+                                <p style="text-align: right;font-weight: bold;">Read 
+		 Customer Data</p>
+                                <p style="text-align: right;">&#160;</p>
+                                <p style="text-align: right;font-weight: bold;color: #ff0000;">Show Me!</p>
+                            </td>
+                            <td style="padding-left: 4px;padding-right: 4px;padding-bottom: 4px;vertical-align: Top;" bgcolor="#EEEEEE">
+                                <ol style="list-style: decimal;">
+                                    <li value="1">
+                                        <p>Place a <span style="font-weight: bold;">tFileInputDelimited</span> 
+			 component on the design workspace to the right of the <span style="font-weight: bold;">tRowGenerator</span> component.</p>
+                                    </li>
+                                    <li value="2">
+                                        <p>In the <span style="font-weight: bold;">Component</span> 
+			 view, change <span style="font-weight: bold;">Schema</span> 
+			 from <span style="font-weight: bold;">Built-In</span> to <span style="font-weight: bold;">Repository</span> and then use 
+			 the button marked with an ellipsis (...) to set the <span style="font-weight: bold;">Schema</span> to <span style="font-weight: bold;">metadata</span> 
+			 under <span style="font-weight: bold;">FullCustomer</span> 
+			 (this is the schema you saved earlier from the <span style="font-weight: bold;">tMap</span> 
+			 component).</p>
+                                    </li>
+                                    <li value="3">
+                                        <p>Set the <span style="font-weight: bold;">File name</span> 
+			 to "C:/Student Files/CappedOut.csv". This is the 
+			 file that the <span style="font-weight: bold;">tFileOutputDelimited</span> 
+			 component elsewhere in the Job writes that contains the customer 
+			 information.</p>
+                                    </li>
+                                    <li value="4">
+                                        <p>Change the <span style="font-weight: bold;">Field separator</span> 
+			 to a comma to match the file contents and then set the <span style="font-weight: bold;">Header</span> value to "1" 
+			 to account for the first row containing the column names:</p>
+                                        <p>
+                                            <img src="../Resources/Images/InputConfigPurchase_450x101.png" alt="" style="border: none;width: 450;height: 101;" border="0" />
+                                        </p>
+                                    </li>
+                                    <li value="5">
+                                        <p>Change the label of the component (in the <span style="font-weight: bold;">View</span> 
+			 tab) to "Full Customer Data".</p>
+                                    </li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: Top;">
+                                <p style="text-align: right;font-weight: bold;">Add 
+		 a tMap Component</p>
+                                <p style="text-align: right;">&#160;</p>
+                                <p style="text-align: right;font-weight: bold;color: #ff0000;">Show Me!</p>
+                            </td>
+                            <td style="padding-left: 4px;padding-right: 4px;padding-bottom: 4px;vertical-align: Top;" bgcolor="#EEEEEE">
+                                <ol style="list-style: decimal;">
+                                    <li value="1">
+                                        <p>Place a <span style="font-weight: bold;">tMap</span> 
+			 component on the design workspace, connect the <span style="font-weight: bold;">tRowGenerator</span> 
+			 component to it with a <span style="font-weight: bold;">Main</span> 
+			 row, and then connect the <span style="font-weight: bold;">Full 
+			 Customer Data</span> component to it with a Main row. This 
+			 Main row will be automatically renamed to Lookup:</p>
+                                        <p>
+                                            <img src="../Resources/Images/PurchaseThreeComponents_450x294.png" alt="" style="border: none;width: 450;height: 294;" border="0" />
+                                        </p>
+                                        <p>Notice that there are two distinct areas on the design workspace: 
+			 the components from the duplicated Job above, and the new 
+			 components you added below. Nothing yet connects those two 
+			 areas.</p>
+                                    </li>
+                                    <li value="2">
+                                        <p>Add a <span style="font-weight: bold;">tLogRow</span> 
+			 component to log the output from the <span style="font-weight: bold;">tMap</span> 
+			 component to the console, naming the row <span style="font-weight: bold;">CustomerPurchases</span>:</p>
+                                        <p>
+                                            <img src="../Resources/Images/PurchFourComps_450x172.png" alt="" style="border: none;width: 450;height: 172;" border="0" />
+                                        </p>
+                                    </li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: Top;">
+                                <p style="text-align: right;font-weight: bold;">Configure 
+		 the tMap</p>
+                                <p style="text-align: right;font-weight: bold;">&#160;</p>
+                                <p style="text-align: right;font-weight: bold;color: #ff0000;">Show Me!</p>
+                            </td>
+                            <td style="padding-left: 4px;padding-right: 4px;padding-bottom: 4px;vertical-align: Top;" bgcolor="#EEEEEE">
+                                <ol style="list-style: decimal;">
+                                    <li value="1">
+                                        <p>Configure the <span style="font-weight: bold;">tMap</span> 
+			 component to perform a left outer join (the default join) 
+			 between <span style="font-weight: bold;">row3</span> and <span style="font-weight: bold;">row4</span> on the Customer ID 
+			 columns (use the instructions in the <a href="../Labs/Lab3_JoiningDataSources/Joining_Data_Sources.htm">previous 
+			 lesson</a> to refresh your memory, if necessary).</p>
+                                    </li>
+                                    <li value="2">
+                                        <p>Configure the output table (<span style="font-weight: bold;">CustomerPurchases</span>) 
+			 to contain all the columns from both input tables, except 
+			 for the ID column from <span style="font-weight: bold;">row4</span><span>(click image to enlarge)</span>:</p>
+                                        <p>
+                                            <img src="../Resources/Images/JoinPurchase_450x165.png" alt="" style="border: none;width: 450;height: 165;" border="0" />
+                                        </p>
+                                    </li>
+                                    <li value="3">
+                                        <p>Click <span style="font-weight: bold;">Ok</span><span>and 
+			 then propagate the changes</span>.</p>
+                                    </li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: Top;">
+                                <p style="text-align: right;font-weight: bold;">Connect 
+		 the Subjobs</p>
+                                <p style="text-align: right;">&#160;</p>
+                                <p style="text-align: right;font-weight: bold;color: #ff0000;">Show Me!</p>
+                            </td>
+                            <td style="padding-left: 4px;padding-right: 4px;padding-bottom: 4px;vertical-align: Top;" bgcolor="#EEEEEE">
+                                <p>Right-click <span style="font-weight: bold;">CustomersFile</span>, click <span style="font-weight: bold;">Trigger</span> 
+		 followed by <span style="font-weight: bold;">OnSubjobOk</span>, 
+		 and then click <span style="font-weight: bold;">tRowGenerator</span>:</p>
+                                <p>
+                                    <img src="../Resources/Images/OnSubJob_450x311.png" alt="" style="border: none;width: 450;height: 311;" border="0" />
+                                </p>
+                                <p>Your Job is now made up of two subjobs: the first creates a 
+		 file containing complete customer data, with both the state code 
+		 and the state name, and the second subjob joins the data in that 
+		 file to generated purchase data to create complete purchase records. 
+		 The trigger <span style="font-weight: bold;">OnSubjobOk</span> 
+		 specifies that the connected subjob only run if the first subjob 
+		 succeeds, making sure that the customer data file is in place 
+		 before the second subjob attempts to access it.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: Top;">
+                                <p style="text-align: right;font-weight: bold;">Run 
+		 the Job</p>
+                                <p style="text-align: right;">&#160;</p>
+                                <p style="text-align: right;font-weight: bold;color: #ff0000;">Show Me!</p>
+                            </td>
+                            <td style="padding-left: 4px;padding-right: 4px;padding-bottom: 4px;vertical-align: Top;" bgcolor="#EEEEEE">
+                                <ol style="list-style: decimal;">
+                                    <li value="1">
+                                        <p>Run the &#160;Job and then examine the contents of the 
+			 console (click the image to enlarge):</p>
+                                        <p>
+                                            <img src="../Resources/Images/PurchConsole_450x114.png" alt="" style="border: none;width: 450;height: 114;" border="0" />
+                                        </p>
+                                        <p>Your output will be different, because the row generator 
+			 creates random data.</p>
+                                    </li>
+                                    <li value="2">
+                                        <p>Click <span style="font-weight: bold;">Clear</span> 
+			 to remove the statistic information from the design workspace.</p>
+                                    </li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: Top;">
+                                <p style="font-weight: bold;text-align: right;">Next</p>
+                            </td>
+                            <td style="padding-left: 4px;padding-right: 4px;padding-bottom: 4px;vertical-align: Top;" bgcolor="#EEEEEE">
+                                <p>Now that you have 
+		 a Job that creates purchase records, you can filter 
+		 those records based on what was purchased.</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

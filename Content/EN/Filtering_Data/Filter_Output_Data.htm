@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Filtering Data">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Adding_Constraints</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Filtering Data</a>
+                    <ul class="sub-menu">
+                        <li><a href="Overview.htm">Overview</a>
+                        </li>
+                        <li><a href="#" class="selected">Filter Output Data</a>
+                        </li>
+                        <li><a href="Using_tMap_Multiple_Filters.htm">Using Multiple Filters</a>
+                        </li>
+                        <li><a href="Wrap-Up.htm">Wrap-Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Filtering Data</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="selected">Filter Output Data</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Filter output data </h1>
+                    <h2>Overview</h2>
+                    <div class="youAreGoingTo">
+                        <p>Your Job needs to filter the output based on the 
+        	<span class="ui-control">State code</span> so that the resultant output files are isolated  to specific states.</p>
+                    </div>
+                    <h2>Duplicate Job</h2>
+                    <ol>
+                        <li value="1">
+                            <p>DUPLICATE THE JOB <span class="ui-control">LookupState</span></p>
+                            <p>Right-click on the Job 
+                <span class="ui-control">LookupState</span> and click 
+                <span class="ui-control">Duplicate</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_duplicateJob.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">NAME THE DUPLICATED JOB</p>
+                            <p>Enter 
+                <span class="user-input-files-variables">Filter_States</span> in the
+               <span class="ui-control">Input new name</span> field and then click
+               <span class="ui-control">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_newJob.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE JOB IN THE DESIGN WORKSPACE</p>
+                            <p>Double-click the new Job to open it in the design space.</p>
+                        </li>
+                    </ol>
+                    <h2>Add Filter</h2>
+                    <ol start="1">
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">ADD A FILTER EXPRESSION IN <span class="ui-control">tMap </span></p>
+                            <p>Double-click the <span class="ui-control">tMap </span>component. </p>
+                            <p>Click the 
+                <span class="ui-control">Activate/ unactivate expression filter</span> Icon on top right of
+                <span class="ui-control">CappedOut</span> and enter 
+                <i>"CA".equals(row1.State)</i> for the filter definition and click 
+                <span class="ui-control">Ok</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_CA_stateExpression.png" alt="" />
+                            </p>
+                            <p>Once the Expression filter is correct, an orange arrow is added for you that maps the flow from the appropriate place in the input table to the output table.</p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">RUN THE JOB AND CHECK THE STATISTICS IN THE DESIGN WORKSPACE<![CDATA[        ]]></p>
+                            <p><span class="ui-control">Run</span> the Job. </p>
+                            <p>
+                                <img src="../../Resources/Images/FD_CA_Run.png" alt="" />
+                            </p>
+                            <p>Note that only 9 rows are now written to the output file.<br /></p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">CHECK THE OUTPUT IN DATA VIEWER</p>
+                            <p>Right-click  the output component
+                <span class="ui-control">tFileOutputDelimited</span> and select <span class="ui-control">Data viewer.</span></p>
+                            <p>Note the filtered data are only records having <i>CA</i> (in Upper Case) for the 
+                <span class="ui-control">State</span> column from the 
+                <span class="ui-control">Custs.csv</span> input file. <MadCap:conditionalText data-mc-conditions="vModifs.vBoxAdditions">This filter expression hasn't included the lower case instances.</MadCap:conditionalText></p>
+                            <p>
+                                <img src="../../Resources/Images/Capture44.png" alt="" />
+                            </p>
+                            <p>Click <span class="ui-control">Close</span>.</p>
+                        </li>
+                        <li value="4">
+                            <p>CORRECT YOUR FILTER EXPRESSION</p>
+                            <p>Double-click 
+                <span class="ui-control">tMap</span> again and change the filter to 
+                <i>"CA".equals(row2.StateCode)</i> and click                 <span class="ui-control">Ok</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_CA_row2_Filter.png" alt="" />
+                            </p>
+                            <p>Notice that once again the orange arrow is placed for you and identifies the data flow for the changed expression. Recall that <span class="user-input-files-variables">row2.StateCode</span> contains the state code in uppercase. </p>
+                        </li>
+                        <li value="5">
+                            <p data-mc-conditions="vModifs.vTitles">RUN THE JOB AND CHECK THE STATISTICS IN THE DESIGN WORKSPACE        </p>
+                            <p><span class="ui-control">Run</span> the Job again and you will see that the output contains 27 rows:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_CA_row2_FilterResult.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="6">
+                            <p data-mc-conditions="vModifs.vTitles">CHECK THE OUTPUT IN THE DATA VIEWER</p>
+                            <p>Right-click  the output component
+                <span class="ui-control">tFileOutputDelimited</span> and select <span class="ui-control">Data viewer</span>.<br /><img src="../../Resources/Images/Capture45.png" alt="" /><br /></p>
+                        </li>
+                    </ol>
+                    <h2>Next</h2>
+                    <p>Now that you have filtered data for one State Code, you can learn how to <a href="Using_tMap_Multiple_Filters.htm">create multiple outputs</a>, filtering different states in the 
+        <span class="ui-control">tMap</span> component.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

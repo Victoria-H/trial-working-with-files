@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Creating Customer Metadata</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/Simple.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Création de la métadonnée Customers</h1>
+                    <h2>Vue d'ensemble</h2>
+                    <p>L'étape suivante consiste à créer une métadonnée relative au fichier client afin de l'utiliser pour configurer un composant. Vous allez exporter les informations de métadonnées en tant que variables de contexte, qui est le meilleur moyen de gérer vos variables.</p>
+                    <h2>Création d'un fichier de métadonnée</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Dans le 
+                <span class="ui-control">Repository</span>, sous 
+                <span class="ui-control">Metadata</span>, cliquez-droit sur 
+                <span class="ui-control">File delimited</span> et sélectionnez 
+                <span class="ui-control">Create file delimited</span>. <br />Vous allez créer une métadonnée relative au fichier client. Vous avez créé une métadonnée de fichier délimité similaire dans une leçon précédente&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createMetadata_createFileDelimitedContextualMenu.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Nommez la métadonnée <span class="ui-control" style="font-weight: normal; font-style: italic;">RetailCustomers</span>, renseignez les champs <span class="ui-control">Purpose</span> et <span class="ui-control">Description</span>, puis cliquez sur 
+                <span class="ui-control">Next</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson7/CreateCustomerMetadata1.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Cliquez sur
+                <span class="ui-control">Browse</span> afin de trouver le fichier 
+                <span class="ui-control">C:/StudentFiles/refCustomer.csv</span>, dans la liste 
+                <span class="ui-control">Format</span>, sélectionnez
+                <span class="ui-control">WINDOWS</span>, puis cliquez sur
+                <span class="ui-control">Next</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson7/CreateCustomerMetadata2.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Configuration de la métadonnée de fichier délimité</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Dans la zone
+                <span class="ui-control">Rows To Skip</span>, dans le champ 
+                <span class="ui-control">Header</span>, saisissez <i>5</i>, indiquant que les cinq premières lignes du fichier ne contiennent pas de données. <br />Dans l'onglet<![CDATA[
+                ]]><span class="ui-control">Preview</span>, cochez la case
+               <span class="ui-control">Set heading row as column names</span>, afin de spécifier que la première ligne de données dans le fichier contient les noms de colonnes, puis cliquez sur le bouton 
+                <span class="ui-control">Refresh Preview</span>.</p>
+                            <p><span class="ui-control">Note&#160;:</span> la valeur dans le champ <span class="ui-control">Header</span> a été incrémentée à 6, une fois la case <span class="ui-control">Set heading row as column names</span> cochée.</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson7/CreateCustomerMetadata3.png" alt="" style="border: none;" border="0" />
+                                <br />Remarquez que la zone 
+                <span class="ui-control">Preview</span> affiche le contenu du fichier client dans un format lisible.<br /></p>
+                        </li>
+                        <li value="2">
+                            <p>Avant de finaliser la création de la métadonnée, exportez toutes les informations en tant que variable de contexte.<br />Cliquez sur le bouton <span class="ui-control">Export as context</span>.<br /><img src="../../Resources/Images/lesson7/ExportAsContext.png" alt="" /><br /></p>
+                        </li>
+                        <li value="3">Dans l'assistant <span class="ui-window-title">Create / Reuse a context group</span>, cliquez sur <b>Next</b>.            <p><img src="../../Resources/Images/lesson7/CreateRepositoryContext1.png" alt="" style="border: none;" border="0" /></p></li>
+                        <li value="4">
+                            <p>Laissez <span class="ui-control" style="font-weight: normal; font-style: italic;">RetailCustomers</span> dans le champ
+                <span class="ui-control">Name</span> et saisissez du texte dans les champs <span class="ui-control">Purpose</span> et
+                <span class="ui-control">Description</span>.<br /><img src="../../Resources/Images/lesson7/CreateRepositoryContext2.png" alt="" style="border: none;" border="0" /></p>
+                        </li>
+                        <li value="5">
+                            <p>Cliquez sur
+                <span class="ui-control">Next</span> et toutes les variables de contexte créées seront affichées&#160;:<br /><img src="../../Resources/Images/lesson7/CreateRepositoryContext3.png" alt="" style="border: none;" border="0" /><br /> Cliquez sur
+                <span class="ui-control">Finish</span> mais ne fermez pas l'assistant principal. Vous allez configurer le schéma <span class="ui-control">Customer</span> dans la section suivante.</p>
+                        </li>
+                        <li value="6">
+                            <p> Dans votre <span class="ui-control">Repository</span>, sous <span class="ui-control">Contexts</span>, vous pouvez déjà voir votre nouveau contexte 
+              <span class="ui-control">RetailCustomers</span>.<br />Toutes les informations concernant votre fichier, comme son nom, son séparateur de champs ou son nombre de lignes d'en-tête, sont stockées dans les variables de contexte.</p>
+                            <p>
+                                <img src="../../Resources/Images/RetailCustomersContext.png" alt="" />
+                            </p>
+                            <p>Il est temps de finaliser la création de la métadonnée de fichier délimité.</p>
+                        </li>
+                    </ol>
+                    <h2>Configuration du schéma Customer</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Cliquez sur
+                <span class="ui-control">Next</span> dans la page <span class="ui-control">File - Step 3 of 4</span> de l'assistant.</p>
+                        </li>
+                        <li value="2">
+                            <p>Modifiez le nom en
+                <span class="ui-control" style="font-weight: normal; font-style: italic;">CustomerMetadata</span> et apportez les modifications suivantes au schéma&#160;:</p>
+                            <ul>
+                                <li style="list-style: disc;margin-left: -20px;" value="1">
+                                    <p>Cochez la case <span class="ui-control">Key</span> de la colonne
+                        <span class="ui-control">id</span> pour la définir comme colonne clé.</p>
+                                </li>
+                                <li style="list-style: disc;margin-left: -20px;" value="2">
+                                    <p>Changez la longueur <span class="ui-control">Length</span> de
+                        <span class="ui-control">CustomerAddress</span> à <span class="ui-control" style="font-weight: normal; font-style: italic;">35</span>.</p>
+                                </li>
+                                <li style="list-style: disc;margin-left: -20px;" value="3">
+                                    <p>Configurez toutes les colonnes en saisissant des noms commençant par <i>Sum</i> (<span class="ui-control" style="font-weight: normal; font-style: italic;">Sum1</span> à <span class="ui-control" style="font-weight: normal; font-style: italic;">Sum7</span>) de type 
+                        <span class="ui-control">Float</span> et de longueur 
+                        <span class="ui-control">Length</span> <span class="ui-control" style="font-weight: normal; font-style: italic;">11</span>.</p>
+                                </li>
+                                <li style="list-style: disc;margin-left: -20px;" value="4">
+                                    <p>Configurez la colonne 
+                        <span class="ui-control">RegTime</span> de type 
+                        <span class="ui-control">String</span> et de longueur 
+                        <span class="ui-control">Length</span> <span class="ui-control" style="font-weight: normal; font-style: italic;">19</span>.</p>
+                                </li>
+                                <li style="list-style: disc;margin-left: -20px;" value="5">
+                                    <p>Configurez la colonne 
+                        <span class="ui-control">RegisterTime</span> de type 
+                        <span class="ui-control">Date</span> et de format <i>"yyyy-MM-dd hh:mm:ss.SSS"</i>. </p>
+                                </li>
+                            </ul>
+                            <p>Vérifiez que votre étape <span class="ui-control">File - Step 4 of 4</span> correspond à ce qui est affiché ci-dessous et cliquez sur 
+				<span class="ui-control">Finish</span> lorsque vous avez terminé&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson7/CreateCustomerMetadata4.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Le Studio Talend a extrait le schéma depuis les données et vous avez corrigé le schéma pour qu'il soit plus précis.</p>
+                            <p>Le tableau final doit ressembler à ceci&#160;:</p>
+                        </li>
+                        <table style="border-collapse: separate;border-collapse: separate;width: 100%;border-left-style: solid;border-left-width: 40px;border-left-color: #ffffff;mc-table-style: url('../../Resources/TableStyles/Simple.css');margin-left: auto;margin-right: 0;" cellspacing="0" border="1" class="TableStyle-Simple">
+                            <col style="width: 100px;" class="TableStyle-Simple-Column-Column1" />
+                            <col style="width: 30px;" class="TableStyle-Simple-Column-Column1" />
+                            <col style="width: 40px;" class="TableStyle-Simple-Column-Column1" />
+                            <col style="width: 200px;" class="TableStyle-Simple-Column-Column1" />
+                            <col style="width: 20px;" class="TableStyle-Simple-Column-Column1" />
+                            <tr class="TableStyle-Simple-Body-Body1">
+                                <td class="TableStyle-Simple-BodyE-Column1-Body1">
+                                    <p>Column</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyE-Column1-Body1">
+                                    <p>Key</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyE-Column1-Body1">
+                                    <p>Type</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyE-Column1-Body1">
+                                    <p>Date Pattern</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyD-Column1-Body1">
+                                    <p>Length</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Simple-Body-Body2">
+                                <td class="TableStyle-Simple-BodyE-Column1-Body2">
+                                    <p>id</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyE-Column1-Body2">
+                                    <p>x</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyE-Column1-Body2">
+                                    <p>Integer</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyE-Column1-Body2" />
+                                <td class="TableStyle-Simple-BodyD-Column1-Body2">
+                                    <p>2</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Simple-Body-Body1">
+                                <td class="TableStyle-Simple-BodyE-Column1-Body1">
+                                    <p>CustomerName</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyE-Column1-Body1" />
+                                <td class="TableStyle-Simple-BodyE-Column1-Body1">
+                                    <p>String</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyE-Column1-Body1" />
+                                <td class="TableStyle-Simple-BodyD-Column1-Body1">
+                                    <p>30</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Simple-Body-Body2">
+                                <td class="TableStyle-Simple-BodyE-Column1-Body2">
+                                    <p>CustomerAddress</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyE-Column1-Body2" />
+                                <td class="TableStyle-Simple-BodyE-Column1-Body2">
+                                    <p>String</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyE-Column1-Body2" />
+                                <td class="TableStyle-Simple-BodyD-Column1-Body2">
+                                    <p>35</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Simple-Body-Body1">
+                                <td class="TableStyle-Simple-BodyE-Column1-Body1">
+                                    <p>idState</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyE-Column1-Body1" />
+                                <td class="TableStyle-Simple-BodyE-Column1-Body1">
+                                    <p>Integer</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyE-Column1-Body1" />
+                                <td class="TableStyle-Simple-BodyD-Column1-Body1">
+                                    <p>2</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Simple-Body-Body2">
+                                <td class="TableStyle-Simple-BodyE-Column1-Body2">
+                                    <p>id2</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyE-Column1-Body2" />
+                                <td class="TableStyle-Simple-BodyE-Column1-Body2">
+                                    <p>Integer</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyE-Column1-Body2" />
+                                <td class="TableStyle-Simple-BodyD-Column1-Body2">
+                                    <p>2</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Simple-Body-Body1">
+                                <td class="TableStyle-Simple-BodyE-Column1-Body1">
+                                    <p>RegTime</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyE-Column1-Body1" />
+                                <td class="TableStyle-Simple-BodyE-Column1-Body1">
+                                    <p>String</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyE-Column1-Body1" />
+                                <td class="TableStyle-Simple-BodyD-Column1-Body1">
+                                    <p>19</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Simple-Body-Body2">
+                                <td class="TableStyle-Simple-BodyE-Column1-Body2">
+                                    <p>RegisterTime</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyE-Column1-Body2" />
+                                <td class="TableStyle-Simple-BodyE-Column1-Body2">
+                                    <p>Date</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyE-Column1-Body2">
+                                    <p>"yyyy-MM-dd hh:mm:ss.SSS"</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyD-Column1-Body2">
+                                    <p>23</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Simple-Body-Body1">
+                                <td class="TableStyle-Simple-BodyE-Column1-Body1">
+                                    <p>Sum1</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyE-Column1-Body1" />
+                                <td class="TableStyle-Simple-BodyE-Column1-Body1">
+                                    <p>Float</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyE-Column1-Body1" />
+                                <td class="TableStyle-Simple-BodyD-Column1-Body1">
+                                    <p>11</p>
+                                </td>
+                            </tr>
+                            <tr class="TableStyle-Simple-Body-Body2">
+                                <td class="TableStyle-Simple-BodyE-Column1-Body2">
+                                    <p>Sum2</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyE-Column1-Body2" />
+                                <td class="TableStyle-Simple-BodyE-Column1-Body2">
+                                    <p>Float</p>
+                                </td>
+                                <td class="TableStyle-Simple-BodyE-Column1-Body2" />
+                                <td class="TableStyle-Simple-BodyD-Column1-Body2">
+                                    <p>11</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <li value="3">
+                            <p>Vérifiez que la métadonnée a bien été créée dans le <span class="ui-control">Repository</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson7/CustomerMetadata.png" alt="" />
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Étape suivante</h2>
+                    <p>Vous avez défini la métadonnée pour le fichier de référence <span class="ui-control">Customers</span>. Vous pouvez commencer à <a href="Creating_Product_Metadata.htm">créer la métadonnée pour le fichier de référence des produits</a>.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

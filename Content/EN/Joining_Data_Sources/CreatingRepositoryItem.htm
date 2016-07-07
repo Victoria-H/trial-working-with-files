@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Joining Data Sources">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>CreatingRepositoryItem</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Joining Data Sources</a>
+                    <ul class="sub-menu">
+                        <li><a href="Overview.htm">Overview</a>
+                        </li>
+                        <li><a href="#" class="selected">Creating Metadata</a>
+                        </li>
+                        <li><a href="Joining_Data_Sources.htm">Joining Data Sources</a>
+                        </li>
+                        <li><a href="Capturing_Rejects.htm">Capturing Rejects</a>
+                        </li>
+                        <li><a href="Correcting_the_Lookup.htm">Correcting the Lookup</a>
+                        </li>
+                        <li><a href="Wrap-Up.htm">Wrap-Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Joining Data Sources</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="selected">Creating Metadata</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Creating Metadata</h1>
+                    <h2>Overview</h2>
+                    <div class="youAreGoingTo">
+                        <p>You previously configured a file input component with information about the source file and its schema. That information was local to that particular component. With Talend Studio, you can store such configuration information as 
+        <span style="font-style: normal; font-weight: bold;">Metadata</span> so that you can reuse it for multiple components, whether in the same or different Jobs. You are creating information about a delimited file containing US state codes and names so that you can use the same information for multiple components in multiple Jobs.</p>
+                    </div>
+                    <h2>Create Metadata</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">CREATE A&#160;DELIMITED FILE IN THE META-DATA FOLDER</p>
+                            <p>In the 
+                <span class="ui-control">Repository</span>, expand 
+                <span class="ui-control">Metadata</span> then Right-click<span class="ui-control"> File delimited         </span>, and then click<span class="ui-control">
+                Create file delimited</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_createmetadata01.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">ENTER THE DETAILS (Step 1 of 4)</p>
+                            <p>Enter 
+                <span class="user-input-files-variables">StateCodes</span> in the 
+                <span class="ui-control">Name</span> box, and appropriate descriptions into the 
+                <span class="ui-control">Purpose</span> and 
+                <span class="ui-control">Description</span> boxes:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_createmetadata02.png" alt="" />
+                            </p>
+                            <p><span class="ui-control">Note:</span> While it is tempting to move quickly and only provide the required name, it is always a good idea to provide documentation about your Job and project elements so that others can understand their purpose.</p>
+                            <p>Then click <span class="ui-control">Next</span>.</p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">DEFINE THE FILE PATH (Step 2 of 4)</p>
+                            <p>In the second step, click 
+                <span class="ui-control">Browse</span>, select 
+                <span class="ui-control">*.txt</span> in the file type list, choose the file 
+                <span class="ui-control">States.txt</span> under 
+                <span class="ui-control">C:/StudentFiles</span> and then click 
+                <span class="ui-control">Open</span>.</p>
+                            <p>Change the <span class="ui-control">Format</span> to <span class="ui-control">WINDOWS</span> and then click 
+                <span class="ui-control">Next</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_createmetadata03.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">PROVIDE CONFIGURATION INFORMATION (Step 3 of 4)</p>
+                            <p>This page is where you provide configuration information about the file. Click 
+                <span class="ui-control">Comma</span> in the 
+                <span class="ui-control">Field separator</span> list to specify that the fields are delimited with a comma. Leave the other settings as they are, because this file has no header row:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_createmetadata04.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="5">
+                            <p data-mc-conditions="vModifs.vTitles">PREVIEW</p>
+                            <p>In the bottom area of the page, click 
+                <span class="ui-control">Refresh Preview</span>. Now that you have specified the correct delimiter, Talend Studio recognizes that the file contains two columns.</p>
+                            <p>Click <![CDATA[
+                ]]><span class="ui-control">Next</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_createmetadata05.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="6">
+                            <p data-mc-conditions="vModifs.vTitles">CONFIGURE THE SCHEMA (Step 4 of 4)</p>
+                            <p>This Step is where you specify the schema for the file. Change the text in the 
+                <span class="ui-control">Name</span> box to 
+                <span class="ui-control">StateCodesSchema</span>. Change 
+                <span class="ui-control">Column0</span> to 
+                <span class="user-input-files-variables">StateCode</span>, set
+                <span class="ui-control">Length</span> to <span class="user-input-files-variables">2</span> and replace 
+                <span class="ui-control">Column1</span> with 
+                <span class="user-input-files-variables">StateName</span> and set 
+                <span class="ui-control">Length</span> to <span class="user-input-files-variables">20</span>.</p>
+                            <p>Then click
+                <span class="ui-control">Finish</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_createmetadata06.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="7">
+                            <p data-mc-conditions="vModifs.vTitles">FINISH</p>
+                            <p>Click 
+                <span class="ui-control">Finish</span>. The new metadata appears in the 
+                <span class="ui-control">Repository</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/MetadataRepos.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Next</h2>
+                    <p>Now you are ready to use this metadata to create a component that will read State  codes from a file in order to 
+        <a href="Joining_Data_Sources.htm">join them to customers information</a>.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

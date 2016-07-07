@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Creating _the_Product_Table</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Création de la table Products</h1>
+                    <h2>Vue d'ensemble</h2>
+                    <p>L'étape suivante consiste à créer et alimenter la table des produits.</p>
+                    <h2>Duplication du Job</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Dupliquez le Job <span class="ui-control">Custprep2Table</span>, nommez-le <span class="user-input-files-variables">ProductPrep2Table</span>. <br />Lorsque vous créez un Job très similaire à un Job existant, cela peut vous faire gagner du temps de le dupliquer plutôt que de le créer à partir de rien.</p>
+                        </li>
+                        <li value="2">
+                            <p>Ouvrez le nouveau Job et fermez tous les autres Jobs, pour éviter la confusion.</p>
+                        </li>
+                    </ol>
+                    <h2>Création et alimentation de la table Products</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Double-cliquez sur le composant 
+                <span class="ui-control">tCreateTable</span>. <br />Dans la liste
+                <span class="ui-control">Schema</span>, sélectionnez
+                <span class="ui-control">RetailProducts - ProductMetadata</span>.<br />Modifiez la valeur du champ <span class="ui-control">Table Name</span> en 
+                <span class="ui-control" style="font-weight: normal; font-style: italic;">"RetailProducts"</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_tMysqlTableChangeSchema.png" alt="" style="border: Solid 1px #c0c0c0;" border="1" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Double-cliquez sur le <span class="ui-control">RetailCustomers</span> pour ouvrir sa vue 
+                <span class="ui-control">Component</span>.<br />Cliquez sur le bouton <span class="ui-control">[...]</span> à côté de la liste <span class="ui-control">Property Type</span> et sélectionnez <span class="ui-control">RetailProducts</span> dans les métadonnées de fichier délimité&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_retailProductsPropertyType.png" alt="" />
+                            </p>
+                            <p>Cliquez sur <span class="ui-control">Yes</span> dans la boîte de dialogue qui s'ouvre&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_retailProductsContext.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Sélectionnez le schéma <span class="ui-control">RetailProducts - ProductMetadata</span>.</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_retailProductsSchema.png" alt="" />
+                            </p>
+                            <p>Répondez <span class="ui-control">Yes</span> lorsqu'il vous est proposé de propager les modifications.</p>
+                        </li>
+                        <li value="4">
+                            <p>Dans l'onglet <span class="ui-control">View</span>, modifiez le nom du composant en <span class="user-input-files-variables">RetailProducts</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_retailProductsName.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="5">
+                            <p>Double-cliquez sur le composant 
+                <span class="ui-control">LocalMySQL</span> pour ouvrir sa vue 
+                <span class="ui-control">Component</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_localMysqlConfig.png" alt="" style="border: Solid 1px #c0c0c0;" border="1" />
+                            </p>
+                            <p>Le schéma est maintenant 
+                <span class="ui-control">Built-in</span>, car vous avez propagé les modifications du schéma depuis le composant 
+                <span class="ui-control">RetailProducts</span>.</p>
+                        </li>
+                        <li value="6">
+                            <p>Modifiez le type de schéma à 
+                <span class="ui-control">Repository</span>, sélectionnez le schéma <span class="ui-control">RetailProducts - ProductMetadata</span> et modifiez le nom de la table en 
+                <span class="ui-control" style="font-weight: normal; font-style: italic;">"RetailProducts"</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_localMysqlChangeSchema.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Ce composant va écrire dans une table nommée
+                <span class="ui-control">RetailProducts</span> avec le schéma pris depuis le 
+                <span class="ui-control">Repository</span>.</p>
+                        </li>
+                        <li value="7">
+                            <p>Exécutez le Job. Le fichier des produits contient 50 lignes&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_runProductPrep2Table.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="8"> Notez qu'un avertissement s'affiche sur le <span class="ui-control">tCreateTable</span> et le <span class="ui-control">LocalMySQL</span>. Passez votre curseur sur le point d'exclamation, pour lire les avertissements&#160;:<br /><img src="../../Resources/Images/image4.png" alt="" /></li>
+                        <li value="9">Pour résoudre l'avertissement, double-cliquez sur le composant <span class="ui-control">tCreateTable</span>. <br />Cliquez sur le bouton <span class="ui-control">[...]</span> à côté du champ <span class="ui-control">Edit Schema</span>, sélectionnez <span class="ui-control">Change to built-in property</span> puis cliquez sur <span class="ui-control">OK</span>&#160;:<br /><img src="../../Resources/Images/Capture40.png" alt="" /><br /></li>
+                        <li value="10">	
+			Le schéma du <span class="ui-control">tCreateTable</span> s'affiche.<br />Notez que la colonne <span class="ui-control">DB Type</span> est vide. <br />Cliquez sur le bouton <span class="ui-control">Reset DB Types</span> et cliquez sur <span class="ui-control">OK</span>&#160;:<br /><img src="../../Resources/Images/Capture41.png" alt="" /><br /></li>
+                        <li value="11">La colonne <span class="ui-control">DB&#160;Type</span> est renseignée&#160;:<br /><img src="../../Resources/Images/Capture42.png" alt="" /><br /></li>
+                        <li value="12">Cliquez sur <span class="ui-control">OK</span> et notez que le point d'exclamation n'est plus affiché&#160;:<br /><img src="../../Resources/Images/Capture43.png" alt="" /><br /></li>
+                        <li value="13">L'avertissement sur le <span class="ui-control">LocalMySQL</span> est également relatif au fait que le type <span class="ui-control">DB Type</span> n'est pas défini dans le schéma. Pour supprimer l'avertissement sur ce composant,  répétez les étapes que vous venez d'effectuer pour supprimer l'avertissement sur le <span class="ui-control">tCreateTable</span>. <br /></li>
+                    </ol>
+                    <h2>Vérification des résultats</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Dans MySQL Workbench, remplacez le texte existant dans la fenêtre <span class="ui-control">Query</span> par la commande suivante&#160;:
+                </p>
+                            <p><span class="code">select * from retailproducts;</span>
+                            </p>
+                            <p>Cliquez sur l'icône représentant un éclair, afin de vérifier les résultats&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_mysqlWorkbenchResult.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Si la requête ne retourne pas de résultat, vérifiez votre travail et effectuez les corrections nécessaires.
+                </p>
+                        </li>
+                    </ol>
+                    <h2>Étape suivante</h2>
+                    <p>Vous avez à présent des tables de base de données contenant les données clients et produits. Vous pouvez 
+        <a href="Setting_Up_Shop_Tables.htm">configurer les tables relatives aux ventes</a>.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

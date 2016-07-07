@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Working with Databases">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Finalizing the Job</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Working with Databases</a>
+                    <ul class="sub-menu">
+                        <li><a href="Overview.htm">Overview</a>
+                        </li>
+                        <li><a href="Creating_Database_Metadata.htm">Creating Database Metadata</a>
+                        </li>
+                        <li><a href="Creating_a_Database_Table.htm">Creating the Customer Table</a>
+                        </li>
+                        <li><a href="Creating_Second_Table.htm">Creating the Product Table</a>
+                        </li>
+                        <li><a href="Setting_Up_Shop_Tables.htm">Setting Up Sales Table</a>
+                        </li>
+                        <li><a href="Reading_from_a_Database.htm">Joining the Data</a>
+                        </li>
+                        <li><a href="#" class="selected">Finalizing the Job</a>
+                        </li>
+                        <li><a href="Wrap-Up.htm">Wrap-Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Working with Databases</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="selected">Finalizing the Job</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Finalizing the Job</h1>
+                    <h2>Overview</h2>
+                    <div class="youAreGoingTo">
+                        <p>You have a couple of steps left to finalize the Job before running it. Those include determining why some rows are rejected and performing basic  calculations on the sales data figures.</p>
+                    </div>
+                    <h2>Capture Rejects</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE <span class="ui-control">tMap</span> MAPPING&#160;EDITOR TO CONFIGURE IT TO CAPTURE THE REJECTS</p>
+                            <p>Continuing with the 
+                <span class="ui-control">RetailSales</span> Job to determine why some rows are being rejected, double-click the 
+                <span class="ui-control">tMap</span> component to configure it.</p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">ADD A NEW OUTPUT TABLE</p>
+                            <p>Click the green
+                <span class="ui-control">[+]</span>button on top to create a new
+                <span class="ui-control">output </span>table and enter 
+                <span class="ui-control" style="font-weight: normal; font-style: italic;">Rejects</span> for 
+                <span class="ui-control">New output</span>. Then click 
+                <span class="ui-control">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_addOutputOnTmap.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">CHANGE THE TABLE OUTPUT SETTING TO <span class="ui-control">Catch lookup inner join reject</span> AND&#160;CONFIGURE&#160;THE&#160;MAPPING</p>
+                            <p>Click the 
+                <span class="ui-control">tMap settings</span> icon 
+                <img src="../../Resources/Images/Database_performingCalculations_tmapIconSetting.png" alt="" style="border: none;" border="0" /> to capture inner join rejects by setting 
+                <span class="ui-control">Value</span> to 
+                <span class="ui-control">true</span> for 
+                <span class="ui-control">Catch lookup inner join reject</span>. Then map all of the columns from the 
+                <span class="ui-control">Sales</span> input to this table and save the 
+                <span class="ui-control">tMap</span> configuration:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_tmapRejectsTable_582x235.png" alt="" style="border: none;width: 582;height: 235;" border="0" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">ADD A COMPONENT TO SORT THESE REJECTS</p>
+                            <p>Add a 
+              <span class="ui-control">tSortRow</span> component to the design workspace.<br />Right-click 
+                <span class="ui-control">tMap</span> and select                <span class="ui-control">Row</span> &gt;
+                <span class="ui-control">Rejects</span> to connect the two components:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_tmapRejectRow_386x165.png" alt="" style="border: none;width: 386;height: 165;" border="0" />
+                            </p>
+                            <p> As its name implies, a 
+                <span class="ui-control">tSortRow</span> component sorts data rows based on column values.</p>
+                        </li>
+                        <li value="5">
+                            <p data-mc-conditions="vModifs.vTitles">SPECIFY HOW YOU WISH THE COMPONENT TO SORT THE DATA</p>
+                            <p>Double -click
+                <span class="ui-control">tSortRow</span> to open the
+                <span class="ui-control">Component</span> view and click the green <b>[+]</b> button at the bottom left to add columns to the table:                </p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_tsortConfig.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="6">
+                            <p data-mc-conditions="vModifs.vTitles">CHOOSE THE COLUMNS</p>
+                            <p data-mc-conditions="vModifs.vBoxAdditions">We performed the lookup on <span class="ui-control">CustID</span> and <span class="ui-control">ProductID</span> so it makes sense to sort and examine these elements. Also the next component you add will need these elements to be sorted.</p>
+                            <p>Select 
+                <span class="ui-control">CustID</span> for the first 
+                <span class="ui-control">Schema column</span> and 
+                <span class="ui-control">ProductID</span> for the second entry:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_trowSortAddColumn.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>With this configuration, the data sent to this component is sorted by the combination of column values of <span class="ui-control">CustID</span> and <span class="ui-control">ProductID</span>.</p>
+                        </li>
+                        <li value="7">
+                            <p data-mc-conditions="vModifs.vTitles">ADD A COMPONENT TO ELIMINATE ANY DUPLICATE ROWS</p>
+                            <p>Add a 
+                <span class="ui-control">tUniqRow</span> component, connecting it to the 
+                <span class="ui-control">tSortRow</span> component with a 
+                <span class="ui-control">Main</span> row. <br />In the 
+                <span class="ui-control">Component</span> view for 
+                <span class="ui-control">tUniqRow</span>, select the 
+                <span class="ui-control">Key attribute</span> check box for both 
+               <span class="ui-control">CustID</span> and 
+                <span class="ui-control">ProductID</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_connectTuniqRow.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p><span class="ui-control">Note: </span>The rows entering this component are already sorted by customer ID and product ID by the 
+                <span class="ui-control">tSortRow</span>component, so the end result will be a single row for every unique combination of customer and product that is rejected by the inner join.</p>
+                        </li>
+                        <li value="8">
+                            <p data-mc-conditions="vModifs.vTitles">ADD A COMPONENT TO OUTPUT THE SORTED REJECTS</p>
+                            <p>Add a 
+                <span class="ui-control">tFileOutputDelimited</span> component:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_jobAfterAddingTFileOutputDelimited.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="9">
+                            <p data-mc-conditions="vModifs.vTitles">LINK THE <span class="ui-control">tUniqRow</span> COMPONENT TO THE OUTPUT COMPONENT</p>
+                            <p>Connect it to                 <span class="ui-control">tUniqRow</span> with a <![CDATA[
+               ]]><span class="ui-control">Uniques</span> row, configuring it to store the results under 
+                <span class="ui-control">C:/StudentFiles/out.csv</span></p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_tFileOutputDelimitedConfig.png" alt="" />
+                                <br />Note that you can also capture the duplicate rows from a 
+                <span class="ui-control">tUniqRow</span> component, which can be useful in other situations.</p>
+                        </li>
+                        <li value="10">
+                            <p data-mc-conditions="vModifs.vTitles">CHANGE THE TABLE ACTION ON THE DATABASE OUTPUT COMPONENT</p>
+                            <p>Open the 
+                <span class="ui-control">Component</span> view for the
+                <span class="ui-control">LocalMySQL</span> component and change the                <span class="ui-control">Action on Table</span> parameter to 
+               <span class="ui-control">Drop table if exists and create</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_tmysqlOutputChangeActionOnTable.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p><span class="ui-control">Note:</span> This prevents duplicate records, since you have already loaded the database table once before.</p>
+                        </li>
+                        <li value="11">
+                            <p data-mc-conditions="vModifs.vTitles">RUN THE JOB</p>
+                            <p>Run the Job and then examine the results in the 
+                <span class="ui-control">C:/StudentFiles/out.csv</span> file <br /><img src="../../Resources/Images/image301.PNG" alt="" style="border: none;" width="281" height="294" border="0" /></p>
+                            <p>Note that the values of the 
+                <span class="ui-control">ProductID</span> column in the output are all greater than 50:
+                <br />Recall that the product table only defines 50 products, but you configured the row generator to create product ID values up to 80. This explains the rejects. <br />In a real project, you would go back and resolve this discrepancy, but for the purposes of this lesson, you can ignore the rejects.</p>
+                        </li>
+                    </ol>
+                    <h2>Perform Calculations</h2>
+                    <p>In this exercise, you will calculate the  total quantity of each product ordered.</p>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">ADD AN OUTPUT TABLE TO THE <span class="ui-control">tMap</span> COMPONENT</p>
+                            <p>Double-click the 
+                <span class="ui-control">tMap</span> component and 
+                <span class="ui-control">Add a output</span> table named 
+                <span class="ui-control">ProdSales</span> then click
+                <span class="ui-control">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_tmapProdSalesTable.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">MAP THE PRODUCT NAME AND THE QUANTITY TO THE OUTPUT TABLE</p>
+                            <p>Map the product name (
+                <span class="ui-control">Product</span>) and the quantity ordered (
+                <span class="ui-control">Quantity</span>) and save the 
+                <span class="ui-control">tMap</span> configuration:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_tmapListOfOutputTable.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3"><![CDATA[
+            ]]><p data-mc-conditions="vModifs.vTitles">ADD A COMPONENT TO TOTAL THE SALES FOR EACH PRODUCT</p><p>Add a 
+            <span class="ui-control">tAggregateRow</span> component, connecting it to the 
+            <span class="ui-control">tMap</span> component with the
+            <span class="ui-control">ProdSales</span> row: </p><p><img src="../../Resources/Images/Database_performingCalculations_tmapConnectToTaggregate.png" alt="" style="border: none;" border="0" /></p></li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE COMPONENT VIEW AND CONFIGURE</p>
+                            <p>In the 
+                <span class="ui-control">Component</span> view for the 
+                <span class="ui-control">tAggregateRow</span> component, click 
+               <span class="ui-control">Sync columns</span> to synchronize the component schema with the row. </p>
+                            <p>Then click the green
+                <span class="ui-control">[+]</span> button to add                 <span class="ui-control">Product</span> to the 
+              <span class="ui-control">Group by</span> and to add 
+                <span class="ui-control">Quantity</span> to the 
+                <span class="ui-control">Operations</span> table. Finish by changing the 
+                <span class="ui-control">Function</span> to 
+                <span class="ui-control">sum</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_tAggregateConfig.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>This component now aggregates a sum of the values in the 
+                <span class="ui-control">Quantity</span> column for each value of the                 <span class="ui-control">Product</span> column.</p>
+                        </li>
+                        <li value="5">
+                            <p data-mc-conditions="vModifs.vTitles">ADD AN OUTPUT COMPONENT FOR YOUR AGGREGATED DATA</p>
+                            <p>Add a 
+                <span class="ui-control">tFileOutputXML</span> component to the design workspace and connect the <b>tAggregateRow</b> component to it with a <b>Main</b> row. </p>
+                            <p>Configure it to write to 
+                <span class="ui-control">C:/StudentFiles/aggregateout.xml</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_performingCalculations_tOutputXMLConfig.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>This component creates an output file in XML format, which can be used as input to a variety of other software applications.</p>
+                        </li>
+                        <li value="6">
+                            <p data-mc-conditions="vModifs.vTitles">RUN THE JOB AND INSPECT THE RESULTS</p>
+                            <p><span class="ui-control">Run</span> the Job and then examine the file 
+                <span class="ui-control">C:/StudentFiles/aggregateout.xml</span> for results:
+                <br /><img src="../../Resources/Images/Database_performingCalculations_listProduct.png" alt="" style="border: none;" border="0" /></p>
+                        </li>
+                    </ol>
+                    <h2>Next</h2>
+                    <p>You have now finished the lesson. It's time to <a href="Wrap-Up.htm">Wrap-up</a>.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

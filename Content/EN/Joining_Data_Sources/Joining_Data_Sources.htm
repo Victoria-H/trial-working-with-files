@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Joining Data Sources">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Creating a Join</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Joining Data Sources</a>
+                    <ul class="sub-menu">
+                        <li><a href="Overview.htm">Overview</a>
+                        </li>
+                        <li><a href="CreatingRepositoryItem.htm">Creating Metadata</a>
+                        </li>
+                        <li><a href="#" class="selected">Joining Data Sources</a>
+                        </li>
+                        <li><a href="Capturing_Rejects.htm">Capturing Rejects</a>
+                        </li>
+                        <li><a href="Correcting_the_Lookup.htm">Correcting the Lookup</a>
+                        </li>
+                        <li><a href="Wrap-Up.htm">Wrap-Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Joining Data Sources</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="selected">Joining Data Sources</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Creating a Join</h1>
+                    <h2>Overview</h2>
+                    <div class="youAreGoingTo">
+                        <p>In this section, you will first duplicate the Job created in the previous lesson. </p>
+                        <p>Then you will use the file containing state codes and names as a lookup table to include the full state name in the output.</p>
+                    </div>
+                    <h2>Duplicate the Job </h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">DUPLICATE THE UPPER CASE JOB</p>
+                            <p>In the 
+                <span class="ui-control">Repository</span>, under 
+                <span class="ui-control">Job Designs</span>, right-click 
+                <span class="ui-control">UpperCase</span> and then click 
+                <span class="ui-control">Duplicate</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_duplicateJob.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">ENTER A NEW NAME</p>
+                            <p>Enter 
+                <span class="ui-control">LookupState</span> for the 
+                <span class="ui-control">Input new name</span> and click 
+                <span class="ui-control">OK</span></p>
+                            <p>
+                                <img src="../../Resources/Images/JD_duplicateJob02.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE JOB</p>
+                            <p>Double-click 
+                <span class="ui-control">LookupState</span> in the 
+                <span class="ui-control">Repository</span> to open it:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_openlookupstate.png" alt="" />
+                            </p>
+                            <p> Take a moment to examine the components to remind yourself of the function of the current Job.</p>
+                        </li>
+                    </ol>
+                    <h2>Add Second Source</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">USE THE ITEM YOU CREATED UNDER <span class="ui-control">Metadata</span> AS THE SECOND INPUT SOURCE</p>
+                            <p>Drag the new 
+                <span class="ui-control">StateCodes</span> item from under 
+                <span class="ui-control">Metadata</span> in the 
+                <span class="ui-control">Repository</span> onto the design workspace above the 
+                <span class="ui-control">tMap</span> component. <span class="italic"><br />Hint</span>:&#160;If you don't have room, you can left-click the group of components and simply drag and drop them lower in the design workspace.</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_place_states_metadata.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">CHOOSE A COMPONENT TO USE WITH THE METADATA</p>
+                            <p>This window allows you to choose which component you want to use with the metadata. <br />Choose 
+                <span class="ui-control">tFileInputDelimited</span> and then click 
+                <span class="ui-control">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_selectcomponenttype.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Your Job should look like this:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_new_Job.png" class="vAlwaysOpen" alt="" />
+                            </p>
+                            <p>Notice that the component label is the same as the name of the metadata item. When you store configuration information as metadata in the 
+                <span class="ui-control">Repository</span>, you can use that metadata as the starting point, as you did here, rather than begin by placing a component and then adding the configuration.</p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">JOIN THE NEW COMPONENT TO <span class="ui-control">tMap</span></p>
+                            <p>Right-click 
+                <span class="ui-control">StateCodes</span>, click 
+                <span class="ui-control">Row</span> followed by 
+                <span class="ui-control">Main</span>, and then click the 
+                <span class="ui-control">tMap</span> component to create a row:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_connect_states.png" alt="" />
+                            </p>
+                            <p>Note that the row is a 
+                <span class="ui-control">Lookup</span>, not a 
+                <span class="ui-control">Main</span>. You can provide multiple input sources for a 
+                <span class="ui-control">tMap</span> component, but only one can be the 
+                <span class="ui-control">Main</span> row. The others are 
+                <span class="ui-control">Lookups</span>.</p>
+                        </li>
+                        <li value="5">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE COMPONENT VIEW</p>
+                            <p>Double-click 
+                <span class="ui-control">StateCodes</span> to open the 
+                <span class="ui-control">Component</span> view:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_states_componentview.png" alt="" />
+                            </p>
+                            <p>Note that the 
+                <span class="ui-control">Property Type</span> and 
+                <span class="ui-control">Schema</span> value is                 <span class="ui-control">Repository</span> and not <b>Built-In</b>.</p>
+                        </li>
+                        <li value="6">
+                            <p data-mc-conditions="vModifs.vTitles">COMPARE <span class="ui-control">Built-In</span> AND <b>Repository</b> CONFIGURATION</p>
+                            <p>Double-click the 
+                <span class="ui-control">CustomersFile</span> component to see that this component uses 
+                <span class="ui-control">Built-In</span> configuration information. <br />So, <b>Built-in</b> property type is specific to a single component, while <b>Repository</b> property type is stored as Metadata and can be used by multiple components in multiple Jobs.</p>
+                        </li>
+                    </ol>
+                    <h2>Configure tMap</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE <span class="ui-control">tMap</span> COMPONENT MAPPING&#160;EDITOR</p>
+                            <p>Double-click the 
+                <span class="ui-control">tMap</span> component:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_tMap_left.png" alt="" />
+                            </p>
+                            <p>Note that there is now a second input table on the left, called 
+                <span class="ui-control">row2</span>, corresponding to the input row connecting 
+                <span class="ui-control">StateCodes</span> to the 
+                <span class="ui-control">tMap</span> component.</p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">LINK THE ELEMENTS YOU WISH TO COMPARE</p>
+                            <p>Drag 
+                <span class="ui-control">State</span> from the 
+                <span class="ui-control">row1</span> table to the 
+                <span class="ui-control">Expr. key</span> field for 
+                <span class="ui-control">StateCode</span> in the 
+                <span class="ui-control">row2</span> table:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_tMap_drag_states.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>This creates the join, so that the value of the 
+                <span class="ui-control">State</span> column from 
+                <span class="ui-control">row1</span> will be compared to the value of the 
+                <span class="ui-control">StateCode</span> column in 
+                <span class="ui-control">row2</span></p>
+                            <p>
+                                <img src="../../Resources/Images/JD_left_join.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">LINK <span class="ui-control">StateName</span> TO THE OUTPUT TABLE</p>
+                            <p>Drag 
+                <span class="ui-control">StateName</span> from the 
+                <span class="ui-control">row2</span> table to the bottom of the 
+                <span class="ui-control">CappedOut</span> table on the right:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_drag_statename.png" alt="" />
+                            </p>
+                            <p>This adds the value of the 
+                <span class="ui-control">StateName</span> column to the output.</p>
+                        </li>
+                        <li value="5">
+                            <p> Click 
+                <span class="ui-control">Ok</span></p>
+                            <p>
+                                <img src="../../Resources/Images/JD_tMap_join.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="6">
+                            <p data-mc-conditions="vModifs.vTitles">PROPAGATE CHANGES </p>
+                            <p>The system will ask you if you want to propagate the changes. Click <b>Yes</b>:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_propagate_changes.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="7">
+                            <p>SAVE</p>
+                            <p>Save the Job</p>
+                        </li>
+                    </ol>
+                    <h2>Run Job</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">RUN THE JOB</p>
+                            <p>Run the Job.</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_runjob.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">EXAMINE THE OUTPUT FILE</p>
+                            <p>Examine the output file. </p>
+                            <p>Right-click on <span class="ui-control">tFileOutputDelimited </span>component and select <span class="ui-control">Data viewer</span>.<br />Note that not all rows include the state name:
+</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture22_607x590.png" style="width: 607;height: 590;" alt="" />
+                            </p>
+                            <p>This means that the Job is not doing exactly what you intended, so you need to investigate further.</p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">CLEAR THE CONSOLE</p>
+                            <p>Click 
+                <span class="ui-control">Clear</span> to remove the statistics display from the design workspace and the execution console:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_clearbutton.png" alt="" />
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Next</h2>
+                    <p>The next step is to 
+        <a href="Capturing_Rejects.htm">determine why the Job is failing</a> to perform as expected so that you can correct it.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

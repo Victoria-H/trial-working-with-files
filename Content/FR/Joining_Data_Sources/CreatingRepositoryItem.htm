@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>CreatingRepositoryItem</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Création de métadonnées</h1>
+                    <h2>Vue d'ensemble</h2>
+                    <p>Vous avez précédemment configuré un composant d'entrée de type fichier avec des informations concernant le fichier source et son schéma. Ces informations étaient locales, dans ce composant particulier. Avec le Studio Talend, vous pouvez stocker des informations de configuration, comme des métadonnées (<span style="font-style: normal; font-weight: bold;">Metadata</span>), afin de les réutiliser dans différents composants, dans le même Job ou dans des Jobs différents. Vous allez créer des informations concernant un fichier délimité contenant des codes d'États des États-Unis et leurs noms, afin que vous puissiez utiliser les mêmes informations dans différents composants dans différents Jobs.</p>
+                    <h2>Création de la métadonnée</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Dans le 
+                <span class="ui-control">Repository</span>, développez 
+                <span class="ui-control">Metadata</span>, cliquez-droit sur <span class="ui-control">File delimited</span> et sélectionnez <span class="ui-control">               Create file delimited</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_createmetadata01.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Saisissez
+                <span class="user-input-files-variables">StateCodes</span> dans le champ 
+                <span class="ui-control">Name</span> et les informations appropriées dans les champs
+                <span class="ui-control">Purpose</span> et
+                <span class="ui-control">Description</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_createmetadata02.png" alt="" />
+                            </p>
+                            <p><span class="ui-control">Note&#160;:</span> il est tentant de renseigner rapidement uniquement le nom requis, mais le respect des bonnes pratiques nécessite de renseigner les autres champs afin de documenter votre Job et vos éléments de projet, afin que les intervenants comprennent les différents objectifs.</p>
+                            <p>Cliquez sur <span class="ui-control">Next</span>.</p>
+                        </li>
+                        <li value="3">
+                            <p>Dans la deuxième étape, cliquez sur 
+                <span class="ui-control">Browse</span>, sélectionnez 
+                <span class="ui-control">*.txt</span> dans liste des types de fichiers, sélectionnez le fichier 
+                <span class="ui-control">States.txt</span>, dans
+                <span class="ui-control">C:/StudentFiles</span> et cliquez sur<![CDATA[ 
+                ]]><span class="ui-control">Open</span>.</p>
+                            <p>Dans la liste <span class="ui-control">Format</span>, sélectionnez <span class="ui-control">WINDOWS</span> puis cliquez sur 
+                <span class="ui-control">Next</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_createmetadata03.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p>Dans cette étape, vous renseignez les informations de configuration relatives au fichier. Sélectionnez 
+                <span class="ui-control">Comma</span> dans la liste
+                <span class="ui-control">Field separator</span> afin de spécifier que les champs sont délimités par une virgule. Laissez les autres paramètres tels qu'ils sont, car le fichier ne contient pas d'en-tête&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_createmetadata04.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="5">
+                            <p>Dans la zone <span class="ui-control">Preview</span>, cliquez sur le bouton 
+                <span class="ui-control">Refresh Preview</span>. Vous avez spécifié le bon délimiteur, le Studio Talend  reconnaît que le fichier contient deux colonnes.</p>
+                            <p>Cliquez sur<![CDATA[
+                ]]><span class="ui-control">Next</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_createmetadata05.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="6">
+                            <p>Dans cette étape, vous spécifiez le schéma du fichier. Modifiez la valeur du champ 
+                <span class="ui-control">Name</span> en <i>StateCodesSchema</i>. Modifiez 
+                <span class="ui-control">Column0</span> en 
+                <span class="user-input-files-variables">StateCode</span>, configurez sa longueur
+                <span class="ui-control">Length</span> à <span class="user-input-files-variables">2</span> et remplacez 
+                <span class="ui-control">Column1</span> par
+                <span class="user-input-files-variables">StateName</span>, puis configurez sa longueur 
+                <span class="ui-control">Length</span> à <span class="user-input-files-variables">20</span>.</p>
+                            <p>Cliquez sur
+                <span class="ui-control">Finish</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_createmetadata06.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="7">
+                            <p>Cliquez sur
+                <span class="ui-control">Finish</span>. La nouvelle métadonnée s'affiche dans le 
+                <span class="ui-control">Repository</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/MetadataRepos.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Étape suivante</h2>
+                    <p>Vous pouvez utiliser cette métadonnée afin de créer un composant lisant les codes des États depuis un fichier, pour effectuer une
+        <a href="Joining_Data_Sources.htm">jointure entre ces fichiers et les informations clients</a>.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Reading Input</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Lecture d'un fichier d'entrée</h1>
+                    <h2>Vue d'ensemble</h2>
+                    <p>Au cours de la première leçon, vous avez créé un premier Job simple. Dans cette section, vous allez créer un nouveau Job lisant des données d'un fichier .csv délimité contenant des données clients. Le Job sera créé dans un dossier spécifique qui contiendra tous les Jobs relatifs au scénario concernant les données clients. </p>
+                    <h2>Création d'un nouveau Job</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Créez un nouveau dossier pour vos Jobs. Sous <span class="ui-control">Job Designs</span>, cliquez sur le <span class="ui-control">[+]</span> devant <span class="ui-control">Job Designs</span>, cliquez-droit sur <span class="ui-control">Standard</span> et sélectionnez <span class="ui-control"> Create folder</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/create_folder.png" alt="" />
+                            </p>
+                            <p>Dans le champ <span class="ui-control">Label</span>, saisissez <span class="user-input-files-variables">Customers</span> puis cliquez sur <span class="ui-control">Finish</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/customers_folder.png" alt="" />
+                            </p>
+                            <p>Le nouveau dossier s'affiche sous <span class="ui-control">Job Designs</span> &gt; <span class="ui-control">Standard</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/Customers_folder_done.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Pour créer le Job suivant, dans le 
+                <span class="ui-control">Repository</span>, cliquez-droit sur 
+                <span class="ui-control">Customers</span>, sous <span class="ui-control">Job Designs</span> &gt; <span class="ui-control">Standard</span>, puis cliquez sur
+                <span class="ui-control">Create Standard Job</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/create_job.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Saisissez
+                <span class="user-input-files-variables">UpperCase</span> dans le champ 
+                <span class="ui-control">Name</span> et renseignez les champs 
+                <span class="ui-control">Purpose</span> et
+                <span class="ui-control">Description</span> comme suit, puis cliquez sur<![CDATA[ 
+              ]]><span class="ui-control">Finish</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/create_job_name.png" alt="" />
+                            </p>
+                            <p>Rappelez-vous que ce Job va convertir le texte de la colonne <span class="ui-control">State</span> en majuscules. Seul le nom est requis, mais la bonne pratique recommande de renseigner les autres champs pour documenter le Job.</p>
+                        </li>
+                        <li value="4">Le nouveau Job s'ouvre, prêt à être construit&#160;: 
+            <p><img src="../../Resources/Images/lesson2/open_job.png" alt="" /></p></li>
+                    </ol>
+                    <h2>Ajout d'un composant de lecture de fichier</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Dans la
+                <span class="ui-control">Palette</span>, cliquez sur
+                <span class="ui-control">File</span>, puis sur 
+                <span class="ui-control">Input</span> et faites défiler vers le bas, jusqu'à trouver le composant<![CDATA[
+                ]]><span class="ui-control">tFileInputDelimited</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/image311.PNG" alt="" />
+                            </p>
+                            <p>Les composants dans la 
+                <span class="ui-control">Palette</span> sont groupés par fonction. Ce composant particulier lit des données d'un fichier délimité.</p>
+                        </li>
+                        <li value="2">
+                            <p>Cliquez sur le
+                <span class="ui-control">tFileInputDelimited</span> dans la 
+                <span class="ui-control">Palette</span>, puis cliquez dans l'espace de modélisation graphique pour placer le composant.</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture4.jpg" alt="" />
+                            </p>
+                            <p>Notez le triangle jaune avec un point d'exclamation (!) dans le coin supérieur droit du composant, indiquant un avertissement. </p>
+                            <li value="4">
+                                <p>Placez votre curseur sur l'icône pour lire l'avertissement&#160;:</p>
+                                <p>
+                                    <img src="../../Resources/Images/lesson2/warning.png" alt="" />
+                                </p>
+                                <p>L'avertissement spécifie que le composant
+nécessite un schéma et doit être relié à un composant de sortie.&#160;Vous fournirez le schéma et le lien lors de la construction du Job.</p>
+                            </li>
+                        </li>
+                    </ol>
+                    <h2>Configuration</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Double-cliquez sur le 
+               <span class="ui-control">tFileInputDelimited</span> pour ouvrir sa vue 
+                <span class="ui-control">Component</span> sous l'espace de modélisation graphique. <br />Cliquez sur le bouton 
+                <span class="ui-control">[...]</span> à côté du champ 
+                <span class="ui-control">File Name / Stream</span>, pour parcourir votre système jusqu'au fichier d'entrée&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture5.jpg" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Trouvez le fichier dans 
+               <span class="ui-control">C:/StudentFiles/Custs.csv</span> et cliquez sur <span class="ui-control">Open</span>&#160;: </p>
+                            <p>
+                                <img src="../../Resources/Images/image314.PNG" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Dans la vue                 <span class="ui-control">Component</span>, dans le champ 
+                <span class="ui-control">Field Separator</span>, saisissez 
+                <span class="user-input-files-variables">","</span> pour indiquer qu'une virgule sépare les valeurs des colonnes dans le fichier et non le point-virgule par défaut. Modifiez la valeur dans le champ                 <span class="ui-control">Header</span> à 
+                <span class="user-input-files-variables">1</span> afin de spécifier que la première ligne du fichier d'entrée contient le nom des colonnes&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture7.jpg" alt="" />
+                            </p>
+                        </li>
+                        <p><span class="ui-control">Note&#160;:</span> vous pouvez spécifier ici toutes les informations nécessaires pour que le composant effectue ses tâches. Notez que les onglets à gauche, comme 
+                <span class="ui-control">Advanced settings</span> et
+                <span class="ui-control">View</span>, vous permettent d'accéder à des paramètres supplémentaires de configuration.</p>
+                        <li value="4">
+                            <p>À l'aide de l'Explorateur Windows, trouvez le fichier <span class="ui-control">Custs.csv</span>, cliquez-droit dessus et sélectionnez <span class="ui-control">Edit with Notepad++</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture17.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="5">
+                            <p>Explorez le contenu du fichier&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture16.png" alt="" />
+                            </p>
+                            <p>Notez que le séparateur dans le fichier est la virgule, comme précédemment configuré et que la première ligne contient l'en-tête. Dans l'en-tête, vous pouvez voir la liste des champs que vous allez définir comme schéma de votre fichier dans les étapes suivantes. </p>
+                        </li>
+                    </ol>
+                    <h2>Schéma</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Dans la vue 
+                <span class="ui-control">Component</span>, cliquez sur le bouton 
+               <span class="ui-control">[...]</span> à côté du champ <span class="ui-control">Edit Schema</span>. La fenêtre
+                <span class="ui-control">Schema</span> s'ouvre&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture8.jpg" alt="" />
+                            </p>
+                            <p><span class="ui-control">Note&#160;:</span> vous pouvez spécifier ici le format des données du fichier <span class="user-input-files-variables">Custs.csv</span>. Les informations concernant la structure de ce fichier vous sont fournies dans cette leçon.&#160;Dans vos propres projets, vous devez connaître le schéma de vos données dans les fichiers source.
+                </p>
+                        </li>
+                        <li value="2">
+                            <p>Cliquez sur le bouton <span class="ui-control">[+]</span> pour ajouter une colonne au schéma. <br />Remplacez 
+                <span class="user-input-files-variables">newColumn</span> par <span class="user-input-files-variables">First</span> et saisissez 
+                <span class="user-input-files-variables">15</span> dans la colonne
+                <span class="ui-control">Length</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture9.jpg" alt="" />
+                            </p>
+                            <p><span class="ui-control">Note&#160;:</span> cela spécifie que la première colonne de chaque ligne de données dans le fichier <span class="user-input-files-variables">Custs.csv</span> contient une chaîne de 15 caractères, correspondant au prénom du client.</p>
+                        </li>
+                        <li value="3">
+                            <p>Ajoutez cinq colonnes de type 
+                <span class="ui-control">String</span>, renommez-les comme suit et, dans la colonne <span class="ui-control">Length</span>, saisissez respectivement&#160;:</p>
+                            <ul>
+                                <li value="1"><span class="user-input-files-variables">Last</span>, <span class="user-input-files-variables">15</span></li>
+                                <li value="2">
+                                    <p><span class="user-input-files-variables">Number</span>, <span class="user-input-files-variables">10</span></p>
+                                </li>
+                                <li value="3">
+                                    <p><span class="user-input-files-variables">Street</span>, <span class="user-input-files-variables">20</span></p>
+                                </li>
+                                <li value="4">
+                                    <p><span class="user-input-files-variables">City</span>, <span class="user-input-files-variables">20</span></p>
+                                </li>
+                                <li value="5">
+                                    <p><span class="user-input-files-variables">State</span>, <span class="user-input-files-variables">2</span></p>
+                                </li>
+                            </ul>
+                            <p>Lorsque vous avez terminé, votre schéma doit ressembler à ceci&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture10.jpg" alt="" />
+                            </p>
+                            <p> Cliquez sur<![CDATA[ 
+                ]]><span class="ui-control">OK</span>.</p>
+                            <p>Comme vous pouvez voir dans ce schéma, le fichier 
+                <span class="ui-control">Custs.csv</span> contient des informations simples d'identification et d'adresses pour un groupe fictif de clients, organisé en six colonnes.</p>
+                        </li>
+                    </ol>
+                    <h2>Affichage</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Cliquez sur l'onglet 
+                <span class="ui-control">View</span>, à gauche, dans la vue <span class="ui-control">Component</span> et saisissez <i>Customers File</i> dans le champ 
+                <span class="ui-control">Label format</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture11.jpg" alt="" />
+                            </p>
+                            <p><span class="ui-control">Note&#160;:</span> l'ensemble des paramètres de l'onglet 
+                <span class="ui-control">View</span> affecte la manière dont s'affiche le composant dans l'espace de modélisation graphique. Le texte saisi ici devient le nom du composant dans l'espace de modélisation graphique. Vous pouvez saisir des balises HTML ou du texte dans les champs, afin de changer le style du libellé et des astuces.</p>
+                        </li>
+                    </ol>
+                    <h2>Avertissements</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Dans le menu 
+                <span class="ui-control">Window</span>, cliquez sur                <span class="ui-control">Show View</span>&#160;:</p>
+                        </li>
+                        <p>
+                            <img src="../../Resources/Images/image322.PNG" alt="" style="border: none;" border="0" />
+                        </p>
+                        <p>Dans cette fenêtre, vous pouvez choisir quelles vues afficher dans l'application.</p>
+                        <li value="2">
+                            <p>Développez
+                <span class="ui-control">Talend</span> et sélectionnez                 <span class="ui-control">Problems</span>. Cliquez sur<![CDATA[
+                ]]><span class="ui-control">OK</span>&#160;:</p>
+                        </li>
+                        <p>
+                            <img src="../../Resources/Images/lesson2/problems.png" alt="" style="border: none;" border="0" />
+                        </p>
+                        <li value="3">
+                            <p>La vue
+                <span class="ui-control">Problems</span> s'affiche sous l'espace de modélisation graphique. </p>
+                            <p>Cliquez sur la flèche sur la ligne 
+                <span class="ui-control">Warnings</span> afin de la développer&#160;:</p>
+                        </li>
+                        <p>
+                            <img src="../../Resources/Images/image324.PNG" alt="" />
+                        </p>
+                        <p>Note&#160;: dans la vue <span class="ui-control">Problems</span>, vous pouvez voir des informations concernant les problèmes relatifs au Job ou aux composants individuels. Dans ce cas, l'avertissement vous indique que votre composant d'entrée doit être relié à une sortie. L'un des avertissements précédents n'est plus affiché car vous avez défini un schéma pour le composant.</p>
+                    </ol>
+                    <h2>Étape suivante</h2>
+                    <p>L'étape suivante consiste à
+        <a href="Transforming_Data.htm">envoyer les données d'un fichier d'entrée à un composant</a> passant les données en majuscules.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

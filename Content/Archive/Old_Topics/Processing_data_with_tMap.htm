@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Processing data with tMap</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Processing data with tMap</h1>
+                    <h2>Overview</h2>
+                    <p>In the Job 
+        <span class="bold">AscOrder</span>you used a component out of the 
+        <span class="bold">processing</span> components to write your output in an ascending order.</p>
+                    <p>The most powerful component in this group is 
+        <span class="bold">tMap</span>. To get a first impression of the options and possibilities, duplicate the Job 
+        <span class="bold">States2MySQL</span>and insert the 
+        <span class="bold">tMap</span>component . Then you will process the data with an expression.</p>
+                    <h2>Duplicate Job</h2>
+                    <ol>
+                        <li value="1">Right-click on the Job 
+            <span class="bold">States2MySQl</span>and click 
+            <span class="bold">Duplicate</span>: 
+            <p><img src="../../Resources/Images/TM_duplicate1.png" alt="" /></p></li>
+                        <li value="2">Enter 
+            <span class="bold">tMapMySQL</span>for the 
+            <span class="bold">Input new name</span>and click 
+            <span class="bold">OK</span>: 
+            <p><img src="../../Resources/Images/TM_JobtMapMYSQL.png" alt="" /></p></li>
+                        <li value="3">Double-click the new Job out of the Repository to open it in the Workspace: 
+            <p><img src="../../Resources/Images/TM_newJob.png" alt="" /></p></li>
+                        <li value="4">You want to place the 
+            <span class="bold">tMap</span>component between the input and the output which will then present a typical ETL Job. Select the link 
+            <span class="bold">row1 (Main)</span>between the two components and type 
+            <span class="bold">tMap</span>: 
+            <p><img src="../../Resources/Images/TM_tmapcomponent.png" alt="" /></p></li>
+                        <li value="5">You will be asked for the new Output name. Enter MySQL and click 
+            <span class="bold">OK</span>: 
+            <p><img src="../../Resources/Images/TM_outmysql.png" alt="" /></p></li>
+                        <li value="6">The system asks 
+            <span class="bold">Do you want to get the schema of the target component?</span>and you click 
+            <span class="bold">Yes</span>: 
+            <p><img src="../../Resources/Images/TM_getschema.png" alt="" /></p></li>
+                        <li value="7">Your Job should look like this now. You may rearrange the components on the Workspace to get a clear Job: 
+            <p><img src="../../Resources/Images/TM_arranged.png" alt="" /></p></li>
+                        <li value="8">Double-click the component 
+            <span class="bold">tMap</span>and have a first look at the 
+            <span class="bold">tMap</span>dialog: 
+            <p><img src="../../Resources/Images/TM_tmapcomponentopen.png" alt="" /></p><p>Note: You see the fields of the input and output are automatically connected. You have several options to process your data in tMap.</p></li>
+                        <li value="9">To output the field "StateName" with uppercase you will need to enter an expression for this field in the output table. Click the field 
+            <span class="bold">row1.StateName</span>and then click the ellispsis next to it "
+            <span class="bold">(...)</span>" to open the Expression Builder. 
+            <p><img src="../../Resources/Images/tm_expression01.PNG" alt="" /></p></li>
+                        <li value="10">The field "row1.StateName" is already entered into the expression. At the bottom you can select from different <b>Categories</b> and <b>Functions</b>. You also can add or enter the expressions manually. Position the cursor at the end of <i>row1.StateName</i> and type <i>.to</i>. You will see a list being displayed right after you started typing: 
+            <p><img src="../../Resources/Images/tm_expression02.PNG" alt="" /></p></li>
+                        <li value="11">Select <i>toUppercase():String - String</i> and it will be entered. Click <b>Ok</b> to close the window: 
+            <p><img src="../../Resources/Images/tm_expression03.PNG" alt="" /></p></li>
+                        <li value="12">The expression appears in the output table. Click <b>OK</b><p> <img src="../../Resources/Images/tm_expression04.PNG" alt="" /></p></li>
+                        <li value="13">Double-click the <b>tMySQLOutput</b> component and update the <b>Action on table</b> to <i>Drop table if exists and create</i>. </li>
+                        <li value="14">Run the Job.</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <h2>Run Job</h2>
+                    <p>Now you run the Job and examine the result in the database table.</p>
+                    <ol>
+                        <li value="1">Run the Job and open the MySQL database: 
+            <p><img src="../../Resources/Images/DO_Mysql_local.png" alt="" /></p></li>
+                        <li value="2">Expand it to the table "
+            <span class="bold">Statemysql</span>": 
+            <p><img src="../../Resources/Images/DO_tables.png" alt="" /></p></li>
+                        <li value="3">Enter the query "select * from training.statemysql" to display the results: 
+            <p><img src="../../Resources/Images/tm_databseout.PNG" alt="" /></p></li>
+                    </ol>
+                    <h2>Next</h2>
+                    <p>With this short overview you will be able to follow the next exercises and will use the important components in detail.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

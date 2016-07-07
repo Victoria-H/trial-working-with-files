@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Creating Master Jobs">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Creating a Master Job</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Creating Master Jobs</a>
+                    <ul class="sub-menu">
+                        <li><a href="Overview.htm">Overview</a>
+                        </li>
+                        <li><a href="#" class="selected">Creating a Master Job</a>
+                        </li>
+                        <li><a href="Challenges.htm">Challenges</a>
+                        </li>
+                        <li><a href="Solutions.htm">Solutions</a>
+                        </li>
+                        <li><a href="Wrap-Up.htm">Wrap-Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Creating Master Jobs</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="selected">Creating a Master Job</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Creating a Master Job</h1>
+                    <h2>Overview</h2>
+                    <div class="youAreGoingTo">
+                        <p>The purpose of this part is to build a master Job and then export it with its dependencies such as context variables and metadata.</p>
+                        <p data-mc-conditions="vModifs.vBoxAdditions">This master Job brings together the smaller Jobs you built in this use case.</p>
+                    </div>
+                    <h2>Create a Master Job</h2>
+                    <p>As you did many times before, you have to create a new Job:</p>
+                    <ol>
+                        <li value="1"><![CDATA[
+            ]]><p data-mc-conditions="vModifs.vTitles">CREATE A STANDARD JOB</p><p>Right-click on the
+            <span class="ui-control">Sales</span> folder under <span class="ui-control">Job Designs / Standard</span> and click 
+            <span class="ui-control">Create Standard Job</span>: 
+            </p><p><img src="../../Resources/Images/MJ_newJob.png" alt="" /></p></li>
+                        <li value="2"><![CDATA[
+            
+            ]]><p data-mc-conditions="vModifs.vTitles">GIVE THE JOB A NAME, PURPOSE AND DESCRIPTION</p><p>Name it 
+            <span class="user-input-files-variables">MasterJob</span>. <br />Enter any 
+            <span class="ui-control">Purpose</span> and 
+            <span class="ui-control">Description</span> and then click 
+            <span class="ui-control">Finish</span>: </p><p><img src="../../Resources/Images/MJ_createMasterjob02.png" alt="" /></p></li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">ADD THE 
+<span class="ui-control">CustPrep2Table</span>JOB                </p>
+                            <p>In the
+                <span class="ui-control">Repository</span>
+                , click
+                <span class="ui-control">CustPrep2Table</span>
+                Job and drag it in the
+                <span class="ui-control">Designer</span>
+                view of MasterJob
+                . <br />This will add a <b>tRunJob</b> component configured to run your <span class="ui-control">CustPrep </span>Job:
+            </p>
+                            <p>
+                                <img src="../../Resources/Images/MJ_dragCust2PrepTable.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="4"><![CDATA[
+            ]]><p data-mc-conditions="vModifs.vTitles">EXPLORE THE <b>tRunJob</b> COMPONENT</p><p>Double-click the 
+            <span class="ui-control">CustPrep2Table</span> component.
+            <br />Usually, double-click on a component will open the 
+            <span class="ui-control">Component</span> view. But, for 
+            <span class="ui-control">tRunJob</span> components, a double-click will open the 
+            <span class="ui-control">referenced Job</span>: </p><p><img src="../../Resources/Images/MJ_openfirstJob.png" alt="" /></p></li>
+                        <li value="5"><![CDATA[
+            ]]><p data-mc-conditions="vModifs.vTitles">EXPLORE THE CONFIGURATION</p><p>
+            In your <span class="ui-control">MasterJob</span>, click the 
+          <b>CustPrep2Table</b>
+            component to select it and then click the
+            <b>Component</b>
+          tab to see the configuration.
+            <br />In this configuration, different information is available : Job name, version and context parameters: </p><p><img src="../../Resources/Images/MJ_ComponetViewfirstJOB.png" alt="" /><br /></p></li>
+                        <li value="6"><![CDATA[
+                ]]><p data-mc-conditions="vModifs.vTitles">ADD THE OTHER JOBS IN THE SAME WAY</p><p>Using the same procedure, add
+                <span class="ui-control">ProductPrep2Table</span>
+                ,
+                <span class="ui-control">SalesFilesPrep</span>
+                ,
+                <span class="ui-control">ShopTableSetup</span>
+                and
+                <span class="ui-control">RetailSales</span>
+					jobs in your 
+                <span class="ui-control">MasterJob</span>:</p><p><img src="../../Resources/Images/MJ_allsubjobs.png" alt="" /></p></li>
+                        <li value="7">
+                            <p data-mc-conditions="vModifs.vTitles">CONNECT THE JOBS
+                    </p>
+                            <p>Connect them with an
+                    <span class="ui-control">OnSubjobOK</span> <b>Trigger</b> : </p>
+                            <p>
+                                <img src="../../Resources/Images/MJ_trigggeronsubjobOK.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="8">
+                            <p data-mc-conditions="vModifs.vTitles">RUN THE MASTER JOB</p>
+                            <p>See the complete Job and 
+            <b>Run</b>
+            the
+            MasterJob:
+            </p>
+                            <p>
+                                <img src="../../Resources/Images/MJ_RunJob.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="9">
+                            <p data-mc-conditions="vModifs.vTitles">CHECK THE RESULTS</p>
+                            <p>
+                As you tested every Job independently, your MasterJob should execute without any error message. <br />You can check the results in
+                <b>C:/StudentFiles</b>
+                folder looking at the timestamp of files generated.
+                <br /></p>
+                        </li>
+                    </ol>
+                    <h2>Overriding Context variables</h2>
+                    <p>To run 
+        the <span class="ui-control">MasterJob</span>, the Studio used the default context variables values. Those values can be changed in each 
+        <span class="ui-control">tRunJob</span> instance.<br /> If you remember what was done earlier, the file names to be read by the different Jobs were saved as context variables. <br />With the following instructions, you will change the file names read by 
+        <span class="ui-control">CustPrep2Table</span> and 
+        <span class="ui-control">ProductPrep2Table</span> subjobs.</p>
+                    <ol>
+                        <li value="1"><![CDATA[
+            ]]><p data-mc-conditions="vModifs.vTitles">OPEN THE COMPONENT TAB TO SEE THE CONTEXT</p><p>Click the 
+            <span class="ui-control">CustPrep2Table</span> Subjob and then click the 
+            <span class="ui-control">Component</span> tab.
+            <br />If you look at the Context list, you will see 
+            <span class="ui-control">Default</span>. If you had defined multiple contexts for 
+            <span class="ui-control">CustPrep2Table</span>, they would appear in this list: </p><p><img src="../../Resources/Images/MJ_componentFirstJob.png" alt="" /><br /></p><p><span class="ui-control">Note:</span> If needed, you can change the values of any context variable and this change will be available only for this instance of the 
+            <span class="ui-control">tRunJob</span> component.</p></li>
+                        <li value="2"><![CDATA[
+            ]]><p data-mc-conditions="vModifs.vTitles">SELECT THE <span class="ui-control">RetailCustomers_File</span> PARAMETER</p><p>Below the 
+            <span class="ui-control">Context Param</span> table, click the 
+            <span class="ui-control">green plus sign</span>. <br />In the
+            <span class="ui-control">Parameters</span> column, click the 
+            <span class="ui-control">context variable</span> that appears to open the list of all context variables. <br />Select
+            <span class="ui-control">RetailCustomers_File</span> parameter in the list: </p><p><img src="../../Resources/Images/MJ_ParameterRetailCustomersFile.png" alt="" /></p></li>
+                        <li value="3"><![CDATA[
+            ]]><p data-mc-conditions="vModifs.vTitles">CHANGE THE FILE PATH</p><p>Enter 
+         <span class="ui-control" style="font-weight: normal; font-style: italic;">"C:/StudentFiles/nofile"</span> in the 
+            <span class="ui-control">Values</span> column: </p><p><img src="../../Resources/Images/MJ_ParameterValues.png" alt="" /></p></li>
+                        <li value="4"><![CDATA[
+                                ]]><p data-mc-conditions="vModifs.vTitles">CHANGE THE FILE PATH FOR <span class="ui-control">RetailProducts_File</span></p><p>Following the same process, select the
+                <span class="ui-control">RetailProducts_File</span>
+                parameter in the
+                <span class="ui-control">ProductPrep2Table</span>
+                Job.<br />Then enter 
+                <span class="ui-control" style="font-weight: normal; font-style: italic;">"C:/StudentFiles/toto.csv"</span>
+                 in the
+                <span class="ui-control">Values</span>
+                column:
+</p><p><img src="../../Resources/Images/MJ_ParameterProduct2PrepTable.png" alt="" /></p></li>
+                        <li value="5">
+                            <p data-mc-conditions="vModifs.vTitles">RUN THE JOB AND NOTE THE ERRORS YOU HAVE INTRODUCED</p>
+                            <p><span class="ui-control">Run</span>
+the            MasterJob
+            and check the messages in the
+            <span class="ui-control">Run</span>
+            view.
+            <br />You should see two error messages saying that 
+            <span class="ui-control">nofile</span> and 
+            <span class="ui-control">toto.csv</span> can't be found</p>
+                        </li>
+                        <li value="6">
+                            <p data-mc-conditions="vModifs.vTitles">GO BACK AND REMOVE THESE ERRORS</p>
+                            <p>
+                In order to export a functional Job, delete the context variables you just created.
+                </p>
+                        </li>
+                        <li value="7">
+                            <p data-mc-conditions="vModifs.vTitles">RUN THE JOB AGAIN</p>
+                            <p><span class="ui-control">Run</span>
+            the MasterJob
+            again to make sure it works properly. <br /></p>
+                        </li>
+                    </ol>
+                    <h2>Exporting Master Job</h2>
+                    <p>Now that the Master Job has been successfully tested the next step is to export it so that you can send it to someone else for future use.</p>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">SAVE THE MASTER JOB</p>
+                            <p>Before exporting, save your Job.</p>
+                        </li>
+                        <li value="2"><![CDATA[ 
+            ]]><p data-mc-conditions="vModifs.vTitles">FROM THE REPOSITORY CHOOSE THE OPTION <span class="ui-control">Export Items</span>:</p><p>Right-click 
+            <span class="ui-control">MasterJob</span> and then click 
+            <span class="ui-control">Export Items</span>:</p><p><img src="../../Resources/Images/MJ_exportItems.png" alt="" /></p></li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">SELECT EXPORT OPTIONS</p>
+                            <p>In the <span class="ui-window-title">Export Items</span> wizard, you will be able to configure what you want to export and how you want to export it. <br />By default, only MasterJob is selected in the list of items to export.
+</p>
+                            <p><![CDATA[            ]]><img src="../../Resources/Images/MJ_exportItems01.png" alt="" /><br />For this example, you will export your Job as an archive file with all dependencies, so that everything needed to run the MasterJob is included in the .zip file.</p>
+                        </li>
+                        <li value="4"><![CDATA[ 
+            ]]><p data-mc-conditions="vModifs.vTitles">ZIP THE JOB AND ITS DEPENDENCIES</p><p>Click 
+            <span class="ui-control">Select archive file</span> and enter 
+            <span class="ui-control">C:/StudentFiles/MasterJob.zip</span>. Select 
+            <span class="ui-control">Export Dependencies</span> and click 
+            <span class="ui-control">Finish</span>:</p><p><img src="../../Resources/Images/MJ_exportItems02.png" alt="" /></p><p> Automatically, all dependencies will be selected in the list : jobs, contexts and metadata.
+            <br /></p></li>
+                        <li value="5">
+                            <p data-mc-conditions="vModifs.vTitles">CHECK THE ARCHIVE FILE</p>
+                            <p>Navigate to             <span class="ui-control">C:/StudentFiles</span>and check that your archive file has been created.
+            <br /></p>
+                        </li>
+                    </ol>
+                    <h2>Next</h2>
+                    <p>Now, it's time for you to reinforce your knowledge with 
+     <a href="Exercises.htm">exercises</a>.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Capturing Rejects</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Capture des rejets de jointure</h1>
+                    <h2>Configuration du modèle de jointure dans le tMap</h2>
+                    <ol data-mc-continue="true">
+                        <li value="1">
+                            <p>Double-cliquez sur le composant 
+                <span class="ui-control">tMap</span>. Dans la table 
+                <span class="ui-control">row2</span>, cliquez sur le bouton 
+                <span class="ui-control">tMap settings</span> (représentant une clé anglaise)&#160;:</p>
+                            <p>Vous pouvez configurer des paramètres supplémentaires relatifs à la table. Notez que la valeur sélectionnée pour 
+                <span class="ui-control">Join Model</span> est
+                <span class="ui-control">Left Outer Join</span>.<br />Une jointure Left Outer Join prend en compte toutes les lignes de la table principale, même s’il n’y a pas de ligne dans la table de référence avec une valeur correspondante dans la colonne de jointure, ce qui explique pourquoi certaines lignes n’ont pas pris en compte les noms d’États. Mais vous avez besoin de savoir pourquoi certaines lignes de référence ne correspondent pas. Pour cela, vous devez utiliser une jointure <b>Inner Join</b>. <br />Cliquez sur
+                <span class="ui-control">Left Outer Join</span> dans la colonne <span class="ui-control">Value</span>, de la ligne 
+                <span class="ui-control">Join Model</span>, puis cliquez sur le bouton <span class="ui-control">[...]</span> pour modifier la valeur&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_inner_Join.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>La boîte de dialogue <span class="ui-window-title">Options</span> s'ouvre. Sélectionnez
+                <span class="ui-control">Inner Join</span> puis cliquez sur 
+                <span class="ui-control">OK</span>. En changeant le type de jointure à <b>Inner Join</b>, les lignes ne correspondant pas seront exclues de la sortie et vous pourrez capturer les rejets à des fins de débogage&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_selectinnerjoin.png" alt="" />
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Ajout de la table des rejets</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Toujours dans le <b>tMap</b>, cliquez sur le bouton <span class="ui-control">[+]</span> (<span class="ui-control">Add output table</span>) au-dessus de la table 
+                <span class="ui-control">CappedOut</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_addoutputtablebutton.png" alt="" />
+                            </p>
+                            <p>Vous créez une nouvelle table afin de capturer les lignes rejetées par la jointure <span class="ui-control">Inner Join</span>, afin de déterminer où se situe le problème.</p>
+                        </li>
+                        <li value="2">
+                            <p>Saisissez <i>JoinFailures</i> dans le champ de texte pour nommer la nouvelle sortie, puis cliquez sur 
+                <span class="ui-control">OK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JDoutputtablejoinfailures.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">La nouvelle table s'affiche sous 
+            <span class="ui-control">CappedOut</span>&#160;: 
+            <p><img src="../../Resources/Images/JoinFailTable.png" alt="" style="border: none;" border="0" /></p></li>
+                        <li value="4">
+                            <p>Cliquez sur le bouton 
+                <span class="ui-control">tMap settings</span> (représentant une clé anglaise) dans la table
+                <span class="ui-control">JoinFailures</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_joinfailuressettings.png" alt="" />
+                            </p>
+                            <p>Notez que les paramètres d'une table de sortie sont différents de ceux d'une table d'entrée.</p>
+                        </li>
+                        <li value="5">
+                            <p>Modifiez la valeur du champ 
+                <span class="ui-control">Catch lookup inner join reject</span> et passez-la à 
+                <span class="ui-control">true</span>. Cliquez sur <span class="ui-control">OK</span>&#160;: </p>
+                            <p>
+                                <img src="../../Resources/Images/JD_joinfailurestrue.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="6">
+                            <p>Déposez 
+                <span class="ui-control">Last</span> et
+                <span class="ui-control">State</span> de la table 
+                <span class="ui-control">row1</span> dans la table 
+                <span class="ui-control">JoinFailures</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_joinfailure_last_state.png" alt="" />
+                            </p>
+                            <p>Notez que cette sortie va contenir le nom de famille et l'État des lignes rejetées par la jointure <b>Inner Join</b>.</p>
+                        </li>
+                        <li value="7">
+                            <p>Cliquez sur
+                <span class="ui-control">Ok</span>.</p>
+                        </li>
+                    </ol>
+                    <h2>Affichage de la sortie</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Ajoutez un composant 
+                <span class="ui-control">tLogRow</span> sous le <b>tMap</b>. </p>
+                            <p>Souvenez-vous, ce composant écrit des lignes dans la console de la vue 
+                <span class="ui-control">Run</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_tlogrow01.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Cliquez-droit sur le composant 
+                <span class="ui-control">tMap</span>, sélectionnez 
+                <span class="ui-control">Row</span> &gt; 
+                <span class="ui-control">JoinFailures</span>, puis cliquez sur le 
+                <span class="ui-control">tLogRow</span> pour relier les composants&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_tlogrow02.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">Le lien
+            <span class="ui-control">JoinFailures</span> correspond à la table de sortie ajoutée au composant 
+            <span class="ui-control">tMap</span>&#160;: 
+            <p><img src="../../Resources/Images/Capture23.png" alt="" /></p></li>
+                    </ol>
+                    <h2>Exécution du Job</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Exécutez le Job et examinez la sortie dans la console&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture26.png" alt="" />
+                            </p>
+                            <p>Notez que les codes d'États dans les lignes rejetées sont en minuscules (du fichier d'entrée), ce qui signifient qu'ils ne correspondent pas aux codes en majuscules du fichier de référence.</p>
+                        </li>
+                    </ol>
+                    <h2>Étape suivante</h2>
+                    <p>Maintenant que vous avez identifié le problème, vous pouvez 
+        <a href="Correcting_the_Lookup.htm">le corriger</a>, pour que tout fonctionne comme prévu.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

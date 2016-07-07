@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Alphabetic Order</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Alphabetic Order</h1>
+                    <h2>Overview</h2>
+                    <p>In this variation of the last Job you will start to use processing components. In case you want an alphabetic order for the output and no more specific transformations you can use the 
+        <span class="bold">tSortRow</span>component. You will learn how to modify an existing Job starting again with duplicating it and redefine it afterwards. You also will pay attention to the error logs to understand how to correct your settings.</p>
+                    <h2>Duplicate and modify a Job</h2>
+                    <ol>
+                        <li value="1">Right-click on the 
+            <span class="bold">UseMetadata</span>Job and select 
+            <span class="bold">Duplicate</span>: 
+            <p><img src="../../Resources/Images/AO_duplicateusematadata.png" alt="" /></p></li>
+                        <li value="2">Enter 
+            <span class="bold">AscOrder</span>for the new Job (like ascending order) and click 
+            <span class="bold">OK</span>: 
+            <p><img src="../../Resources/Images/AO_Ascorder.png" alt="" /></p></li>
+                        <li value="3">The Job is displayed and you want to insert the processing component 
+            <span class="bold">tSortRow</span>. One way to modify your Job, is to delete the link , to place the new component between input and output and link them again. So right-click the link and select 
+            <span class="bold">Delete</span>: 
+            <p><img src="../../Resources/Images/AO_deletelink.png" alt="" /></p></li>
+                        <li value="4">Move the component 
+            <span class="bold">tFileOutputXML</span>to the right to have more space for the new component. You are looking for a "sorting" component. To find such components in the Palette you ente <i>sort</i> and click the magnifying glass agin and select 
+            <span class="bold">tSortRow</span>out of the results: 
+            <p><img src="../../Resources/Images/AO_search.png" alt="" /></p></li>
+                        <li value="5">Place the component 
+            <span class="bold">tSortRow</span>in the Workspace: 
+            <p><img src="../../Resources/Images/AO_placetsortrow.png" alt="" /></p></li>
+                        <li value="6">You link the three components starting with a right-click on 
+            <span class="bold">StatesCodes</span>and select 
+            <span class="bold">Row</span>then click 
+            <span class="bold">Main</span>and connect to the component 
+            <span class="bold">tSortRow</span>: 
+            <p><img src="../../Resources/Images/AO_rightklickstatescodes.png" alt="" /></p></li>
+                        <li value="7">Go on with the next link and see the result: 
+            <p><img src="../../Resources/Images/AO_linked.png" alt="" /></p></li>
+                    </ol>
+                    <h2>Place tSortRow directly</h2>
+                    <p>Another way to enter the new component between the input and output component is to place it directly between the two components.</p>
+                    <p>To prepare this option, delete the 
+        <span class="bold">tSortRow</span>component and connect the input and output again.</p>
+                    <ol>
+                        <li value="1">Right-click on 
+            <span class="bold">tSortRow</span>and 
+            <span class="bold">select</span>Delete: 
+            <p><img src="../../Resources/Images/AO_deletetlsortrow.png" alt="" /></p></li>
+                        <li value="2">Right-click on 
+            <span class="bold">StatesCodes</span>select 
+            <span class="bold">Row</span>and click 
+            <span class="bold">Main</span>and connect to 
+            <span class="bold">tFileOutputXML</span>: 
+            <p><img src="../../Resources/Images/AO_linkagain.png" alt="" /></p></li>
+                        <li value="3">Select the link between the components and type 
+            <span class="bold">tSortRow</span>to place the new component. See also the description of the component which is displayed: 
+            <p><img src="../../Resources/Images/AO_placedirectly.png" alt="" /></p><p><img src="../../Resources/Images/AO_texttsortrow.png" alt="" /></p></li>
+                        <li value="4">The connections between the three components are set automatically: 
+            <p><img src="../../Resources/Images/AO_Jobagain.png" alt="" /></p></li>
+                        <li value="5">Save your Job.</li>
+                    </ol>
+                    <h2>Run the Job</h2>
+                    <ol data-mc-continue="false">
+                        <li value="1">You do not see any warnings and decide to Run the Job. Select the <![CDATA[           ]]><span class="bold">Run</span> tab and click 
+            <span class="bold">Run</span>: 
+            <p><img src="../../Resources/Images/AO_runfisttime.png" alt="" /></p></li>
+                        <li value="2">Open the 
+            <span class="bold">out.xml</span> file from the 
+            <span class="bold">C:/StudentFiles</span>folder and see that the output is not ordered: 
+            <p><img src="../../Resources/Images/AO_outputnoorder.png" alt="" /></p></li>
+                        <li value="3">To define an ascending order, double-click the component tSortRow and click the green "+" at the bottom of the Criteria table: 
+            <p><img src="../../Resources/Images/AO_ordertable.png" alt="" /></p></li>
+                        <li value="4">The field 
+            <span class="bold">StateCode</span>is automatically entered by the tool. Order is set to "
+            <span class="bold">asc</span>" so the default order is ok. Lets assume you find this setting fine and you want to Run the Job again: 
+            <p><img src="../../Resources/Images/AO_statecodeorder.png" alt="" />.</p></li>
+                        <li value="5">Select the Run tab and Run the Job again. Then verify the error message. It indicates that column 
+            <span class="bold">StateCode</span>is set to "
+            <span class="bold">num</span>" which is not correct. It has to be set to 
+            <span class="bold">alpha</span> to get an 
+            alphabetic ordering: 
+            <p><img src="../../Resources/Images/AO_errorlog.png" alt="" /></p></li>
+                        <li value="6">Double-click the 
+            <span class="bold">tSortRow</span>component again and select 
+            <span class="bold">alpha</span>for the 
+            <span class="bold">column sort num or alpha?.</span>Then Run the Job again: 
+            <p><img src="../../Resources/Images/AO_changeOrder.png" alt="" /></p></li>
+                        <li value="7">The Job runs without errors and displaying the 
+            <span class="bold">out.xml</span> file from the 
+            <span class="bold">C:/StudentFiles</span>folder , shows the correct output: 
+            <p><img src="../../Resources/Images/AO_correctorder.png" alt="" /></p></li>
+                    </ol>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

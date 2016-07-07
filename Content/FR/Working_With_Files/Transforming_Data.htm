@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Transforming Data</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Transformation de données</h1>
+                    <h2>Vue d'ensemble</h2>
+                    <p>Votre Job
+        <span class="ui-control">UpperCase</span> contient un composant fournissant les données d'entrée.&#160;Vous devez ajouter un composant effectuant une transformation&#160;: convertir des abréviations d'États de minuscules à majuscules.</p>
+                    <h2>Ajout de composants</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Saisissez <span class="user-input-files-variables">tMap</span> dans le champ de recherche en haut de la 
+                <span class="ui-control">Palette</span> puis cliquez sur l'icône rerésentant une loupe, ou appuyez sur la touche&#160;<span class="ui-control">Entrée&#160;</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/IT_UC_001_tmappalette.png" alt="" />
+                            </p>
+                            <p>Note&#160;: vous pouvez utiliser la fonction de recherche de la
+              <span class="ui-control">Palette</span> pour trouver rapidement un composant, même si vous ne vous souvenez que d'une partie de son nom.</p>
+                        </li>
+                        <li value="2">
+                            <p>Placez le 
+               <span class="ui-control">tMap</span> dans l'espace de modélisation graphique, à droite du composant existant.&#160;Cliquez-droit sur le composant 
+                <span class="ui-control">Customers File</span>, sélectionnez 
+                <span class="ui-control">Row</span> &gt; 
+               <span class="ui-control">Main</span> et cliquez sur le 
+                <span class="ui-control">tMap</span>. Cela crée un lien entre ces composants&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/IT_UC_002_tmaprow.png" alt="" />
+                            </p>
+                            <p> Le 
+                <span class="ui-control">tMap</span> permet de mapper des données de l'entrée à la sortie et peut effectuer une grande variété de transformations sur les données. Vous allez rapidement l'utiliser comme pièce centrale de nombreux Jobs dans <span class="ui-control">Talend Data Integration</span>.</p>
+                            <p>Notez l'avertissement affiché pour le composant 
+        <span class="ui-control">tMap</span>. Le 
+        <span class="ui-control">tMap</span> transforme les données et nécessite une sortie.</p>
+                        </li>
+                    </ol>
+                    <h2>Ajout d'un composant de sortie</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Cliquez-droit sur le <span class="ui-control">tMap</span>, maintenez le clic et déplacez votre curseur hors du composant.</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/addComponent.png" alt="" />
+                            </p>
+                            <p>Une liste de composants est alors suggérée. </p>
+                            <p> Saisissez les premiers caractères du nom
+                <span class="user-input-files-variables">tFileOutputDelimited</span> dans le champ de recherche, puis double-cliquez sur le composant pour l'ajouter à votre Job&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/addComponent2.png" alt="" />
+                            </p>
+                            <p> Comme son nom l'indique, le 
+                <span class="ui-control">tFileOutputDelimited</span> écrit des lignes dans un fichier de format délimité.</p>
+                        </li>
+                        <li value="2">
+                            <p>Une boîte de dialogue vous demande de saisir un nom pour le lien de sortie. Saisissez                 <i>CappedOut</i> (les espaces ne sont pas autorisés) dans le champ, puis cliquez sur                <span class="ui-control">OK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/addComponent3.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Le nouveau lien de sortie est un lien 
+                <span class="ui-control">Main</span>, comme le lien d'entrée.</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/job_created.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Passez votre curseur sur l'erreur du <span class="ui-control">tMap</span> ou ouvrez la vue <span class="ui-window-title">Problems</span> pour voir quelle est l'erreur. Il y a un problème avec le schéma de sortie, qui sera résolue par la suite.</p>
+                        </li>
+                    </ol>
+                    <h2>Mapping de lignes</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Double-cliquez sur le composant 
+                <span class="ui-control">tMap</span> pour ouvrir la fenêtre de configuration&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/image331_450x558.png" alt="" style="border: none;width: 450;height: 558;" border="0" />
+                            </p>
+                            <p>Comme le 
+              <span class="ui-control">tMap</span> fournit de nombreuses fonctionnalités, la fenêtre comporte de nombreux éléments. Remarquez la table à gauche, nommée 
+                <span class="ui-control">row1</span> et la table à droite, nommée 
+                <span class="ui-control">CappedOut</span>. Ces tables représentent le schéma des liens d'entrée et de sortie, dont les noms correspondent aux liens. Le schéma de 
+                <span class="ui-control">row1</span> est copié du composant d'entrée et semble familier. Le schéma de 
+                <span class="ui-control">CappedOut</span> n'est pas encore défini.</p>
+                            <p>L'objectif de ce Job est de passer toutes les données de 
+                <span class="ui-control">row1</span> à
+                <span class="ui-control">CappedOut</span>, en mettant en majuscules les abréviations des États.</p>
+                        </li>
+                        <li value="2">
+                            <p>Dans 
+                <span class="ui-control">row1</span>, cliquez sur la première ligne, appuyez sur la touche <span class="ui-control">Maj</span>, puis cliquez sur la dernière ligne, afin de les sélectionner toutes.</p>
+                            <p>
+                                <img src="../../Resources/Images/image332_450x202.png" alt="" style="border: none;width: 450;height: 202;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Maintenez la touche <span class="ui-control">Maj </span>enfoncée et déposez toutes les lignes dans la table 
+                <span class="ui-control">CappedOut</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/image333.PNG" alt="" style="border: none;" width="416" height="190" border="0" />
+                            </p>
+                            <p>Vous pouvez voir des flèches indiquant le mapping des colonnes d'un schéma à l'autre. Dans la table 
+                <span class="ui-control">CappedOut</span>, remarquez la colonne
+                <span class="ui-control">Expression</span>, qui définit le contenu des données et <span class="ui-control">Column</span>, qui définit le nom des colonnes. Les données et les noms de colonnes sont une correspondance exacte par rapport à celles de 
+                <span class="ui-control">row1</span> (l'expression 
+                <span class="ui-control">row1.&lt;name&gt;</span> spécifie les données dans la colonne <span class="ui-control">Name </span>de 
+                <span class="ui-control">row1</span>).</p>
+                        </li>
+                    </ol>
+                    <h2>Construction de l'expression</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Comme vous souhaitez modifier les données de la colonne 
+                <span class="ui-control">State</span>, cliquez sur
+                <span class="ui-control">row1.State</span> dans la table de sortie <span class="ui-control">CappedOut</span>, puis cliquez sur le bouton <span class="ui-control">[...]</span> qui s'affiche.</p>
+                            <p>
+                                <img src="../../Resources/Images/image335.PNG" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Dans la liste 
+                <span class="ui-control">Categories</span>, sélectionnez 
+                <span class="ui-control">StringHandling</span>, puis faites défiler la liste 
+                <span class="ui-control">Functions</span> jusqu'à trouver et sélectionner
+                <span class="ui-control">UPCASE</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/uppercase.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Note&#160;: l'<span class="ui-control">Expression Builder</span> vous permet de construire des expressions avec la syntaxe Java. Vous pouvez saisir l'expression en tant que texte vous-même, mais si vous n'êtes pas totalement familier avec la syntaxe, cet outil simplifie le processus. L'expression est toujours 
+                <span class="ui-control">row1.State</span>. Cette zone de l'                <span class="ui-control">Expression Builder</span> fournit un accès organisé à de nombreuses fonctions. Notez la documentation fournie pour chaque fonction dans la zone 
+                <span class="ui-control">Help</span>.</p>
+                        </li>
+                        <li value="3">
+                            <p>Double-cliquez sur
+                <span class="ui-control">UPCASE</span> pour insérer cette syntaxe dans la zone <span class="ui-control">Expression</span> au point d'insertion (le vôtre peut être au début de l'expression plutôt qu'à la fin)&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/uppercase2.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Notez que l'expression se compose de la catégorie, d'un point et du nom de la fonction, avec les arguments entourés de parenthèses. Cette fonction convertit la chaîne de caractères entre les parenthèses en majuscules. Dans l'exemple par défaut, la fonction contient la chaîne de caractères littérale <i>"Hello"</i>. Vous ne souhaitez pas convertir de chaîne de caractères littérale mais le contenu de la colonne<![CDATA[ 
+                ]]><span class="ui-control">State</span>.</p>
+                        </li>
+                        <li value="4">Déplacez 
+            <i>row1.State</i> dans l'expression, pour qu'elle remplace <i>"Hello"</i>, puis cliquez sur<![CDATA[ 
+            ]]><span class="ui-control">Ok</span>&#160;: 
+            <p><img src="../../Resources/Images/lesson2/uppercase3.png" alt="" style="border: none;" border="0" /></p><p><span class="ui-control">Note&#160;:</span> l'expression agit sur le bon argument.
+            Pensez à supprimer les guillemets dans les parenthèses.</p></li>
+                        <li value="5">
+                            <p>La nouvelle expression s'affiche dans la table 
+                <span class="ui-control">CappedOut</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/ExprUpCaseDone.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <p>La colonne de sortie <span class="ui-control">State</span> va contenir la chaîne de caractères de la colonne du même nom de la table <span class="ui-control">row1</span>, convertie en majuscules.
+            </p>
+                    </ol>
+                    <h2>Sauvegarde</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Vous avez terminé la configuration du 
+                <span class="ui-control">tMap</span>, cliquez sur 
+                <span class="ui-control">Ok</span>. Une boîte de dialogue s'ouvre&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/propagate.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Vous avez modifié le schéma de sortie, cette boîte de dialogue vous propose de propager ces modifications au schéma du composant à l'autre bout du lien.</p>
+                        </li>
+                        <li value="2">
+                            <p>Cliquez sur               <span class="ui-control">Yes</span>.</p>
+                        </li>
+                    </ol>
+                    <h2>Configuration de la sortie</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Double-cliquez sur le composant de sortie 
+                <span class="ui-control">tFileOutputDelimited</span> pour ouvrir sa vue<![CDATA[ 
+                ]]><span class="ui-control">Component</span>.</p>
+                        </li>
+                        <li value="2">
+                            <p>Modifiez le nom du fichier de sortie à <i>C:/StudentFiles/CappedOut.csv</i>, dans le champ 
+                <span class="ui-control">Field Separator</span>, saisissez une virgule entre guillemets et cochez la case
+                <span class="ui-control">Include Header</span> pour que la première ligne du fichier comprenne les noms de colonnes&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/image339.PNG" alt="" style="border: none;" width="374" height="359" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Cliquez sur le bouton <span class="ui-control">[...]</span> à côté de 
+                <span class="ui-control">Edit schema</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/outputSchema.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Notez que le schéma du composant correspond au schéma spécifié dans le 
+                <span class="ui-control">tMap</span>, le schéma d'entrée (                <span class="ui-control">CappedOut</span>).</p>
+                            <p>Vous n'avez aucune modification à effectuer, cliquez sur<![CDATA[ 
+                ]]><span class="ui-control">OK</span>.</p>
+                        </li>
+                    </ol>
+                    <h2>Étape suivante</h2>
+                    <p>Votre Job est terminé et vous pouvez
+        <a href="Writing_Output.htm">l'exécuter</a>.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Working with Files">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Combining Columns</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Working with Files</a>
+                    <ul class="sub-menu">
+                        <li><a href="Overview.htm">Overview</a>
+                        </li>
+                        <li><a href="Reading_a_File.htm">Reading an Input File</a>
+                        </li>
+                        <li><a href="Transforming_Data.htm">Transforming Data</a>
+                        </li>
+                        <li><a href="Writing_Output.htm">Running the Job</a>
+                        </li>
+                        <li><a href="#" class="selected">Combining Columns</a>
+                        </li>
+                        <li><a href="Duplicating_a_Job.htm">Duplicating a Job</a>
+                        </li>
+                        <li><a href="Challenges.htm">Challenges</a>
+                        </li>
+                        <li><a href="Solutions.htm">Solutions</a>
+                        </li>
+                        <li><a href="Wrap-Up.htm">Wrap-Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Working with Files</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="selected">Combining Columns</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Combining Columns</h1>
+                    <h2>Overview</h2>
+                    <div class="youAreGoingTo">
+                        <p>The 
+ 	       <span class="bold">tMap</span> component provides the capability to perform a variety of data mapping and transformation functions. Imagine that your destination data store requires the first and last names to be combined in a single column. Follow the steps below to achieve that.</p>
+                    </div>
+                    <h2>Edit Schema</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN  THE <span class="bold">tMap</span> COMPONENT CONFIGURATION&#160;WINDOW</p>
+                            <p>Double-click the 
+                <span class="bold">tMap</span> component.</p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">SELECT <span class="bold">row1.Last</span> IN THE OUTPUT TABLE</p>
+                            <p>Click the 
+                <span class="bold">row1.Last</span> expression in the 
+                <span class="bold">CappedOut</span> table:</p>
+                            <p>
+                                <img src="../../Resources/Images/SelectLast.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>In the 
+                <span class="bold">Schema editor</span> at the bottom of the window, notice that the same column is selected:</p>
+                            <p>
+                                <img src="../../Resources/Images/SelectLastBelow.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Because you are going to combine the data from two columns into a single column, this column is no longer necessary.</p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">DELETE THE UNNEEDED COLUMN</p>
+                            <p>Click the 
+                <span class="bold">Remove selected items</span> button, marked with a red X (highlighted in the previous print screen ), to delete the 
+                <span class="bold">Last</span> column from the output schema:</p>
+                            <p><span style="font-weight: bold;font-style: italic;">Important !</span> Make sure to click <b>Remove selected items</b> in the Schema Editor of CappedOut (lower right part of the Map Editor) and not the Remove table red X (in the upper right part of the Map Editor). If you click Remove Table, you will delete your mapping and will have to rebuild it from the beginning.</p>
+                        </li>
+                        <li value="4">
+                            <p>The column has disappeared from the <span class="ui-control">CappedOut </span>table at the top of the window as well.                 </p>
+                        </li>
+                    </ol>
+                    <h2>Combine Columns</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">MAP BOTH FIRST AND LAST NAMES TO THE SAME OUTPUT COLUMN</p>
+                            <p>Drag the column 
+                <span class="bold">Last</span> from the 
+                <span class="bold">row1</span> table on the left, dropping it onto 
+                <span class="bold">First</span> in the 
+                <span class="bold">CappedOut</span> table:</p>
+                            <p>
+                                <img src="../../Resources/Images/First_and_Last.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Note that the expression now contains references to two columns from the 
+                <span class="bold">row1</span> table.</p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">CONCATENATE FIRST AND LAST NAMES</p>
+                            <p>Insert a plus sign (<span class="user-input-files-variables">+</span>) between the two references:</p>
+                            <p>
+                                <img src="../../Resources/Images/FirstPlusLast.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Because the two columns contain strings, the plus sign concatenates the values.</p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">ADD A SPACE BETWEEN THE FIRST AND LAST NAMES</p>
+                            <p>To include a space between the first and last names, insert 
+                <span class="user-input-files-variables">" " +</span> after the first plus sign. Press the <span class="ui-control">Enter </span>key on your keyboard to save this expression :</p>
+                            <p>
+                                <img src="../../Resources/Images/AddSpace.png" alt="" style="border: none;" width="432" height="72" border="0" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">CHANGE THE COLUMN NAME AND&#160;UPDATE&#160;THE STRING&#160;LENGTH</p>
+                            <p>In the 
+                <span class="bold">Schema editor</span> at the bottom of the window, click 
+                <span class="bold">First</span> for the <span class="ui-control">CappedOut </span>table and then change it to <span class="user-input-files-variables">Name</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/FirstToName_450x100.png" alt="" style="border: none;width: 450;height: 100;" border="0" />
+                            </p>
+                            <p>Then update the length of the <b>Name</b> field from 15 to 30. </p>
+                            <p>Now the schema column name in the 
+                <span class="bold">CappedOut</span> table is 
+                <span class="bold">Name</span> rather than 
+                <span class="bold">First</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/SpaceBetweem.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="5">
+                            <p data-mc-conditions="vModifs.vTitles">SAVE YOUR CHANGES</p>
+                            <p>Click 
+                <span class="bold">Ok</span> to save your changes, and then propagate the changes when prompted.</p>
+                        </li>
+                    </ol>
+                    <h2>Run</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">RUN THE JOB</p>
+                            <p>In order to Run the Job you can either use the <span class="ui-control">Run </span>button or press the <span class="ui-control">F6</span> key on your keyboard.</p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE DATA VIEWER</p>
+                            <p>Right-click the <span class="ui-control">tFileOutputDelimited </span>component and select <span class="ui-control">Data viewer</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture18.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">CHECK THE OUTPUT FILE</p>
+                            <p>Explore the content of the output file using the <span class="ui-control">Result Data Preview</span> display: </p>
+                            <p>
+                                <img src="../../Resources/Images/Capture19.png" alt="" />
+                                <br />Notice that the first column is now <span class="ui-control">Name</span> and is the combination of <span class="ui-control">First</span> and <span class="ui-control">Last</span> columns of the <span class="ui-control">Custs.csv</span> file separated by a space (as specified in the Expression Builder).</p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">YOU CAN ALSO VIEW THE DATA IN RAW CSV </p>
+                            <p>Click on the <span class="ui-control">File Content</span> tab to see the raw format of the file:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture20.png" alt="" />
+                            </p>
+                            <p>Click <span class="ui-control">Close</span>. </p>
+                        </li>
+                    </ol>
+                    <h2>Next</h2>
+                    <p>You have now finished this Job. Next you will <a href="Duplicating_a_Job.htm">Duplicate the Job</a> , modify it and then execute the new Job. </p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

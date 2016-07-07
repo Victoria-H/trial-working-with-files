@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Working with Files">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Transforming Data</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Working with Files</a>
+                    <ul class="sub-menu">
+                        <li><a href="Overview.htm">Overview</a>
+                        </li>
+                        <li><a href="Reading_a_File.htm">Reading an Input File</a>
+                        </li>
+                        <li><a href="#" class="selected">Transforming Data</a>
+                        </li>
+                        <li><a href="Writing_Output.htm">Running the Job</a>
+                        </li>
+                        <li><a href="Combining_Columns.htm">Combining Columns</a>
+                        </li>
+                        <li><a href="Duplicating_a_Job.htm">Duplicating a Job</a>
+                        </li>
+                        <li><a href="Challenges.htm">Challenges</a>
+                        </li>
+                        <li><a href="Solutions.htm">Solutions</a>
+                        </li>
+                        <li><a href="Wrap-Up.htm">Wrap-Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Working with Files</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="selected">Transforming Data</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Transforming Data</h1>
+                    <h2>Overview</h2>
+                    <div class="youAreGoingTo">
+                        <p>Your 
+        <span class="ui-control">UpperCase</span> Job contains a component to provide the input data, now you need to add a component to perform the transformation: converting any lower-case state abbreviation to upper case.</p>
+                    </div>
+                    <h2>Add Component</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">CHOOSE THE COMPONENT <span class="ui-control">tMap</span></p>
+                            <p>Enter 
+                <span class="ui-control">tMap</span> into the text box near the top of the 
+                <span class="ui-control">Palette</span> and then either click the magnifying 
+                glass button or press Enter:</p>
+                            <p>
+                                <img src="../../Resources/Images/IT_UC_001_tmappalette.png" alt="" />
+                            </p>
+                            <p>Note: You can use the 
+                <span class="ui-control">Palette</span> search feature to locate a component quickly, even if you only remember part of the component name.</p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">PLACE THE COMPONENT AND LINK THE <span class="ui-control">Customers File</span> COMPONENT TO IT</p>
+                            <p>Place the 
+               <span class="ui-control">tMap</span> component on the design workspace to the right of the existing component and Right-click the 
+                <span class="ui-control">Customers File</span> component, click 
+                <span class="ui-control">Row</span> followed by 
+               <span class="ui-control">Main</span>, and then click the 
+                <span class="ui-control">tMap</span> component. This creates a connection between the two components:</p>
+                            <p>
+                                <img src="../../Resources/Images/IT_UC_002_tmaprow.png" alt="" />
+                            </p>
+                            <p> The 
+                <span class="ui-control">tMap</span> component maps data from input to output, with the capability to perform a variety of transformations on the data. You will find yourself using it as the center piece of almost all of your Talend Data Integration Jobs.</p>
+                            <p>Note the warning displayed for the 
+        <span class="ui-control">tMap</span> component. The 
+        <span class="ui-control">tMap</span> component transforms data, so it needs an output destination.</p>
+                        </li>
+                    </ol>
+                    <h2>Add Output Component</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">CHOOSE AN OUTPUT COMPONENT</p>
+                            <p>Right-click the <span class="ui-control">tMap</span> component, hold the right-click on and move the mouse outside the component.</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/addComponent.png" alt="" />
+                            </p>
+                            <p>A list of components are then suggested. </p>
+                            <p> Type the first characters from
+                <span class="user-input-files-variables">tFileOutputDelimited</span> in the 
+                search box and then double-click the component to add it to your Job:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/addComponent2.png" alt="" />
+                            </p>
+                            <p> As its name implies, a 
+                <span class="ui-control">tFileOutputDelimited</span> component writes rows to a file in delimited format.</p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">NAME THE COMPONENT</p>
+                            <p>This window asks you to supply a name for the output connection. Enter                 <i>CappedOut</i> (no spaces allowed) into the text box and then click                <span class="ui-control">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/addComponent3.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">INVESTIGATE THE SIGNALLED ERROR </p>
+                            <p>The new output connection is a 
+                <span class="ui-control">Main</span> row, just like the input connection.</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/job_created.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Either hover over the <span class="ui-control">tMap </span>error or view the <span class="ui-window-title">Problems </span>window to see what the error is. There is an issue with the output schema, which will get resolved next.</p>
+                        </li>
+                    </ol>
+                    <h2>Map Rows</h2>
+                    <p data-mc-conditions="vModifs.vBoxAdditions">You need to define the output schema in <span class="ui-control">tMap</span> to define the output rows and the data transformations to perform.</p>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE <span class="ui-control">tMap</span> MAPPING&#160;EDITOR</p>
+                            <p>Double-click the 
+                <span class="ui-control">tMap</span> component to open the configuration window :</p>
+                            <p>
+                                <img src="../../Resources/Images/image331_450x558.png" alt="" style="border: none;width: 450;height: 558;" border="0" />
+                            </p>
+                            <p>Because the 
+              <span class="ui-control">tMap</span> component provides so much functionality, this window has many elements. Notice the table on the left, labeled 
+                <span class="ui-control">row1</span>, and the table on the right labeled 
+                <span class="ui-control">CappedOut</span>. Those tables represent the schema of the input and output connections, with names that match the rows. The schema for 
+                <span class="ui-control">row1</span> is copied from the input component and should look familiar. The schema for the new row 
+                <span class="ui-control">CappedOut</span> is not defined yet.</p>
+                            <p>The goal of this Job is to pass all the data from 
+                <span class="ui-control">row1</span> to 
+                <span class="ui-control">CappedOut</span>, simply capitalizing the state abbreviations.</p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">SELECT ALL THE INPUT ROWS</p>
+                            <p>In 
+                <span class="ui-control">row1</span>, click on the top row and then shift-click on the bottom row, to select all the rows.</p>
+                            <p>
+                                <img src="../../Resources/Images/image332_450x202.png" alt="" style="border: none;width: 450;height: 202;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">DRAG THE INPUT ROWS TO THE OUTPUT COMPONENT BOX <span class="ui-control">CappedOut</span>:</p>
+                            <p>Hold the Shift key and then drag all the rows to 
+                <span class="ui-control">CappedOut</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/image333.PNG" alt="" style="border: none;" width="416" height="190" border="0" />
+                            </p>
+                            <p> First notice the arrows indicating the mapping of columns from one schema to the other. Next, in the 
+                <span class="ui-control">CappedOut</span> table, note the 
+                <span class="ui-control">Expression</span>, which defines the data content, and then the column names. At this point, the data and column names are an exact match to those in 
+                <span class="ui-control">row1</span> (the expression 
+                <span class="ui-control">row1.&lt;name&gt;</span> specifies the data in the name column of 
+                <span class="ui-control">row1</span>).</p>
+                        </li>
+                    </ol>
+                    <h2>Build Expression</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">SELECT THE OUTPUT YOU WISH TO MODIFY</p>
+                            <p>Because you want to modify the data in the 
+                <span class="ui-control">State</span> column, click 
+                <span class="ui-control">row1.State</span> in 
+the               <span class="ui-control">CappedOut</span> output table, and then click the button marked with an ellipsis                 <span class="ui-control">[...]</span> that appears.</p>
+                            <p>
+                                <img src="../../Resources/Images/image335.PNG" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">LOCATE THE FUNCTION <span class="ui-control">UPCASE</span>:</p>
+                            <p>In the 
+                <span class="ui-control">Categories</span> list, click 
+                <span class="ui-control">StringHandling</span>, and then scroll down in the 
+                <span class="ui-control">Functions</span> list until you find and click 
+                <span class="ui-control">UPCASE</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/uppercase.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Note: The 
+                <span class="ui-control">Expression Builder</span> allows you to construct expressions with Java expression syntax. You can just enter the expression as text yourself, but if you are not completely familiar with the syntax, this tool makes the process easier. At this point, the expression is still 
+                <span class="ui-control">row1.State</span>. This area of the 
+                <span class="ui-control">Expression Builder</span> provides organized access to a variety of functions. Note the documentation provided for each function in the 
+                <span class="ui-control">Help</span> area.</p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">INSERT THE <span class="ui-control">UPCASE</span> SYNTAX INTO THE EXPRESSION</p>
+                            <p>Double-click 
+                <span class="ui-control">UPCASE</span> to insert that syntax into the expression at the insertion point (yours may be at the beginning of the expression rather than the end):</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/uppercase2.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Note that the expression is the category followed by a period and then the function name, with arguments enclosed in parentheses. This function converts the string within the parentheses to upper case. As a default example, the function contains the literal string "Hello". What you want to convert is not a literal string, but the contents of the 
+                <span class="ui-control">State</span> column.</p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">REPLACE THE DEFAULT <i>"Hello"</i> WITH <i>row1.State</i></p>
+                            <p>Move 
+            <i>row1.State</i> in the expression so that it replaces <i>"Hello"</i> and click 
+            <span class="ui-control">Ok</span>: </p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/uppercase3.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p><span class="ui-control">Note:</span> Now the expression acts on the correct argument.
+            Make sure that you deleted the quotes inside the parenthesis!</p>
+                        </li>
+                        <li value="5">
+                            <p>The new expression appears in the 
+                <span class="ui-control">CappedOut</span> table:</p>
+                            <p>
+                                <img src="../../Resources/Images/ExprUpCaseDone.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <p>Now the output column <span class="ui-control">State</span> will contain the string from the column of the same name in the <span class="ui-control">row1</span> table, converted to upper case.
+            </p>
+                    </ol>
+                    <h2>Save</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">CONFIGURATION IS FINISHED. CLICK OK TO APPLY THE CHANGES YOU HAVE MADE.</p>
+                            <p>You are finished with your 
+                <span class="ui-control">tMap</span> component configuration, so click 
+                <span class="ui-control">Ok</span>. A prompt appears:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/propagate.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>You have made changes to the schema of the output connection, and this prompt asks if you want those changes to be reflected in the schema of the component on the other end of the connection.</p>
+                        </li>
+                        <li value="2">
+                            <p>Click                <span class="ui-control">Yes</span>.</p>
+                        </li>
+                    </ol>
+                    <h2>Configure Output</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE COMPONENT VIEW OF THE OUTPUT COMPONENT</p>
+                            <p>Double-click the output component 
+                <span class="ui-control">tFileOutputDelimited</span> to open the 
+                <span class="ui-control">Component</span> view.</p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">SPECIFY THE OUTPUT FILE, FIELD SEPARATOR AND HEADER OPTION</p>
+                            <p>Change the name of the output file to 
+                <span class="ui-control">C:/StudentFiles/CappedOut.csv</span>, change the 
+                <span class="ui-control">Field Separator</span> to a comma, and then select the 
+                <span class="ui-control">Include Header</span> check box to include the column names as the first row of the output file :</p>
+                            <p>
+                                <img src="../../Resources/Images/image339.PNG" alt="" style="border: none;" width="374" height="359" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE SCHEMA TO CHECK IT</p>
+                            <p>Click the 
+                <span class="ui-control">Edit schema [...]</span>(ellipsis) button:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/outputSchema.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Note that the schema of the component matches the schema you specified in the 
+                <span class="ui-control">tMap</span> component, which matches the schema of the input connection (
+                <span class="ui-control">CappedOut</span>).</p>
+                            <p>There is no need to make any changes here, so click 
+                <span class="ui-control">OK</span>.</p>
+                        </li>
+                    </ol>
+                    <h2>Next</h2>
+                    <p>Your Job is complete and you are now 
+        <a href="Writing_Output.htm">ready to run it</a>.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

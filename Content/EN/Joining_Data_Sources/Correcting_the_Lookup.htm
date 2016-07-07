@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Joining Data Sources">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Correcting the Lookup</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Joining Data Sources</a>
+                    <ul class="sub-menu">
+                        <li><a href="Overview.htm">Overview</a>
+                        </li>
+                        <li><a href="CreatingRepositoryItem.htm">Creating Metadata</a>
+                        </li>
+                        <li><a href="Joining_Data_Sources.htm">Joining Data Sources</a>
+                        </li>
+                        <li><a href="Capturing_Rejects.htm">Capturing Rejects</a>
+                        </li>
+                        <li><a href="#" class="selected">Correcting the Lookup</a>
+                        </li>
+                        <li><a href="Wrap-Up.htm">Wrap-Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Joining Data Sources</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="selected">Correcting the Lookup</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Correcting the Lookup</h1>
+                    <h2>Overview</h2>
+                    <div class="youAreGoingTo">
+                        <p>Now that you know the lookup is failing because of lower case string values, you can correct the configuration.</p>
+                        <p data-mc-conditions="vModifs.vBoxAdditions">You need to convert the state codes to uppercase <i>before</i> comparison in the lookup table.</p>
+                    </div>
+                    <h2>Configure tMap</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE EXPRESSION BUILDER FOR <span class="ui-control">row1.State</span> IN THE LOOKUP TABLE</p>
+                            <p>Double-click the 
+                <span class="ui-control">tMap</span> component. Remember that 
+                <span class="ui-control">row2</span> is the lookup table for the join. In the 
+                <span class="ui-control">row2</span> table on the left, click 
+                <span class="ui-control">row1.State</span> and then click the button marked with an ellipsis 
+                <span class="ui-control">[...]</span> to open the 
+                <span class="ui-control">Expression Builder</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_correct_lookup.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">ENTER THE EXPRESSION TO CONVERT TO UPPERCASE</p>
+                            <p>In a previous exercise, you used the 
+                <span class="ui-control">Expression Builder</span> to convert lowercase strings to uppercase. Now you need to do the same thing for this column. But let's do it differently. After the last character of <span class="user-input-files-variables">row1.State</span> type directly <span class="user-input-files-variables">.to</span> and you will get the options the editor's contextual auto-completion has to propose.</p>
+                            <p>Double-click <span class="user-input-files-variables">toUppercase():&#160;String - String</span>in&#160;order to select it.</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_expressionbulid.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">CLICK <span class="ui-control">Ok</span></p>
+                            <p>Click 
+                <span class="ui-control">Ok</span> to close the 
+                <span class="ui-control">Expression Builder</span>. Now the value of the 
+                <span class="ui-control">State</span> column is converted to upper case before being compared to the lookup table, so the join should work properly:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_expression_final.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">CLOSE THE <span class="ui-control">tMap</span> COMPONENT</p>
+                            <p>Click 
+                <span class="ui-control">Ok</span> to close the 
+                <span class="ui-control">tMap</span> component.</p>
+                        </li>
+                    </ol>
+                    <h2>Run the Job</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">RUN THE JOB</p>
+                            <p>Run the Job . Note that the <span class="ui-control">tLogRow</span> component processed 0 rows this time, as there were no rejects found. The data flow to the output flow is back up to 100 rows processed again.</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_capture_final.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">USE <span class="ui-control">Data Preview</span> TO CHECK THE OUTPUT</p>
+                            <p>Examine the output file content using the <span class="ui-control">Data Preview</span> option in the Studio or <span class="ui-control">Notepad++</span> to make sure that all rows include the state name:
+                </p>
+                            <p>
+                                <img src="../../Resources/Images/Capture25.png" alt="" />
+                                <br />
+                            </p>
+                            <p>At this point, there is no longer a need to log the rejects, so you can clean up the Job by removing the <span class="ui-control">tLogRow </span>component. </p>
+                        </li>
+                    </ol>
+                    <h2>Clean up the Job </h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">REMOVE THE UNNEEDED COMPONENT</p>
+                            <p>Right-click the 
+                <span class="ui-control">tLogRow</span> component in the design workspace and then select  <b>Delete</b> to remove the component:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_deletetlogrow.png" alt="" />
+                            </p>
+                            <p>Note you can also delete a component by using the <span class="ui-control">Delete </span>key on your keyboard.</p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">REMOVE THE UNNEEDED REJECT TABLE IN <span class="bold">tMap</span></p>
+                            <p>Double-click the  
+        <span class="bold">tMap</span> component to open the Mapping Editor. <br />Click the 
+        <span class="bold">JoinFailures</span> table on the right and then click the 
+        <span class="bold">Remove selected output table</span> button, marked with an X (near the top of the main window).</p>
+                            <p>
+                                <img src="../../Resources/Images/removeJoinFailuresOutputTable.png" alt="" />
+                            </p>
+                            <p>Answer <span class="ui-control">OK</span> when asked if you are sure you want to remove the <span class="ui-control">JoinFailures</span> table:</p>
+                            <p>
+                                <img src="../../Resources/Images/confirmRemoveOutputTable.png" alt="" />
+                            </p>
+                            <p>Click <span class="ui-control">Ok </span>to close the Mapping Editor. </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">CLEAR THE CONSOLE AND THE DESIGN WORKSPACE STATISTICS</p>
+                            <p>Click 
+                <span class="ui-control">Clear</span> in the 
+                <span class="ui-control">Run</span> view to remove the statistics display from the design workspace:</p>
+                            <p>
+                                <img src="../../Resources/Images/LookupStateFinalClean.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">SAVE</p>
+                            <p>Save the Job.</p>
+                        </li>
+                    </ol>
+                    <h2>Next</h2>
+                    <p>You have completed this Job, you are now ready to read the <a href="Wrap-Up.htm">Wrap-Up</a>.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

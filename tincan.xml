@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tincan xmlns="http://projecttincan.com/tincan.xsd">
+    <activities>
+        <activity id="http://talend.talentlms.com/WorkingWithFilesnameasgiveninxmlfile/thismustbeuniqueIRI" type="http://adlnet.gov/expapi/activities/course">
+            <name>DI-101 6.0 ed.2 - Working with Files</name>
+            <description lang="en-US">DI-101 6.0 ed.2 - Working with Files</description>
+            <launch lang="en-US">Content/EN/Working_With_Files/Overview.htm</launch>
+        </activity>
+    </activities>
+</tincan>

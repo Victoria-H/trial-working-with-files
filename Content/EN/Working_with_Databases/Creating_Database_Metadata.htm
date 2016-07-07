@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Working with Databases">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Creating Database Metadata</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Working with Databases</a>
+                    <ul class="sub-menu">
+                        <li><a href="Overview.htm">Overview</a>
+                        </li>
+                        <li><a href="#" class="selected">Creating Database Metadata</a>
+                        </li>
+                        <li><a href="Creating_a_Database_Table.htm">Creating the Customer Table</a>
+                        </li>
+                        <li><a href="Creating_Second_Table.htm">Creating the Product Table</a>
+                        </li>
+                        <li><a href="Setting_Up_Shop_Tables.htm">Setting Up Sales Table</a>
+                        </li>
+                        <li><a href="Reading_from_a_Database.htm">Joining the Data</a>
+                        </li>
+                        <li><a href="Performing_Calculations.htm">Finalizing the Job</a>
+                        </li>
+                        <li><a href="Wrap-Up.htm">Wrap-Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Working with Databases</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="selected">Creating Database Metadata</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Creating Database Metadata</h1>
+                    <h2>Overview</h2>
+                    <div class="youAreGoingTo">
+                        <p>Now you are ready to create metadata regarding the connection to your local database server and the specific database. Creating metadata with this information makes it easier to reference it in many components in several Jobs.</p>
+                    </div>
+                    <h2>Create Database Connection Metadata</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">CREATE  DATABASE METADATA IN THE REPOSITORY</p>
+                            <p>In the 
+                <span class="ui-control">Repository</span>, under 
+                <span class="ui-control">Metadata</span>, right-click 
+                <span class="ui-control">Db Connections</span> and then click 
+                <span class="ui-control">Create connection</span> :</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createDatabaseMetadata_contextualMenu.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p><span class="ui-control">Note:</span> Because many components in your project need to connect to the same database, storing the connection information in the 
+                <span class="ui-control">Repository</span> saves you from having to enter the information repeatedly for each component.</p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">GIVE THE METADATA A NAME, PURPOSE AND DESCRIPTION</p>
+                            <p>Enter 
+                <span class="ui-control">LocalMySQL</span> into the 
+                <span class="ui-control">Name</span> box, provide a
+                <span class="ui-control">Purpose</span> and 
+                a <span class="ui-control">Description</span>. Then click 
+                <span class="ui-control">Next</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createDatabaseMetadata_newConnectionStep1_384x321.png" alt="" style="border: none;width: 384;height: 321;" border="0" />
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Configure Database Metadata</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">ENTER THE DATABASE CONNECTION DETAILS</p>
+                            <p>Select 
+                <span class="ui-control">MySQL</span> out of the drop-down list for the in the 
+                <span class="ui-control">DB Type</span>. Then configure the connection as follows :<br /><span class="ui-control">Login</span>: root<br /><span class="ui-control">Password</span>: root<br /><span class="ui-control">Server</span>: localhost<br /><span class="ui-control">DataBase</span>: training<br /></p>
+                            <p>Then click  
+                <span class="ui-control">Check</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createDatabaseMetadata_databaseConfig_343x404.png" alt="" style="border: none;width: 343;height: 404;" border="0" />
+                            </p>
+                            <p><span class="ui-control">Note:</span> this configuration information is specific to the training environment, where a MySQL database is set up for you. In your own environment, you would, of course, provide the connection information appropriate for your configuration.</p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">CHECK CONNECTION IS SUCCESSFUL</p>
+                            <p>The 
+                <span class="ui-control">Check</span> should be successful and click                 <span class="ui-control">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createDatabaseMetadata_checkConnection_412x117.png" alt="" style="border: none;width: 412;height: 117;" border="0" />
+                            </p>
+                            <p>If the connection is not successful, correct the connection information and then try again.</p>
+                        </li>
+                        <p><span class="ui-control">Note:</span> The first time you configure a connection in your own environment, you may be prompted to download and install an external jar file. If this happens to you, install the file and continue. All such required jar files are already installed in the training environment.
+            </p>
+                    </ol>
+                    <h2>Export as context</h2>
+                    <p>As you did for the <b>RetailCustomer</b> metadata, you will create context variables with all the information about your connection to MySQL database.
+        </p>
+                    <ol>
+                        <li value="1"><![CDATA[                ]]><p>EXPORT THE DATABASE CONNECTION INFORMATION AS A CONTEXT</p><p>Click <span class="ui-control">Export as Context</span> and then click <b>Next</b>:
+</p><p><img src="../../Resources/Images/Database_createMetadata_createContextGroup_346x285.png" alt="" style="border: none;width: 346;height: 285;" border="0" /></p></li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">CREATE A NEW CONTEXT GROUP </p>
+                            <p>In the <span class="ui-control">Create / Reuse a context group</span> wizard, click <span class="ui-control">Next</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createDatabaseMetadata_exportAsContextConfig_349x321.png" alt="" style="border: none;width: 349;height: 321;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">CHECK THE CONTEXT VARIABLES THAT ARE TO BE CREATED AND FINISH</p>
+                            <p>In the Variables tab, you will see the list of context variables created and in the Value as Table tab, you will see the default value of each context variable. <br />Then click 
+                <span class="ui-control">Finish</span>:</p>
+                            <p><a href="../../Resources/Images/image228.PNG"><img src="../../Resources/Images/Database_createDatabaseMetadata_exportAsContextMetadata_340x256.png" alt="" style="border: none;width: 340;height: 256;" border="0" /></a>
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">FINALISE THE DATABASE CONNECTION METADATA </p>
+                            <p>Going back to the Database connection window, notice  that instead of the values you typed in each box, you will have context variables. <br />Then click <b>Finish</b>:
+                <br /><img src="../../Resources/Images/Database_createDatabaseMetadata_databaseConfigWithContext_434x418.png" alt="" style="border: none;width: 434;height: 418;" border="0" /><br /></p>
+                        </li>
+                    </ol>
+                    <h2>Next</h2>
+                    <p>Now that connection information for your local MySQL database is setup you can <a href="Creating_a_Database_Table.htm">create the first database table.</a></p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Filtering Data">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Using_tMap_Multiple_Filters</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Filtering Data</a>
+                    <ul class="sub-menu">
+                        <li><a href="Overview.htm">Overview</a>
+                        </li>
+                        <li><a href="Filter_Output_Data.htm">Filter Output Data</a>
+                        </li>
+                        <li><a href="#" class="selected">Using Multiple Filters</a>
+                        </li>
+                        <li><a href="Wrap-Up.htm">Wrap-Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Filtering Data</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="selected">Using Multiple Filters</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Using tMap for Multiple Filters</h1>
+                    <h2>Overview</h2>
+                    <div class="youAreGoingTo">
+                        <p>You will now learn how to filter on several states in one 
+        <span class="ui-control">tMap</span> component, following best practices. You will create 3 output files each containing a different state.</p>
+                    </div>
+                    <h2>Duplicate Job</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">DUPLICATE THE <span class="ui-control">Filter_States</span> JOB</p>
+                            <p>Right-click on the Job 
+                <span class="ui-control">Filter_States</span> and click 
+                <span class="ui-control">Duplicate</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_Duplicate_tFilterStates.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">GIVE THE JOB A NAME</p>
+                            <p>Name the new Job 
+                <span class="ui-control">Filter_States_tMap</span> and click
+              <span class="ui-control">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_tFilterStates_tMap.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE JOB</p>
+                            <p>Double-click the newly created job to open it. </p>
+                        </li>
+                    </ol>
+                    <h2>Edit Output</h2>
+                    <ol start="1">
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">COPY THE EXISTING OUTPUT COMPONENT</p>
+                            <p>Enter a new output component to the Job. Right-click on 
+                <span class="ui-control">tFileOutputDelimited</span> and click 
+                <span class="ui-control">Copy</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_copyOutput01.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">PASTE IT INTO THE DESIGN WORKSPACE</p>
+                            <p>Right-click below the output component in the canvas and click 
+                <span class="ui-control">Paste</span> to place the new 
+                <span class="ui-control">tFileOutputDelimited</span> component:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_PasteOutput01.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">PASTE AGAIN TO CREATE 3 OUTPUT COMPONENTS </p>
+                            <p>The component is placed below the existing <span class="ui-control">tFileOutputDelimited </span>component. <br />Below the second <span class="ui-control">tFileOutputDelimited </span>component right-click and select <span class="ui-control">Paste </span>again to drop the third 
+                <span class="ui-control">tFileOutputDelimited</span> component to your Job:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_PasteOutput02.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p>You have placed three outputs now in your Job:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_three_outputs.png" class="vAlwaysOpen" alt="" />
+                            </p>
+                        </li>
+                        <li value="5">
+                            <p data-mc-conditions="vModifs.vTitles">CHANGE THE OUTPUT FILE PATH FOR THE PASTED COMPONENT</p>
+                            <p>Remember the last setting in <span class="ui-control">tMap</span> was a filter, filtering entries for <span class="ui-control">CA</span> (California) and writing the output to a file. Now you will  edit the settings for the first output component and change the output file name. Double-click 
+                <span class="ui-control">tFileOutputDelimited_1</span> and change the <span class="ui-control">File Name</span> to 
+                <span class="user-input-files-variables">"C:/StudentFiles/CA_Out.csv"</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_CA_Out.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="6">
+                            <p data-mc-conditions="vModifs.vTitles">LABEL THE COMPONENT</p>
+                            <p>Click 
+                <span class="ui-control">View</span> to change the output name to 
+                <span class="ui-control">CA</span>. Enter 
+                <span class="ui-control">CA</span> into the field 
+                <span class="ui-control">Label format</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_CA_Outputname.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="7">
+                            <p data-mc-conditions="vModifs.vTitles">CHANGE THE OUTPUT FILE PATH FOR THE SECOND PASTED COMPONENT</p>
+                            <p>Now double-click the second 
+                <span class="ui-control">tFileOutputDelimited</span> component, change the file name to 
+                <span class="ui-control">NY_Out.csv</span> and enter 
+                <span class="ui-control">NY</span> for the 
+                <span class="ui-control">Label format</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_NY_Outputname.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="8">
+                            <p data-mc-conditions="vModifs.vTitles">CHANGE THE LABEL</p>
+                            <p>Enter the changes for the third <span class="ui-control">tFileOutputDelimited</span> component to 
+                <span class="ui-control">AK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_threeoutputs.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="9">
+                            <p data-mc-conditions="vModifs.vTitles">ADD A NEW OUTPUT ROW FROM  THE <span class="ui-control">tMap</span> COMPONENT </p>
+                            <p>Right-click the 
+                <span class="ui-control">tMap</span> component and click 
+                <span class="ui-control">Row</span> then 
+                <span class="ui-control">*New Output* (Main)</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_rightclick_tMap01.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="10">
+                            <p data-mc-conditions="vModifs.vTitles">CONNECT THE TO THE <b>NY</b> OUTPUT COMPONENT AND NAME THE OUTPUT ROW</p>
+                            <p>Connect it to the <b>NY</b> component, name it 
+                <span class="ui-control">NY</span> and then click 
+                <span class="ui-control">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_connectNY.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="11">
+                            <p data-mc-conditions="vModifs.vTitles">GET THE SCHEMA OF THE <b>NY</b> OUTPUT COMPONENT</p>
+                            <p>Click <span class="ui-control">Yes </span>when prompted  
+                <span class="ui-control">Do you want to get the schema of the target component?</span>:F</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_confirmschema.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="12">
+                            <p data-mc-conditions="vModifs.vTitles">CONNECT <b>tMap</b> TO THE <b>AK</b> OUTPUT COMPONENT IN THE SAME WAY</p>
+                            <p>Repeat these steps for the last output component 
+                <span class="ui-control">AK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_finaloutput.png" alt="" />
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Edit tMap</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE <span class="ui-control">tMap</span> MAPPING EDITOR</p>
+                            <p>Double-click the 
+            <span class="ui-control">tMap</span> component to open the Mapping Editor.</p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">USE <span class="ui-control">Auto map!</span> TO MAP THE INPUT TO THE NEW OUTPUT</p>
+                            <p>Click the 
+            <span class="ui-control">Auto map!</span> button on the top right: </p>
+                            <p>
+                                <img src="../../Resources/Images/FD_Automapbutton.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">The system will map the elements as follows: 
+            <p><img src="../../Resources/Images/FD_autoMap.png" class="vAlwaysOpen" alt="" /></p><p data-mc-conditions="vModifs.vBoxAdditions">The expression combining first and last names is missing in the new output as is the  UPCASE expression. </p></li>
+                        <li value="4"><![CDATA[
+            ]]><p data-mc-conditions="vModifs.vTitles">COPY THE NAME EXPRESSION FROM THE <b>CappedOut</b> TABLE</p><p>You can copy and paste Expressions. Right-click on the expression for the field 
+           <span class="ui-control">Name</span> in the <b>CappedOut</b> table and click 
+            <span class="ui-control">Copy</span>: </p><p><img src="../../Resources/Images/FD_CopyExpressions01.png" alt="" /></p></li>
+                        <li value="5"><![CDATA[
+            ]]><p data-mc-conditions="vModifs.vTitles">PASTE THE EXPRESSION IN THE <b>NY</b> TABLE</p><p>Right-click the expression for the field 
+            <span class="ui-control">Name</span> in the output 
+            <span class="ui-control">NY</span> and click 
+            <span class="ui-control">Paste</span>: </p><p><img src="../../Resources/Images/FD_PasteExpression01.png" alt="" /></p></li>
+                        <li value="6"><![CDATA[
+            ]]><p data-mc-conditions="vModifs.vTitles">PASTE IN THE <b>AK</b> OUTPUT TABLE</p><p>Paste it also in the <span class="ui-control">Name</span> column for the output 
+            <span class="ui-control">AK</span>: </p><p><img src="../../Resources/Images/FD_PasteExpression02.png" alt="" /></p></li>
+                        <li value="7"><![CDATA[            ]]><p>REPEAT THIS FOR THE STATE EXPRESSION
+</p><p>Copy and paste the expression for the field 
+            <span class="ui-control">State</span> also: </p><p><img src="../../Resources/Images/FD_CopyExpressions03.png" alt="" /></p></li>
+                        <li value="8">
+                            <p>Your output tables should look as follows:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_result_CopyPaste.png" class="vAlwaysOpen" alt="" />
+                            </p>
+                        </li>
+                        <li value="9">
+                            <p data-mc-conditions="vModifs.vTitles">COPY THE FILTER EXPRESSION FROM THE FIRST OUTPUT TABLE</p>
+                            <p>If it is not already opened, click the 
+                <span class="ui-control">Activate / unactivate the expression filter</span> Icon  on the top right of the output schema <b>CappedOut</b> and copy the expression  
+                <i>"CA".equals(row2.StateCode):</i></p>
+                            <p>
+                                <img src="../../Resources/Images/Capture3.jpg" alt="" />
+                            </p>
+                        </li>
+                        <li value="10">
+                            <p data-mc-conditions="vModifs.vTitles">PASTE THE&#160;EXPRESSIO IN THE <b>NY</b> TABLE AND MODIFY IT</p>
+                            <p>Click the 
+                <span class="ui-control">Activate / unactivate the expression filter</span> Icon 
+           on the top right of the output schema 
+                <span class="ui-control">NY</span> and paste the expression to it. Then change it to  
+                <i>"NY".equals(row2.StateCode)</i> :</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_NYexpressions.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="11">
+                            <p data-mc-conditions="vModifs.vTitles">REPEAT THIS FOR THE <span class="ui-control">AK</span>: OUTPUT</p>
+                            <p>Apply the same changes for  the output 
+                <span class="ui-control">AK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_AKexpression02.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="12">
+                            <p data-mc-conditions="vModifs.vTitles">SAVE YOUR CHANGES AND SAVE THE JOB</p>
+                            <p>Click <span class="ui-control">OK </span>to save your <span class="ui-control">tMap </span>editor changes, and then save the Job.</p>
+                        </li>
+                    </ol>
+                    <h2>Run Job</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">RUN THE JOB</p>
+                            <p><span class="ui-control">Run</span> the Job and notice how the results are written to different output files based on the filters put in place:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_RunfinalJob.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">CHECK THE CSV OUTPUT FILES</p>
+                            <p>Navigate to and display the output files in 
+                <span class="ui-control">C:/StudentFiles/</span> to verify the output. The <span class="ui-control">NY_Out.csv</span> file is displayed here:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_AK_out.png" alt="" />
+                            </p>
+                        </li>
+                    </ol>
+                    <p>  <![CDATA[ ]]></p>
+                    <h2>Next</h2>
+                    <p>You have now completed this lesson. It's now time to <a href="Wrap-Up.htm">Wrap-Up</a>.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

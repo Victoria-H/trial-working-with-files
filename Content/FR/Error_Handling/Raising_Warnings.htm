@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Handling Errors</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Génération d'un avertissement</h1>
+                    <h2>Vue d'ensemble</h2>
+                    <p>Au cours de cet exercice, vous allez générer un avertissement à chaque fois que le fichier de sortie contient moins de lignes que le fichier d'entrée. </p>
+                    <h2>Limitation de la sortie</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Résolvez le problème précédemment introduit dans le
+              <span class="ui-control">Customers File</span> en modifiant la valeur du champ
+                <span class="ui-control">File Name</span> en 
+                <span class="user-input-files-variables">"C:/StudentFiles/Custs.csv"</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson6/CorrectCustomersFile.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Exécutez le Job pour vous assurer qu'il s'exécute comme attendu. <br />(100 lignes doivent être écrites dans le fichier de sortie).</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_runJobDie.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Double-cliquez sur le 
+                <span class="ui-control">tMap</span> et cliquez sur le bouton 
+                <span class="ui-control">Activate filter expression</span> de la table 
+                <span class="ui-control">CappedOut</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/PC_ActivateExpressionFilter.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p>Saisissez
+                <span class="user-input-files-variables">"AK".equals(row2.StateCode)</span> dans le champ de texte et cliquez sur 
+                <span class="ui-control">Ok</span> pour sauvegarder les modifications et fermer l'éditeur&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_FilterAK.png" alt="" />
+                            </p>
+                            <p>Cette expression limite la sortie aux lignes ayant la valeur <span class="ui-control">StateCod</span> définie à <span class="ui-control">AK</span> (Alaska). Vous savez que certaines lignes contiennent cette valeur, mais pas toutes. Cela introduit une limitation artificielle dans le Job. Rappelez-vous que vous pouvez déposez la ligne <span class="ui-control">Row</span> de la table d'entrée et utiliser l'<span class="ui-control">Expression Builder</span> pour vous aider à construire l'expression.</p>
+                        </li>
+                    </ol>
+                    <ol start="4">
+                        <li value="4">
+                            <p>Exécutez le Job et examinez les résultats&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_result_AK.png" alt="" />
+                            </p>
+                            <p>La sortie du <b>tMap</b> contient moins de lignes (21) que le flux d'entrée (100), ce qui n'est pas souhaité. Au cours des étapes suivantes, vous allez configurer le Job pour afficher un message d'avertissement si le fichier de sortie contient moins de 100 lignes.</p>
+                        </li>
+                    </ol>
+                    <h2>Génération d'un avertissement</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Ajoutez un composant <span class="ui-control">tWarn</span> après le <span class="ui-control">tFileOutputDelimited</span>. </p>
+                            <p>Le composant 
+                <span class="ui-control">tWarn</span> est utilisé ici pour afficher un message d'avertissement.</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_tWarnAdded.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Cliquez-droit sur le 
+                <span class="ui-control">tFileOutputDelimited</span>, sélectionnez 
+                <span class="ui-control">Trigger</span> &gt;<![CDATA[ 
+                ]]><span class="ui-control">Run if</span> et cliquez sur le 
+                <span class="ui-control">tWarn</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_tWarnConnected.png" alt="" />
+                            </p>
+                            <p> Cela permet de spécifier que le 
+                <span class="ui-control">tWarn</span> s'exécute uniquement lorsqu'une condition est remplie.<br /></p>
+                        </li>
+                        <li value="3">
+                            <p>Le Job doit ressembler à ceci&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_tWarnJob.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="4">Cliquez sur le lien 
+            <span class="ui-control">If</span> entre les composants dans l'espace de modélisation graphique pour ouvrir sa vue 
+            <span class="ui-control">Component</span>. <br />Dans le champ <span class="ui-control">Condition</span>, appuyez sur les touches <span class="ui-control">Ctrl+Espace</span>.<br />Faites défiler la liste jusqu'à trouver 
+            <span class="ui-control">tFileOutputDelimited_1.NB_LINE</span> et cliquez dessus&#160;:
+            <p><img src="../../Resources/Images/PD_tFileoutputdelimieted_If.png" alt="" /></p></li>
+                        <li value="5">Lisez l'explication qui s'affiche. Cela représente le nombre de lignes écrites dans le fichier de sortie par le composant spécifié&#160;:
+            <p><img src="../../Resources/Images/PD_IfDescription.png" alt="" /></p></li>
+                        <li value="6">
+                            <p>Double-cliquez pour insérer la variable dans le champ <span class="ui-control">Condition</span>, puis saisissez 
+                <span class="ui-control" style="font-style: italic; font-weight: normal;">&lt;100</span> à la fin de la chaîne de caractères&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_Less100_If.png" alt="" />
+                            </p>
+                            <p>La condition doit ressembler à ceci&#160;: <i>((Integer)globalMap.get("tFileOutputDelimited_1_NB_LINE"))&lt;100</i>.</p>
+                            <p>Le composant 
+                <span class="ui-control">tWarn</span> va s'exécuter uniquement si le nombre de lignes écrites dans le fichier de sortie est inférieur à 100. </p>
+                        </li>
+                        <li value="7"> 
+Double-cliquez sur le 
+            <span class="ui-control">tWarn</span> pour ouvrir sa vue 
+            <span class="ui-control">Component</span>. Modifiez le texte dans le champ
+            <span class="ui-control">Warn message</span> en 
+            <span class="ui-control" style="font-style: italic; font-weight: normal;">"Less than 100 rows written"</span>&#160;: </li>
+                        <p>
+                            <img src="../../Resources/Images/Capture27.png" alt="" />
+                        </p>
+                        <li value="8">
+                            <p style="margin-left: 0px;font-style: normal;">Exécutez à nouveau le Job et vérifiez que l'avertissement est affiché dans la console&#160;:</p>
+                            <p style="margin-left: 0px; font-style: normal;">
+                                <img src="../../Resources/Images/PD_messageless100.png" alt="" />
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Étape suivante</h2>
+                    <p>Vous avez terminé cette leçon.&#160;Vous pouvez passer à la <a href="Wrap-Up.htm">Conclusion</a>.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

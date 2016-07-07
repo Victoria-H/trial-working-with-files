@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Create Metadata</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Create Metadata</h1>
+                    <h2>Overview</h2>
+                    <p>In this lab you will learn how to duplicate a Job, how to create and use the Metadata in the actual Job and how to reuse it in other Jobs.</p>
+                    <p>Duplicating a Job shows how easy it is to reuse an existing Job and create a new one based on it.</p>
+                    <p>You will create the Metadata first out of the duplicated Job. In the second part you will delete it and create the Metadata directly in the Repository using the Wizard without having a Job or component prepared.</p>
+                    <h2>Duplicate Job</h2>
+                    <ol>
+                        <li value="1">Right-click on 
+            <span class="bold">FirstJob 0.1</span> and click 
+            <span class="bold">Duplicate</span>: 
+            <p><img src="../../Resources/Images/CM_duplicateJob.png" alt="" /></p></li>
+                        <li value="2">
+                            <p>Enter 
+                <span class="bold">Create_Metadata</span>for the 
+                <span class="bold">Input new name</span>and click  
+                <span class="bold">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/CM_JobMetdata.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Double-click the new Job 
+                <span class="bold">Create_Metadata</span>and close the 
+                <span class="bold">FirstJob</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/CM_openJobMetadata.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p>Double-click the component 
+                <span class="bold">tFileInputDelimited</span>named 
+                <span class="bold">States</span>to open the <![CDATA[
+                ]]><span class="bold">Component</span>tab and click the disc 
+                <img src="../../Resources/Images/CM_IconDisc.png" alt="" />in order to save this schema in the 
+                <span class="bold">Metadata</span>to be reused further on:</p>
+                            <p>
+                                <img src="../../Resources/Images/CM_SaveMetadatadisc.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="5">
+                            <p>The Wizard for creating this type of Metadata will pop-up. Enter 
+                <span class="bold">States</span> for the 
+                <span class="bold">Name</span>and enter the following text for the 
+                <span class="bold">Purpose</span>and 
+                <span class="bold">Description.</span>Then click 
+                <span class="bold">Next</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/CM_Wizard_01.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="6">
+                            <p>The Wizard displays the next step and entries. 
+                <span class="bold">File</span>allows you to select another file for creating this Metadata. You will leave it to the 
+                <span class="bold">States.csv</span> file. The 
+                <span class="bold">File Viewer</span>shows a preview of the data. Change the <span class="ui-widget">Format</span> to <span class="ui-widget">WINDOWS</span> and then click 
+                <span class="bold">Next</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/CM_Wizard_02.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="7">Step 3 of the Wizard offers several options like 
+            <span class="bold">Field Separator, Header, Footer,</span>several 
+            <span class="bold">CSV</span>options and a 
+            <span class="bold">Preview</span>. Don't change the settings and click 
+            <span class="bold">Next</span>: 
+            <p><img src="../../Resources/Images/CM_Wizard_03.png" alt="" /></p></li>
+                        <li value="8">Enter  
+            <span class="bold">StateCodes</span> for the 
+            <span class="bold">Name</span>and enter text into the field 
+            <span class="bold">Comment</span>. Change the names for the columns in the table to  
+            <span class="bold">StateCode</span> and  
+            <span class="bold">StateName</span> , set the 
+            <span class="bold">Length</span>to  
+            <span class="bold">2</span> and  
+            <span class="bold">20</span> respectively and then click 
+            <span class="bold">Finish</span>: 
+            <p><img src="../../Resources/Images/CM_Wizard_04.png" alt="" /></p></li>
+                        <li value="9">In the Repository expand the folder Metadata and display the new 
+            <span class="bold">StateCodes</span>metadata: 
+            <p><img src="../../Resources/Images/CM_Repository_metadata.png" alt="" /></p><p class="italic">Note: It can now be reused in all your Jobs.</p></li>
+                    </ol>
+                    <p class="italic" />
+                    <h1>Delete and Create Metadata in the Repository</h1>
+                    <h2>Overview</h2>
+                    <p>You created the Metadata for the component 
+        <span class="bold">tFileInputDelimited</span>. You used the wizard for creating the Metadata. There are several other wizards available for standard formats.</p>
+                    <p>In case you cannot use the wizards you will create a Generic Schema by entering all the data manually.</p>
+                    <h2>Delete Metadata</h2>
+                    <ol>
+                        <li value="1">Expand the Metadata in the repository and right-click on 
+            <span class="bold">States0.1</span>then click 
+            <span class="bold">Delete</span>: 
+            <p><img src="../../Resources/Images/CM_metadataDelete.png" alt="" /></p></li>
+                        <li value="2">The Metadata will be created again using the same name. It is still in the Recycle bin and needs to be removed, else the system will retrieve the name. Right-click on 
+            <span class="bold">Recycle bin</span>and click 
+            <span class="bold">Empty recycle bin</span>and answer with 
+            <span class="bold">Yes</span>: 
+            <p><img src="../../Resources/Images/CM_Recyclebin.png" alt="" /></p></li>
+                        <li value="3">Right-click 
+            <span class="bold">File delimited</span>and click 
+            <span class="bold">Create file delimited</span>: 
+            <p><img src="../../Resources/Images/CM_metadatafiledelimited.png" alt="" /></p></li>
+                        <li value="4">The Wizard for creating this type of Metadata will pop-up and you enter " 
+            <span class="bold">StatesCodes</span>" for the 
+            <span class="bold">Name</span>and enter your text for the 
+            <span class="bold">Purpose</span>and 
+            <span class="bold">Description</span>: 
+            <p><img src="../../Resources/Images/CM_Wizard_01.png" alt="" /></p></li>
+                        <li value="5">The Wizard displays the next step and entries. 
+            <span class="bold">Server</span>indicates that you only have a local connection for this installation and do not use remote data. 
+            <span class="bold">File</span>allows you to select another file for creating this Metadata. You will leave it set to the " 
+            <span class="bold">States.csv</span>" file. The 
+            <span class="bold">File Viewer</span>shows a preview of the data. Click 
+            <span class="bold">Next</span>: 
+            <p><img src="../../Resources/Images/CM_Wizard_02.png" alt="" /></p></li>
+                        <li value="6">In step 3 of the Wizard set the 
+            <span class="bold">Field Separator</span>to 
+            <span class="bold">Comma</span>and leave 
+            <span class="bold">Header, Footer</span>empty. The 
+            <span class="bold">CSV</span>options will not be used and the 
+            <span class="bold">Preview</span>shows the correct data. Click 
+            <span class="bold">Next</span>: 
+            <p><img src="../../Resources/Images/CM_Wizard_03.png" alt="" /></p></li>
+                        <li value="7">Enter " 
+            <span class="bold">StatesCodes</span>" for the 
+            <span class="bold">Name</span>and enter text into the field 
+            <span class="bold">Comment</span>. Change the names for the columns in the table to " 
+            <span class="bold">StateCode</span>" and " 
+            <span class="bold">StateName</span>" and set the 
+            <span class="bold">Length</span>to " 
+            <span class="bold">2</span>" and " 
+            <span class="bold">20</span>" then click 
+            <span class="bold">Finish</span>: 
+            <p><img src="../../Resources/Images/CM_Wizard_04.png" alt="" /></p></li>
+                        <li value="8">In the Repository expand the folder 
+            <span class="bold">Metadata</span>and display the new 
+            <span class="bold">StatesCodes</span>Metadata: 
+            <p><img src="../../Resources/Images/CM_Repository_metadata.png" alt="" /></p></li>
+                    </ol>
+                    <h2>Next</h2>
+                    <p>Now you are ready to create your Job again, using the Metadata directly in the Workspace.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

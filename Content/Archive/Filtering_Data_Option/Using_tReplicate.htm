@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Using_tReplicate</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Using tReplicate</h1>
+                    <h2>Overview</h2>
+                    <ol style="list-style: decimal;">
+                        <li value="1">To become familiar with further components in Talend Studio 
+			 you will now use the component "<span style="font-weight: bold;">tReplicate</span>" 
+			 to filter on several &#160;states in one Job.</li>
+                    </ol>
+                    <h2>Duplicate Job</h2>
+                    <ol style="list-style: decimal;">
+                        <li value="1">
+                            <p>Right-click on the Job "<span style="font-weight: bold;">FilterStates_tFilterRow</span>" 
+			 and click "<span style="font-weight: bold;">Duplicate</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image111.PNG" alt="" style="border: none;" width="341" height="358" border="0" />
+                    </p>
+                    <ol start="2" style="list-style: decimal;">
+                        <li value="2">
+                            <p>Name the new Job "<span style="font-weight: bold;">FilterStates_tFilterReplicate</span>" 
+			 and click "<span style="font-weight: bold;">OK</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image112_450x178.png" alt="" style="border: none;width: 450;height: 178;" border="0" />
+                    </p>
+                    <h2>Edit</h2>
+                    <h2>Output</h2>
+                    <ol style="list-style: decimal;">
+                        <li value="1">
+                            <p>Open the new Job and right-click on the component "<span style="font-weight: bold;">Rejected</span>" then click 
+			 "<span style="font-weight: bold;">Delete</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image113.PNG" alt="" style="border: none;" width="278" height="242" border="0" />
+                    </p>
+                    <p>&#160;</p>
+                    <ol start="2" style="list-style: decimal;">
+                        <li value="2">
+                            <p>Right-click on the connection 
+			 "<span style="font-weight: bold;">Filter</span>" 
+			 then click "<span style="font-weight: bold;">Delete</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image114.PNG" alt="" style="border: none;" width="225" height="304" border="0" />
+                    </p>
+                    <ol start="3" style="list-style: decimal;">
+                        <li value="3">
+                            <p>Click the group of the components 
+			 "<span style="font-weight: bold;">tFilterRow</span>" 
+			 and "<span style="font-weight: bold;">tFileOutputDelimeted</span>" 
+			 then move it to the right then right-click on the group and 
+			 click "<span style="font-weight: bold;">Copy</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image116.PNG" alt="" style="border: none;" width="438" height="304" border="0" />
+                    </p>
+                    <ol start="4" style="list-style: decimal;">
+                        <li value="4">
+                            <p>Position the cursor under 
+			 this group and right-click then click "<span style="font-weight: bold;">Paste</span>" 
+			 and position the new group under the first one:</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image117.PNG" alt="" style="border: none;" width="351" height="324" border="0" />
+                    </p>
+                    <ol start="5" style="list-style: decimal;">
+                        <li value="5">
+                            <p>Then right-click again and 
+			 "<span style="font-weight: bold;">Paste</span>" 
+			 again for another new group:</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image118.PNG" alt="" style="border: none;" width="314" height="353" border="0" />
+                    </p>
+                    <ol start="6" style="list-style: decimal;">
+                        <li value="6">
+                            <p>Double-click the first "<span style="font-weight: bold;">tFileOutputDelimeted</span>" 
+			 component and click "<span style="font-weight: bold;">Component</span>" 
+			 to change the "<span style="font-weight: bold;">File 
+			 Nam</span>e" to ""<span style="font-weight: bold;">C:/StudentFiles/State_CA_out.csv</span>"":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image119.PNG" alt="" style="border: none;" width="429" height="452" border="0" />
+                    </p>
+                    <ol start="7" style="list-style: decimal;">
+                        <li value="7">
+                            <p>Click "<span style="font-weight: bold;">View</span>" 
+			 and enter "<span style="font-weight: bold;">State_CA</span>" 
+			 for the "<span style="font-weight: bold;">Label format</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image120.PNG" alt="" style="border: none;" width="437" height="477" border="0" />
+                    </p>
+                    <ol start="8" style="list-style: decimal;">
+                        <li value="8">
+                            <p>Double-click on the next "<span style="font-weight: bold;">tFileOutputDelimited</span>" 
+			 and click "<span style="font-weight: bold;">Component</span>" 
+			 then enter ""<span style="font-weight: bold;">C:/StudentFiles/State_NY_out.csv</span>"" 
+			 for the "<span style="font-weight: bold;">File Name</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image121_450x451.png" alt="" style="border: none;width: 450;height: 451;" border="0" />
+                    </p>
+                    <ol start="9" style="list-style: decimal;">
+                        <li value="9">
+                            <p>Click "<span style="font-weight: bold;">View</span>" 
+			 and enter "<span style="font-weight: bold;">State_NY</span>" 
+			 for the "<span style="font-weight: bold;">Label format</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image122.PNG" alt="" style="border: none;" width="430" height="431" border="0" />
+                    </p>
+                    <ol start="10" style="list-style: decimal;">
+                        <li value="10">
+                            <p>Double-click on the next "<span style="font-weight: bold;">tFileOutputDelimited</span>" 
+			 and click "<span style="font-weight: bold;">Component</span>" 
+			 then enter ""<span style="font-weight: bold;">C:/StudentFiles/State_AK_out.csv</span>"" 
+			 for the "<span style="font-weight: bold;">File Name</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image123_450x335.png" alt="" style="border: none;width: 450;height: 335;" border="0" />
+                    </p>
+                    <ol start="11" style="list-style: decimal;">
+                        <li value="11">
+                            <p>Click "<span style="font-weight: bold;">View</span>" 
+			 and enter "<span style="font-weight: bold;">State_AK</span>" 
+			 for the "<span style="font-weight: bold;">Label format</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image124.PNG" alt="" style="border: none;" width="438" height="295" border="0" />
+                    </p>
+                    <h2>Enter tReplicate</h2>
+                    <ol style="list-style: decimal;">
+                        <li value="1">Right-click under "<span style="font-weight: bold;">tMap</span>" 
+			 and enter the new component "<span style="font-weight: bold;">tReplicate</span>":</li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image125_450x231.png" alt="" style="border: none;width: 450;height: 231;" border="0" />
+                    </p>
+                    <ol start="2" style="list-style: decimal;">
+                        <li value="2">
+                            <p>Right-click "<span style="font-weight: bold;">tMap</span>" 
+			 and click "<span style="font-weight: bold;">Row</span>" 
+			 then click "<span style="font-weight: bold;">Filter</span>" 
+			 and connect it to "<span style="font-weight: bold;">tReplicate</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image126.PNG" alt="" style="border: none;" width="355" height="263" border="0" />
+                    </p>
+                    <ol start="3" style="list-style: decimal;">
+                        <li value="3">
+                            <p>Right-click "<span style="font-weight: bold;">tReplicate</span>" 
+			 and click "<span style="font-weight: bold;">Row</span>" 
+			 then click "<span style="font-weight: bold;">Main</span>" 
+			 and connect it to "<span style="font-weight: bold;">State_CA</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image127.PNG" alt="" style="border: none;" width="346" height="283" border="0" />
+                    </p>
+                    <ol start="4" style="list-style: decimal;">
+                        <li value="4">
+                            <p>Click "<span style="font-weight: bold;">Yes</span>" 
+			 to answer to "<span style="font-weight: bold;">Would 
+			 you like to propagate changes?</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image128_450x261.png" alt="" style="border: none;width: 450;height: 261;" border="0" />
+                    </p>
+                    <ol start="5" style="list-style: decimal;">
+                        <li value="5">
+                            <p>Right-click again on "<span style="font-weight: bold;">tReplicate</span>" and click 
+			 "<span style="font-weight: bold;">Row</span>" then 
+			 click "<span style="font-weight: bold;">Main</span>" 
+			 and connect it to "<span style="font-weight: bold;">State_NY</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image129.PNG" alt="" style="border: none;" width="360" height="229" border="0" />
+                    </p>
+                    <ol start="6" style="list-style: decimal;">
+                        <li value="6">
+                            <p>Click "<span style="font-weight: bold;">Yes</span>" 
+			 to answer to "<span style="font-weight: bold;">Would 
+			 you like to propagate changes?</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image130_450x356.png" alt="" style="border: none;width: 450;height: 356;" border="0" />
+                    </p>
+                    <ol start="7" style="list-style: decimal;">
+                        <li value="7">
+                            <p>Right-click again on "<span style="font-weight: bold;">tReplicate</span>" and click 
+			 "<span style="font-weight: bold;">Row</span>" then 
+			 click "<span style="font-weight: bold;">Main</span>" 
+			 and connect it to "<span style="font-weight: bold;">State_AK</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image131.PNG" alt="" style="border: none;" width="416" height="280" border="0" />
+                    </p>
+                    <ol start="8" style="list-style: decimal;">
+                        <li value="8">
+                            <p>Click "<span style="font-weight: bold;">Yes</span>" 
+			 to answer to "<span style="font-weight: bold;">Would 
+			 you like to propagate changes?</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image132_450x437.png" alt="" style="border: none;width: 450;height: 437;" border="0" />
+                    </p>
+                    <ol start="9" style="list-style: decimal;">
+                        <li value="9">
+                            <p>Click the yellow triangle 
+			 on the top-right of <span style="font-weight: bold;">"State_CA"</span> 
+			 to display the "<span style="font-weight: bold;">Warning</span>" 
+			 which indicates that the input schema is different to the 
+			 output schema:</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image134_450x87.png" alt="" style="border: none;width: 450;height: 87;" border="0" />
+                    </p>
+                    <ol start="10" style="list-style: decimal;">
+                        <li value="10">
+                            <p>Double-click the output component 
+			 "<span style="font-weight: bold;">State_CA</span>" 
+			 then click "Component" and click the button "Sync 
+			 columns". Repeat this for "<span style="font-weight: bold;">State_NY</span>" 
+			 and for the output component "<span style="font-weight: bold;">State_AK</span>" 
+			 please:</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image135.PNG" alt="" style="border: none;" width="259" height="512" border="0" />
+                    </p>
+                    <p>Note: The Warnings 
+		 disappear.</p>
+                    <ol start="11" style="list-style: decimal;">
+                        <li value="11">
+                            <p style="margin-left: 0px;font-style: normal;">Double-click 
+			 the second "<span style="font-weight: bold;">tFilterRow</span>" 
+			 component and click "<span style="font-weight: bold;">Component</span>" 
+			 then enter "<span style="font-weight: bold;">"NY"</span>" 
+			 for the Value in the table below:</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image136.PNG" alt="" style="border: none;" width="391" height="486" border="0" />
+                    </p>
+                    <ol start="12" style="list-style: decimal;">
+                        <li value="12">
+                            <p>Double-click the last"<span style="font-weight: bold;">tFilterRow</span>" component 
+			 and click "<span style="font-weight: bold;">Component</span>" 
+			 then enter "<span style="font-weight: bold;">"AK"</span>" 
+			 for the Value in the table below:</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image137.PNG" alt="" style="border: none;" width="368" height="502" border="0" />
+                    </p>
+                    <h2>Run</h2>
+                    <h2>Job</h2>
+                    <ol style="list-style: decimal;">
+                        <li value="1">
+                            <p>"<span style="font-weight: bold;">Run</span>" 
+			 the Job and see how the results will be written to the different 
+			 output files, following the filter settings:</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image138_450x375.png" alt="" style="border: none;width: 450;height: 375;" border="0" />
+                    </p>
+                    <ol start="2" style="list-style: decimal;">
+                        <li value="2">
+                            <p>Display the output files in 
+			 "<span style="font-weight: bold;">C:/StudentFiles/</span>"to 
+			 verify the output:</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image139.PNG" alt="" style="border: none;" border="0" />
+                    </p>
+                    <p>
+                        <img src="../../Resources/Images/image140.PNG" alt="" style="border: none;" width="444" height="447" border="0" />
+                    </p>
+                    <p>Note: 
+		 Example "<span style="font-weight: bold;">C:/StudentFiles/State_AK_out.csv</span>":</p>
+                    <p>
+                        <img src="../../Resources/Images/image140.PNG" alt="" style="border: none;" width="444" height="447" border="0" />
+                    </p>
+                    <h2>Next</h2>
+                    <p>Now that you have filtered data in a simple Job and you can 
+		 start to learn how you are <a href="../../Labs/Lab4_Filtering_Data/Using_tMap_Multiple_Filters.htm">Using_tMap_Multiple_Filters</a></p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

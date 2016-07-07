@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Traitement de fichiers</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Traitement de fichiers</h1>
+                    <h2>Vue d'ensemble</h2>
+                    <p>Au cours de cette leçon, vous allez commencer à travailler avec des fichiers. </p>
+                    <p>Vous allez d'abord lire un fichier délimité stockant des informations clients depuis votre système de fichiers local.  Vous allez ensuite utiliser un composant de transformation de données pour appliquer une modification simple sur les données&#160;: passer le nom de l'État du client en majuscules. Pour tester votre transformation, vous allez écrire les données transformées dans un fichier de sortie.</p>
+                    <p>Vous allez finalement consolider vos connaissances sur les transformations de données en combinant les colonnes du prénom et du nom de famille en une colonne contenant le nom complet du client. </p>
+                    <p>Voici la vue haut niveau du Job que vous allez construire dans cette leçon. </p>
+                    <p>&#160;</p>
+                    <p>
+                        <img src="../../Resources/Images/lesson2_overview.png" alt="" />
+                    </p>
+                    <h2>Objectifs</h2>
+                    <p>Après avoir terminé cette leçon, vous pourrez&#160;:</p>
+                    <ul>
+                        <li value="1">Lire et écrire un fichier texte délimité</li>
+                        <li value="2">Lire des messages d'avertissements et d'erreurs</li>
+                        <li value="3">Transformer des données à l'aide du composant <span class="ui-control">tMap</span></li>
+                        <li value="4">Construire des expressions simples</li>
+                        <li value="5">Explorer les données à l'aide du Data Viewer dans le Studio</li>
+                        <li value="6">Dupliquer un Job existant comme base pour un nouveau Job</li>
+                    </ul>
+                    <h2>Avant de commencer </h2>
+                    <p>Assurez-vous de travailler dans un environnement contenant&#160;:</p>
+                    <ul>
+                        <li value="1">Une installation fonctionelle du Studio  Talend</li>
+                        <li value="2">Les fichiers nécessaires à la leçon&#160;: <span class="ui-control">Custs.csv</span> dans <span class="ui-control">C:/StudentFiles</span>.</li>
+                    </ul>
+                    <h2>Étape suivante</h2>
+                    <p>La première étape consiste à créer un Job <a href="Reading_a_File.htm">lisant un fichier délimité</a>.</p>
+                    <!-- DO NOT MODIFY BELOW THIS LINE -->
+                    <!-- The following snippet is responsible for sending a completion Tin Can statement to the LMS/LRS -->
+                    <!-- Tin Can API Wrapper -->
+                    <script>/* <![CDATA[ */
+// Uncomment the following line to enable debug statements in the web console of the browser
+//TinCan.enableDebug();
+
+// Initialize a TinCan object.
+// Several properties forwarded through the Activity Provider (AP) are automatically set, like the endpoint and authentication:
+// Refer to http://scorm.com/wp-content/assets/tincandocs/Incorporating-a-Tin-Can-LRS-into-an-LMS.pdf for more details
+var tincan = new TinCan (
+	{
+		url: window.location.href,
+	}
+);
+
+// Send activity initialization statement
+// 'duration' is set to 0 seconds (pattern is "PT1H37M56.34S" = 1 hour, 37 min and 56.34 seconds)
+tincan.sendStatement(
+	{
+		verb: {
+			id: "http://adlnet.gov/expapi/verbs/attempted",
+			display: {
+				"en-US": "attempted"
+			}
+		},
+		result: {
+			duration: "PT0S"
+		}
+	}
+);
+
+// Marshall TinCan object to Local Storage for later reuse in other pages
+localStorage.setItem("tincan", JSON.stringify(tincan));
+		/* ]]> */</script>
+                    <!-- /Tin Can API Wrapper -->
+                    <!-- Tin Can API Wrapper -->
+                    <script>/* <![CDATA[ */
+// Uncomment the following line to enable debug statements in the web console of the browser
+//TinCan.enableDebug();
+
+// Initialize a TinCan object.
+// Several properties forwarded through the Activity Provider (AP) are automatically set, like the endpoint and authentication:
+// Refer to http://scorm.com/wp-content/assets/tincandocs/Incorporating-a-Tin-Can-LRS-into-an-LMS.pdf for more details
+var tincan = new TinCan (
+	{
+		url: window.location.href,
+	}
+);
+
+// Send activity initialization statement
+// 'duration' is set to 0 seconds (pattern is "PT1H37M56.34S" = 1 hour, 37 min and 56.34 seconds)
+tincan.sendStatement(
+	{
+		verb: {
+			id: "http://adlnet.gov/expapi/verbs/attempted",
+			display: {
+				"en-US": "attempted"
+			}
+		},
+		result: {
+			duration: "PT0S"
+		}
+	}
+);
+
+// Marshall TinCan object to Local Storage for later reuse in other pages
+localStorage.setItem("tincan", JSON.stringify(tincan));
+		/* ]]> */</script>
+                    <!-- /Tin Can API Wrapper -->
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

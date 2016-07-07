@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using Context Variables">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Using Repository Context Variables</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Using Context Variables</a>
+                    <ul class="sub-menu">
+                        <li><a href="Overview.htm">Overview</a>
+                        </li>
+                        <li><a href="Using_Context_Variables.htm">Using Context Variables</a>
+                        </li>
+                        <li><a href="#" class="selected">Using Repository Context Variables</a>
+                        </li>
+                        <li><a href="Challenges.htm">Challenges</a>
+                        </li>
+                        <li><a href="Solutions.htm">Solutions</a>
+                        </li>
+                        <li><a href="Wrap-Up.htm">Wrap-Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Using Context Variables</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="selected">Using Repository Context Variables</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Using Repository Context Variables</h1>
+                    <h2>Overview</h2>
+                    <div class="youAreGoingTo">
+                        <p>In the previous exercise, you created a built-in context variable that was only available to a single Job. Now you will create a 
+        		<span class="ui-control">Repository</span> context variable that can be reused in any Job in the project.</p>
+                    </div>
+                    <h2>Create Repository Context Variable</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">CREATE A CONTEXT GROUP IN THE REPOSITORY TO ORGANISE YOUR CONTEXT VARIABLES</p>
+                            <p>In the 
+                <span class="ui-control">Repository</span>, right-click 
+               <span class="ui-control">Contexts</span>, and click 
+                <span class="ui-control">Create context group</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_createcontextgroup.png" alt="" />
+                            </p>
+                            <p>Note: A context group is just an organizing tool for repository variables, so it is a good idea to name it something meaningful.</p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">GIVE THE GROUP A NAME, PURPOSE AND DESCRIPTION</p>
+                            <p>Enter 
+                <span class="user-input-files-variables">LocationContextVariables</span> for the 
+                <span class="ui-control">Name</span> and then enter appropriate information into the 
+                <span class="ui-control">Purpose</span> and 
+                <span class="ui-control">Description</span> boxes.<br />Then click 
+                <span class="ui-control">Next</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_createcontextgroup02.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3"><![CDATA[
+            ]]><p data-mc-conditions="vModifs.vTitles">ADD A NEW CONTEXT VARIABLE</p><p>Click the green 
+               <span class="ui-control">[+]</span> (Add) button at the bottom left of the table to add a new variable. Name it 
+            <span class="ui-control" style="font-style: italic; font-weight: normal;">RepoOutputDir</span> to differentiate it by name from the built-in context 
+            variable 
+                         <span class="ui-control">OutputDir</span>.<br />Set the default value to 
+            <span class="ui-control" style="font-weight: normal; font-style: italic;">"C:/StudentFiles/"</span> : </p><p><img src="../../Resources/Images/PD_createcontextgroup03.png" alt="" /></p></li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">ADD A NEW&#160;CONTEXT</p>
+                            <p>Click the green 
+               <span class="ui-control">[+]</span> at the top right of the table, which is the 
+                <span class="ui-control">Configure Contexts</span> button and then click 
+                <span class="ui-control">New</span> :</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_createcontextgroup04.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="5">
+                            <p data-mc-conditions="vModifs.vTitles">NAME THE&#160;CONTEXT</p>
+                            <p>Enter 
+         <span class="ui-control">Production</span> and then click
+            <span class="ui-control">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_createcontextgroup05.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="6">
+                            <p data-mc-conditions="vModifs.vTitles">CONFIGURE&#160; THE NEW CONTEXT</p>
+                            <p>Click <b>OK</b> again. <br />Then set the value for 
+                <span class="ui-control">RepoOutputDir</span> in the 
+                <span class="ui-control">Production</span> context to                 <span class="ui-control" style="font-style: italic;font-weight: normal;">"C:/StudentFiles/Production/"</span> and click 
+               <span class="ui-control">Finish</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_createcontextgroup06.png" alt="" />
+                            </p>
+                            <p><span class="italic">Reminder</span>: The Value for each context variable includes a final <span class="user-input-files-variables">"/"</span> and is enclosed in double quotes.</p>
+                        </li>
+                        <li value="7">
+                            <p data-mc-conditions="vModifs.vTitles">CHECK THE GROUP EXISTS IN THE REPOSITORY</p>
+                            <p>The new group appears in the 
+                <span class="ui-control">Repository</span>, containing a single variable:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_createcontextgroup07.png" alt="" />
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Add Repository Context Variables to a Job</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE CONTEXTS VIEW FOR THE JOB <span class="ui-control">Context_Uppercase</span></p>
+                            <p>In the 
+                <span class="ui-control">Context_Uppercase</span> Job, click the 
+                <span class="ui-control">Contexts</span> view.</p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE SELECT CONTEXT VARIABLE WIZARD AND SELECT THE CONTEXT</p>
+                            <p>Click the contexts button below the 
+                <span class="ui-control">Variables</span> table. The <span class="ui-window-title">Select Context Variables</span> wizard opens in a new window. </p>
+                            <p>Select the check box for the Context variable previously defined to specify all the variables in that group, and then click 
+                <span class="ui-control">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_specifyallvariables.png" alt="" />
+                            </p>
+                            <p>This is where you select the variables from a group that you want to make available to the Job.</p>
+                        </li>
+                        <li value="3"><![CDATA[
+            ]]><p data-mc-conditions="vModifs.vTitles">YOU CAN SEE THE REPOSITORY CONTEXT VARIABLE IN THE CONTEXTS VIEW</p><p>The variable and the group appear in the 
+            <span class="ui-control">Contexts</span> view. </p><p><img src="../../Resources/Images/PD_allvariablestable.png" alt="" /></p><p>The values are the ones you set in the 
+            <span class="ui-control">Repository</span> and you cannot change them from here. You can of course edit them from the <span class="ui-control">Repository </span>directly however.</p></li>
+                    </ol>
+                    <h2>Use Repository Context Variables</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">CHANGE THE OUTPUT PATH OF THE <span class="ui-control">tFileOutputDelimited</span> COMPONENT TO USE THE NEW CONTEXT VARIABLE</p>
+                            <p>Double-click the 
+                <span class="ui-control">tFileOutputDelimited</span> component to open the
+                <span class="ui-control">Component</span> view. <br />Update the <b>File Name</b> value to  
+                <span class="ui-control" style="font-weight: normal; font-style: italic;">context.RepoOutputDir + "CappedOut.csv"</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_withoutcontext.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">SELECT THE PRODUCTION CONTEXT AS THE DEFAULT FOR THIS JOB </p>
+                            <p>Click the 
+                <span class="ui-control">Contexts</span> tab again and select 
+                <span class="ui-control">Production</span> for the <span class="ui-control">Default context environment</span>: </p>
+                            <p>
+                                <img src="../../Resources/Images/PD_contextproduction2.png" alt="" />
+                            </p>
+                            <p>&#160;</p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">RUN THE JOB</p>
+                            <p>Change to the
+                <span class="ui-control">Run</span> view and run the Job.</p>
+                            <p>The file created during this run of the Job appears in the 
+                <span class="ui-control">C:/StudentFiles/Production</span> directory because of the default context variable, which was set to <span class="ui-control">Production</span>.</p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE REPOSITORY CONTEXT FOR EDIT</p>
+                            <p>In the 
+                <span class="ui-control">Repository</span>, under <span class="ui-control">Contexts</span>, double-click 
+                <span class="ui-control">LocationContextVariables</span> to open the group for edit.<br />Then click 
+                <span class="ui-control">Next</span> :</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_createcontextgroup02.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="5">
+                            <p data-mc-conditions="vModifs.vTitles">MODIFY THE VARIABLE VALUE</p>
+                            <p>Change the value under 
+                <span class="ui-control">Production</span> to 
+                <span class="ui-control" style="font-weight: normal; font-style: italic;">C:/StudentFiles/New_ Production/</span> and click 
+                <span class="ui-control">Finish</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_newproduction.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="6"><![CDATA[            ]]><p data-mc-conditions="vModifs.vTitles">PROPAGATE CHANGES</p><p>When asked if you want to propagate changes, click 
+            <span class="ui-control">Yes</span>:
+</p><p><img src="../../Resources/Images/PD_modification.png" alt="" /></p><![CDATA[       ]]><p>Note: this prompt is asking you if you want the change to be reflected in all Jobs that use the Repository variable.</p></li>
+                        <li value="7">
+                            <p data-mc-conditions="vModifs.vTitles">CHOOSE THE JOBS TO APPLY THE MODIFICATION TO</p>
+                            <p>The <span class="ui-control">Update Detection</span> window pops-up. This lists the items in a particular Job that use this context variable. If you had multiple Jobs using the variable, you would see all of them listed so that you could choose which one to change.</p>
+                            <p>Leave all items selected and click 
+                <span class="ui-control">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_modificationOK.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="8">
+                            <p>RUN THE JOB</p>
+                            <p>Run the Job using the 
+                <span class="ui-control">Production</span> context again. Note that 
+                <span class="ui-control">CappedOut.csv</span> file is now created in the new directory, as you would expect from changing the value of the context variable. </p>
+                            <p>
+                                <img src="../../Resources/Images/PD_newproductionFile.png" alt="" />
+                            </p>
+                            <p>With the context variable set in the Repository, you can now use the variable in any Job in the project.</p>
+                        </li>
+                    </ol>
+                    <h2>Next</h2>
+                    <p>You have now completed this lesson. 
+        <a href="Challenges.htm">Work through the exercises</a> to reinforce what you learned.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

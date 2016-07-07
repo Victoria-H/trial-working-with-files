@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Adding_Constraints</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Filtre sur les données de sortie</h1>
+                    <h2>Vue d'ensemble</h2>
+                    <p>Votre Job doit filtrer la sortie sur la colonne 
+        <span class="ui-control">State code</span> pour que les fichiers de sortie soient séparés par État.</p>
+                    <h2>Duplication du Job</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Cliquez-droit sur le Job 
+                <span class="ui-control">LookupState</span> et sélectionnez 
+                <span class="ui-control">Duplicate</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_duplicateJob.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Saisissez 
+                <span class="user-input-files-variables">Filter_States</span> dans le champ
+               <span class="ui-control">Input new name</span>, puis cliquez sur                <span class="ui-control">OK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_newJob.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Double-cliquez sur le nouveau Job pour l'ouvrir dans l'espace de modélisation graphique.</p>
+                        </li>
+                    </ol>
+                    <h2>Ajout d'un filtre</h2>
+                    <ol start="1">
+                        <li value="1">
+                            <p>Double-cliquez sur le <span class="ui-control">tMap</span>. </p>
+                            <p>Cliquez sur l'icône 
+                <span class="ui-control">Activate/ unactivate expression filter</span> en haut à droite de la table
+                <span class="ui-control">CappedOut</span> et saisissez 
+                <i>"CA".equals(row1.State)</i> comme définition de filtre et cliquez sur 
+                <span class="ui-control">Ok</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_CA_stateExpression.png" alt="" />
+                            </p>
+                            <p>Une fois l'expression de filtre correctement définie, une flèche orange est ajoutée, mappant le flux de la table d'entrée à la table de sortie.</p>
+                        </li>
+                        <li value="2">
+                            <p>Exécutez le Job. </p>
+                            <p>
+                                <img src="../../Resources/Images/FD_CA_Run.png" alt="" />
+                            </p>
+                            <p>Notez que seules 9 lignes sont écrites dans le fichier de sortie.<br /></p>
+                        </li>
+                        <li value="3">
+                            <p>Cliquez-droit sur le composant de sortie
+                <span class="ui-control">tFileOutputDelimited</span> et sélectionnez <span class="ui-control">Data viewer</span>.</p>
+                            <p>Notez que les données filtrées sont seulement des enregistrements ayant la valeur <i>CA</i> (en majuscules) dans la colonne 
+                <span class="ui-control">State</span> du fichier d'entrée 
+                <span class="ui-control">Custs.csv</span>.</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture44.png" alt="" />
+                            </p>
+                            <p>Cliquez sur <span class="ui-control">Close</span>.</p>
+                        </li>
+                        <li value="4">
+                            <p>Double-cliquez à nouveau sur le
+                <span class="ui-control">tMap</span> et modifiez le filtre à 
+                <i>"CA".equals(row2.StateCode)</i>, puis cliquez sur                 <span class="ui-control">Ok</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_CA_row2_Filter.png" alt="" />
+                            </p>
+                            <p>Une fois de plus, une flèche orange est placée pour vous et identifie le flux de données pour l'expression modifiée. Rappelez-vous que <span class="user-input-files-variables">row2.StateCode</span> contient le code d'État en lettres capitales. </p>
+                        </li>
+                        <li value="5">
+                            <p>Exécutez le Job à nouveau.&#160;Vous constatez que la sortie contient 27 lignes&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_CA_row2_FilterResult.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="6">
+                            <p>Cliquez-droit
+sur le composant de sortie            <span class="ui-control">tFileOutputDelimited</span> et sélectionnez <span class="ui-control">Data viewer</span>.<br /><img src="../../Resources/Images/Capture45.png" alt="" /><br /></p>
+                        </li>
+                    </ol>
+                    <h2>Étape suivante</h2>
+                    <p>Vous avez filtré les données pour la colonne <span class="ui-control">State Code</span>, vous allez apprendre à <a href="Using_tMap_Multiple_Filters.htm">créer plusieurs sorties</a> et à filtrer les différents États dans le composant 
+        <span class="ui-control">tMap</span>.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

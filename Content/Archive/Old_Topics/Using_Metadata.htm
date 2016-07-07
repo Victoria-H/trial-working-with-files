@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Using Metadata</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Using Metadata</h1>
+                    <h2>Overview</h2>
+                    <p>Now, you will create a new Job and use the Metadata 
+        <span class="bold">StatesCodes</span>for creating the input component of your Job. You will start to use the components out of the <span class="ui-widget">Processing</span> folder in the Palette starting with the 
+        <span class="bold">tFileOutputXML</span>component and you will create another Metadata with the 
+        <span class="bold">Db Connections</span>wizard which will be used in the following labs. Finally you will use the 
+        <span class="bold">tMap</span>component, another very powerful component,  to create a typical ETL Job.</p>
+                    <h2><span class="bold">Create New Job</span>
+                    </h2>
+                    <ol>
+                        <li value="1">Right-click on 
+            <span class="bold">Job Designs</span> and click             <span class="bold">Create Standard Job</span>: 
+            <p><img src="../../Resources/Images/UM_newJob.png" alt="" /></p></li>
+                        <li value="2">
+                            <p>Enter 
+                <span class="bold">UseMetadata</span> for the name and enter your text for the 
+                <span class="bold">Purpose</span> and the 
+                <span class="bold">Description</span> and then click 
+                <span class="bold">Finish</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/UM_newJobfinish.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Expand the folder <span class="ui-widget">Metadata</span> in the repository and drag the 
+                <span class="bold">StatesCodes</span>metadata to the workspace of your new Job:</p>
+                            <p>
+                                <img src="../../Resources/Images/UM_dragMetadata.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p>When you drop it there a list of components is displayed. Select 
+                <span class="bold">tFileInputDelimited</span>and click 
+                <span class="bold">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/UM_ListComponents.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="5">To become more familiar with the Palette please search for the <span class="ui-widget">tFileOutputXML</span> component. Enter <span class="italic">tfileoutput</span> as a search criteria and click the magnifying glass. You will find the component under 
+            <span class="bold">File</span>folder, 
+            <span class="bold">Output</span> subfolder. Select it:
+            <p><img src="../../Resources/Images/UM_tFileOutputXML.png" alt="" /></p></li>
+                        <li value="6">Place it to the right of your input component: 
+            <p><img src="../../Resources/Images/UM_2components.png" alt="" /></p></li>
+                        <li value="7">Connect the input to the output component. Right-click on 
+            <span class="bold">StatesCodes</span>, select 
+            <span class="bold">Row</span>,click 
+            <span class="bold">Main</span> and then link it to the 
+            <span class="bold">tFileOutputXML</span>: 
+            <p><img src="../../Resources/Images/UM_RowMain.png" alt="" /></p></li>
+                        <li value="8">Double-click the <span class="ui-widget">tFileOutputXML</span> component to open the <span class="ui-widget">Component</span> tab and configure it. Click the ellipsis <span class="ui-widget">...</span> next to the field 
+            <span class="bold">File Name</span>: 
+            <p><img src="../../Resources/Images/UM_changeFile.png" alt="" /></p>Set the path to 
+            <span class="bold">C:/StudentFiles</span>with the File name 
+            <span class="bold">out.xml</span>. Click <span class="ui-widget">Open</span>: 
+            <p><img src="../../Resources/Images/UM_path.png" alt="" /></p></li>
+                        <li value="9">Select the <span class="ui-widget">Run</span> Tab and click <span class="ui-widget">Run</span> to execute the job. <![CDATA[
+            ]]><p><img src="../../Resources/Images/UM_Runfirsttime.png" alt="" /></p></li>
+                        <li value="10">Open the File Browser and go to the folder <span class="ui-widget">C:/StudentFiles</span>. Open the file <span class="ui-widget">out.xml</span> with Notepad ++: 
+            <p><img src="../../Resources/Images/UM_openxml.png" alt="" /></p></li>
+                        <li value="11">Here is how the XML output file looks like : 
+            <p><img src="../../Resources/Images/UM_noteplus.png" alt="" /></p></li>
+                    </ol>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

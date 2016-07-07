@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Using_tFilterRow</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Using tFilterRow_test</h1>
+                    <h2>Overview</h2>
+                    <p>To become familiar with further components in Talend Studio 
+		 you will now use the component "<span style="font-weight: bold;">tFilterRow</span>" 
+		 to filter a certain" state.</p>
+                    <h2>Duplicate Job</h2>
+                    <ol style="list-style: decimal;">
+                        <li value="1">
+                            <p>Right-click on the Job "<span style="font-weight: bold;">FilterStates</span>" 
+			 and click "<span style="font-weight: bold;">Duplicate</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image091.PNG" alt="" style="border: none;" width="303" height="367" border="0" />
+                    </p>
+                    <ol start="2" style="list-style: decimal;">
+                        <li value="2">
+                            <p>Name the new Job "<span style="font-weight: bold;">FilterStates_tFilterRow</span>" 
+			 and click "<span style="font-weight: bold;">OK</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image092_450x177.png" alt="" style="border: none;width: 450;height: 177;" border="0" />
+                    </p>
+                    <h2>Edit</h2>
+                    <h2>Job</h2>
+                    <ol style="list-style: decimal;">
+                        <li value="1">
+                            <p>Double-click "<span style="font-weight: bold;">tMap</span>" 
+			 and delete the filter "<span style="font-weight: bold;">"CA".equals(row2.StateCode)"</span> 
+			 then click "<span style="font-weight: bold;">OK</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image093_450x675.png" alt="" style="border: none;width: 450;height: 675;" border="0" />
+                    </p>
+                    <ol start="2" style="list-style: decimal;">
+                        <li value="2">
+                            <p>Enter a new component "<span style="font-weight: bold;">tFilterRow</span>" to the 
+			 Job:<img src="../../Resources/Images/image094.PNG" alt="" style="border: none;" width="289" height="237" border="0" /></p>
+                        </li>
+                        <li value="3">
+                            <p>Right-click "<span style="font-weight: bold;">tMap</span>" 
+			 and select "<span style="font-weight: bold;">Row</span>" 
+			 then select "<span style="font-weight: bold;">*New Output*</span><span style="font-weight: bold;">(Main)</span>" and connect 
+			 it to "<span style="font-weight: bold;">tFilterRow</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image095.PNG" alt="" style="border: none;" width="431" height="199" border="0" />
+                    </p>
+                    <ol start="4" style="list-style: decimal;">
+                        <li value="4">
+                            <p>Enter "<span style="font-weight: bold;">Filter</span>" 
+			 for the "<span style="font-weight: bold;">new Output 
+			 name</span>": and click "<span style="font-weight: bold;">OK</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image096_450x164.png" alt="" style="border: none;width: 450;height: 164;" border="0" />
+                    </p>
+                    <ol start="5" style="list-style: decimal;">
+                        <li value="5">
+                            <p>Double-click "<span style="font-weight: bold;">tMap</span>" 
+			 and you will see the additional schema for the connection 
+			 "<span style="font-weight: bold;">Filter</span>" 
+			 which is empty. You need to drag &amp; drop the fields from 
+			 "<span style="font-weight: bold;">row1</span>" to 
+			 the output schema "<span style="font-weight: bold;">Filter</span>" 
+			 and then enter "<span style="font-weight: bold;">StringHandling.UPCASE(row1.State)"</span> 
+			 for the uppercase ouput:</p>
+                        </li>
+                    </ol>
+                    <p><a href="../../Resources/Images/image097.PNG"><img src="../../Resources/Images/image097_450x228.png" alt="" style="border: none;width: 450;height: 228;" border="0" /></a>
+                    </p>
+                    <ol start="6" style="list-style: decimal;">
+                        <li value="6">
+                            <p>Drag &amp; drop "<span style="font-weight: bold;">StateName</span>" from "<span style="font-weight: bold;">row2</span>" to the schema 
+			 "<span style="font-weight: bold;">Filter</span>" 
+			 and place it at the end then click "<span style="font-weight: bold;">OK</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image098.PNG" alt="" style="border: none;" width="405" height="474" border="0" />
+                    </p>
+                    <ol start="7" style="list-style: decimal;">
+                        <li value="7">
+                            <p>Click "<span style="font-weight: bold;">Yes</span>" 
+			 for "<span style="font-weight: bold;">Would you like 
+			 to propagate changes?</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image099_450x129.png" alt="" style="border: none;width: 450;height: 129;" border="0" />
+                    </p>
+                    <ol start="8" style="list-style: decimal;">
+                        <li value="8">
+                            <p>Enter a new component "<span style="font-weight: bold;">tFileOutputDelimeted</span>" 
+			 :</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image100_450x175.png" alt="" style="border: none;width: 450;height: 175;" border="0" />
+                    </p>
+                    <ol start="9" style="list-style: decimal;">
+                        <li value="9">
+                            <p>Select "<span style="font-weight: bold;">tFileOutputDelimeted</span>" 
+			 and click "Component" then enter "<span style="font-weight: bold;">C:/StudentFiles/tFilterRow_out.csv</span>" 
+			 in "File Name":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image101.PNG" alt="" style="border: none;" border="0" />
+                    </p>
+                    <ol start="10" style="list-style: decimal;">
+                        <li value="10">
+                            <p>Right-click "<span style="font-weight: bold;">tFilterRow</span>" 
+			 and click "<span style="font-weight: bold;">Row</span>" 
+			 then click "<span style="font-weight: bold;">Filter</span>" 
+			 and connect it to "<span style="font-weight: bold;">tFileOutputDelimited</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image102.PNG" alt="" style="border: none;" width="356" height="211" border="0" />
+                    </p>
+                    <ol start="11" style="list-style: decimal;">
+                        <li value="11">
+                            <p>Click "<span style="font-weight: bold;">tFilterRow</span>" 
+			 again and click "<span style="font-weight: bold;">Component</span>" 
+			 then click the green <span style="font-weight: bold;">"+"</span> 
+			 and select "<span style="font-weight: bold;">State</span>" 
+			 from the drop-down list for the "<span style="font-weight: bold;">Input 
+			 Column</span>" and enter "<span style="font-weight: bold;">CA</span>" 
+			 for the "<span style="font-weight: bold;">Value</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image103.PNG" alt="" style="border: none;" width="408" height="364" border="0" />
+                    </p>
+                    <h2>Run</h2>
+                    <h2>Job</h2>
+                    <ol style="list-style: decimal;">
+                        <li value="1">Click "<span style="font-weight: bold;">Run</span>" 
+			 and you see the 27 rows for "<span style="font-weight: bold;">CA</span>" 
+			 are filtered:</li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image104.PNG" alt="" style="border: none;" width="445" height="409" border="0" />
+                    </p>
+                    <ol start="2" style="list-style: decimal;">
+                        <li value="2">
+                            <p>Open the file "<span style="font-weight: bold;">C:/StudentFiles/tFilterRow_out.csv</span>" 
+			 and verify the output:</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image105_450x536.png" alt="" style="border: none;width: 450;height: 536;" border="0" />
+                    </p>
+                    <h2>Rejected</h2>
+                    <ol style="list-style: decimal;">
+                        <li value="1">
+                            <p>Enter a new component "<span style="font-weight: bold;">tFileOutputDelimted</span>" 
+			 to the Job to write the data not matching the filter to another 
+			 output. Select the new component and click ""<span style="font-weight: bold;">View</span>" to enter "<span style="font-weight: bold;">Rejected</span>" into the 
+			 field "<span style="font-weight: bold;">Labelformat</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image106_450x313.png" alt="" style="border: none;width: 450;height: 313;" border="0" />
+                    </p>
+                    <ol start="2" style="list-style: decimal;">
+                        <li value="2">
+                            <p>Right-click "<span style="font-weight: bold;">tFilterRow</span>" 
+			 and click "<span style="font-weight: bold;">Row</span>" 
+			 then click "<span style="font-weight: bold;">Reject</span>" 
+			 and connect it to "<span style="font-weight: bold;">Rejected</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image107.PNG" alt="" style="border: none;" width="367" height="249" border="0" />
+                    </p>
+                    <ol start="3" style="list-style: decimal;">
+                        <li value="3">
+                            <p>Select the component" 
+			 <span style="font-weight: bold;">Rejected</span>" and 
+			 click "<span style="font-weight: bold;">Component</span>" 
+			 to enter "<span style="font-weight: bold;">C:/StudentFiles/Rejected_out.csv</span>" 
+			 for the "<span style="font-weight: bold;">File Name</span>":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image109.PNG" alt="" style="border: none;" border="0" />
+                    </p>
+                    <ol start="4" style="list-style: decimal;">
+                        <li value="4">
+                            <p>Click "<span style="font-weight: bold;">Run</span>" 
+			 and you will see, that the data not matching the filter "<span style="font-weight: bold;">CA</span>" will be written 
+			 to "Rejected":</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <img src="../../Resources/Images/image110.PNG" alt="" style="border: none;" width="437" height="449" border="0" />
+                    </p>
+                    <p>&#160;</p>
+                    <h2>Next</h2>
+                    <p>Now that you have filtered data in a simple Job and you can 
+		 start to learn how you are Using_tReplicate</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

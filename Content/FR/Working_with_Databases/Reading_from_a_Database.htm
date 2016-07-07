@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Joining the Data</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Combinaison des données</h1>
+                    <h2>Vue d'ensemble</h2>
+                    <p>Une fois toute la préparation effectuée, vous pouvez créer le Job principal permettant d'effectuer une jointure sur les données et les stocker dans la table maître.</p>
+                    <h2>Lecture des données de ventes</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Créez un nouveau Job dans le dossier <span class="ui-control">Sales</span> :</p>
+                            <p>
+                                <img src="../../Resources/Images/database_createSalesJob.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Saisissez                <span class="ui-control" style="font-style: italic; font-weight: normal;">RetailSales</span> dans le champ 
+                <span class="ui-control">Name</span> et renseignez les champs 
+                <span class="ui-control">Purpose</span> et
+                <span class="ui-control">Description</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_readingFromADatabase_newJobForm_456x378.png" alt="" style="border: none;width: 456;height: 378;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Déposez la métadonnée de connexion à la base de données depuis le 
+                <span class="ui-control">Repository</span> dans l'espace de modélisation graphique, sélectionnez le composant 
+                <span class="ui-control">tMysqlInput</span> et cliquez sur<![CDATA[ 
+                ]]><span class="ui-control">OK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_readingFromADatabase_ddragLocalMysqlForMysqlInput_624x306.png" alt="" style="border: none;width: 624;height: 306;" border="0" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p>Cliquez sur
+                <span class="ui-control">Yes</span> pour ajouter les variables de contexte correspondantes à votre Job&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_readingFromADatabase_addContext_349x384.png" alt="" style="border: none;width: 349;height: 384;" border="0" />
+                            </p>
+                        </li>
+                        <li value="5">
+                            <p>Configurez le composant pour qu'il utilise le schéma du référentiel
+                <span class="ui-control">ShopMetadata</span> et, dans le champ 
+                <span class="ui-control">Table Name</span>, saisissez 
+                <span class="ui-control" style="font-weight: normal; font-style: italic;">"SalesStaging"</span>.</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_readingFromADatabase_tMysqlInputConfig.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="6"> Cliquez sur le bouton 
+                <span class="ui-control">Guess Query</span> et vérifiez que le champ 
+            <span class="ui-control">Query</span> ressemble à ceci&#160;: 
+            <p><img src="../../Resources/Images/Database_readingFromADatabase_querySalesStaging.png" alt="" style="border: none;" border="0" /></p><p> Vous pouvez voir que la requête par défaut récupère toutes les colonnes de la table, ce qui est exactement ce que vous souhaitez dans cet exercice.</p></li>
+                        <li value="7">
+                            <p>Cliquez sur l'onglet <b>View</b> dans la vue <b>Component</b> et saisissez 
+                <span class="ui-control" style="font-weight: normal; font-style: italic;">SalesDataIn</span> dans le champ 
+                <span class="ui-control">Label format</span> du composant&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_readingFromADatabase_salesDataInChangeView.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Lecture des données clients et produits</h2>
+                    <ol>
+                        <li value="1">Utilisez la métadonnée de connexion à la base de données <b>LocalMySQL</b> pour ajouter deux autres 
+            <span class="ui-control">tMysqlInput</span>, un pour la table
+            <span class="ui-control">RetailProducts</span> et un pour la table<![CDATA[ 
+            ]]><span class="ui-control">RetailCustomers</span>. 
+            <p>Utilisez le bon schéma et le bon nom de table dans chacun des composants. </p><p>La configuration du composant
+            <span class="ui-control">ProductDataIn</span> doit ressembler à celle-ci&#160;:</p><p><img src="../../Resources/Images/Database_readingFromADatabase_productDataInConfig.png" alt="" border="0" /></p></li>
+                        <li value="2">Votre configuration du 
+            <span class="ui-control">RetailCustomers</span> et du             <span class="ui-control">CustomerDataIn</span> doit ressembler à ceci&#160;: 
+            <p><img src="../../Resources/Images/Database_readingFromADatabase_customerDataInConfig.png" alt="" style="border: none;" border="0" /></p></li>
+                        <li value="3">L'espace de modélisation graphique doit ressembler à ceci&#160;:<![CDATA[      ]]><p><img src="../../Resources/Images/Database_readingFromADatabase_desingWorkspaceStep3.png" alt="" style="border: none;" border="0" /></p></li>
+                    </ol>
+                    <h2>Combinaison des données</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Placez un composant 
+                <span class="ui-control">tMap</span> dans l'espace de modélisation graphique&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_readingFromADatabase_desingWorkspaceJoinDataStep1.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p><span class="ui-control">Note&#160;:</span> vous pouvez adapter la taille du <span class="ui-control">tMap</span> pour garder un Job clair et lisible. <br />L'entrée principale doit être à gauche du
+                <span class="ui-control">tMap</span> et les entrées de référence doivent être au-dessus du 
+                <span class="ui-control">tMap</span>.</p>
+                        </li>
+                        <li value="2">
+                            <p>Cliquez-droit sur 
+                <span class="ui-control">SalesDataIn</span>, sélectionnez 
+                <span class="ui-control">Row</span> &gt;
+                <span class="ui-control">Main</span> et connectez au 
+                <span class="ui-control">tMap</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_readingFromADatabase_salesDataInRowMain.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Modifiez le nom du lien en <span class="ui-control" style="font-weight: normal; font-style: italic;">Sales</span>.</p>
+                            <p>Reliez le 
+                <span class="ui-control">ProductDataIn</span> au <span class="ui-control">tMap</span> et nommez le lien <span class="ui-control" style="font-weight: normal; font-style: italic;">Product</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_readingFromADatabase_productDataInLookup.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Note&#160;: cliquez deux fois sur le nom d'un lien, lentement, pour le sélectionner et saisissez le nouveau nom.</p>
+                        </li>
+                        <li value="4">
+                            <p>Reliez le
+                <span class="ui-control">CustomerDataIn</span> au
+                <span class="ui-control">tMap</span> et nommez le lien <span class="ui-control" style="font-weight: normal; font-style: italic;">Customer</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_readingFromADatabase_customerDataInLookup.png" alt="" style="border: none;" border="0" />
+                                <br />
+                            </p>
+                        </li>
+                        <li value="5">Double-cliquez sur le             <span class="ui-control">tMap</span> et créez deux jointures Inner Join, l'une sur les colonnes <span class="ui-control">ProductID</span> et l'autre sur les colonnes&#160;<span class="ui-control">CustID</span>&#160;: 
+            <p><img src="../../Resources/Images/Database_readingFromADatabase_tmapInnerJoin.png" alt="" style="border: none;" border="0" /></p><p>Dans l'option <span class="ui-control">Join Model</span>, pensez à sélectionner <span class="ui-control">Inner Join</span>.</p></li>
+                        <li value="6">
+                            <p>Ajoutez une table de sortie nommée 
+                <span class="ui-control">CombinedSales</span> comprenant les colonnes 
+                <span class="ui-control">ShopName</span>, 
+                <span class="ui-control">Product</span>, 
+                <span class="ui-control">CustomerName</span> et
+                <span class="ui-control">Quantity</span>, sauvegardez la configuration du 
+                <span class="ui-control">tMap</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_readingFromADatabase_combinedSales.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="7">
+                            <p>Ajoutez un composant 
+               <span class="ui-control">tMysqlOutput</span> à l'aide de la métadonnée de connexion à la base de données, puis connectez le
+                <span class="ui-control">tMap</span> au nouveau composant à l'aide d'un lien<![CDATA[     ]]><span class="ui-control">CombinedSales</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_readingFromADatabase_tmysqlOutput.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="8">
+                            <p>Dans la liste 
+                <span class="ui-control">Action on table</span> du composant 
+                <span class="ui-control">tMysqlOutput</span>, sélectionnez
+                <span class="ui-control">Create table if does not exist</span> et nommez la table <span class="ui-control" style="font-weight: normal; font-style: italic;">TotalSales</span>&#160;     :</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_readingFromADatabase_tmysqlOutputConfig.png" alt="" style="border: Solid 1px #c0c0c0;" border="1" />
+                            </p>
+                        </li>
+                        <li value="9">Exécutez le Job et vérifiez les statistiques&#160;: 
+            <p><img src="../../Resources/Images/Database_readingFromADatabase_completeRunJob.png" alt="" style="border: none;" border="0" /></p><p><span class="ui-control">Note&#160;:</span> 15 000 lignes proviennent de la table des données de ventes, mais peu arrivent dans la table finale. Certaines lignes sont rejetées par les jointures Inner Join.</p></li>
+                        <li value="10">
+                            <p>Double-cliquez sur le composant <span class="ui-control">LocalMySQL</span> pour ouvrir sa vue <span class="ui-control">Components</span>. <br />Cliquez sur le bouton <span class="ui-control">SQL Builder</span> à côté du champ <span class="ui-control">Table name</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture30.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="11">
+                            <p>Le <span class="ui-window-title">SQL Builder</span> s'ouvre.</p>
+                            <p>Saisissez la requête suivante&#160;: <span class="code">select * from totalsales;</span><br />Exécutez la requête pour vérifier les données insérées dans la table <span class="ui-control">TotalSales</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture31.png" alt="" />
+                            </p>
+                            <p>Modifiez la requête comme suit&#160;: <span class="code">select * from totalsales where ShopName="Shop2";</span>. <br />Exécutez la requête pour vérifier que les données relatives au magasin <span class="ui-control">Shop2</span> ont été insérées dans la table <span class="ui-control">TotalSales</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture32.png" alt="" />
+                            </p>
+                            <p><span class="ui-control">Note&#160;:</span> vous pouvez également utiliser SQL Workbench pour vérifier le contenu des tables de base de données (comme dans les étapes précédentes). </p>
+                        </li>
+                    </ol>
+                    <h2>Étape suivante</h2>
+                    <p>L'étape suivant consiste à 
+        <a href="Performing_Calculations.htm">déterminer pourquoi certaines lignes sont rejetées</a> et effectuer des calculs sur le total des ventes.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

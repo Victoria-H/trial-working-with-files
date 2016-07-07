@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Error Handling">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Handling Errors</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Error Handling</a>
+                    <ul class="sub-menu">
+                        <li><a href="Overview.htm">Overview</a>
+                        </li>
+                        <li><a href="Handling_Errors.htm">Handling Errors</a>
+                        </li>
+                        <li><a href="#" class="selected">Raise a Warning</a>
+                        </li>
+                        <li><a href="Wrap-Up.htm">Wrap-Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Error Handling</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="selected">Raise a Warning</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Raise a Warning</h1>
+                    <h2>Overview</h2>
+                    <div class="youAreGoingTo">
+                        <p>In this exercise you will raise a warning every time the output file contains less rows then the input file. </p>
+                    </div>
+                    <h2>Limit the Output</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">FIX THE ERROR IN THE INPUT FILE PATH</p>
+                            <p>Fix the problem with the 
+                <span class="ui-control">Customers File</span> component you introduced earlier by changing the 
+                <span class="ui-control">File Name</span> back to 
+                <span class="user-input-files-variables">"C:/StudentFiles/Custs.csv"</span></p>
+                            <p>
+                                <img src="../../Resources/Images/lesson6/CorrectCustomersFile.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">RUN THE JOB</p>
+                            <p>Run the Job to make sure that it performs again as expected. <br />(100 rows should be written to the output file).</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_runJobDie.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">INTRODUCE A FILTER IN  
+                <span class="ui-control">tMap</span> TO LIMIT OUTPUT ROWS</p>
+                            <p>Double-click the 
+                <span class="ui-control">tMap</span> component and click the 
+                <span class="ui-control">Activate filter expression</span> button (an arrow with a plus sign) on the 
+                <span class="ui-control">CappedOut</span> table:</p>
+                            <p>
+                                <img src="../../Resources/Images/PC_ActivateExpressionFilter.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p>Enter 
+                <span class="user-input-files-variables">"AK".equals(row2.StateCode)</span> into the text box and then click 
+                <span class="ui-control">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_FilterAK.png" alt="" />
+                            </p>
+                            <p>This expression limits the output to rows having the <span class="ui-control">StateCode </span>value set to <span class="ui-control">AK</span> (Alaska) . You know that some of the rows contain that value, but not all. This introduces an artificial limitation into the Job. Recall that you could also drag the row name from the input table and use the<span class="ui-control"> Expression Builder</span> to help you construct the expression.</p>
+                        </li>
+                        <li value="5">
+                            <p>RUN THE JOB</p>
+                            <p><span class="ui-control">Run</span> the Job and then examine the results:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_result_AK.png" alt="" />
+                            </p>
+                            <p>The output from the <b>tMap</b> component is fewer (21 rows) than the input flow (100 rows), which is not desirable. In the following steps, you will configure the Job to display a warning message if the output file contains less than 100 rows.</p>
+                        </li>
+                    </ol>
+                    <h2>Raise a warning</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">ADD A WARNING COMPONENT</p>
+                            <p>Add a <span class="ui-control">tWarn</span> component just after the <span class="ui-control">tFileOutputDelimited</span> component. </p>
+                            <p>
+                                <img src="../../Resources/Images/PD_tWarnAdded.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">ADD A TRIGGER FROM THE OUTPUT COMPONENT</p>
+                            <p>Right-click the 
+                <span class="ui-control">tFileOutputDelimited</span> component, click 
+                <span class="ui-control">Trigger</span> followed by 
+                <span class="ui-control">Run if</span>, and then click the 
+                <span class="ui-control">tWarn</span> component:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_tWarnConnected.png" alt="" />
+                            </p>
+                            <p> This specifies that the 
+                <span class="ui-control">tWarn</span> component executes only if a condition is met.<br /></p>
+                        </li>
+                        <li value="3">
+                            <p>The Job looks as follows:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_tWarnJob.png" class="vAlwaysOpen" alt="" />
+                            </p>
+                        </li>
+                        <li value="4"><![CDATA[
+            ]]><p data-mc-conditions="vModifs.vTitles">SELECT THE CONDITION FOR THE TRIGGER</p><p>Click the 
+            <span class="ui-control">If</span> connector between components in the design workspace and then open the 
+            <span class="ui-control">Component</span> view. <br />In the             <span class="ui-control">Condition</span> field
+, press
+            <span class="ui-control">Ctrl+Space</span>.<br />Then scroll down the list until you find 
+            <span class="ui-control">tFileOutputDelimited_1.NB_LINE</span> and then click it:</p><p><img src="../../Resources/Images/PD_tFileoutputdelimieted_If.png" alt="" /></p></li>
+                        <li value="5"><![CDATA[
+            ]]><p data-mc-conditions="vModifs.vTitles">AN EXPLANATION IS GIVEN FOR THE CONDITION</p><p>Read the explanation that appears. This represents the number of lines written to the output file by the specified component: </p><p><img src="../../Resources/Images/PD_IfDescription.png" alt="" /></p></li>
+                        <li value="6">
+                            <p data-mc-conditions="vModifs.vTitles">SPECIFY THE CONDITION</p>
+                            <p>Double-click to insert the variable into the <span class="ui-control">Condition</span> box and then append 
+                <span class="ui-control" style="font-style: italic; font-weight: normal;">&lt;100</span> to the string:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_Less100_If.png" alt="" />
+                            </p>
+                            <p>The condition should be : <i>((Integer)globalMap.get("tFileOutputDelimited_1_NB_LINE"))&lt;100</i></p>
+                            <p>Now the 
+                <span class="ui-control">tWarn</span> component will execute only if the number of rows written to the 
+                output file is less then 100. </p>
+                        </li>
+                        <li value="7">
+                            <p data-mc-conditions="vModifs.vTitles">ADD THE WARNING MESSAGE
+</p>
+                            <p>Double-click the 
+            <span class="ui-control">tWarn</span> component to open the 
+            <span class="ui-control">Component</span> view. Then change the
+            <span class="ui-control">Warn message</span> text to 
+            <span class="ui-control" style="font-style: italic; font-weight: normal;">"Less than 100 rows written"</span> :</p>
+                            <p> <img src="../../Resources/Images/Capture27.png" alt="" /></p>
+                        </li>
+                        <li value="8">
+                            <p style="margin-left: 0px;font-style: normal;" data-mc-conditions="vModifs.vTitles">RUN THE JOB AND VERIFY THE CONSOLE</p>
+                            <p style="margin-left: 0px;font-style: normal;">Run the Job again and verify that the warning message is displayed in the execution console:</p>
+                            <p style="margin-left: 0px; font-style: normal;">
+                                <img src="../../Resources/Images/PD_messageless100.png" alt="" />
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Next</h2>
+                    <p>You have now completed this lesson.  It's now time to <a href="Wrap-Up.htm">Wrap-up. </a></p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

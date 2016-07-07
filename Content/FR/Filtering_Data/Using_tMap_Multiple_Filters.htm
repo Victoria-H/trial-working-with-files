@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Using_tMap_Multiple_Filters</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Utilisation de plusieurs filtres dans le tMap</h1>
+                    <h2>Vue d'ensemble</h2>
+                    <p>Vous allez apprendre à filtrer sur différents États dans un 
+        <span class="ui-control">tMap</span>, en suivant les bonnes pratiques. Vous allez créer trois fichiers de sortie, chacun contenant un État différent.</p>
+                    <h2>Duplication du Job</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Cliquez-droit sur le Job 
+                <span class="ui-control">Filter_States</span> et sélectionnez 
+                <span class="ui-control">Duplicate</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_Duplicate_tFilterStates.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Nommez le nouveau Job 
+             <span class="user-input-files-variables">Filter_States_tMap</span> et cliquez sur
+              <span class="ui-control">OK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_tFilterStates_tMap.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Double-cliquez sur le nouveau Job pour l'ouvrir. </p>
+                        </li>
+                    </ol>
+                    <h2>Modification de la sortie</h2>
+                    <ol start="1">
+                        <li value="1">
+                            <p>Ajoutez un nouveau composant au Job. Cliquez-droit sur le 
+                <span class="ui-control">tFileOutputDelimited</span> et sélectionnez 
+                <span class="ui-control">Copy</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_copyOutput01.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Cliquez-droit sous le composant de sortie dans l'espace de modélisation graphique et sélectionnez 
+                <span class="ui-control">Paste</span> pour placer le composant 
+                <span class="ui-control">tFileOutputDelimited</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_PasteOutput01.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Le composant est placé sous le <span class="ui-control">tFileOutputDelimited</span> existant. <br />Sous le second <span class="ui-control">tFileOutputDelimited</span>, cliquez-droit et sélectionnez <span class="ui-control">Paste</span> pour placer le troisième 
+                <span class="ui-control">tFileOutputDelimited</span> à votre Job&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_PasteOutput02.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p>Vous avez placé trois composants de sortie dans votre Job&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_three_outputs.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="5">
+                            <p>Rappelez-vous que le dernier paramètre du <span class="ui-control">tMap</span> était un filtre, filtrant les entrées pour <span class="ui-control">CA</span> (Californie) et écrivant la sortie dans un fichier. Vous allez modifier les paramètres pour le premier composant de sortie et modifier le nom du fichier de sortie. Double-cliquez sur le 
+                <span class="ui-control">tFileOutputDelimited_1</span> et, dans le champ <span class="ui-control">File Name</span>, saisissez
+                <span class="user-input-files-variables">"C:/StudentFiles/CA_Out.csv"</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_CA_Out.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="6">
+                            <p>Cliquez sur 
+                l'onglet <span class="ui-control">View</span> pour modifier le nom de la sortie en 
+                  <span class="user-input-files-variables">CA</span>. Saisissez
+                <span class="user-input-files-variables">CA</span> dans le champ 
+                <span class="ui-control">Label format</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_CA_Outputname.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="7">
+                            <p>Double-cliquez sur le deuxième 
+                <span class="ui-control">tFileOutputDelimited</span>, modifiez le nom du fichier en <span class="user-input-files-variables">NY_Out.csv</span> et saisissez <span class="user-input-files-variables">NY</span>
+                dans le champ 
+                <span class="ui-control">Label format</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_NY_Outputname.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="8">
+                            <p>Effectuez les mêmes modifications pour le troisième composant <span class="ui-control">tFileOutputDelimited</span> et renommez-le <span class="user-input-files-variables">AK</span><![CDATA[ 
+             ]]>:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_threeoutputs.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="9">
+                            <p>Cliquez-droit sur le composant 
+                <span class="ui-control">tMap</span> et sélectionnez 
+                <span class="ui-control">Row</span> &gt;<![CDATA[
+                ]]><span class="ui-control">*New Output* (Main)</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_rightclick_tMap01.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="10">
+                            <p>Reliez-le au composant <b>NY</b>, nommez le lien <span class="user-input-files-variables">NY</span><![CDATA[       ]]>puis cliquez sur <span class="ui-control">OK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_connectNY.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="11">
+                            <p>Cliquez sur <span class="ui-control">Yes</span> lorsqu'une boîte de dialogue vous propose de récupérer le schéma du composant cible&#160;:<p>&#160;</p></p>
+                            <p>
+                                <img src="../../Resources/Images/FD_confirmschema.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="12">
+                            <p>Répétez ces étapes pour le dernier composant de sortie 
+                <span class="ui-control">AK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_finaloutput.png" alt="" />
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Modification du tMap</h2>
+                    <ol>
+                        <li value="1">Double-cliquez sur le 
+            <span class="ui-control">tMap</span> pour ouvrir son éditeur de mapping.</li>
+                        <li value="2">Cliquez sur le bouton 
+            <span class="ui-control">Auto map!</span>, en haut à droite&#160;: 
+            <p><img src="../../Resources/Images/FD_Automapbutton.png" alt="" /></p></li>
+                        <li value="3">Le système va mapper les éléments comme suit&#160;: 
+            <p><img src="../../Resources/Images/FD_autoMap.png" alt="" /></p></li>
+                        <li value="4">Vous pouvez copier-coller les expressions. Cliquez-droit sur l'expression dans la ligne
+           <span class="ui-control">Name</span> de la table <b>CappedOut</b>, puis cliquez sur 
+            <span class="ui-control">Copy</span>&#160;: 
+            <p><img src="../../Resources/Images/FD_CopyExpressions01.png" alt="" /></p></li>
+                        <li value="5">Cliquez-droit sur l'expression dans la ligne 
+            <span class="ui-control">Name</span>, dans la table 
+            <span class="ui-control">NY</span> et sélectionnez 
+            <span class="ui-control">Paste</span>&#160;: 
+            <p><img src="../../Resources/Images/FD_PasteExpression01.png" alt="" /></p></li>
+                        <li value="6">Collez-la également dans la ligne <span class="ui-control">Name</span> de la table 
+            <span class="ui-control">AK</span>&#160;: 
+            <p><img src="../../Resources/Images/FD_PasteExpression02.png" alt="" /></p></li>
+                        <li value="7">Copiez-collez l'expression de la ligne 
+            <span class="ui-control">State</span>&#160;: 
+            <p><img src="../../Resources/Images/FD_CopyExpressions03.png" alt="" /></p></li>
+                        <li value="8">
+                            <p>Vos tables de sortie doivent ressembler à celles-ci&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_result_CopyPaste.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="9">
+                            <p>Si le filtre n'est pas actif, cliquez sur l'icône représentant une flèche blanche avec un signe +
+(<![CDATA[            ]]><span class="ui-control">Activate / unactivate the expression filter</span>), en haut à droite du schéma de sortie <b>CappedOut</b>, puis copiez l'expression  
+                <i>"CA".equals(row2.StateCode)</i>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture3.jpg" alt="" />
+                            </p>
+                        </li>
+                        <li value="10">
+                            <p>Cliquez sur l'icône 
+                <span class="ui-control">Activate / unactivate the expression filter</span> en haut à droite du schéma de sortie 
+                <span class="ui-control">NY</span> et collez l'expression dans le champ qui s'affiche. Modifiez-la en<![CDATA[ 
+                ]]><i>"NY".equals(row2.StateCode)</i>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_NYexpressions.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="11">
+                            <p>Appliquez le mêmes modifications à la sortie 
+                <span class="ui-control">AK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_AKexpression02.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="12">
+                            <p>Cliquez sur <span class="ui-control">OK</span> pour sauvegarder vos modifications dans l'éditeur du <span class="ui-control">tMap</span>, puis sauvegardez votre Job.</p>
+                        </li>
+                    </ol>
+                    <h2>Exécution du Job</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Exécutez le Job et constatez que les résultats sont écrits dans les différents fichiers de sortie, comme paramétré dans les filtres&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_RunfinalJob.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Ouvrez les fichiers de sortie dans le dossier 
+                <span class="ui-control">C:/StudentFiles/</span> afin de vérifier la sortie. Voici le fichier   <span class="user-input-files-variables">NY_Out.csv</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FD_AK_out.png" alt="" />
+                            </p>
+                        </li>
+                    </ol>
+                    <p> </p>
+                    <h2>Étape suivante</h2>
+                    <p>Vous avez terminé cette leçon. Vous pouvez passer à la <a href="Wrap-Up.htm">Conclusion</a>.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

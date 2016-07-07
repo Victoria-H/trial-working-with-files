@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Working with Files">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Wrap-Up</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Working with Files</a>
+                    <ul class="sub-menu">
+                        <li><a href="Overview.htm">Overview</a>
+                        </li>
+                        <li><a href="Reading_a_File.htm">Reading an Input File</a>
+                        </li>
+                        <li><a href="Transforming_Data.htm">Transforming Data</a>
+                        </li>
+                        <li><a href="Writing_Output.htm">Running the Job</a>
+                        </li>
+                        <li><a href="Combining_Columns.htm">Combining Columns</a>
+                        </li>
+                        <li><a href="Duplicating_a_Job.htm">Duplicating a Job</a>
+                        </li>
+                        <li><a href="Challenges.htm">Challenges</a>
+                        </li>
+                        <li><a href="Solutions.htm">Solutions</a>
+                        </li>
+                        <li><a href="#" class="selected">Wrap-Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Working with Files</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="selected">Wrap-Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h2>Wrap-Up</h2>
+                    <p>In this lesson you learned how to read a delimited file and how to define the related schema. You also learned how to apply simple transformations on the input data and write them into an output file.</p>
+                    <p>&#160;</p>
+                    <!--COPY THIS INTO YOUR TEXT EDITOR : Formatting is automatic-->
+                    <!--GIVE THE CORRECT ANSWER THE CLASS NAME vCORRECT-->
+                    <div class="vQuestion" data-mc-conditions="vModifs.vQuestion">
+                        <p class="vQuizTitle">tRowGenerator</p>
+                        <p>Imagine you wish to have a column in your output files with a random date in 2016.<br />			What expression would you use to do this?<br /><em>HINT : Open the expression builder.</em></p>
+                        <ul>
+                            <li class="answer vCorrect" value="1">TalendDate.getRandomDate("2016-01-01","2016-12-31")
+				</li>
+                            <li class="answer vWrong" value="2">String.getRandomDate("2016-01-01","2016-12-31")
+				</li>
+                            <li class="answer vWrong" value="3">TalendDate.getDate("2016")
+				</li>
+                        </ul>
+                        <div class="vFeedbackCorrect">
+                            <p>Well done!</p>
+                        </div>
+                        <div class="vFeedbackWrong">
+                            <p>Sorry!</p>
+                            <p>HINT:Double click on the tRowGenerator. Add a column to the schema with type 'String', and keep the ... in the functions box.
+					<br /> 
+				Select the column and double click in the <b>Value</b> box to open the expression builder.Choose a suitable category</p>
+                        </div>
+                    </div>
+                    <!--END OF QUIZ TEMPLATE-->
+				
+				                    <!--COPY THIS INTO YOUR TEXT EDITOR : Formatting is automatic-->
+                    <!--GIVE THE CORRECT ANSWER THE CLASS NAME vCORRECT-->
+                    <div class="vQuestion" data-mc-conditions="vModifs.vQuestion">
+                        <p class="vQuizTitle">my second question</p>
+                        <p>Imagine you wish to have a column in your output files with a random date in 2016.<br />			What expression would you use to do this?<br /><em>HINT : Open the expression builder.</em></p>
+                        <ul>
+                            <li class="answer vCorrect" value="1">TalendDate.getRandomDate("2016-01-01","2016-12-31")
+				</li>
+                            <li class="answer vWrong" value="2">String.getRandomDate("2016-01-01","2016-12-31")
+				</li>
+                            <li class="answer vWrong" value="3">TalendDate.getDate("2016")
+				</li>
+                        </ul>
+                        <div class="vFeedbackCorrect">
+                            <p>Well done!</p>
+                        </div>
+                        <div class="vFeedbackWrong">
+                            <p>Sorry!</p>
+                            <p>HINT:Double click on the tRowGenerator. Add a column to the schema with type 'String', and keep the ... in the functions box.
+					<br /> 
+				Select the column and double click in the <b>Value</b> box to open the expression builder.Choose a suitable category</p>
+                        </div>
+                    </div>
+                    <!--END OF QUIZ TEMPLATE-->
+				
+				
+                    <!-- OPTIONAL -->
+                    <!-- DO NOT MODIFY BELOW THIS LINE -->
+                    <!-- The following snippet is responsible for displaying a message reminding the user to click "Mark as completed" in the LMS -->
+                    <div data-mc-conditions="i18n.EN">
+                        <h3>Next Step</h3>
+                        <p>Congratulations, you successfully completed this lesson. Click the <span class="ui-control">Check your status with this unit</span> button below in order to save your progress. Then click <span class="ui-control">Completed. Let's continue &gt;</span> on the next screen to jump to the next lesson.</p>
+                    </div>
+					
+					
+					<!--tincan stuff-->
+					<div class="youAreGoingTo">
+					<p>You must rate this lesson in order to complete it. Comments are optional.</p><br/>
+					<img id="vLike0" class='vLikeIcon' onclick="vRating(this)" src="../../Resources/Images/OtherGraphics/dislike.png"/>
+					<img id="vLike1" class='vLikeIcon' onclick="vRating(this)" src="../../Resources/Images/OtherGraphics/halflike.png"/>
+					<img id="vLike2" class='vLikeIcon' onclick="vRating(this)" src="../../Resources/Images/OtherGraphics/like.png"/>
+					
+					<input type="text" id="vComment" value="comment here" maxlength="140">
+					<button id="vRateSubmit" type="button" onclick="vRateAndComplete()" >SUBMIT</button>
+					<p id="vMessage"></p>
+					</div>
+                    
+                    <script>/* <![CDATA[ */
+
+//OLD CODE WITH LOCAL STORAGE					
+// Unmarshall and rebuild TinCan object from Local Storage
+//var tincan = new TinCan(JSON.parse(localStorage.getItem("tincan")));
+
+//NOTE : Quiz question statements are generated in the function vQuiz in vicky.js
+//Most of the following code would also be transferred to separate js file.
+
+//draught styling on rating element
+	$('#vComment').css({
+				'background-color':'#FFF',
+				'padding':'0.5em',
+				'margin':'0.5em',
+				'border-radius':'0.5em',
+				'border':'1px solid #5ea7cb',
+				'width':'70%',
+	});
+	
+	$('.vLikeIcon').css({
+				
+				'width':'10%',
+				'height':'auto',
+				'margin-left':'17.5%',
+				'display':'inline-block',
+				'background-color':'#EEE'
+				
+	});
+	
+	$(".vLikeIcon").hover(function(){
+		$(this).css("background-color", "white");
+		}, function(){
+		$(this).css("background-color", "#EEE");
+	});
+
+	$('#vRateSubmit').css({
+				'background-color':'#EEE',
+				//'padding':'0.5em',
+				//'border-radius':'0.2em',
+				'border':'1px solid #5ea7cb',
+				'pointer-events':'none',
+				'width':'20%',
+				'color':'white'
+	});
+//end of styling
+
+
+
+//Rating and completion.
+//Learner must rate the lesson and click submit.
+
+	var vRatingScale=-1;
+	var vRatingText;
+
+
+function vRating(th) {
+
+	//gives a rating of 0 0.5 or 1
+	vRatingScale = th.id.split("vLike")[1]/2;
+	
+	//more styling for submit button. 
+	$('#vRateSubmit').css({
+				'background-color':'#93A000',
+				'pointer-events':'auto'
+			});
+	$('.vLikeIcon').css({
+			'border':'0px solid #93A000',	
+			});
+	$(th).css({
+			'border':'2px solid #93A000',	
+			});
+
+}
+
+function vRateAndComplete() {
+	vRatingText = document.getElementById("vComment").value;
+	//checks rating has been done (not really necessary as I have pointer events) and then sends rating and completion statement
+	if (vRatingScale != -1) {
+		vSendRating();
+		vComplete();
+		$('#vMessage').html('Congratulations, You have successfully completed this lesson, check your status with this unit etc.');
+	}
+}
+
+
+//PURE TINCAN STUFF
+//debugging
+TinCan.enableDebug()
+
+//new Tincan to include on every page we wish to send statements from.
+var tincan = new TinCan (
+          {
+              url: window.location.href,
+ 
+          }
+       );
+		
+//code to add second LRS which I'm using for testing
+//inital app sandbox  and 2nd trial inital app 
+//THIS IS FOR TESTING ONLY AND WOULD NOT BE INCLUDED
+var newLRS = new TinCan.LRS(
+        {
+            endpoint: "https://cloud.scorm.com/tc/KIHYRB7TQI/sandbox/",
+            username: "vF4TIlPjtrGSHtaKyoU",
+            password: "yuvVWM5EM-LMBcEE708",
+            allowFail: false
+        }
+    );
+	
+tincan.recordStores[1] = newLRS;
+//end of 2nd LRS code.
+
+
+//this sends the rating and comment.
+function vSendRating() {
+	
+	tincan.sendStatement(
+		{
+			verb: {
+				id: "http://adlnet.gov/expapi/verbs/rated",
+				display: {
+					"en-US": "rated"
+				}
+			},
+			result: {
+				"score": {
+					"scaled": vRatingScale
+				},
+				"response":vRatingText
+			}
+		}
+	);
+	
+}
+
+// Send activity completion statement    	
+function vComplete() {
+
+	tincan.sendStatement(
+		{
+			verb: {
+				id: "http://adlnet.gov/expapi/verbs/completed",
+				display: {
+					"en-US": "completed"
+				}
+			}
+		}
+	);
+
+}
+
+
+		/* ]]> */</script>
+                    <!-- /Tin Can API Wrapper -->
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

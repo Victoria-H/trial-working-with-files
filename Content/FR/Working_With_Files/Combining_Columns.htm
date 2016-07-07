@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Combining Columns</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Combinaison de colonnes</h1>
+                    <h2>Vue d'ensemble</h2>
+                    <p>Le 
+        <span class="bold">tMap</span> permet d'effectuer différentes opérations de mapping et transformations de données. Imaginez que votre stockage cible de données nécessite les noms et prénoms combinés en une seule colonne. Suivez les étapes suivantes pour y parvenir.</p>
+                    <h2>Modification du schéma</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Double-cliquez sur le 
+                <span class="bold">tMap</span>.</p>
+                        </li>
+                        <li value="2">
+                            <p>Cliquez dans la case de l'expression 
+                <span class="bold">row1.Last</span> de la table 
+                <span class="bold">CappedOut</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/SelectLast.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Dans l'éditeur de schéma, au bas de la fenêtre, remarquez que la même colonne est sélectionnée&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/SelectLastBelow.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Comme vous allez combiner les données de deux colonnes en une seule, une colonne ne sera plus nécessaire.</p>
+                        </li>
+                        <li value="3">
+                            <p>Cliquez sur le bouton 
+                <span class="bold">Remove selected items</span>, marqué d'une croix rouge (encadré dans l'image ci-dessus), pour supprimer la colonne
+                <span class="bold">Last</span> du schéma de sortie&#160;:</p>
+                            <p><span style="font-weight: bold;font-style: italic;">Important&#160;:</span> assurez-vous de cliquer sur le bouton <b>Remove selected items</b> dans l'éditeur du schéma <span class="ui-control">CappedOut</span> (partie inférieure droite de l'éditeur du <span class="ui-control">tMap</span>) et de ne pas utiliser le bouton <b>[x]</b> pour supprimer la table (dans la partie supérieure droite de l'éditeur de mapping). Si vous cliquez sur ce bouton (<span class="ui-control">Remove Table</span>), vous supprimerez votre mapping et devrez tout recommencer.</p>
+                        </li>
+                        <li value="4">
+                            <p>La colonne a disparu de la table <span class="ui-control">CappedOut</span> en haut de l'éditeur également.                 </p>
+                        </li>
+                    </ol>
+                    <h2>Combinaison de colonnes</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Glissez la colonne 
+                <span class="bold">Last</span> de la table 
+                <span class="bold">row1</span> à gauche et déposez-la dans la ligne 
+                <span class="bold">First</span> de la table 
+                <span class="bold">CappedOut</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/First_and_Last.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Notez que l'expression contient à présent des références aux deux colonnes de la table<![CDATA[
+                ]]><span class="bold">row1</span>.</p>
+                        </li>
+                        <li value="2">
+                            <p>Insérez un signe <span class="user-input-files-variables">+</span> entre les deux références&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FirstPlusLast.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Comme les deux colonnes contiennent des chaînes de caractères, le signe <span class="user-input-files-variables">+</span> concatène les valeurs.</p>
+                        </li>
+                        <li value="3">
+                            <p>Pour inclure un espace entre le prénom et le nom de famille, insérez 
+                <span class="user-input-files-variables">" " +</span> après le <span class="user-input-files-variables">+</span>. Appuyez sur la touche <span class="ui-control">Entrée</span> de votre clavier pour sauvegarder cette expression&#160;:</p>
+                        </li>
+                        <p>
+                            <img src="../../Resources/Images/AddSpace.png" alt="" style="border: none;" width="432" height="72" border="0" />
+                        </p>
+                        <li value="4">
+                            <p>Dans l'éditeur de schéma, au bas de la fenêtre, cliquez sur 
+                <span class="bold">First</span> dans la table <span class="ui-control">CappedOut</span> et changez sa valeur en <span class="user-input-files-variables">Name</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/FirstToName_450x100.png" alt="" style="border: none;width: 450;height: 100;" border="0" />
+                            </p>
+                            <p>Modifiez la longueur de la ligne <b>Name</b> de <i>15</i> à <i>30</i>. </p>
+                            <p>Le nom de la colonne du schéma dans la table 
+                <span class="bold">CappedOut</span> est 
+                <span class="bold">Name</span> et non 
+                <span class="bold">First</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/SpaceBetweem.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="5">
+                            <p>Cliquez sur 
+                <span class="bold">Ok</span> afin de sauvegarder vos modifications et propagez ces changements lorsqu'une boîte de dialogue vous le propose.</p>
+                        </li>
+                    </ol>
+                    <h2>Exécution</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Pour exécuter le Job, vous pouvez utiliser le bouton <span class="ui-control">Run</span> ou appuyer sur la touche <span class="ui-control">F6</span> de votre clavier.</p>
+                        </li>
+                        <li value="2">
+                            <p>Cliquez-droit sur le composant <span class="ui-control">tFileOutputDelimited</span> et sélectionnez <span class="ui-control">Data viewer</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture18.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Explorez le contenu du fichier de sortie à l'aide de l'affichage dans la fenêtre <span class="ui-control">Result Data Preview</span>&#160;: </p>
+                            <p>
+                                <img src="../../Resources/Images/Capture19.png" alt="" />
+                                <br />Notez que la première colonne est <span class="ui-control">Name</span>, elle est la combinaison des colonnes <span class="ui-control">First</span> et <span class="ui-control">Last</span> du fichier <span class="ui-control">Custs.csv</span> séparées par un espace (comme spécifié dans l'Expression Builder).</p>
+                        </li>
+                        <li value="4">
+                            <p>Cliquez dans l'onglet <span class="ui-control">File Content</span> pour voir le format brut du fichier&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture20.png" alt="" />
+                            </p>
+                            <p>Cliquez sur <span class="ui-control">Close</span>. </p>
+                        </li>
+                    </ol>
+                    <h2>Étape suivante</h2>
+                    <p>Vous avez terminé ce Job. Vous allez ensuite le <a href="Duplicating_a_Job.htm">dupliquer</a>, le modifier et exécuter le nouveau Job. </p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<html>
+<head>
+	<style>
+	body {
+	overflow:hidden;
+	margin:0px;
+	padding:0px;
+
+	}
+	</style>
+	<script src="Content/Resources/Scripts/tincan.js"></script>
+	<script>
+
+console.log("hi");
+
+TinCan.enableDebug();
+
+var tincan = new TinCan (
+	{
+		url: window.location.href,
+	}
+);
+console.log("hi2");
+console.log(tincan);
+
+// Send activity initialization statement
+// 'duration' is set to 0 seconds (pattern is "PT1H37M56.34S" = 1 hour, 37 min and 56.34 seconds)
+tincan.sendStatement(
+	{
+		verb: {
+			id: "http://adlnet.gov/expapi/verbs/attempted",
+			display: {
+				"en-US": "attempted"
+			}
+		},
+		result: {
+			duration: "PT0S"
+		}
+	}
+);
+
+console.log(location.search);
+
+function passTCtoIframe() {
+	var iframeSrc="Content/EN/Working_With_Files/Overview.htm"+ location.search;
+	var theIframe=document.getElementById("theIframe");
+	console.log(theIframe);
+	theIframe.src=iframeSrc;
+
+	console.log(window.location.href);
+	console.log(location.search);
+
+}
+
+</script>
+</head>
+<body onload="passTCtoIframe();">
+<iframe id="theIframe" src="" width="100%" height="100%" ></iframe>
+<!--<iframe src="http://www.w3schools.com" width="100%" height="100%" />-->
+
+</body>
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Working with Databases">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Creating_the_Customer_Table</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Working with Databases</a>
+                    <ul class="sub-menu">
+                        <li><a href="Overview.htm">Overview</a>
+                        </li>
+                        <li><a href="Creating_Database_Metadata.htm">Creating Database Metadata</a>
+                        </li>
+                        <li><a href="#" class="selected">Creating the Customer Table</a>
+                        </li>
+                        <li><a href="Creating_Second_Table.htm">Creating the Product Table</a>
+                        </li>
+                        <li><a href="Setting_Up_Shop_Tables.htm">Setting Up Sales Table</a>
+                        </li>
+                        <li><a href="Reading_from_a_Database.htm">Joining the Data</a>
+                        </li>
+                        <li><a href="Performing_Calculations.htm">Finalizing the Job</a>
+                        </li>
+                        <li><a href="Wrap-Up.htm">Wrap-Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Working with Databases</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="selected">Creating the Customer Table</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Creating the Customer Table</h1>
+                    <h2>Overview</h2>
+                    <div class="youAreGoingTo">
+                        <p>Your next step is to connect to an existing database, create a table for customer data, and then load data from a text file into that database table.</p>
+                    </div>
+                    <h2>Create new Job</h2>
+                    <ol>
+                        <li value="1"><![CDATA[
+            ]]><p data-mc-conditions="vModifs.vTitles">CREATE A STANDARD JOB IN THE REPOSITORY</p><p>Right-click the <span class="ui-control">Sales</span> folder under <span class="ui-control">Job Designs / Standard</span> and select <span class="ui-control">Create Standard Job</span>: <img src="../../Resources/Images/lesson8/createCustPrep2TableJob.png" alt="" style="border: none;" border="0" /></p></li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">GIVE THE JOB A NAME, PURPOSE AND DESCRIPTION</p>
+                            <p>Enter 
+                <span class="ui-control">CustPrep2Table</span> for the 
+                <span class="ui-control">Name</span>, fill in the <span class="ui-control">Purpose</span> and <span class="ui-control">Description</span> and click 
+                <span class="ui-control">Finish</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson8/nameCustPrep2TableJob.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Create a Table</h2>
+                    <p data-mc-conditions="vModifs.vBoxAdditions">You are going to create a database table using the connection and customer file information you stored as metadata in the repository.</p>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">CHOOSE A COMPONENT TO CREATE A DATABASE TABLE</p>
+                            <p>In the 
+                <span class="ui-control">CustPrep2Table</span> Job, place a 
+                <span class="ui-control">tCreateTable</span> component :</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_tcreateTable.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>As its name implies, this component creates a table in a database. <br />A window may appear providing the option to install additional modules. These might be useful under other circumstances and in your home environment you should examine the list carefully and read about the modules to decide if you want to install any of them. Note that none are marked as Required.</p>
+                            <p>If this window appears, select the checkbox in front of <b>Do not show again</b> and then close the window.</p>
+                            <p><a href="../../Resources/Images/image242.png"><img src="../../Resources/Images/Database_createDatabaseMetadata_downloadModule_531x407.png" alt="" style="border: none;width: 531;height: 407;" border="0" /></a>
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE COMPONENT VIEW FOR <span class="ui-control">tCreateTable</span> AND THEN THE REPOSITORY CONTENT WIZARD</p>
+                            <p>Double-click the 
+              <span class="ui-control">tCreateTable</span> component to open the
+                <span class="ui-control">Component</span> view. </p>
+                            <p>Select 
+                <span class="ui-control">Repository</span> in the 
+                <span class="ui-control">Property Type</span> list to use the stored database connection information. <br />Then click the button marked with an ellipsis<span class="ui-control"> [...] </span>next to the field 
+                <span class="ui-control">Property Type</span></p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_tcreateTableComponent.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">SELECT THE DATABASE CONNECTION YOU CONFIGURED BEFORE</p>
+                            <p>In the <span class="ui-control">Repository Content</span> wizard, select
+                <span class="ui-control">LocalMySQL</span> and then click 
+                <span class="ui-control">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_tcreateTableRepository.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">ADD THE CONTEXT PARAMETERS TO THE JOB</p>
+                            <p>Then click 
+                <span class="ui-control">Yes</span> in order to add context parameters to the Job:
+                <br /><img src="../../Resources/Images/Database_createTable_tcreateTableAddContext.png" alt="" /></p>
+                        </li>
+                        <li value="5">
+                            <p data-mc-conditions="vModifs.vTitles">CHECK THE CONFIGURATION</p>
+                            <p>Check the configuration of the 
+                <span class="ui-control">tCreateTable</span> component:
+                <br /><img src="../../Resources/Images/Database_createTable_tcreateTableConfigWithContext.png" alt="" style="border: none;" border="0" /><br /></p>
+                            <p>The information from the stored connection now appears in the 
+					<span class="ui-control">Component</span> view.</p>
+                        </li>
+                        <li value="6">
+                            <p data-mc-conditions="vModifs.vTitles">TELL THE COMPONENT TO USE A SCHEMA FROM THE REPOSITORY</p>
+                            <p>Set the  
+                <span class="ui-control">Schema</span> to <![CDATA[
+                ]]><span class="ui-control">Repository</span> (changing it from 
+                <span class="ui-control">Built-In</span>) and then click the button marked with an ellipsis (to the left of 
+                <span class="ui-control">Edit schema</span>) to choose the schema:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_tcreateTableChangeSchema.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="7">
+                            <p data-mc-conditions="vModifs.vTitles">SELECT THE <b>CustomerMetadata</b> SCHEMA YOU CREATED EARLIER</p>
+                            <p>Under 
+                <span class="ui-control">Metadata</span> click 
+               <span class="ui-control">File Delimited</span> and under 
+                <span class="ui-control">RetailCustomers</span>, select <b>CustomerMetadata</b>. Then click 
+                <span class="ui-control">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_tcreateTableChooseSchema.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Recall that this is the Customer Schema you defined in the <span class="ui-control">Repository </span>earlier.</p>
+                        </li>
+                        <li value="8">
+                            <p data-mc-conditions="vModifs.vTitles">SET THE TABLE NAME AND TABLE ACTION</p>
+                            <p>Select 
+               <span class="ui-control">Drop table if exists and create</span> out of the list for 
+                <span class="ui-control">Table Action.</span></p>
+                            <p>Set the
+               <span class="ui-control">Table Name</span> to 
+                <span class="ui-control" style="font-style: italic; font-weight: normal;">"RetailCustomers"</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_tcreateTableTableAction.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Now this component is configured to connect to your local MySQL server and create a table named 
+                <span class="ui-control">RetailCustomers</span> with the stored 
+                <span class="ui-control">RetailCustomers</span> schema in the 
+                <span class="ui-control">training</span> database ( this database was created for you in this environment). <span class="italic">Hint</span>:&#160;Initially, the <span class="ui-control">Table Name</span> is blank. When you set the <span class="ui-control">Schema </span>to the <span class="ui-control">Repository </span>(RetailCustomers) it gets set to <span class="italic">"CustomerMetadata"</span>. Be sure that you changed it to <span class="italic">"RetailCustomers"</span> last (before continuing with the rest of the steps below).</p>
+                        </li>
+                        <p>The 
+            <span class="ui-control">Table Action</span> parameter set to <![CDATA[
+            ]]><span class="ui-control">Create table</span> by default, can only happen once. By changing the action to 
+            <span class="ui-control">Drop table if exists and create</span>, you can run this Job repeatedly if necessary without causing an error.</p>
+                        <p>&#160;</p>
+                    </ol>
+                    <h2>Populate the Customer Table</h2>
+                    <p data-mc-conditions="vModifs.vBoxAdditions">You are going to put the data from the C:/StudentFiles/refCustomer.csv file into your database table. You have already created metadata for this file and for the database connection.</p>
+                    <ul data-mc-conditions="vModifs.vBoxAdditions">
+                        <li value="1" data-mc-conditions="vModifs.vBoxAdditions"> You have a component, <span class="ui-control">tCreateTable </span>, that creates your database table.</li>
+                        <li value="2" data-mc-conditions="vModifs.vBoxAdditions"> When the table is created, it will trigger an input component to read the information from your csv file. </li>
+                        <li value="3" data-mc-conditions="vModifs.vBoxAdditions">Then you will choose a component that writes this input to your database table.</li>
+                    </ul>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">STARTING FROM THE FILE METADATA IN THE REPOSITORY, ADD THE <span class="ui-control">tFileInputDelimited</span> COMPONENT TO THE WORKSPACE</p>
+                            <p>Drag the 
+                <span class="ui-control">RetailCustomers</span> metadata into the design workspace, choosing 
+                <span class="ui-control">tFileInputDelimited</span> as the component. Place the component under the <span class="ui-control">tCreateTable </span>component.</p>
+                            <p>This file input component reads the customer data file. As you exported your information as context variables, you will be prompted to add context parameters to the Job. <br />Click 
+                <span class="ui-control">Yes</span>:
+                <br /><img src="../../Resources/Images/Database_createMetadata_custPrepAddContext_344x325.png" alt="" style="border: none;width: 344;height: 325;" border="0" /></p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">CHECK THE COMPONENT IN THE COMPONENT VIEW</p>
+                            <p>Double-click 
+                <span class="ui-control">RetailCustomers</span> to open the 
+                <span class="ui-control">Component</span> view. The information displayed is just what you entered in the 
+                <span class="ui-control">Repository</span> metadata and saved as context variables:
+                <br /><img src="../../Resources/Images/Database_createMetadata_tFileInputDelimitedComponent.png" alt="" style="border: none;" border="0" /></p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">TRIGGER THE INPUT COMPONENT FROM THE <span class="ui-control">tCreateTable</span> COMPONENT</p>
+                            <p>Connect the 
+                <span class="ui-control">tCreateTable</span> component to the 
+                <span class="ui-control">RetailCustomers</span> component with an 
+                <span class="ui-control">OnComponentOK</span> trigger:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_tcreateTableOnComponentOK_445x295.png" alt="" style="border: none;width: 445;height: 295;" border="0" />
+                            </p>
+                            <p>This trigger specifies that the connected subjob only executes when the component runs without error. In other words, the Job will not populate the table unless the table is successfully created first.</p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">STARTING FROM THE DATABASE CONNECTION METADATA IN THE REPOSITORY, ADD A COMPONENT TO WRITE THE DATA TO YOUR DATABASE</p>
+                            <p>Drag the database connection 
+                <span class="ui-control">LocalMySQL</span> from the 
+                <span class="ui-control">Metadata</span> onto the design workspace to the right of 
+                <span class="ui-control">RetailCustomers</span>:</p>
+                            <p><a href="../../Resources/Images/image239.PNG"><img src="../../Resources/Images/Database_createTable_localMysqlDragOnDesigner.png" alt="" style="border: none;" border="0" /></a>
+                            </p>
+                        </li>
+                        <li value="5">
+                            <p data-mc-conditions="vModifs.vTitles">CHOOSE THE <span class="ui-control">tMysqlOutput</span> COMPONENT</p>
+                            <p>Click 
+                <span class="ui-control">tMysqlOutput</span> in the 
+                <span class="ui-control">Components</span> window (to write to the database) and then click 
+                <span class="ui-control">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_custprep2TableAfterDragLocalMysql.png" alt="" border="0" class="vAlwaysOpen" />
+                            </p>
+                        </li>
+                        <li value="6">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE COMPONENT VIEW OF <span class="ui-control">LocalMySQL</span></p>
+                            <p>Double-click the new component 
+                <span class="ui-control">LocalMySQL</span> to open the 
+                <span class="ui-control">Component</span>view. <br />Notice that the connection information is already set based on the metadata.</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture28.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="7"><![CDATA[           ]]><p data-mc-conditions="vModifs.vTitles"> SPECIFY THE SCHEMA</p><p>Specify the 
+                <span class="ui-control">Repository</span> schema 
+                <span class="ui-control">RetailCustomers - CustomerMetadata</span> (as you did with the 
+                <span class="ui-control">tCreateTable </span>component). Set the table name to 
+                <span class="ui-control" style="font-weight: normal; font-style: italic;">"RetailCustomers"</span>.</p><p>This is the name of the table the 
+                <span class="ui-control">tCreateTable</span> component creates, so this component writes data to that new table.</p><p><img src="../../Resources/Images/DB_cust2prepTableproperties.PNG" alt="" /></p></li>
+                        <li value="8">
+                            <p data-mc-conditions="vModifs.vTitles">LINK THE INPUT COMPONENT TO THE DATABASE CONNECTION</p>
+                            <p>Right-click 
+                <span class="ui-control">RetailCustomers</span> and click
+                <span class="ui-control">Row</span> , then <span class="ui-control">Main</span> and then drag it to the 
+                <span class="ui-control">LocalMySQL</span>component to connect them:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_connectRetailCustomerAndMysqlOutput.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li style="font-style: normal;" value="9">
+                            <p data-mc-conditions="vModifs.vTitles">PROPAGATE CHANGES</p>
+                            <p>Click 
+                <span class="ui-control">Yes</span> if this message appears:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_propagateChange.png" alt="" border="0" class="vAlwaysOpen" />
+                            </p>
+                        </li>
+                        <li value="10">
+                            <p data-mc-conditions="vModifs.vTitles">RUN THE JOB</p>
+                            <p><span class="ui-control">Run</span> the Job and then examine the results:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture39.png" alt="" />
+                            </p>
+                            <p>The customer data file contains 5000 rows.</p>
+                        </li>
+                        <li value="11">
+                            <p data-mc-conditions="vModifs.vTitles">CHECK THE WARNINGS</p>
+                            <p> Note that a warning appear on <span class="ui-control">tCreateTable</span> and <span class="ui-control">LocalMySQL</span>. Hover the exclamation mark to read the warnings :</p>
+                            <p class="alert">
+                                <img src="../../Resources/Images/image2.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="12">
+                            <p data-mc-conditions="vModifs.vTitles">CHANGE THE SCHEMA TO BUILT-IN</p>
+                            <p>In order to solve the warning, double-click on the <span class="ui-control">tCreateTable </span>component. <br />Click on the <span class="ui-control">Edit Schema [...]</span> button, select <span class="ui-control">Change to built-in property</span> and then click <span class="ui-control">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture35.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="13">
+                            <p data-mc-conditions="vModifs.vTitles">RESET DATABASE TYPES</p>
+                            <p>The schema of the <span class="ui-control">tCreateTable </span>is then displayed.<br />Note that the<span class="ui-control"> DB Type</span> column is empty, and highlighted in orange.<br />Click the <span class="ui-control">Reset DB Types</span> button and then click <span class="ui-control">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/image3.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="14">
+                            <p data-mc-conditions="vModifs.vTitles">CHECK</p>
+                            <p>The<span class="ui-control"> DB&#160;Type</span> column is then filled in:<br /><img src="../../Resources/Images/Capture37.png" alt="" /><br /></p>
+                        </li>
+                        <li value="15">
+                            <p data-mc-conditions="vModifs.vTitles">NOTE THE WARNINGS HAVE DISAPPEARED</p>
+                            <p>Click <span class="ui-control">OK&#160;</span>and note that the exclamation mark disappeared for <span class="ui-control">tCreateTable</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture38.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="16">
+                            <p data-mc-conditions="vModifs.vTitles">REMOVE THE WARNINGS FROM <span class="ui-control">tCreateTable </span> IN THE SAME MANNER</p>
+                            <p>The  <span class="ui-control">LocalMySQL</span> warning is also related to the fact that the <span class="ui-control">DB Type</span> is not defined in the schema. In order to remove the warning on this component, repeat the steps you executed to remove the warning on the <span class="ui-control">tCreateTable </span>component. </p>
+                        </li>
+                    </ol>
+                    <h2>Verify Results</h2>
+                    <p>You are going to check that the database table has been created. </p>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE <span class="ui-control">MySQL</span>WORKBENCH</p>
+                            <p>From the Windows 
+                <span class="ui-control">Start</span> menu, click 
+                <span class="ui-control">All Programs</span>, followed by 
+                <span class="ui-control">MySQL</span>, and then 
+                <span class="ui-control">MySQL Workbench 6.3 CE</span> to start the program
+                <span class="ui-control">mySQL Workbench</span>. <br />The welcome window appears briefly, and then the 
+                <span class="ui-control">Workbench Central Workspace</span> appears:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_mysqlWorkbench_450x276.png" alt="" style="border: none;width: 450;height: 276;" border="0" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE CONNECTION</p>
+                            <p>Double-click 
+                <span class="ui-control">Local instances MySQL56</span> to open the connection to start querying. </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">ENTER THE&#160;USERNAME</p>
+                            <p>Enter <i>root</i> into the 
+                <span class="ui-control">Username</span> box and then click 
+                <span class="ui-control">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_mysqlWorkbenchPasswordForm_369x188.png" alt="" style="border: none;width: 369;height: 188;" border="0" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p>ENTER&#160;THE&#160;PASSWORD</p>
+                            <p>Enter <i>root</i> into the <span class="ui-control">Password</span> box and then click <span class="ui-control">OK</span>.</p>
+                            <p>The 
+                <span class="ui-control">SQL Editor</span> opens.</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_mysqlWorkbenchAfterConnection_524x320.png" alt="" style="border: none;width: 524;height: 320;" border="0" />
+                            </p>
+                        </li>
+                        <li value="5">
+                            <p data-mc-conditions="vModifs.vTitles">SPECIFY THE DATABASE</p>
+                            <p>Double-click
+                <span class="ui-control">training</span> in the 
+                <span class="ui-control">Object Browser</span> on the left to specify the database you are connecting to and using for your queries.</p>
+                        </li>
+                        <li value="6">
+                            <p data-mc-conditions="vModifs.vTitles">QUERY THE DATABASE</p>
+                            <p>In the 
+                <span class="ui-control">Query</span> window enter the following command, including the semi-colon:</p>
+                            <p><span class="code">select * from retailcustomers;</span>
+                            </p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_mysqlWorkbenchQuery.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="7">
+                            <p data-mc-conditions="vModifs.vTitles">EXECUTE THE QUERY</p>
+                            <p>Click the lightening bolt to execute the query:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_mysqlWorkbenchQueryResult_515x284.png" alt="" style="border: none;width: 515;height: 284;" border="0" />
+                            </p>
+                            <p>This shows the rows from the table, demonstrating that your Job loaded data into the table. If your query does 
+                <span class="italic">not</span> return any results, double-check your work in Talend Studio and make any necessary corrections. Make sure that the table name matches in all components.</p>
+                        </li>
+                        <li value="8">
+                            <p>Leave MySQL Workbench running to use in the next exercise.</p>
+                        </li>
+                    </ol>
+                    <h2>Next</h2>
+                    <p>Now that you have the customer database table populated, 
+        <a href="Creating_Second_Table.htm">you can populate the product database table</a>.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

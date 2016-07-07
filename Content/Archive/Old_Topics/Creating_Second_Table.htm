@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Creating _the_Product_Table</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Creating the Product Table</h1>
+                    <h2>Overview</h2>
+                    <p>The next step is to create and populate the product table.</p>
+                    <h2>Create Job</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Duplicate the Job                 <span class="bold">Custprep2Table</span>, naming it                 <span class="bold">Productprep2Table</span>. When you are creating a Job that is very similar to an existing Job, it can save time to duplicate it rather than to start from scratch.</p>
+                        </li>
+                        <li value="2">
+                            <p>Open the new Job and then close all other Jobs to avoid confusion.</p>
+                        </li>
+                    </ol>
+                    <h2>Create File Metadata</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Create a new 
+                <span class="bold">File delimited</span>metadata, naming it 
+              <span class="bold">RetailProducts</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_fileDelimitedContextualMenu.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Enter 
+                <span class="bold">RetailProducts</span> for the 
+                <span class="bold">Name</span> and fill in text for 
+                <span class="bold">Purpose</span> and <![CDATA[
+                ]]><span class="bold">Description</span>. Then click 
+                <span class="bold">Next</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_fileDelimitedConfig_461x524.png" alt="" style="border: none;width: 461;height: 524;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Configure the metadata with the following information:</p>
+                            <p>The file is 
+                <span class="bold">C:/StudentFiles/refProducts.csv</span>and the 
+                <span class="bold">Format</span>is 
+                <span class="bold">Windows</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_fileDelimitedSelectFile_361x419.png" alt="" style="border: none;width: 361;height: 419;" border="0" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p>There are no header rows to skip and no row of column names (no configuration needed for Step 3). Click 
+                <span class="bold">Export as context</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_fileDelimitedStep_527x491.png" alt="" style="border: none;width: 527;height: 491;" border="0" />
+                            </p>
+                        </li>
+                        <li value="5">
+                            <p>Select <span class="bold">Create a new repository context</span> and click <span class="bold">Next</span>:
+                </p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_createContext_522x429.png" alt="" style="border: none;width: 522;height: 429;" border="0" />
+                            </p>
+                        </li>
+                        <li value="6">
+                            <p>Leave the 
+                <span class="bold">Name</span>as 
+                <span class="bold">RetailProducts</span> and enter the 
+                <span class="bold">Purpose</span> and 
+                <span class="bold">Description</span> and then click 
+                <span class="bold">Next</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_createContextStep2_548x505.png" alt="" style="border: none;width: 548;height: 505;" border="0" />
+                            </p>
+                        </li>
+                        <li value="7">
+                            <p>The context variables and values are displayed. Then click <span class="bold">Finish</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_createContextDisplayContext_521x375.png" alt="" style="border: none;width: 521;height: 375;" border="0" />
+                            </p>
+                        </li>
+                        <li value="8">
+                            <p>You can see the new Metadata appeared in the Repository under
+                <span class="bold">File delimited</span> section. 
+                </p>
+                        </li>
+                        <li value="9">
+                            <p>Enter                 <span class="bold" style="font-weight: normal; font-style: italic;">id</span> for the first Column and set the Type to <![CDATA[                ]]><span class="bold">Integer</span> and enter 
+                <span class="bold" style="font-weight: normal; font-style: italic;">Product</span> for the second Column and click 
+                <span class="bold">Finish</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_fileDelimitedStep4_496x473.png" alt="" style="border: none;width: 496;height: 473;" border="0" />
+                                <br />
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Create Schema Metadata</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Double-click the 
+                <span class="bold">RetailCustomers</span>component to open the 
+                <span class="bold">Component</span>view and click the button marked with an ellipsis 
+                <span class="bold">(...)</span>next to the 
+                <span class="bold">Property Type</span>text box:</p>
+                            <p><a href="../../Resources/Images/image248.PNG"><img src="../../Resources/Images/Database_createSecondTable_retailCustomersComponent_567x240.png" alt="" style="border: none;width: 567;height: 240;" border="0" /></a>
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Select 
+                <span class="bold">RetailProducts</span>from the
+                <span class="bold">Metadata</span>and click 
+                <span class="bold">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_retailCustomersChangeProperty_395x375.png" alt="" style="border: none;width: 395;height: 375;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Click 
+                <span class="bold">Edit Schema</span>so that you can save the schema separately:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_retailCustomersSchema.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p>Leave the selection to <![CDATA[
+             ]]><span class="bold">View schema</span>and click                 <span class="bold">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_retailCustomersEditParameterRepository_338x226.png" alt="" style="border: none;width: 338;height: 226;" border="0" />
+                            </p>
+                        </li>
+                        <li value="5">
+                            <p>Click the 
+                <b>Save</b> button to                 <span class="bold">Save as generic schema</span> :</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_retailCustomersExportGenericSchema_464x337.png" alt="" style="border: none;width: 464;height: 337;" border="0" />
+                            </p>
+                        </li>
+                        <li value="6">
+                            <p>Click 
+                <span class="bold">OK</span>to leave it in the default folder:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_retailCustomersExportGenericSchemaSelectFolder_365x360.png" alt="" style="border: none;width: 365;height: 360;" border="0" />
+                            </p>
+                        </li>
+                        <li value="7">
+                            <p>Enter 
+                <span class="bold">ProductSchema</span> for the 
+                <span class="bold">Name</span>, and enter values into the 
+                <span class="bold">Purpose</span>and 
+                <span class="bold">Description</span>boxes then click 
+                <span class="bold">Finish</span> followed by 
+                <span class="bold">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_retailCustomersExportGenericSchemaConfig_418x414.png" alt="" style="border: none;width: 418;height: 414;" border="0" />
+                            </p>
+                            <p>Note: The schema now appears in the 
+                <span class="bold">Repository</span>.</p>
+                            <p>Expand the <b>Generic schema</b> under <b>Metadata</b> in the <b>Repository</b> until you see the word <i style="font-weight: bold; font-style: normal;">metadata</i>. Double click on <b>metadata</b>, change <b>Name</b> to 
+                <span class="bold" style="font-weight: normal; font-style: italic;">RetailProducts</span>, and click 
+                <span class="bold">Finish</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/DB_MetadataProducts.PNG" alt="" />
+                            </p>
+                        </li>
+                        <li value="8">
+                            <p>Back to the <b>Component</b> view of the <b>RetailCustomers</b> component: in the 
+                <span class="bold">View</span>tab, change the name of the component to                 <span class="bold">RetailProducts</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_retailCustomersChangeViewToProduct.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Now this component reads the product data file using the appropriate schema from the <b>Repository</b></p>
+                        </li>
+                    </ol>
+                    <h2>Create Table</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Double-click the 
+                <span class="bold">LocalMySQL</span>component to open the 
+                <span class="bold">Component</span>view:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_localMysqlConfig_568x170.png" alt="" style="border: Solid 1px #c0c0c0;width: 568;height: 170;" border="1" />
+                            </p>
+                            <p>Note:The schema is now 
+                <span class="bold">Built-in</span>, because you propagated the schema changes from the 
+                <span class="bold">RetailProducts</span>component.</p>
+                        </li>
+                        <li value="2">
+                            <p>Change the schema to 
+                <span class="bold">Repository</span>, specify the new generic schema you just created, and then change the table name to 
+                <span class="bold" style="font-weight: normal; font-style: italic;">"RetailProducts"</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_localMysqlChangeSchema.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Now this component will write to a table named 
+                <span class="bold">RetailProducts</span>with the schema taken from the 
+                <span class="bold">Repository</span>.</p>
+                        </li>
+                        <li value="3">
+                            <p>Double-click the 
+                <span class="bold">tCreateTable</span>component and change the
+                <span class="bold">Schema</span>to the new 
+                <span class="bold">ProductSchema</span>metadata, and then change the table name to 
+                <span class="bold" style="font-weight: normal; font-style: italic;">"RetailProducts"</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_tMysqlTableChangeSchema.png" alt="" style="border: Solid 1px #c0c0c0;" border="1" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p><span class="bold">Run</span>the Job. The product file contains 50 rows:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_runProductPrep2Table_397x306.png" alt="" style="border: none;width: 397;height: 306;" border="0" />
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Verify Results</h2>
+                    <ol>
+                        <li value="1">
+                            <p>In MySQL Workbench, replace the existing text in the<span class="bold">Query</span>window with the following command:
+                </p>
+                            <p>select * from retailproducts;</p>
+                            <p>and then click the lightning bolt and verify the result:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_mysqlWorkbenchResult.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p><span class="italic">Note: Again, if the query does not return results, double-check your work and make any necessary corrections.</span>
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Next</h2>
+                    <p>You now have database tables containing both product and customer data. Now you can 
+        <a href="../../EN/Working_with_Databases/Setting_Up_Shop_Tables.htm">set up the shop tables.</a></p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

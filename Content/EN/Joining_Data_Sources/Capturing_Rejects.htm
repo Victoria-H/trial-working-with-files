@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Joining Data Sources">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Capturing Rejects</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Joining Data Sources</a>
+                    <ul class="sub-menu">
+                        <li><a href="Overview.htm">Overview</a>
+                        </li>
+                        <li><a href="CreatingRepositoryItem.htm">Creating Metadata</a>
+                        </li>
+                        <li><a href="Joining_Data_Sources.htm">Joining Data Sources</a>
+                        </li>
+                        <li><a href="#" class="selected">Capturing Rejects</a>
+                        </li>
+                        <li><a href="Correcting_the_Lookup.htm">Correcting the Lookup</a>
+                        </li>
+                        <li><a href="Wrap-Up.htm">Wrap-Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Joining Data Sources</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="selected">Capturing Rejects</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Capturing Join Failures</h1>
+                    <h2>Overview</h2>
+                    <div class="youAreGoingTo" data-mc-conditions="vModifs.vBoxAdditions">
+                        <p>Your lookup  isn't working as planned. In this section you will configure <b>tmap</b> to examine the rows where the lookup failed.</p>
+                    </div>
+                    <h2>Configure Join Model in tMap</h2>
+                    <ol data-mc-continue="true">
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE <span class="ui-control">row2</span> TABLE SETTINGS</p>
+                            <p>Double-click the 
+                <span class="ui-control">tMap</span> component. In the 
+                <span class="ui-control">row2</span> table, click the 
+                <span class="ui-control">tMap settings</span> button (marked with a wrench):</p>
+                            <p>This is where you can configure additional parameters about the table. Notice that the 
+                <span class="ui-control">Join Model</span> says 
+                <span class="ui-control">Left Outer Join</span>.<br /> A left outer join includes all rows from the primary table even if there is not a row in the lookup table with a matching value in the join column, which explains why some rows did not include the state name. But now you need to know why some lookup rows did not match, and in order to do that, you need to use an inner join. <br />Click 
+                <span class="ui-control">Left Outer Join</span> in the Value column, next to 
+                <span class="ui-control">Join Model</span>, and then click the button marked with an ellipsis <span class="ui-control">[...]</span> to change the value:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_inner_Join.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">CHANGE THE CONFIGURATION THE <span class="ui-control">row2</span> TABLE TO <span class="ui-control">Inner Join</span>.</p>
+                            <p>The <span class="ui-window-title">Options</span> wizard opens. Choose 
+                <span class="ui-control">Inner Join</span> and then click 
+                <span class="ui-control">OK</span>. By changing the join to an inner join, rows that don't match will be excluded from the output, and you can capture the rejects for troubleshooting purposes:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_selectinnerjoin.png" alt="" />
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Add Rejects Table</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">ADD AN OUTPUT TABLE FOR YOUR REJECTS</p>
+                            <p>Still in the <b>tMap</b> component, click the 
+                <span class="ui-control">Add output table</span> button above the 
+                <span class="ui-control">CappedOut</span> table (marked with a plus sign):</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_addoutputtablebutton.png" alt="" />
+                            </p>
+                            <p>You are creating a new table to capture rows that fail the inner join so that you can determine the problem.</p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">NAME THE NEW OUTPUT</p>
+                            <p>Enter <![CDATA[                ]]><span class="ui-control">JoinFailures</span> into the text box to name the new output, and then click 
+                <span class="ui-control">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/JDoutputtablejoinfailures.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">The new table appears below 
+            <span class="ui-control">CappedOut</span>: 
+            <p><img src="../../Resources/Images/JoinFailTable.png" alt="" style="border: none;" border="0" /></p></li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE SETTINGS DIALOGUE FOR YOUR OUTPUT TABLE</p>
+                            <p>Click the 
+                <span class="ui-control">tMap settings</span> button (the wrench) in the 
+                <span class="ui-control">JoinFailures</span> table:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_joinfailuressettings.png" alt="" />
+                            </p>
+                            <p>Notice that the settings on an output table are different from those on an input table.</p>
+                        </li>
+                        <li value="5">
+                            <p data-mc-conditions="vModifs.vTitles">CHANGE THE SETTINGS TO CATCH INNER JOIN REJECTS</p>
+                            <p>Click the value of 
+                <span class="ui-control">Catch lookup inner join reject</span> and change it to 
+                <span class="ui-control">true</span>. Then click <span class="ui-control">OK</span>: </p>
+                            <p>
+                                <img src="../../Resources/Images/JD_joinfailurestrue.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="6">
+                            <p data-mc-conditions="vModifs.vTitles">DEFINE THE COLUMNS OF THE OUTPUT TABLE</p>
+                            <p>Drag 
+                <span class="ui-control">Last</span> and 
+                <span class="ui-control">State</span> from the 
+                <span class="ui-control">row1</span> table to the 
+                <span class="ui-control">JoinFailures</span> table:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_joinfailure_last_state.png" alt="" />
+                            </p>
+                            <p>Now this output will hold the last name and state for rows that fail the inner join.</p>
+                        </li>
+                        <li value="7">
+                            <p>Click 
+                <span class="ui-control">Ok</span>.</p>
+                        </li>
+                    </ol>
+                    <h2>Log Output</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">ADD A <span class="ui-control">tLogRow</span> COMPONENT TO LOG THE OUTPUT</p>
+                            <p>Add a 
+                <span class="ui-control">tLogRow</span> component just below the <b>tMap</b> component. </p>
+                            <p>Recall that this component writes rows to the execution console in the 
+                <span class="ui-control">Run</span> view:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_tlogrow01.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">LINK THE <span class="ui-control">tMap</span> COMPONENT TO THE <span class="ui-control">tLogRow</span> COMPONENT</p>
+                            <p>Right-click the 
+                <span class="ui-control">tMap</span> component, click 
+                <span class="ui-control">Row</span> followed by 
+                <span class="ui-control">JoinFailures</span>, and then click 
+                <span class="ui-control">tLogRow</span> to connect them:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_tlogrow02.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3"><![CDATA[
+            ]]><p data-mc-conditions="vModifs.vTitles">NOTE HOW THE ROW LABEL CORRESPONDS TO THE OUTPUT TABLE IN <span class="ui-control">tMap</span></p><p>The 
+            <span class="ui-control">JoinFailures</span> row corresponds to the output table you added to the 
+            <span class="ui-control">tMap</span> component: </p><p><img src="../../Resources/Images/Capture23.png" alt="" /></p></li>
+                    </ol>
+                    <h2>Run the Job</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">RUN THE JOB</p>
+                            <p>Run the Job and then examine the output in the console:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture26.png" alt="" />
+                            </p>
+                            <p>Note that the state codes in the rejected rows are lower case (from the input file), which means they won't match the uppercase codes from the lookup file.</p>
+                        </li>
+                    </ol>
+                    <h2>Next</h2>
+                    <p>Now that you know the problem with the join, you can 
+        <a href="Correcting_the_Lookup.htm">make a correction</a> so that the lookup works as planned.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

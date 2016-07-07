@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Creating a Join</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Création d'une jointure</h1>
+                    <h2>Vue d'ensemble</h2>
+                    <p>Au cours de cette section, vous allez dupliquer le Job créé dans la leçon précédente. </p>
+                    <p>Vous allez ensuite utiliser le fichier contenant les noms et codes des États dans une table de référence (lookup) pour inclure le nom complet de l'État dans la sortie.</p>
+                    <h2>Duplication du Job </h2>
+                    <ol>
+                        <li value="1">
+                            <p>Dans le 
+                <span class="ui-control">Repository</span>, sous 
+                <span class="ui-control">Job Designs</span>, cliquez-droit sur
+                <span class="ui-control">UpperCase</span> et sélectionnez 
+                <span class="ui-control">Duplicate</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_duplicateJob.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Saisissez <i>LookupState</i> dans le champ
+                
+                <span class="ui-control">Input new name</span>, puis cliquez sur 
+                <span class="ui-control">OK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_duplicateJob02.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Double-cliquez sur
+                <span class="ui-control">LookupState</span> dans le
+                <span class="ui-control">Repository</span> pour l'ouvrir&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_openlookupstate.png" alt="" />
+                            </p>
+                            <p>Prenez un moment pour examiner les composants et vous souvenir de la fonction du Job.</p>
+                        </li>
+                    </ol>
+                    <h2>Ajout d'une seconde source</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Glissez le nouvel élément 
+                <span class="ui-control">StateCodes</span> du noeud 
+                <span class="ui-control">Metadata</span> du 
+                <span class="ui-control">Repository</span> dans l'espace de modélisation graphique, au-dessus du 
+                <span class="ui-control">tMap</span>. <span class="italic"><br />Astuce&#160;</span>:&#160;Si vous n'avez pas de place, cliquez sur le groupe de composants et déposez-le plus bas dans l'espace de modélisation graphique.</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_place_states_metadata.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Cette fenêtre vous permet de choisir le composant à utiliser avec la métadonnée.<br />Sélectionnez le 
+                <span class="ui-control">tFileInputDelimited</span> et cliquez sur<![CDATA[ 
+                ]]><span class="ui-control">OK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_selectcomponenttype.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Votre Job doit ressembler à ceci&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_new_Job.png" alt="" />
+                            </p>
+                            <p>Notez que le composant est nommé de la même manière que l'élément de métadonnée. Lorsque vous stockez des informations de configuration en tant que métadonnées dans le 
+                <span class="ui-control">Repository</span>, vous pouvez utiliser cette métadonnée comme point de départ, comme ici, plutôt que de placer un composant et de le configurer ensuite.</p>
+                        </li>
+                        <li value="4">
+                            <p>Cliquez-droit sur 
+                <span class="ui-control">StateCodes</span>, sélectionnez 
+                <span class="ui-control">Row</span> &gt; <span class="ui-control">Main</span> et cliquez sur le composant 
+                <span class="ui-control">tMap</span> pour créer le lien&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_connect_states.png" alt="" />
+                            </p>
+                            <p>Notez que le lien est un lien 
+                <span class="ui-control">Lookup</span> et non 
+                <span class="ui-control">Main</span>. Vous pouvez fournir plusieurs sources en entrée, pour un composant 
+                <span class="ui-control">tMap</span>, mais une seule via un lien 
+                <span class="ui-control">Main</span>. Les autres sources seront liées par des liens<![CDATA[
+                ]]><span class="ui-control">Lookup</span>.</p>
+                        </li>
+                        <li value="5">
+                            <p>Double-cliquez sur le
+                <span class="ui-control">StateCodes</span> pour ouvrir sa vue 
+                <span class="ui-control">Component</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_states_componentview.png" alt="" />
+                            </p>
+                            <p>Notez que la valeur des listes 
+                <span class="ui-control">Property Type</span> et
+                <span class="ui-control">Schema</span> est <span class="ui-control">Repository</span> et non <b>Built-In</b>.</p>
+                        </li>
+                        <li value="6">
+                            <p>Double-cliquez sur le composant 
+                <span class="ui-control">CustomersFile</span> pour voir que ce composant utilise des informations de configuration
+                <span class="ui-control">Built-In</span>. <br />Le type de propriété <b>Built-in</b> est spécifique à un composant, alors que le type <b>Repository</b> utilise des informations stockées en tant que métadonnées et pouvant être utilisées par différents composants dans différents Jobs.</p>
+                        </li>
+                    </ol>
+                    <h2>Configuration du tMap</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Double-cliquez sur le 
+                <span class="ui-control">tMap</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_tMap_left.png" alt="" />
+                            </p>
+                            <p>Notez qu'il y a une seconde table d'entrée sur la gauche, nommée 
+                <span class="ui-control">row2</span>, correspondant au lien d'entrée reliant le
+                <span class="ui-control">StateCodes</span> au 
+                <span class="ui-control">tMap</span>.</p>
+                        </li>
+                        <li value="2">
+                            <p>Déposez
+                <span class="ui-control">State</span> de la table 
+                <span class="ui-control">row1</span> dans le champ 
+                <span class="ui-control">Expr. key</span> de la colonne 
+                <span class="ui-control">StateCode</span> de la table 
+                <span class="ui-control">row2</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_tMap_drag_states.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Cela crée la jointure, la valeur de la colonne                <span class="ui-control">State</span> de la table 
+                <span class="ui-control">row1</span> sera comparée à la valeur de la colonne 
+                <span class="ui-control">StateCode</span> de la table 
+                <span class="ui-control">row2</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_left_join.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p>Déposez 
+                <span class="ui-control">StateName</span> de la table 
+                <span class="ui-control">row2</span> au bas de la table 
+                <span class="ui-control">CappedOut</span>, à droite&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_drag_statename.png" alt="" />
+                            </p>
+                            <p>Cela ajoute la valeur de la colonne 
+                <span class="ui-control">StateName</span> à la sortie.</p>
+                        </li>
+                        <li value="5">
+                            <p> Cliquez sur
+                <span class="ui-control">Ok</span>.</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_tMap_join.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="6">
+                            <p>Le système vous propose de propager vos modifications. Cliquez sur <b>Yes</b>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_propagate_changes.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="7">
+                            <p>Sauvegardez le Job.</p>
+                        </li>
+                    </ol>
+                    <h2>Exécution du Job</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Exécutez le Job&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_runjob.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Examinez le fichier de sortie. </p>
+                            <p>Cliquez-droit sur le <span class="ui-control">tFileOutputDelimited</span> et sélectionnez <span class="ui-control">Data viewer</span>.<br />Notez que toutes les lignes ne comprennent pas le nom de l'État&#160;:
+</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture22_607x590.png" style="width: 607;height: 590;" alt="" />
+                            </p>
+                            <p>Cela signifie que le Job ne fait pas exactement ce que vous souhaitez, vous devez comprendre pourquoi.</p>
+                        </li>
+                        <li value="3">
+                            <p>Cliquez sur 
+                <span class="ui-control">Clear</span> pour effacer l'affichage des statistiques dans l'espace de modélisation graphique et la console&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/JD_clearbutton.png" alt="" />
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Étape suivante</h2>
+                    <p>L'étape suivante consiste à 
+        <a href="Capturing_Rejects.htm">déterminer pourquoi le Job n'effectue pas correctement sa tâche</a>, afin de le corriger.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

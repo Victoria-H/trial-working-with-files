@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Using Context Variables</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Création des variables de contexte</h1>
+                    <h2>Vue d'ensemble</h2>
+                    <p>Dans le Studio Talend, vous pouvez définir des contextes et des variables de contexte vous permettant de modifier la valeur de différents paramètres de configuration, en exécutant un Job avec un contexte spécifique.</p>
+                    <h2>Création d'une variable</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Cliquez-droit sur le Job 
+                <span class="ui-control">UpperCase</span> et sélectionnez 
+                <span class="ui-control">Duplicate</span>.</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_DuplicateJob.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Saisissez <span class="user-input-files-variables">context_UpperCase</span> dans le champ 
+                <span class="ui-control">Input new name</span>, puis cliquez sur
+                <span class="ui-control">OK</span>&#160;:<br /><img src="../../Resources/Images/PD_DuplicateJob02.png" alt="" /></p>
+                        </li>
+                        <li value="3">
+                            <p>Ouvrez le nouveau Job et cliquez sur l'onglet 
+                <span class="ui-control">Contexts</span>&#160;:<br /><img src="../../Resources/Images/PD_contextview.png" alt="" /></p>
+                            <p>Vous pouvez créer ici vos variables de contexte et spécifier les valeurs de ces variables. Lorsque vous exécutez un Job, exécutez-le avec un contexte spécifique. Si vous ajoutez des contextes et des variables supplémentaires, vous pouvez spécifier la valeur à utiliser pour ces variables en modifiant le contexte avec lequel exécuter le Job.</p>
+                        </li>
+                        <li value="4">
+                            <p>Cliquez sur le bouton 
+                <span class="ui-control">[+]</span> dans le coin inférieur gauche de la table pour ajouter une variable de contexte. </p>
+                            <p>Dans la colonne 
+                <span class="ui-control">Name</span>,                saisissez <i>OutputDir</i>. </p>
+                            <p>Saisissez
+                <span class="italic">"C:/StudentFiles/"</span> dans la colonne 
+                <span class="ui-control">Default</span>/<b>Value</b>. Assurez-vous d'inclure les guillemets doubles et la barre oblique finale&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_contextviewpath.png" alt="" />
+                            </p>
+                            <p>Vous créez une variable de contexte permettant de modifier l'emplacement des fichiers de sortie. Pour qu'une variable de contexte soit vraiment utile, vous devez définir</p>
+                            <p>différents contextes.</p>
+                        </li>
+                    </ol>
+                    <h2>Création d'un nouveau contexte</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Cliquez sur le bouton <span class="ui-control"> [+]</span>(<span class="ui-control">Configure Contexts</span>) dans le coin supérieur droit de la table pour créer un nouveau contexte&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_definenewcontaxt.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>L'assistant <span class="ui-window-title">Configure Contexts</span> s'ouvre. Cliquez sur
+                <span class="ui-control">New</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_newcontext.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Saisissez <span class="user-input-files-variables">Production</span> dans le champ, puis cliquez sur 
+                <span class="ui-control">OK</span>&#160;:<br /><img src="../../Resources/Images/PD_Production.png" alt="" /></p>
+                            <p>Le nouveau contexte s'affiche dans la liste.  Lorsque vous exécutez un Job, le Studio Talend utilise le contexte sélectionné ici (coché) par défaut&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_Productioncontextlist.png" alt="" />
+                            </p>
+                            <p>Lorsque vous construisez vos projets, il est possible que vous deviez créer un contexte supplémentaire pour les tests. Généralement, vous allez créer un contexte pour chaque environnement. </p>
+                        </li>
+                        <li value="4">
+                            <p>Cliquez 
+  sur              <span class="ui-control">OK</span>. Le nouveau contexte s'affiche en tant que colonne dans la table, avec des valeurs copiées de celles par défaut. </p>
+                            <p>Cliquez sur la valeur dans la colonne 
+                <span class="ui-control">Production</span> et modifiez-la en 
+                <i>"C:/StudentFiles/Production/"</i>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_contextproduction.png" alt="" />
+                            </p>
+                            <p>Vérifiez que vous n'avez pas oublié la barre oblique finale lors de la définition des chemins (c'est une erreur fréquente).</p>
+                            <p>Vous avez une variable de contexte nommée <span class="ui-control">OutputDir</span> ayant une valeur différente selon le contexte.</p>
+                        </li>
+                    </ol>
+                    <h2>Utilisation de la variable de contexte</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Double-cliquez sur le 
+                <span class="ui-control">tFileOutputDelimited</span> pour ouvrir sa vue 
+                <span class="ui-control">Component</span>.</p>
+                        </li>
+                        <li value="2">
+                            <p>Cliquez dans le champ 
+                <span class="ui-control">File name</span>. Supprimez le chemin du dossier, laissez uniquement <i>"CappedOut.csv"</i>.</p>
+                            <p>Commencez à saisir <i>co</i> au début du champ <b>File Name</b> et appuyez sur les touches
+                <span class="ui-control">Ctrl+Espace</span>&#160;:<br /><img src="../../Resources/Images/PD_contextlist.png" alt="" /></p>
+                        </li>
+                        <p>Une liste de suggestions s'affiche. La liste est spécifique au champ dans lequel vous avez cliqué, elle change selon son point d'insertion, lorsque vous appuyez sur les touches <span class="ui-control">Ctrl+Espace</span>. Si vous avez saisi <span class="italic">con</span>, la liste affichée est réduite. Vous pouvez utiliser ces touches dans tous les paramètres d'entrée et voir une liste similaire.</p>
+                        <li value="3">Double-cliquez sur la variable de contexte 
+                <span class="ui-control">context.OutputDir</span>&#160;:<br /></li>
+                        <p>
+                            <img src="../../Resources/Images/PD_Contextoutoflist.png" alt="" />
+                        </p>
+                        <p>Rappelez-vous que 
+				<span class="ui-control">context.OutputDir</span> est le script permettant d'accéder à la valeur de la variable de contexte.&#160;Cette chaîne de caractères écrit le nom du fichier à la suite de la valeur de la variable (chemin d'accès au répertoire).</p>
+                        <li value="4">Insérez un signe <span class="user-input-files-variables">+</span> dans le champ <span class="ui-control">File Name</span> pour que sa valeur soit 
+            <i>context.OutputDir + "CappedOut.csv"</i>&#160;: 
+            <p><img src="../../Resources/Images/PD_finalcontext.png" alt="" /></p></li>
+                        <li value="5">
+                            <p>Exécutez le Job et examinez le fichier de sortie. <br />Le fichier de sortie <span class="ui-control">CappedOut.csv</span> doit avoir été écrasé dans le dossier
+		<span class="ui-control">C:/StudentFiles</span>. <span class="italic">Astuce</span>&#160;:&#160;même si l'option <span class="ui-control">Data viewer</span> du Studio est pratique et utile, lors de débogage ou d'apprentissage, il est recommandé de vérifier la taille des fichiers dans votre explorateur de fichiers (différente de 0), la date et l'heure de modification, etc. </p>
+                        </li>
+                    </ol>
+                    <h2>Modification des contextes</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Dans la vue 
+                <span class="ui-control">Run</span>, cliquez sur la liste des contextes à droite et passez la sélection de 
+                <span class="ui-control">Default</span> à<![CDATA[ 
+                ]]><span class="ui-control">Production</span>&#160;:<br /><img src="../../Resources/Images/PD_changecontext.png" alt="" /></p>
+                            <p>Notez que la valeur des variables change.</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_changecontext2.png" alt="" />
+                            </p>
+                            <p>Il n'est pas nécessaire de créer manuellement le nouveau dossier.&#160;Par défaut, si le dossier de destination n'existe pas, il sera créé avec le fichier généré.</p>
+                        </li>
+                        <li value="2">
+                            <p>Exécutez le Job à nouveau et examinez les fichiers de sortie dans le nouveau répertoire 
+                <span class="ui-control">C:/StudentFiles/Production</span>.</p>
+                            <p>En modifiant le contexte avec lequel vous avez exécuté le Job, les paramètres de configuration ont été modifiés, car la valeur de la variable de contexte est différente, puisqu'elle concerne l'emplacement de la sortie.</p>
+                            <p>Si vous avez oublié le caractère <span class="user-input-files-variables">"/"</span> final dans la valeur du contexte <span class="ui-control">Production</span>, un nouveau fichier <span class="ui-control">ProductionCappedOut.csv</span> est créé dans le dossier <span class="ui-control">StudentFiles</span>.</p>
+                        </li>
+                    </ol>
+                    <h2>Étape suivante</h2>
+                    <p>Vous allez 
+        <a href="Using_Repository_Context_Variables.htm">créer une variable de contexte dans le
+        <span class="ui-control">Repository</span></a> pour pouvoir l'utiliser dans tous les Jobs du projet.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Generic Schemas">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Setting up Sales Files_for_database_exercise</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Generic Schemas</a>
+                    <ul class="sub-menu">
+                        <li><a href="Overview.htm">Overview</a>
+                        </li>
+                        <li><a href="#" class="selected">Setup Sales Data Files</a>
+                        </li>
+                        <li><a href="Creating_Customer_Metadata.htm">Creating Customer Metadata</a>
+                        </li>
+                        <li><a href="Creating_Product_Metadata.htm">Creating Product Metadata</a>
+                        </li>
+                        <li><a href="Wrap-Up.htm">Wrap-Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Generic Schemas</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="selected">Setup Sales Data Files</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Create a Generic Schema &amp; Generate Data Files</h1>
+                    <h2>Objective</h2>
+                    <div class="youAreGoingTo">
+                        <p>In this lesson you will create a generic schema  in the 
+        <span class="ui-control">Repository</span>. This schema will describe sales data information. The generic schema will then be used to generate sales data files.</p>
+                    </div>
+                    <h2>Create the Generic Schema</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">
+             CREATE A GENERIC SCHEMA
+                    <br /></p>
+                            <p> In the <b>Repository</b> view, under the <b>Metadata</b> folder, right-click on 
+                <span class="ui-control">Generic schemas</span> and then click 
+                <span class="ui-control">Create generic schema</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/SF_genericschema.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">
+                    ENTER THE DETAILS                 <br /></p>
+                            <p>In the first step, enter 
+                <span class="ui-control">ShopMetadata</span> for the 
+                <span class="ui-control">Name</span>.<br />Then fill in the <span class="ui-control">Purpose</span> field with the following text:
+                <span class="user-input-files-variables">sales data</span>.<br />Enter 
+              <span class="user-input-files-variables">Sales data for database lab</span> in the <b>Description</b> field. <br />Then click 
+                <span class="ui-control">Next</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/SF_genericschema01.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">
+                    CONFIGURE THE COLUMNS OF THE SCHEMA
+                    <br /></p>
+                            <p>In the second step, set the <span class="ui-control">Name </span>to <span class="user-input-files-variables">Shopmetadata</span>.<br />Then click the green <span class="ui-control">[+]</span> (Add) icon four times to add 4 columns to the table. <br />Name the first column 
+                <span class="ui-control">ShopName</span>, select 
+                <span class="ui-control">String</span> for the 
+                <span class="ui-control">Type</span> and enter 
+                <span class="ui-control">10</span> for the 
+                <span class="ui-control">Length</span>. <br />For the next columns, name them 
+                <span class="ui-control">CustID</span>, 
+                <span class="ui-control">ProductID</span>, and 
+                <span class="ui-control">Quantity</span> and select
+                <span class="ui-control">Integer</span> for the<span class="ui-control">Type</span>.</p>
+                            <p>
+                                <img src="../../Resources/Images/SF_genericschema02.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">
+                   CHECK AND FINISH                    <br /></p>
+                            <p>Then click Finish. The final schema in the Repository should look as follows:</p>
+                        </li>
+                        <p>
+                            <img src="../../Resources/Images/SF_genericschema03.png" alt="" />
+                        </p>
+                    </ol>
+                    <h2>Generate Sales data files</h2>
+                    <div data-mc-conditions="vModifs.vBoxAdditions">
+                        <p> You are going to use the generic schema and generate some random sales data for 3 shops to work with in your job</p>
+                    </div>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">
+                    CREATE A NEW FOLDER IN STANDARD JOB DESIGNS                    <br /></p>
+                            <p>Right-click on <span class="ui-control">Standard</span> under <span class="ui-control">Job Designs</span> in the <span class="ui-control">Repository</span> and select <span class="ui-control">Create folder</span>.<br /><img src="../../Resources/Images/SF_newFolder.png" alt="" /></p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">
+GIVE THE FOLDER A NAME                    <br /></p>
+                            <p>Set the <span class="ui-control">Label</span> to <span class="user-input-files-variables">Sales</span> and then click <span class="ui-control">Finish</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/SF_CraeteNewFolder.png" alt="" />
+                                <br />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">
+                   CREATE A STANDARD JOB IN YOUR NEW FOLDER
+                  <br /></p>
+                            <p>Right-click on the <span class="ui-control">Sales</span> folder under <span class="ui-control">Job Designs / Standard</span> and click 
+            	<span class="ui-control">Create Standard Job</span>: </p>
+                            <p>
+                                <img src="../../Resources/Images/SF_newJob.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">
+                    GIVE YOUR JOB A NAME, PURPOSE AND DESCRIPTION                    <br /></p>
+                            <p>Enter <span class="user-input-files-variables">SalesFilesPrep</span> for the <span class="ui-control">Name</span> .</p>
+                            <p>Set the <span class="ui-control">Purpose</span> to <span class="user-input-files-variables">create sales data</span>, a text of your choice for the 
+                <span class="ui-control">Description</span> and then click <span class="ui-control">Finish</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/SF_newJob01.png" alt="" /> </p>
+                        </li>
+                        <li value="5">
+                            <p data-mc-conditions="vModifs.vTitles">
+CHOOSE A COMPONENT TO GENERATE RANDOM DATA
+                  <br /></p>
+                            <p>The newly created Job opens in the design workspace.<br />Type 
+                <span class="ui-control">tRowGenerator</span> to add this component to the Job:</p>
+                            <p>
+                                <img src="../../Resources/Images/sf_trowgenerato.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="6">
+                            <p data-mc-conditions="vModifs.vTitles">
+                    TELL THE <span class="ui-control">tRowGenerator</span> COMPONENT TO USE A SCHEMA FROM THE REPOSITORY
+                    <br /></p>
+                            <p>Open the
+                <span class="ui-control">Component</span> view and select 
+                <span class="ui-control">Repository</span> for the 
+                <span class="ui-control">Schema</span><br />Then click the 
+                <span class="ui-control">[...]</span> icon next to the field 
+                <span class="ui-control">Schema</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/sf_trowgenerator_component.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="7">
+                            <p data-mc-conditions="vModifs.vTitles">
+                    ASSOCIATE YOUR GENERIC SCHEMA WITH THE <span class="ui-control">tRowGenerator</span> COMPONENT
+                    <br /></p>
+                            <p>Open the folder 
+                <span class="ui-control">Generic schemas</span> and the folder 
+                <span class="ui-control">ShopMetadata</span> and then select the entry 
+                <span class="ui-control">Shopmetadata</span>. <br />Click 
+                <span class="ui-control">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/SF_select_genericschema.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="8">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE <span class="ui-control">tRowGenerator</span> SCHEMA TO CONFIGURE IT<br /></p>
+                            <p>Double-click the 
+                <span class="ui-control">tRowGenerator</span> component. The schema should look familiar to you. Enter                 <span class="ui-control" style="font-weight: normal; font-style: italic;">5000</span> for 
+                <span class="ui-control">Number of Rows for RowGenerator</span> to create 5000 entries.</p>
+                            <p>
+                                <img src="../../Resources/Images/SF_rowsGenerated.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="9">
+                            <p data-mc-conditions="vModifs.vTitles">
+                  GIVE YOUR SHOP A NAME
+                    <br /></p>
+                            <p> Select the column 
+                <span class="ui-control">ShopName</span> and then enter 
+                <span class="ui-control">"Shop1"</span> for the                 <span class="ui-control">Value</span> in the table below. <br /></p>
+                            <p>
+                                <img src="../../Resources/Images/sf_trowgenerato.rsettingspng.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="10">
+                            <p data-mc-conditions="vModifs.vTitles">
+                   TELL THE COMPONENT TO GENERATE RANDOM DATA FOR THE CUTOMER ID
+
+                    <br /> </p>
+                            <p>Select the <span class="ui-control">CustID</span> column and choose            <span class="ui-control">Numeric.random</span> for 
+	            <span class="ui-control">Functions</span>.</p>
+                            <p>In the <span class="ui-control">Function parameters</span> tab below, enter 
+              	<span class="ui-control">1</span> for 
+                <span class="ui-control">min value</span> and leave 
+                <span class="ui-control">100</span> for 
+                <span class="ui-control">max value</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/sf_trowgeneratorsettings03.png" alt="" />
+                            </p>
+                            <p>This will generate a random number from 1 to 100 for 
+            <span class="ui-control">CustID</span>. </p>
+                        </li>
+                        <li value="11">
+                            <p data-mc-conditions="vModifs.vTitles">
+                    TELL THE COMPONENT TO GENERATE RANDOM DATA FOR PRODUCT ID AND QUANTITY<br /></p>
+                            <p>Configure the <b>ProductID</b> to generate a random number from 1 to 80 
+	           , and then <b>Quantity</b> to generate a value from 1 to 1000 
+	            and check the final settings. Then click 
+	            <span class="ui-control">OK</span>: </p>
+                            <p>
+                                <img src="../../Resources/Images/sf_trowgeneratorsettingsfinal.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="12">
+                            <p data-mc-conditions="vModifs.vTitles">
+                    ADD A COMPONENT TO WRITE YOUR GENERATED DATA TO A FILE
+                    <br /></p>
+                            <p>Add a 
+	            <span class="ui-control">tFileOutputDelimited</span> to the canvas:</p>
+                            <p>
+                                <img src="../../Resources/Images/sf_tfileoutput.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="13">
+                            <p data-mc-conditions="vModifs.vTitles">
+                   CONNECT THE <span class="ui-control">tRowGenerator</span> TO THE <span class="ui-control">tFileOutputDelimited</span> :
+                    <br /> </p>
+                            <p>Right-click the 
+	            <span class="ui-control">tRowGenerator</span> component then click 
+	            <span class="ui-control">Row</span> and then 
+	            <span class="ui-control">Main</span> to connect it to the output component: </p>
+                            <p>
+                                <img src="../../Resources/Images/sf_tfileoutputconnect.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="14">
+                            <p data-mc-conditions="vModifs.vTitles">
+                    TELL THE <span class="ui-control">tFileOutputDelimited</span> COMPONENT WHERE TO SAVE THE FILE<br /></p>
+                            <p>Double-click the component 
+                <span class="ui-control">tFileOutputDelimited</span> to open the <span class="ui-control">Component</span> view.</p>
+                            <p>Then click the ellipsis next to the field <b>File Name</b> and set the value to
+                
+                <span class="user-input-files-variables">"C:/StudentFiles/SalesFiles/shop1.csv"</span>. <br />Leave the
+                <span class="ui-control">Field Separator</span> to the default
+                <span class="ui-control">";"</span>. </p>
+                            <p>
+                                <img src="../../Resources/Images/sf_outputfileshop1.png" alt="" />
+                            </p>
+                            <p>Note: Be sure to put the output file under the subdirectory 
+               <span class="ui-control">SalesFiles</span>.</p>
+                        </li>
+                        <li value="15">
+                            <p data-mc-conditions="vModifs.vTitles">
+                   GIVE THE <span class="ui-control">tFileOutputDelimited</span> COMPONENT&#160;A LABEL :
+                    <br /></p>
+				In the 
+	            <span class="ui-control">Component</span> tab click the
+	            <span class="ui-control">View</span> section and enter             <span class="ui-control" style="font-weight: normal; font-style: italic;">Shop1out</span> in the <![CDATA[
+	            ]]><span class="ui-control">Label format</span> field:<p><img src="../../Resources/Images/sf_nameoutputshop1.png" alt="" /></p></li>
+                        <li value="16">
+                            <p data-mc-conditions="vModifs.vTitles">
+                   OPEN THE SUB JOB COMPONENT VIEW                    <br /></p>
+				Left-click anywhere in the sub Job frame in the main design workspace. <br />Then click on the <b>Component</b> view to open the sub job’s settings:<br /><br /><img src="../../Resources/Images/Capture13.jpg" alt="" /><br /></li>
+                        <li value="17">
+                            <p data-mc-conditions="vModifs.vTitles">
+                   NAME THE SUB JOB <br /> </p>
+				Select the check box
+	            <span class="ui-control">Show subjob title</span> in the 
+	            <span class="ui-control">Basic settings</span> section. <br />In the
+	            <span class="ui-control">Title</span> box, enter <i>Shop1</i>: 
+	            <p><img src="../../Resources/Images/sf_namesubjob.png" alt="" /></p><p>The subjob’s title appears on top of the subjob in the design space.</p></li>
+                        <li value="18">
+                            <p data-mc-conditions="vModifs.vTitles">
+                   SAVE YOUR JOB
+                    <br /></p>
+                            <p>Save your Job by using <b>Ctrl + S</b>.</p>
+                        </li>
+                    </ol>
+                    <h2>Create additional subjobs</h2>
+                    <div data-mc-conditions="vModifs.vBoxAdditions">
+                        <p> You are going to duplicate the subjob to generate random data for Shop2 and Shop3.</p>
+                    </div>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">
+                   COPY AND PASTE YOUR SUBJOB
+                    <br /></p>
+                            <p>To copy and paste the subjob, right-click the subjob and click 
+                <span class="ui-control">Copy</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/sf_copysubjob.png" alt="" />
+                            </p>
+				Right-click in the workspace below the Job and click <b>Paste</b>: 
+            	<p><img src="../../Resources/Images/sf_pastesubjob.png" alt="" /></p>
+				Repeat the 
+            <span class="ui-control">Paste</span>: 
+            <p><img src="../../Resources/Images/sf_pastesubjob02.png" alt="" /></p></li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">
+                   CONFIGURE THE NEW OUTPUT COMPONENTS
+                    <br /></p>
+                            <p>Change the file names for the output to 
+                <span class="ui-control">shop2.csv</span> and 
+                <span class="ui-control">shop3.csv</span>. Here you can see the<![CDATA[
+                ]]><span class="ui-control">Shop2</span> configuration:</p>
+                            <p>
+                                <img src="../../Resources/Images/sf_shop2_settings.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">
+                    NAME THE NEW OUTPUT COMPONENTS
+                    <br /></p>
+				Click 
+	            <span class="ui-control">View</span> and change the 
+	            <span class="ui-control">Label format</span> to 
+	            <span class="ui-control" style="font-weight: normal; font-style: italic;">Shop2out</span> and 
+	            <span class="ui-control" style="font-weight: normal; font-style: italic;">Shop3out</span>. Here you can see the
+	                <span class="ui-control">Shop2</span> configuration:
+			
+            	<p><img src="../../Resources/Images/sf_shop2_settings02.png" alt="" /></p></li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">
+                   TITLE THE NEW SUBJOBS                    <br /></p>
+					Click the subjobs and change the <span class="ui-control">Title </span>to 
+	            <span class="ui-control" style="font-weight: normal; font-style: italic;">Shop2</span> and 
+	            <span class="ui-control" style="font-weight: normal; font-style: italic;">Shop3</span>. The  
+	            <span class="ui-control">Shop3</span> subjob should look like: 
+	            <p><img src="../../Resources/Images/sf_shop3_settings.png" alt="" /></p></li>
+                        <li value="5">
+                            <p data-mc-conditions="vModifs.vTitles">
+CONFIGURE THE NEW <span class="ui-control">tRow Generator</span> COMPONENTS
+                    <br /></p>
+				Open the <b>Component</b> View for the 
+	            <span class="ui-control">tRow Generator</span> of 
+	            <span class="ui-control" style="font-weight: bold; font-style: normal;">Shop2</span> and 
+	            <span class="ui-control" style="font-weight: bold; font-style: normal;">Shop3</span> and change the entry for the 
+	            <span class="ui-control">ShopName Value</span> from <i>"Shop1"</i> to <i>"Shop2"</i> and <i>"Shop3"</i> respectively. <br /><![CDATA[            ]]><span class="ui-control">Shop2</span> should look like: 
+	            <p><img src="../../Resources/Images/sf_change_shopname2.PNG" alt="" /></p></li>
+                    </ol>
+                    <h2>Run the Job</h2>
+                    <div data-mc-conditions="vModifs.vBoxAdditions">
+                        <p> You are going to run the job and check that you have generated the random data for the 3 shops/</p>
+                    </div>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">
+                    SAVE THE JOB AND RUN IT 
+                  <br /></p>
+				Save the Job and then  
+	            <span class="ui-control">Run</span> it: 
+	            <p><img src="../../Resources/Images/sf_final_Job.png" alt="" /></p></li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">
+                    CHECK THE OUTPUT 
+                    <br /></p>
+				Verify the output folder <b>C:/StudentFiles/SalesFiles</b>. Confirm that the three CSV files were created in the SalesFiles folder.  <br />Open up each one and make sure the first entry reflects the correct shop name, and the next three entries show random numbers within the correct ranges delimited by a ";". 
+	            <p>The file <b>shop2.csv</b> should look similar (but not identical) to the following:</p></li>
+                        <p>
+                            <img src="../../Resources/Images/sf_shop2out.png" alt="" />
+                        </p>
+                    </ol>
+                    <h2>Next</h2>
+                    <div>
+                        <p>You have now finished generating the sales data files. Next you will  <a href="Creating_Customer_Metadata.htm">create the metadata</a> for a customer reference file. </p>
+                    </div>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

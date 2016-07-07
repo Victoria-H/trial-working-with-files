@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Database Connection</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Database Connection</h1>
+                    <h2>Overview</h2>
+                    <p>Now you will use another Metadata Wizard to create a database connection. You will use it in a new Job which will be similiar to the last one. The output shall be a new table in a MySQL database. This Metadata will also be used later in the database lab to connect to this database again.</p>
+                    <h2>Create Database Connection</h2>
+                    <ol>
+                        <li value="1">Close your existing Jobs and expand again the 
+            <span class="bold">Metadata</span>folder in the 
+            <span class="bold">Repository</span>and right-click on 
+            <span class="bold">Db Connection</span>then click 
+            <span class="bold">Create Connection</span>: 
+            <p><img src="../../Resources/Images/CD_newconnection.png" alt="" /></p></li>
+                        <li value="2">Enter 
+            <span class="bold">LocalMySQL</span>for the 
+            <span class="bold">Name</span>, enter your text for the 
+            <span class="bold">Purpose</span>and a 
+            <span class="bold">Description</span>. Click 
+            <span class="bold">Next</span>: 
+            <p><img src="../../Resources/Images/CD_newdb_1.png" alt="" /></p></li>
+                        <li value="3">In the following windows select MySQL for the DB Type and enter the data to connect to the database. Enter the following login credentials and click the button <span class="ui-widget">Check</span> at the end to check the connection: 
+            <ul><li value="1">Login "
+                <span class="bold">root</span>"</li><li value="2">Password "
+                <span class="bold">root</span></li><li value="3">Server "
+                <span class="bold">localhost</span>"</li><li value="4">Port leave it to "
+                <span class="bold">3306</span>"</li><li value="5">Database "
+                <span class="bold">training</span>"</li></ul><p><img src="../../Resources/Images/CD_newdb_2.png" alt="" /></p></li>
+                        <li value="4">The Check Connection windows appears and shows a successful connection. Click OK and then click Finish: 
+            <p><img src="../../Resources/Images/CD_checkconnection.png" alt="" /></p></li>
+                        <li value="5">Expand the 
+            <span class="bold">Metadata</span>again and expand 
+            <span class="bold">Db Connections</span>: 
+            <p><img src="../../Resources/Images/CD_newmetadata.png" alt="" /></p></li>
+                    </ol>
+                    <h2>Export Items</h2>
+                    <p>The connection 
+        <span class="bold">LocalMySQL</span>will be reused in the database lab. To secure that you will have it available and to understand how you can archive or export Jobs or other content you will export this connection as a zip file with the option to upload it.</p>
+                    <p>This is a general way of exporting Jobs or Projects.</p>
+                    <ol>
+                        <li value="1">You can right-click on the item you want to export or somewhere else in the 
+            <span class="bold">Repository</span>and select 
+            <span class="bold">Export items</span>: 
+            <p><img src="../../Resources/Images/CD_export.png" alt="" /></p></li>
+                        <li value="2">You mark 
+            <span class="bold">Select archive file</span>and change the path to 
+            <span class="bold">C:/StudentFiles/Db Connections.zip</span>. The option 
+            <span class="bold">Export Dependencies</span>offers the possibility, in case you export a Job, to automatically select all dependencies like used connections etc. in order not to forget an important item. In this case you only need to export the selected item.  Don't select additional items and click 
+            <span class="bold">Finish</span>: 
+            <p><img src="../../Resources/Images/CD_export2.png" alt="" /></p><p>Next step will be to create a database output in a new Job.</p></li>
+                    </ol>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

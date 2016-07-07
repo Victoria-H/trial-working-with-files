@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Creating Customer Metadata</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Create Customer &amp; Product Metadata</h1>
+                    <h2>Overview</h2>
+                    <p>Your next step is to create Metadata about the customer file so that you can use it to configure a component. You will also export Metadata information as context variables which is the best way to manage your variables.</p>
+                    <h2>Create Customer File Metadata</h2>
+                    <ol>
+                        <li value="1">
+                            <p>In the 
+                <span class="bold">Repository</span>, under 
+                <span class="bold">Metadata</span>, right-click 
+                <span class="bold">File delimited</span>and then click 
+                <span class="bold">Create file delimited</span>. You are creating metadata about the customer file. You already created similar file delimited metadata in an earlier training lesson:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createMetadata_createFileDelimitedContextualMenu.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Name the metadata                 <span class="bold" style="font-weight: normal; font-style: italic;">RetailCustomers</span>, provide a purpose and description and click 
+                <span class="bold">Next</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson7/CreateCustomerMetadata1.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Click 
+                <span class="bold">Browse</span> to locate the file 
+                <span class="bold">C:/StudentFiles/refCustomer.csv</span>, change the 
+                <span class="bold">Format</span> to 
+                <span class="bold">WINDOWS</span>, and then click
+                <span class="bold">Next</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson7/CreateCustomerMetadata2.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Configure File Delimited Metadata</h2>
+                    <ol>
+                        <li value="1">
+                            <p>In the
+                <span class="bold">Rows To Skip</span> section, set 
+                <span class="bold">Header</span> to
+               <span class="bold">6</span>, indicating that the first six rows of the file do not contain data. <br />Under 
+                <span class="bold">Preview</span>, select 
+               <span class="bold">Set heading row as column names</span> to specify that the first row of data in the file are actually the column names and click 
+                <span class="bold">Refresh Preview</span>.</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson7/CreateCustomerMetadata3.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Note: Now the 
+                <span class="bold">Preview</span> area shows the contents of the customer data file in a reasonable format. Before finalizing your metadata creation, you will export all the information as context variables.</p>
+                        </li>
+                        <li value="2">
+                            <p>Click <span class="bold">Export as context</span>.<br /><img src="../../Resources/Images/lesson7/ExportAsContext.png" alt="" /><br /></p>
+                        </li>
+                        <li value="3">On the <span class="ui-window-title">Create/Reuse a context group </span>wizard, click <b>Next</b>.            <p><img src="../../Resources/Images/lesson7/CreateRepositoryContext1.png" alt="" style="border: none;" border="0" /></p></li>
+                        <li value="4">
+                            <p>Leave                <span class="bold" style="font-weight: normal; font-style: italic;">RetailCustomers</span> for the
+                <span class="bold">Name</span> and enter text for the 
+                <span class="bold">Purpose</span> and the
+                <span class="bold">Description.</span><br /><img src="../../Resources/Images/lesson7/CreateRepositoryContext2.png" alt="" style="border: none;" border="0" /></p>
+                        </li>
+                        <li value="5">
+                            <p>Click 
+                <span class="bold">Next</span> to visualize context variables that will be created and then click 
+                <span class="bold">Finish</span>:<br /><a href="../../Resources/Images/image278.PNG"><img src="../../Resources/Images/lesson7/CreateRepositoryContext3.png" alt="" style="border: none;" border="0" /></a></p>
+                        </li>
+                        <li value="6">
+                            <p> In your <span class="ui-control">Repository</span>, below <span class="ui-control">Contexts</span>, you will see your new 
+              <span class="bold">RetailCustomers</span> context. All information about your file, such as the file name, field separator or the number of header lines, are now stored in context variables.</p>
+                            <p>
+                                <img src="../../Resources/Images/RetailCustomersContext.png" alt="" />
+                            </p>
+                            <p>Now, it's time to finalize the File Delimited metadata creation.</p>
+                        </li>
+                    </ol>
+                    <h2>Configure Customer Schema</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Click 
+                <span class="bold">Next</span> in
+               <span class="bold">File - Step 3 of 4</span></p>
+                        </li>
+                        <li value="2">
+                            <p>Change the name to 
+                <span class="bold" style="font-weight: normal; font-style: italic;">CustomerMetadata</span> and then make the following changes to the schema:</p>
+                            <ul>
+                                <li style="list-style: disc;margin-left: -20px;" value="1">
+                                    <p>Specify the column 
+                        <span class="bold">id</span> as the key.</p>
+                                </li>
+                                <li style="list-style: disc;margin-left: -20px;" value="2">
+                                    <p>Change the length of 
+                        <span class="bold">CustomerAddress</span> to 35.</p>
+                                </li>
+                                <li style="list-style: disc;margin-left: -20px;" value="3">
+                                    <p>Configure all the columns with names that begin with <i>Sum</i> as type 
+                        <span class="bold">Float</span> with a 
+                        <span class="bold">Length</span> of 11.</p>
+                                </li>
+                                <li style="list-style: disc;margin-left: -20px;" value="4">
+                                    <p>Set the 
+                        <span class="bold">RegTime</span> column as type 
+                        <span class="bold">String</span> with a 
+                        <span class="bold">Length</span> of 19.</p>
+                                </li>
+                                <li style="list-style: disc;margin-left: -20px;" value="5">
+                                    <p>Set the column 
+                        <span class="bold">RegisterTime</span> as type 
+                        <span class="bold">Date</span> with the format <i>"yyyy-mm-dd hh:mm:ss.SSS"</i> <![CDATA[ ]]></p>
+                                </li>
+                            </ul>
+                            <p>Then click 
+				<span class="bold">Finish</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson7/CreateCustomerMetadata4.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p> Talend Studio derived the schema from the data, and you have now corrected the schema to be accurate.</p>
+                        </li>
+                    </ol>
+                    <p style="font-style: italic;margin-left: 40px;">The final table for your control is :</p>
+                    <table style="border-collapse: separate;border-collapse: separate;width: 100%;border-left-style: solid;border-left-width: 40px;border-left-color: #ffffff;margin-left: auto;margin-right: 0;" cellspacing="0" border="1">
+                        <col style="width: 20%;" />
+                        <col style="width: 6.488%;" />
+                        <col style="width: 11.882%;" />
+                        <col style="width: 239px;" />
+                        <col style="width: 20%;" />
+                        <tr>
+                            <td>
+                                <p>Column</p>
+                            </td>
+                            <td>
+                                <p>Key</p>
+                            </td>
+                            <td>
+                                <p>Type</p>
+                            </td>
+                            <td>
+                                <p>Date Pattern</p>
+                            </td>
+                            <td>
+                                <p>Length</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>id</p>
+                            </td>
+                            <td>
+                                <p>x</p>
+                            </td>
+                            <td>
+                                <p>Integer</p>
+                            </td>
+                            <td />
+                            <td>
+                                <p>2</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>CustomerName</p>
+                            </td>
+                            <td />
+                            <td>
+                                <p>String</p>
+                            </td>
+                            <td />
+                            <td>
+                                <p>30</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>CustomerAdress</p>
+                            </td>
+                            <td />
+                            <td>
+                                <p>String</p>
+                            </td>
+                            <td />
+                            <td>
+                                <p>35</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>idState</p>
+                            </td>
+                            <td />
+                            <td>
+                                <p>Integer</p>
+                            </td>
+                            <td />
+                            <td>
+                                <p>2</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>id2</p>
+                            </td>
+                            <td />
+                            <td>
+                                <p>Integer</p>
+                            </td>
+                            <td />
+                            <td>
+                                <p>2</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>RegTime</p>
+                            </td>
+                            <td />
+                            <td>
+                                <p>String</p>
+                            </td>
+                            <td />
+                            <td>
+                                <p>19</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>RegisterTime</p>
+                            </td>
+                            <td />
+                            <td>
+                                <p>Date</p>
+                            </td>
+                            <td>
+                                <p>"yyyy-mm-dd hh:mm:ss.SSS"</p>
+                            </td>
+                            <td>
+                                <p>23</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Sum1</p>
+                            </td>
+                            <td />
+                            <td>
+                                <p>Float</p>
+                            </td>
+                            <td />
+                            <td>
+                                <p>11</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Sum2</p>
+                            </td>
+                            <td />
+                            <td>
+                                <p>Float</p>
+                            </td>
+                            <td />
+                            <td>
+                                <p>11</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <h2>Create Job</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Create a new Job, naming it 
+                <span class="bold">CustPrep</span>.</p>
+                        </li>
+                        <li value="2">
+                            <p>Drag the 
+                <span class="bold">RetailCustomers</span>metadata onto the design workspace, choosing 
+                <span class="bold">tFileInputDelimited</span>as the component. This file input component reads the customer data file. As you exported your information as context variables, you will see the following window that appear. Click 
+                <span class="bold">Yes</span>:
+                <br /><img src="../../Resources/Images/Database_createMetadata_custPrepAddContext_344x325.png" alt="" style="border: none;width: 344;height: 325;" border="0" /></p>
+                        </li>
+                        <li value="3">
+                            <p>Double-click 
+                <span class="bold">RetailCustomers</span> to open the 
+                <span class="bold">Component</span>view. The information displayed is just what you entered in the 
+                <span class="bold">Repository</span>metadata and saved as context variables:
+                <br /><img src="../../Resources/Images/Database_createMetadata_tFileInputDelimitedComponent.png" alt="" style="border: none;" border="0" /></p>
+                            <p>Because you will use the data in this file to load the database table, you know that the schema of the database table needs to match. Rather than entering that schema information again when you configure the database, you can save the schema information separately in the 
+        <span class="bold">Repository</span>to use it again.</p>
+                        </li>
+                    </ol>
+                    <p>&#160;</p>
+                    <h2>Create Schema Metadata</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Click the 
+              <span class="bold">...</span>Icon next to 
+                <span class="bold">Edit schema</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createMetadata_tFileInputDelimitedEditSchemaButton_326x156.png" alt="" style="border: none;width: 326;height: 156;" border="0" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Click 
+                <span class="bold">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createMetadata_tFileInputDelimitedEditParameterUsingRepository_283x189.png" alt="" style="border: none;width: 283;height: 189;" border="0" />
+                            </p>
+                            <p><span class="italic" style="font-style: normal;">Note: Because the schema is defined in the <b>Repository</b></span><span class="italic" style="font-style: normal;">and not locally, you are given several choices of how to work with it. In this case, you want to examine and save the schema, not change it. </span>
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>In the 
+                <span class="bold">Schema of RetailCustomers</span>window, click the 
+                <span class="bold">Save as generic schema</span>button, shaped like a 
+                <span class="bold">floppy disk</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createMetadata_retailCustomerSchema_351x254.png" alt="" style="border: none;width: 351;height: 254;" border="0" />
+                            </p>
+                            <p>Note: This is the schema you defined when you configured the metadata file.</p>
+                        </li>
+                        <li value="4">Click 
+            <span class="bold">OK</span>to leave the schema in the default folder: 
+            <p><img src="../../Resources/Images/Database_createMetadata_selectFolderOnSaveGenericSchema_284x279.png" alt="" style="border: none;width: 284;height: 279;" border="0" /></p><p>Note: You will be working with the customer data in several components, so saving this information as a generic schema makes it easier to reference in multiple components.</p></li>
+                        <li value="5">
+                            <p>Enter 
+                <span class="bold" style="font-weight: normal; font-style: italic;">RetailCustomersSchema</span> for the 
+                <span class="bold">Name</span>and enter the <span class="bold">Purpose</span>and the
+                <span class="bold">Description</span>.</p>
+                            <p>Then click<span class="bold">Finish</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createMetadata_saveGeneratedSchemaStep1_301x173.png" alt="" style="border: Solid 1px #c0c0c0;width: 301;height: 173;" border="1" />
+                            </p>
+                            <p>Click <span class="bold">OK</span> to close the <span class="ui-title">Schema of RetailCustomers</span> window.</p>
+                            <p>Note: Now the schema appears under 
+                <span class="bold">Metadata</span>in the 
+                <span class="bold">Repository</span>, under 
+                <span class="bold">Generic schemas</span>.</p>
+                        </li>
+                        <li value="6">
+                            <p>Expand the <b>Generic schema</b> under <b>Metadata</b> in the <b>Repository</b> until you see the word <b>metadata</b>. Double click on <b>metadata</b>, change Name to <i>RetailCustomers</i> and then click <b>Finish</b>:</p>
+                            <p>
+                                <img src="../../Resources/Images/DB_MetadataCustomer.PNG" alt="" />
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Next</h2>
+                    <p>Now that you have the file metadata and a Job reading that file, you start 
+        <a href="../../EN/Working_with_Databases/Creating_Database_Metadata.htm">Creating Database Metadata</a></p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

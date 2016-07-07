@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Creating_the_Customer_Table</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Création de la table Customer</h1>
+                    <h2>Vue d'ensemble</h2>
+                    <p>L'étape suivante consiste à vous connecter à une base de données existante, créer une table pour les données clients et charger des données d'un fichier texte dans la table de base de données.</p>
+                    <h2>Création d'un nouveau Job</h2>
+                    <ol>
+                        <li value="1">Cliquez-droit sur le dossier <span class="ui-control">Sales</span> sous <span class="ui-control">Job Designs / Standard</span> et sélectionnez <span class="ui-control">Create Standard Job</span>&#160;: 
+            <p><img src="../../Resources/Images/lesson8/createCustPrep2TableJob.png" alt="" style="border: none;" border="0" /></p></li>
+                        <li value="2">
+                            <p>Saisissez <span class="user-input-files-variables">CustPrep2Table</span> dans le champ 
+                <span class="ui-control">Name</span>, renseignez les champs <span class="ui-control">Purpose</span> et <span class="ui-control">Description</span> puis cliquez sur 
+                <span class="ui-control">Finish</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson8/nameCustPrep2TableJob.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Création d'une table</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Dans le Job 
+                <span class="ui-control">CustPrep2Table</span>, placez un composant 
+                <span class="ui-control">tCreateTable</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_tcreateTable.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Comme son nom l'indique, ce composant crée une table dans une base de données. <br />Une fenêtre peut s'ouvrir, vous donnant la possibilité d'installer des modules supplémentaires. Ils peuvent être utiles dans d'autres circonstances.&#160;Dans votre propre environnement, vous devez examiner attentivement la liste et vous renseigner sur les modules, afin de décider si vous devez les installer. Ici, aucun n'est marqué comme requis.</p>
+                            <p>Si cette fenêtre s'ouvre, cochez la case <b>Do not show again</b> et fermez la fenêtre.</p>
+                            <p><a href="../../Resources/Images/image242.png"><img src="../../Resources/Images/Database_createDatabaseMetadata_downloadModule_531x407.png" alt="" style="border: none;width: 531;height: 407;" border="0" /></a>
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Double-cliquez sur le composant 
+              <span class="ui-control">tCreateTable</span> pour ouvrir sa vue
+                <span class="ui-control">Component</span>. </p>
+                            <p>Sélectionnez 
+                <span class="ui-control">Repository</span> dans la liste 
+                <span class="ui-control">Property Type</span> pour utiliser les informations stockées de connexion à la base de données. <br />Cliquez sur le bouton <span class="ui-control">[...]</span> à côté de la liste<![CDATA[ 
+                ]]><span class="ui-control">Property Type</span>.</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_tcreateTableComponent.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Dans l'assistant <span class="ui-control">Repository Content</span>, sélectionnez
+                <span class="ui-control">LocalMySQL</span> puis cliquez sur 
+                <span class="ui-control">OK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_tcreateTableRepository.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p>Cliquez sur 
+                <span class="ui-control">Yes</span> pour ajouter des paramètres de contexte au Job&#160;:
+                <br /><img src="../../Resources/Images/Database_createTable_tcreateTableAddContext.png" alt="" /></p>
+                        </li>
+                        <li value="5">
+                            <p>Vérifiez la configuration du
+                <span class="ui-control">tCreateTable</span> :
+                <br /><img src="../../Resources/Images/Database_createTable_tcreateTableConfigWithContext.png" alt="" style="border: none;" border="0" /><br /></p>
+                            <p>Les informations de la connexion stockée s'affichent dans la vue 
+					<span class="ui-control">Component</span>.</p>
+                        </li>
+                        <li value="6">
+                            <p>Dans la liste <span class="ui-control">Schema</span>, sélectionnez
+                <span class="ui-control">Repository</span> (modifiez de 
+                <span class="ui-control">Built-In</span>) puis cliquez sur le bouton <span class="ui-control">[...]</span> (à gauche du champ 
+                <span class="ui-control">Edit schema</span>) pour choisir le schéma&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_tcreateTableChangeSchema.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="7">
+                            <p>Sous
+                <span class="ui-control">Metadata</span>, cliquez sur
+               <span class="ui-control">File Delimited</span> et, sous 
+                <span class="ui-control">RetailCustomers</span>, sélectionnez <b>CustomerMetadata</b>. Cliquez sur 
+                <span class="ui-control">OK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_tcreateTableChooseSchema.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Souvenez-vous, ce schéma est celui que vous avez défini précédemment dans le <span class="ui-control">Repository</span>.</p>
+                        </li>
+                        <li value="8">
+                            <p>Sélectionnez 
+               <span class="ui-control">Drop table if exists and create</span> dans la liste 
+                <span class="ui-control">Table Action</span>.</p>
+                            <p>Dans le champ <span class="ui-control">Table Name</span>, saisissez
+                <span class="ui-control" style="font-style: italic; font-weight: normal;">"RetailCustomers"</span> :</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_tcreateTableTableAction.png" alt="" style="border: none;" border="0" />
+                            </p>
+                            <p>Ce composant est configuré pour se connecter à votre serveur local MySQL et créer une table nommée 
+                <span class="ui-control">RetailCustomers</span>, avec le schéma
+                <span class="ui-control">RetailCustomers</span> stocké dans la base de données
+                <span class="ui-control">training</span> (cette base de données a été créée pour vous dans cet environnement). <span class="italic">Astuce</span>&#160;:&#160;initialement, le champ <span class="ui-control">Table Name</span> est blanc. Lorsque, dans la liste <span class="ui-control">Schema</span>, vous sélectionnez <span class="ui-control">Repository</span> (<span class="ui-control">RetailCustomers</span>), sa valeur passe à <span class="italic">"CustomerMetadata"</span>. Assurez-vous d'avoir changé en <span class="italic">"RetailCustomers"</span> (avant de continuer les étapes).</p>
+                        </li>
+                        <p>Dans la liste            <span class="ui-control">Table Action</span>, l'opération 
+            <span class="ui-control">Create table</span> est sélectionnée par défaut et ne peut s'exécuter qu'une fois.&#160;En sélectionnant 
+            <span class="ui-control">Drop table if exists and create</span>, vous pouvez exécuter ce Job de manière répétée, si nécessaire, sans causer d'erreur.</p>
+                    </ol>
+                    <h2>Alimentation de la table Customer</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Déposez la métadonnée 
+                <span class="ui-control">RetailCustomers</span> dans l'espace de modélisation graphique, sélectionnez le composant
+                <span class="ui-control">tFileInputDelimited</span>. Placez le composant sous le <span class="ui-control">tCreateTable</span>.</p>
+                            <p>Ce fichier d'entrée lit le fichier de données clients. Comme vous avez exporté vos informations en tant que variables de contexte, il vous est proposé d'ajouter des paramètres de contexte au Job. <br />Cliquez sur
+                <span class="ui-control">Yes</span>&#160;:
+                <br /><img src="../../Resources/Images/Database_createMetadata_custPrepAddContext_344x325.png" alt="" style="border: none;width: 344;height: 325;" border="0" /></p>
+                        </li>
+                        <li value="2">
+                            <p>Double-cliquez sur
+                <span class="ui-control">RetailCustomers</span> pour ouvrir la vue 
+                <span class="ui-control">Component</span>. Les informations affichées sont celles saisies dans la métadonnée dans le 
+                <span class="ui-control">Repository</span> et sauvegardées en tant que variables de contexte&#160;:
+                <br /><img src="../../Resources/Images/Database_createMetadata_tFileInputDelimitedComponent.png" alt="" style="border: none;" border="0" /></p>
+                        </li>
+                        <li value="3">
+                            <p>Connectez le composant 
+                <span class="ui-control">tCreateTable</span> au 
+                <span class="ui-control">RetailCustomers</span> à l'aide d'un lien <span class="ui-control">Trigger </span>&gt; 
+                <span class="ui-control">OnComponentOK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_tcreateTableOnComponentOK_445x295.png" alt="" style="border: none;width: 445;height: 295;" border="0" />
+                            </p>
+                            <p>Ce déclencheur spécifie que le sous-job connecté s'exécute uniquement lorsque le composant précédent s'exécute sans erreur. En d'autres termes, le Job n'alimente la table que si elle a bien été créée d'abord.</p>
+                        </li>
+                        <li value="4">
+                            <p>Déposez la connexion à la base de données 
+                <span class="ui-control">LocalMySQL</span> depuis le dossier 
+                <span class="ui-control">Metadata</span>, dans l'espace de modélisation graphique, à droite du 
+                <span class="ui-control">RetailCustomers</span>&#160;:</p>
+                            <p><a href="../../Resources/Images/image239.PNG"><img src="../../Resources/Images/Database_createTable_localMysqlDragOnDesigner.png" alt="" style="border: none;" border="0" /></a>
+                            </p>
+                        </li>
+                        <li value="5">
+                            <p>Cliquez sur le
+                <span class="ui-control">tMysqlOutput</span> dans la fenêtre
+                <span class="ui-control">Components</span> (pour écrire dans la base de données), puis cliquez sur 
+                <span class="ui-control">OK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_custprep2TableAfterDragLocalMysql.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="6">
+                            <p>Double-cliquez sur le nouveau composant 
+                <span class="ui-control">LocalMySQL</span> pour ouvrir sa vue 
+                <span class="ui-control">Component</span>. <br />Notez que les informations de connexion sont déjà configurées, grâce à la métadonnée.</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture28.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="7"> Spécifiez le schéma du 
+                <span class="ui-control">Repository</span><![CDATA[
+                ]]><span class="ui-control">RetailCustomers - CustomerMetadata</span> (comme dans le composant 
+                <span class="ui-control">tCreateTable</span>).            <p>Configurez le nom de la table à
+                <span class="ui-control" style="font-weight: normal; font-style: italic;">"RetailCustomers"</span>. C'est le nom de la table que crée le 
+                <span class="ui-control">tCreateTable</span>, afin que ce composant écrive les données dans cette nouvelle table.</p><p><img src="../../Resources/Images/DB_cust2prepTableproperties.PNG" alt="" /></p></li>
+                        <li value="8">
+                            <p>Cliquez-droit sur 
+                <span class="ui-control">RetailCustomers</span> et sélectionnez
+                <span class="ui-control">Row</span> &gt; <span class="ui-control">Main</span>, puis placez votre curseur sur le composant 
+                <span class="ui-control">LocalMySQL</span> pour les connecter&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_connectRetailCustomerAndMysqlOutput.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li style="font-style: normal;" value="9">
+                            <p>Cliquez sur
+                <span class="ui-control">Yes</span> si la fenêtre suivante s'affiche&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createSecondTable_propagateChange.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="10">
+                            <p>Exécutez le Job et examinez les résultats :</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture39.png" alt="" />
+                            </p>
+                            <p>Le fichier de données clients contient 5 000 lignes.</p>
+                        </li>
+                        <li value="11">
+                            <p> Notez qu'un avertissement s'affiche sur le <span class="ui-control">tCreateTable</span> et le <span class="ui-control">LocalMySQL</span>. Passez votre curseur sur le point d'exclamation pour lire les avertissements&#160;:</p>
+                            <p class="alert">
+                                <img src="../../Resources/Images/image2.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="12">
+                            <p>Pour résoudre l'avertissement, double-cliquez sur le <span class="ui-control">tCreateTable</span>. <br />Cliquez sur le bouton <span class="ui-control">[...]</span> à côté du champ <span class="ui-control">Edit Schema</span>, sélectionnez <span class="ui-control">Change to built-in property</span> puis cliquez sur <span class="ui-control">OK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture35.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="13">
+                            <p>Le schéma du <span class="ui-control">tCreateTable</span> s'affiche.<br />Notez que la colonne <span class="ui-control">DB Type</span> est vide et surlignée en orange.<br />Cliquez sur le bouton <span class="ui-control">Reset DB Types</span> puis sur <span class="ui-control">OK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/image3.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="14">La colonne <span class="ui-control">DB&#160;Type</span> est renseignée&#160;:<br /><img src="../../Resources/Images/Capture37.png" alt="" /><br /></li>
+                        <li value="15">
+                            <p>Cliquez sur <span class="ui-control">OK</span> et remarquez que le point d'exclamation près du <span class="ui-control">tCreateTable</span> n'est plus affiché&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture38.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="16">L'avertissement <span class="ui-control">LocalMySQL</span> est également relatif au fait que le type de la base de données (<span class="ui-control">DB Type</span>) n'est pas défini dans le schéma. Pour supprimer l'avertissement sur ce composant, répétez les étapes exécutées pour supprimer l'avertissement du <span class="ui-control">tCreateTable</span>. </li>
+                    </ol>
+                    <h2>Vérification des résultats</h2>
+                    <ol>
+                        <li value="1">
+                            <p>Dans le menu 
+                <span class="ui-control">Start</span> de Windows, cliquez sur 
+                <span class="ui-control">All Programs</span> &gt; 
+                <span class="ui-control">MySQL</span> puis sur 
+                <span class="ui-control">MySQL Workbench 6.3 CE</span> afin de démarrer le programme
+                <span class="ui-control">mySQL Workbench</span>. <br />La fenêtre de bienvenue s'ouvre brièvement et l'espace de travail central s'affiche&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_mysqlWorkbench_450x276.png" alt="" style="border: none;width: 450;height: 276;" border="0" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p>Double-cliquez sur
+                <span class="ui-control">Local instances MySQL56</span> pour ouvrir la connexion et commencer à effectuer des requêtes. </p>
+                        </li>
+                        <li value="3">
+                            <p>Saisissez <i>root</i> dans le champ 
+                <span class="ui-control">Username</span> puis cliquez sur 
+                <span class="ui-control">OK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_mysqlWorkbenchPasswordForm_369x188.png" alt="" style="border: none;width: 369;height: 188;" border="0" />
+                            </p>
+                        </li>
+                        <li value="4">Saisissez <i>root</i> dans le champ <span class="ui-control">Password</span>, puis cliquez sur <span class="ui-control">OK</span>.<p>L'éditeur
+                <span class="ui-control">SQL Editor</span> s'ouvre.</p><p><img src="../../Resources/Images/Database_createTable_mysqlWorkbenchAfterConnection_524x320.png" alt="" style="border: none;width: 524;height: 320;" border="0" /></p></li>
+                        <li value="5">
+                            <p>Double-cliquez sur
+                <span class="ui-control">training</span> dans 
+                <span class="ui-control">Object Browser</span>, à gauche, afin de spécifier la base de données à laquelle vous vous connectez et que vous utilisez pour vos requêtes.</p>
+                        </li>
+                        <li value="6">
+                            <p>Dans la fenêtre 
+                <span class="ui-control">Query</span>, saisissez la commande suivante, y compris le point-virgule&#160;:</p>
+                            <p><span class="code">select * from retailcustomers;</span>
+                            </p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_mysqlWorkbenchQuery.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="7">
+                            <p>Cliquez sur l'icône représentant un éclair, pour exécuter la requête&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/Database_createTable_mysqlWorkbenchQueryResult_515x284.png" alt="" style="border: none;width: 515;height: 284;" border="0" />
+                            </p>
+                            <p>Cela montre les lignes de la table, démontre que votre Job a chargé des données dans la table. Si votre requête ne retourne aucun résultat, vérifiez votre travail dans le Studio Talend et effectuez les corrections nécessaires. Assurez-vous que le nom de la table correspond dans tous les composants.</p>
+                        </li>
+                        <li value="8">
+                            <p>Laissez MySQL Workbench s'exécuter, pour l'utiliser dans l'exercice suivant.</p>
+                        </li>
+                    </ol>
+                    <h2>Étape suivante</h2>
+                    <p>La table <span class="ui-control">Customer </span>de la base de données est alimentée, 
+        <a href="Creating_Second_Table.htm">vous pouvez alimenter la table Products de la base de données</a>.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

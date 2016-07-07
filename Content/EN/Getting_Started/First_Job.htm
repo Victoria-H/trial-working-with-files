@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Getting Started">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>First_Job</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Getting Started</a>
+                    <ul class="sub-menu">
+                        <li><a href="Overview.htm">Overview</a>
+                        </li>
+                        <li><a href="Starting_Talend_Studio.htm">Starting Talend Studio</a>
+                        </li>
+                        <li><a href="#" class="selected">Create First Job</a>
+                        </li>
+                        <li><a href="Run_First_Job.htm">Running a Job</a>
+                        </li>
+                        <li><a href="Wrap-Up.htm">Wrap-Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Getting Started</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="selected">Create First Job</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Creating a First Job</h1>
+                    <h2>Overview</h2>
+                    <div class="youAreGoingTo">
+                        <p>In this section, you will create your first Job and learn how to add and connect components. You will make use of the <span class="ui-control">Palette</span> in order to search for components. You will also configure the components in the corresponding <span class="ui-control">Views</span> and finally you will execute the Job by using the <b>Run</b> View . </p>
+                        <p>The Job is very simple: it will define a <span class="user-input-files-variables">"Hello World"</span> message that will be displayed in the execution console.</p>
+                        <p>
+                            <img class="vAlwaysOpen" src="../../Resources/Images/1job_overview.png" alt="" />
+                        </p>
+                    </div>
+                    <h2>Create Job</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">CREATE&#160;A&#160;STANDARD&#160;JOB&#160;IN&#160;THE&#160;REPOSITORY&#160;SECTION</p>
+                            <p>In order to create a new Job, in the <span class="ui-control">Repository</span> section, right-click on 
+                <span class="ui-control">Job Designs</span> and then click on                <span class="ui-control">Create Standard Job</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/1job_newjob.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">ENTER&#160;THE&#160;JOB&#160;DETAILS</p>
+                            <p>Enter <span class="user-input-files-variables">HelloWorld</span> for the 
+                <span class="ui-control">Name</span> and then enter the following values for the 
+                <span class="ui-control">Purpose</span> and the 
+                <span class="ui-control">Description</span> of your new Job:</p>
+                            <p>
+                                <img src="../../Resources/Images/1job_firstjob.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">FINISH AND&#160;NOTE&#160;THE&#160;CHANGES&#160;IN&#160;THE&#160;STUDIO</p>
+                            <p>Click <span class="ui-control">Finish</span> when ready. </p>
+                            <p>Notice the changes in the workspace designer, the 
+            <span class="bold">Palette</span>, and the configuration views.</p>
+                            <p>The newly created
+                <span class="ui-control">Job</span> is opened in the <span class="ui-control">Designer</span> and the components are now available in the
+                <span class="ui-control">Palette</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/1job_workspace.png" alt="" />
+                            </p>
+                            <p>The content of the <span class="ui-control">Palette</span> is organized in folders and contains more than 800 components depending on your installation.</p>
+                        </li>
+                    </ol>
+                    <h2>Add components</h2>
+                    <div class="youAreGoingTo" data-mc-conditions="vModifs.vTitles">
+                        <p>You are going to select 2 components from the <b>Palette</b>. You need a component to input the message and a component to output the message</p>
+                    </div>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">SEARCH IN THE PALETTE FOR THE <b>tFixedFlowInput</b> COMPONENT</p>
+                            <p>Search for the <span class="ui-control">tFixedFlowInput</span> component. </p>
+                            <p>Type <span class="user-input-files-variables">tFixed</span> in the <span class="ui-control">Find Component</span> box from the <span class="ui-control">Palette</span> and then click the <span class="ui-control">Search</span> button nearby or use the <span class="ui-control">Enter</span> key from your keyboard:
+                </p>
+                            <img src="../../Resources/Images/1job_search_component.png" alt="" />
+                            <p>The component has been found under the <span class="ui-control">Misc</span> folder. </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">LOOK AT THE COMPONENT DESCRIPTION</p>
+                            <p>Mouse over the component in the Palette to have a short description of the component. The <b>tFixedFlowInput</b> component allows you to define a fixed flow for an internal variable.<br /> <img src="../../Resources/Images/1job_mouseOver.png" alt="" /></p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">ADD THE COMPONENT TO YOUR JOB</p>
+                            <p>Select 
+            <span class="ui-control">tFixedFlowInput</span> component and 
+with the selected component in the <span class="ui-control">Palette</span>, place your mouse in the design space and click. This will add the component to your Job:       
+			 </p>
+                            <p>
+                                <img src="../../Resources/Images/1job_placeComponent.png" alt="" />
+                            </p>
+                            <p>It is also possible to simply drag and drop the component from the <span class="ui-control">Palette</span> to your Job's design space.</p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">CHOOSE THE SECOND COMPONENT</p>
+                            <p>In order to add a second component to your Job, click on the design space outside the component and start typing <span class="user-input-files-variables">tLog</span>. A list of components will then appear.</p>
+                            <p>
+                                <img src="../../Resources/Images/1job_add_component.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="5">
+                            <p>ADD THE COMPONENT AND ARRANGE THEM IN THE DESIGN WORKSPACE</p>
+                            <p>Double-click the <span class="ui-control">tLogRow</span> component.</p>
+                            <p>
+                                <img src="../../Resources/Images/1job_components.png" alt="" />
+                            </p>
+                            <p> The component is now added to the Job. This is another way you can use to add components to your Job.</p>
+                            <p>As a best practice, arrange your components on the design workspace to mimic the flow of data and execution, from left to right and top to bottom.</p>
+                            <p>Notice the exclamations marks on the top right corners of the components. </p>
+                        </li>
+                        <li value="6">
+                            <p data-mc-conditions="vModifs.vTitles">INSPECT THE WARNINGS FOR THE e <span class="ui-control">tFixedFlowInput</span></p>
+                            <p>Mouse-over the red exclamation mark on the top right corner of the <span class="ui-control">tFixedFlowInput</span> component to see the warnings and errors:</p>
+                            <ol data-mc-continue="true">
+                                <p>
+                                    <img src="../../Resources/Images/1job_errors.png" alt="" />
+                                </p>
+                            </ol>
+                            <p>The component needs to be configured and has to be connected to an output component.</p>
+                        </li>
+                        <li value="7">
+                            <p data-mc-conditions="vModifs.vTitles">INSPECT THE&#160;WARNINGS FOR THE <span class="ui-control">tLogRow</span> COMPONENT</p>
+                            <p>Mouse-over the orange exclamation mark on the top right corner of the <span class="ui-control">tLogRow</span> component to see the warnings  :</p>
+                            <p>
+                                <img src="../../Resources/Images/1job_warnings.png" alt="" />
+                            </p>
+                            <p>You are now ready to connect the components.</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <h2>Connect components</h2>
+                    </p>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">LINK THE COMPONENTS WITH A ROW</p>
+                            <p>To link the components, right-click on 
+                <span class="ui-control">tFixedFlowInput</span> component.</p>
+                            <p>Click 
+                <span class="ui-control">Row</span> &gt;
+                <span class="ui-control">Main</span> and then move your mouse over the 
+                <span class="ui-control">tLogRow</span> component and left-click on it:</p>
+                            <p style="text-align: left;">
+                                <img src="../../Resources/Images/1job_Link.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">CHECK </p>
+                            <p>The link will be created and displayed:</p>
+                            <p>
+                                <img src="../../Resources/Images/1job_Linked.png" alt="" />
+                            </p>
+                            <p>A row (or link) allows data to flow from one component to another. The arrow indicates the direction of the flow. </p>
+                            <p>In the following steps you will see how you can create the <span class="ui-control">Main</span> row differently. </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">DELETE THE LINK</p>
+                            <p>Right-click the link and select <span class="ui-control">Delete</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/1job_deleteLink.png" alt="" />
+                            </p>
+                            <p><span class="ui-control">Note: </span>It is also possible to use the <span class="ui-control">Delete </span>key of the keyboard in order to delete a row or a component. </p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">RE-CREATE THE LINK USING A DIFFERENT METHOD</p>
+                            <p>In order to re-create the link, right-click the first component, hold the right-click and  move the mouse over the second one. This will also create a <span class="ui-control">Main</span> link.<br /> <img src="../../Resources/Images/1job_Linked2.png" alt="" /></p>
+                            <p>&#160;</p>
+                            <p>While this method requires less operation steps than the previous one, it works only with a limited types of <span class="ui-control">Row </span>connections depending on the nature and role of the components you are connecting. More connectors are available in the contextual menu, such as triggers that will be covered later in the course.</p>
+                        </li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p>
+                        <h2>Configure components</h2>
+                    </p>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE COMPONENT VIEW</p>
+                            <p>Double-click the <span class="ui-control">tFixedFlowInput</span> component to open the <span class="ui-control">Component</span> view in the lower half of the main window. </p>
+                            <p>Then click on the <span class="ui-control">[...]</span> button just near <span class="ui-control">Edit schema</span>. </p>
+                            <p>
+                                <img src="../../Resources/Images/1job_TabComponent.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN&#160;THE SCHEMA&#160;WIZARD</p>
+                            <p>The <span class="ui-window-title">Schema of tFixedFlowInput</span> wizard opens. </p>
+                            <p>
+                                <img src="../../Resources/Images/1job_schema.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">ADD&#160;A&#160;NEW&#160;COLUMN</p>
+                            <p>Click the <span class="ui-control">[+]</span> green button to add a new column.</p>
+                            <p>Change the Column name to <span class="user-input-files-variables">Message</span> and then click <span class="ui-control">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/1job_Message.png" alt="" />
+                            </p>
+                            <p>Answer <span class="ui-control">Yes</span> when asked if you would like to propagate changes.</p>
+                            <p>
+                                <img src="../../Resources/Images/1job_Yes.png" alt="" />
+                            </p>
+                            <p> You will get this question every time a schema is updated. In case you have more than one Job using that schema, this one will be propagated to all the Jobs.</p>
+                            <p>&#160;</p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">NOTE&#160;THE&#160;NEW&#160;MESSAGE&#160;COLUMN</p>
+                            <p>The <span class="ui-control">Message</span> column is then added to the schema.</p>
+                            <p>
+                                <img src="../../Resources/Images/1job_singleTable.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="5">
+                            <p data-mc-conditions="vModifs.vTitles">ENTER YOUR 'Hello World' MESSAGE</p>
+                            <p>Set the <span class="ui-control">Value</span> of the <span class="ui-control">Message</span> Column to <span class="user-input-files-variables">"Hello World"</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/1job_messageValue.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="6">
+                            <p data-mc-conditions="vModifs.vTitles">NAME&#160;THE&#160;COMPONENT</p>
+                            <p>Click the 
+            <span class="ui-control" style="font-weight: bold;">View</span> section from the <span class="ui-control" style="font-weight: bold;">Component</span> view on the left and then change the 
+            <span style="font-weight: bold;" class="ui-control">Label format</span> to 
+            <span class="user-input-files-variables" style="font-style: italic;">InputMessage</span>. This updates the component's name in the <span class="ui-control">Designer</span>. </p>
+                            <p>
+                                <img src="../../Resources/Images/1job_Label.png" alt="" />
+                            </p>
+                            <p>Note that the 
+            <span class="ui-control">tFixedFlowInput</span> component shows no more errors as the input schema has been defined and the component has an output linked.</p>
+                        </li>
+                        <li value="7">
+                            <p data-mc-conditions="vModifs.vTitles">CHECK THE SETTINGS OF THE  
+            <span class="ui-control">tLogRow</span> component</p>
+                            <p>Now double-click the 
+            <span class="ui-control">tLogRow</span> component and check the settings in the
+            <span class="ui-control">Components</span> view: </p>
+                            <p>
+                                <img src="../../Resources/Images/1job_tlogrow_components.png" alt="" />
+                            </p>
+                            <p>Leave the default settings for a first output in the log window.</p>
+                        </li>
+                        <li value="8">
+                            <p data-mc-conditions="vModifs.vTitles">SAVE THE JOB</p>
+                            <p>Note there is an <span class="ui-control">*</span> just in front of the name of your Job. This means the Job has not been saved yet. Click the <span class="ui-control" style="font-weight: bold;">Save</span> button and the <span class="ui-control">*</span>  disappears: </p>
+                            <p>
+                                <img src="../../Resources/Images/1job_save.png" alt="" />
+                            </p>
+                            <p>You could also press <span class="ui-control">Ctrl + S</span> to save the Job.</p>
+                        </li>
+                        <li value="9">
+                            <p>Your Job is now ready. </p>
+                        </li>
+                    </ol>
+                    <h2>Help</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN A COMPONENT HELP PAGE</p>
+                            <p>Click on the <span class="ui-control">tFixedFlowInput</span> component (renamed <b>InputMessage</b>) and press the <span class="ui-control">F1</span>&#160;key on your keyboard. 
+				This opens the <span class="ui-control">Help</span> page for the selected component.</p>
+                            <p>
+                                <img src="../../Resources/Images/1job_help.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE COMPONENT DOCUMENTATION</p>
+                            <p>Click on the Component Documentation link highlighted. Then double-click on the <span class="ui-control">Help</span> tab to extend it.</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson1/help_F1.png" alt="" />
+                            </p>
+                            <p>Take a moment to explore the characteristics of the component. Note you can read about different types of Jobs in which the component can be used and you can understand the respective properties. For example, by clicking the <span class="ui-control">tFixedFlowInput</span> properties , you will find information about the <span class="ui-control">Component Family</span> as well as how to configure the <span class="ui-control">Schema </span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson1/help_F1_properties.png" alt="" />
+                            </p>
+                            <p>&#160;</p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">LOOK AT THE DOCUMENTATION FOR <span class="ui-control">tLogRow</span></p>
+                            <p>Then click on the <span class="ui-control">Search</span> button and find the documentation for the <span class="ui-control">tLogRow</span> component.</p>
+                            <p>
+                                <img src="../../Resources/Images/1job_help_search.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">REDUCE THE SIZE OF THE HELP PAGE</p>
+                            <p>Double-click the <span class="ui-control">Help </span>tab to reset back the size of the page.</p>
+                            <p>You could also drag and drop it to any section of the Main Window. </p>
+                            <p>
+                                <img src="../../Resources/Images/1job_organizeTab.png" alt="" />
+                            </p>
+                            <p>Use the same method to move other tabs and organize your workspace as you prefer. </p>
+                            <p>Recall that if you want to get back to the initial organization of the workspace, you can use the <span class="ui-control">Window &gt;&#160;Reset Perspective...</span> option in the main menu. </p>
+                        </li>
+                    </ol>
+                    <h2>Next</h2>
+                    <p>You have now created your first Talend Data Integration Job. It's now time to <a href="Run_First_Job.htm">Run it .</a></p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

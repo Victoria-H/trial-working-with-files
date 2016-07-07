@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Accessing a Web Service</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Accès à un Service Web</h1>
+                    <h2>Vue d'ensemble</h2>
+                    <p>Le Studio Talend vous permet d'interagir avec un Service Web en tant que partie d'un projet. Dans cet exemple, vous récupérez des informations météorologiques d'un Service Web gratuit pouvant être utilisé pour tester les appels de Services Web. </p>
+                    <p>Notez que ce Service Web est utilisé à des fins de test et peut ne pas donner de résultats pour certaines entrées (comme les codes postaux).</p>
+                    <h2>Récupération d'informations du Service Web</h2>
+                    <ol>
+                        <li value="1">Créez un nouveau Job. Cliquez-droit sur 
+            <span class="ui-control">Job Designs</span> &gt; <b>Standard</b> et créez un nouveau dossier nommé <span class="ui-control" style="font-weight: normal; font-style: italic;">WS</span>. Cliquez-droit sur le nouveau dossier et sélectionnez             <span class="ui-control">Create Standard Job</span>&#160;: 
+            <p><img src="../../Resources/Images/WWS_createJob.png" alt="" /></p></li>
+                        <li value="2">
+                            <p>Saisissez
+                <span class="user-input-files-variables">WeatherWebService</span> dans le champ 
+                <span class="ui-control">Name</span>, 
+                <span class="user-input-files-variables">Get Weather</span> dans le champ
+                <span class="ui-control">Purpose</span>, puis une 
+                <span class="ui-control">Description</span> de votre choix.</p>
+                            <p>Cliquez sur 
+                <span class="ui-control">Finish</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/WWS_createJob02.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p>Ajoutez un composant
+                <span class="ui-control">tESBConsumer</span> et double-cliquez sur le composant&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/WWS_tESBConumer.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="4">Saisissez l'URL suivante dans le champ 
+            <span class="ui-control">WSDL</span>&#160;:<br /><span class="ui-control" style="font-style: italic; font-weight: normal;">http://wsf.cdyne.com/WeatherWS/Weather.asmx?WSDL</span>.<br />Appuyez sur la touche <span class="ui-control">Entrée</span> de votre clavier             
+            (ou cliquez sur le bouton de rafraîchisssement
+            <img src="../../Resources/Images/clip_image002.jpg" alt="" width="16" height="16" border="0" /> ) pour alimenter les zones <b>Port Name</b> et <b>Operations</b>.
+			</li>
+                        <p>Configurez le composant comme suit&#160;: </p>
+                        <p><![CDATA[
+          ]]><span class="ui-control">Port Name</span>&#160;: 
+            <span class="user-input-files-variables">WeatherSoap12</span>. </p>
+                        <p><![CDATA[
+            ]]><span class="ui-control">Operation</span>&#160;:
+            <span class="user-input-files-variables">GetCityWeatherByZIP(GetCityWeatherByZIP):GetCityWeatherByZIPResponse</span><![CDATA[  ]]></p>
+                        <p>Cochez la case             <span class="ui-control">Populate schema to repository on finish</span> puis cliquez sur             <span class="ui-control">Finish</span>&#160;: 
+            <p><img src="../../Resources/Images/WWS_tESBConsumerStteing.png" alt="" /></p></p>
+                        <li value="5">
+                            <p>Dans le 
+                <span class="ui-control">Repository</span>, naviguez jusqu'à  
+                <span class="ui-control">Metadata </span>&gt; <span class="ui-control">File&#160;xml</span> &gt; <span class="ui-control">&#160;ws-cdyne-com</span>. <br />Ouvrez les sous-dossiers jusqu'à afficher la requête              <span class="ui-control">metadata</span> de l'opération SOAP <b>GetCityWeatherByZIP</b>. <br />Cette requête doit contenir une seule colonne&#160;: <b>ZIP</b>. </p>
+                            <p>
+                                <img src="../../Resources/Images/WWS_tESBConsumerMetadata.png" alt="" />
+                            </p>
+                            <p>&#160;</p>
+                        </li>
+                        <li value="6">
+                            <p>Saisissez le nom du composant 
+                <span class="ui-control">tFixedFlowInput</span> comme entrée de votre Job, placez ce composant à gauche du 
+                <span class="ui-control">tESBConsumer</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/WWS_tFixedFlowInput.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="7">
+                            <p>Placez un
+                <span class="ui-control">tXMLMap</span> entre ces deux composants&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/WWS_tXMLMap.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="8">
+                            <p>Saisissez le nom du dernier composant                 <span class="ui-control">tLogRow</span> et placez-le à droite du 
+                <span class="ui-control">tESBConsumer</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/WWS_tLogRow.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="9">
+                            <p>Cliquez-droit sur le 
+                <span class="ui-control">tFixedFlowInput</span> et reliez-le au 
+                <span class="ui-control">tXMLMap</span> à l'aide d'un lien <b>Main</b>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/WWS_linkInpu2XML.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="10">
+                            <p>Cliquez-droit sur le 
+                <span class="ui-control">tXMLMap</span>, sélectionnez
+                <span class="ui-control">Row</span> &gt;
+                <span class="ui-control">*New Output* (Main)</span> et nommez le lien 
+                 <span class="ui-control" style="font-weight: normal; font-style: italic;">ZIP</span>. </p>
+                            <p>Cliquez sur<![CDATA[ 
+                ]]><span class="ui-control">OK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/WWS_Row_ZIP.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="11">
+                            <p>Cliquez sur
+                <span class="ui-control">Yes</span> pour répondre à la question 
+                <span class="ui-control">Do you want to get the schema of the target component?</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/WWS_targetSchema.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="12">
+                            <p>Cliquez-droit sur le 
+                <span class="ui-control">tESBConsumer</span>, sélectionnez 
+                <span class="ui-control">Row</span> &gt; 
+                <span class="ui-control">Response</span> pour le connecter au composant <b>tLogRow</b>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/WWS_RowResponse.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="13">
+                            <p>Le premier composant affiche un avertissement
+               (<span class="ui-control">!</span> blanc sur fond rouge), indiquant qu'aucun schéma n'a été défini (               <span class="ui-control">No schema has been defined yet</span>)&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/WWB_tfixflowinput_red.PNG" alt="" />
+                            </p>
+                        </li>
+                        <li value="14">
+                            <p>Double-cliquez sur le
+                <span class="ui-control">tFixedFlowInput</span> pour ouvrir sa vue 
+                <span class="ui-control">Component</span>, cliquez sur le bouton 
+                <span class="ui-control">[...]</span> à côté du champ 
+                <span class="ui-control">Edit schema</span>. <br />Cliquez sur le bouton
+                <span class="ui-control">[+]</span> pour ajouter une colonne, que vous nommez 
+                <span class="ui-control" style="font-weight: normal; font-style: italic;">ZIP</span>.</p>
+                            <p>Cliquez sur<![CDATA[ 
+                ]]><span class="ui-control">OK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/WWS_EditSchema.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="15">
+                            <p>Saisissez               <span class="ui-control" style="font-weight: normal; font-style: italic;">"94022"</span> dans la colonne 
+                <span class="ui-control">Value</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/WWS_InputZIP.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="16">
+                            <p>Double-cliquez sur le composant 
+                <span class="ui-control">tXMLMap</span> pour ouvrir son éditeur de mapping. <br />Dans la table de sortie, cliquez-droit sur
+                <span class="ui-control">payload</span> et sélectionnez 
+                <span class="ui-control">Import From Repository</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/WWS_Rightclick_payload.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="17">
+                            <p>Naviguez dans le référentiel, sous le dossier <b>Metadata</b>, jusqu'à trouver<![CDATA[  
+                ]]><span class="ui-control">GetCityWeatherByZIP 0.1</span>. <br />Cliquez dessus puis sur <b>OK</b>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/WSS_getWeatherbyZIP.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="18">
+                            <p>Vous pouvez voir que la métadonnée a été ajoutée au payload dans votre composant <b>tXMLMap</b>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/WWS_selectedMetadata.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="19">
+                            <p>Mappez les éléments 
+                <span class="ui-control">ZIP</span> à l'aide d'un glisser-déposer de l'élément 
+                <span class="ui-control">ZIP</span> de gauche, dans la colonne 
+                <span class="ui-control">Expression</span> vide à droite, à côté de 
+                <span class="ui-control">tns:ZIP</span>.<br />Cliquez sur<![CDATA[ 
+                ]]><span class="ui-control">OK</span>&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/WWS_linkZIP.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="20">
+                            <p>Exécutez le Job et explorez le résultat&#160;:</p>
+                            <p>
+                                <img src="../../Resources/Images/WWS_FirstRun.png" alt="" />
+                            </p>
+                            <p> Notez que le message reçu respecte la métadonnée <b>GetCityWeatherByZIPResponse</b>. Le Service Web public a retourné les informations météorologiques pour Los Altos CA (Californie) (la ville dont le code postal est 94022). Bien entendu, vous pouvez vérifier les informations via un site Web différent, par exemple <a href="http://www.accuweather.com/">www.accuweather.com</a>.</p>
+                        </li>
+                    </ol>
+                    <h2>Étape suivante</h2>
+                    <p>Vous avez terminé la première partie de cet exercice, vous allez à présent modifier le Job pour inclure <a href="Detailed_Output.htm">une sortie plus détaillée</a>.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

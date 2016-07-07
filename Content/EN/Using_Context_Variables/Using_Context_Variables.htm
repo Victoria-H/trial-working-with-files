@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Using Context Variables">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Using Context Variables</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan-min.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Using Context Variables</a>
+                    <ul class="sub-menu">
+                        <li><a href="Overview.htm">Overview</a>
+                        </li>
+                        <li><a href="#" class="selected">Using Context Variables</a>
+                        </li>
+                        <li><a href="Using_Repository_Context_Variables.htm">Using Repository Context Variables</a>
+                        </li>
+                        <li><a href="Challenges.htm">Challenges</a>
+                        </li>
+                        <li><a href="Solutions.htm">Solutions</a>
+                        </li>
+                        <li><a href="Wrap-Up.htm">Wrap-Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Using Context Variables</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="selected">Using Context Variables</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Create Context Variables</h1>
+                    <h2>Overview</h2>
+                    <div class="youAreGoingTo">
+                        <p>With Talend Studio, you can define contexts and context variables that allow you to change the value of different configuration parameters by running a Job in a specific context.</p>
+                    </div>
+                    <h2>Create a Variable</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">DUPLICATE THE JOB <span class="ui-control">UpperCase</span></p>
+                            <p>Right-click the Job 
+                <span class="ui-control">UpperCase</span> and click 
+                <span class="ui-control">Duplicate</span></p>
+                            <p>
+                                <img src="../../Resources/Images/PD_DuplicateJob.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">NAME&#160;THE&#160;JOB</p>
+                            <p>Enter 
+                <span class="ui-control">Context_UpperCase</span> for the 
+                <span class="ui-control">Input new name</span> and click 
+                <span class="ui-control">OK</span>:<br /><img src="../../Resources/Images/PD_DuplicateJob02.png" alt="" /></p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE JOB AND THE CONTEXTS VIEW</p>
+                            <p>Open up the new Job and click the 
+                <span class="ui-control">Contexts</span> view:<br /><img src="../../Resources/Images/PD_contextview.png" alt="" /></p>
+                            <p>This is where you create context variables and specify values for those variables. When you run a Job, you run it within a specific context. If you add additional contexts and variables, you can specify the value to use for those variables by changing the context in which you run a Job.</p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">CREATE A CONTEXT VARIABLE </p>
+                            <p data-mc-conditions="vModifs.vTitles">This variable will allow you to change the location of the output directory.</p>
+                            <p>Click the 
+                <span class="ui-control">[+]</span> (Add) button at the lower left corner of the table to add a new context variable. </p>
+                            <p>Change the 
+                <span class="ui-control">Name</span> to
+               <i>OutputDir</i> <![CDATA[ ]]></p>
+                            <p>Enter 
+                <span class="italic">"C:/StudentFiles/"</span> in the 
+                <span class="ui-control">Default</span>/<b>Value</b> field. Be sure to include the double quotes <span class="italic">and </span>the trailing slash in the <span class="ui-control">Value </span>field:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_contextviewpath.png" alt="" />
+                            </p>
+                            <p>You are creating a context variable that will allow you to change the location of output files. In order for a context variable to be really useful, you need to define multiple contexts.</p>
+                        </li>
+                    </ol>
+                    <h2>Create a new Context</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN CONFIGURE&#160;CONTEXTS&#160;</p>
+                            <p>Click the green<span class="ui-control"> [+]</span>(Configure Contexts) button at the top right corner of the table to create new contexts
+             :</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_definenewcontaxt.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">ADD A NEW CONTEXT</p>
+                            <p>The <span class="ui-window-title">Configure Contexts</span> wizard appears. Click 
+                <span class="ui-control">New</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_newcontext.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">NAME THE CONTEXT</p>
+                            <p>Enter <span class="user-input-files-variables">Production</span> into the box and then click 
+                <span class="ui-control">OK</span>:<br /><img src="../../Resources/Images/PD_Production.png" alt="" /></p>
+                            <p>The new context appears in the list.  When running a Job, Talend Studio uses the context you select here (marked with a check) as the default:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_Productioncontextlist.png" alt="" />
+                            </p>
+                            <p> While building out your projects, you might need to create an additional context for testing. Usually you will create one context for each environment. </p>
+                        </li>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">CHANGE THE OUTPUT DIRECTORY VARIABLE FOR THE PRODUCTION CONTEXT</p>
+                            <p>Click 
+                <span class="ui-control">OK</span>. The new context appears as a column in the table, with variable values copied from the default context. </p>
+                            <p>Click the value under 
+                <span class="ui-control">Production</span> and change it to 
+                <i>"C:/StudentFiles/Production/"</i>:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_contextproduction.png" alt="" />
+                            </p>
+                            <p>Double check that you did not forget the final "/" while defining the path values. (It is a common mistake.)</p>
+                            <p>Now you have a context variable called <span class="ui-control">OutputDir</span> that has a different value depending on the context.</p>
+                        </li>
+                    </ol>
+                    <h2>Use the Context Variable</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE COMPONENT VIEW OF THE OUTPUT COMPONENT</p>
+                            <p>Double-click the 
+                <span class="ui-control">tFileOutputDelimited</span> component to open the 
+                <span class="ui-control">Component</span> view.</p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">CHANGE THE FILE PATH TO MAKE USE OF THE CONTEXT VARIABLE</p>
+                            <p>Click in the 
+                <span class="ui-control">File name</span> field. Delete the folder path, keep only <i>"CappedOut.csv"</i>.</p>
+                            <p>Start typing <i>co</i> at the beginning of the <b>File Name</b> field and press 
+                <span class="ui-control">Ctrl + Space</span>:<br /><img src="../../Resources/Images/PD_contextlist.png" alt="" /></p>
+                        </li>
+                        <p>A list of suggestions appear. The list is specific to the current field, so the list displayed changes depending on where you place the insertion point and when you press <span class="ui-control">Ctrl + Space</span>. If you typed <span class="italic">con </span>the displayed list narrows further. You can press this key sequence for any input parameter and see a similar list.</p>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">INSERT THE CONTEXT VARIABLE IN PLACE OF FOLDER PATH</p>
+                            <p>Double-click the context variable 
+                <span class="ui-control">context.OutputDir</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_Contextoutoflist.png" alt="" />
+                                <br />
+                            </p>
+                        </li>
+                        <p>Recall that 
+				<span class="ui-control">context.OutputDir</span> is the script code for accessing the context variable value, so this string appends the file name to the value of the variable (a directory path).</p>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">COMPLETE THE EXPRESSION</p>
+                            <p>Insert a plus sign  so that the final <span class="ui-control">File Name</span> value is: 
+            <i>context.OutputDir + "CappedOut.csv"</i>: 
+            </p>
+                            <p>
+                                <img src="../../Resources/Images/PD_finalcontext.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="5">
+                            <p data-mc-conditions="vModifs.vTitles">RUN THE JOB AND CHECK</p>
+                            <p>Run the Job and  examine the output file. <br />The output file <span class="ui-control">CappedOut.csv</span> should have been overwritten under the
+		<span class="ui-control">C:/StudentFiles</span> folder. <span class="italic">Tip</span>:&#160;Although the <span class="ui-control">Data viewer</span> option within the Studio is convenient and helpful, while learning or troubleshooting sometimes its worth looking at the local filesystem so you can verify file size (e.g. not 0), modified date and time, etc. </p>
+                        </li>
+                    </ol>
+                    <h2>Change Contexts</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">CHANGE THE CONTEXT FROM THE <span class="ui-control">Run</span> VIEW</p>
+                            <p>In the 
+                <span class="ui-control">Run</span> view, click the context list to the right and change it from 
+                <span class="ui-control">Default</span> to 
+                <span class="ui-control">Production</span>:<br /><img src="../../Resources/Images/PD_changecontext.png" alt="" /></p>
+                            <p>Note that the value of the variable changes.</p>
+                            <p>
+                                <img src="../../Resources/Images/PD_changecontext2.png" alt="" />
+                            </p>
+                            <p>Note that you do not need to manually create the new folder. By default, if the destination folder does not exist, it will be created together with the generated file.</p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">RUN THE JOB AND CHECK THE NEW OUTPUT LOCATION</p>
+                            <p>Run the Job again and then examine the output file in the new directory 
+                <span class="ui-control">C:/StudentFiles/Production</span>.</p>
+                            <p>By changing the context in which you ran the Job, the configuration parameter changed because of the different value of the context variable, affecting the output location.</p>
+                            <p>If you forgot to include the final <span class="user-input-files-variables">"/"</span> in the <span class="ui-control">Production </span>context Value, then a new file ProductionCappedOut.csv gets  created in the StudentFiles folder.</p>
+                        </li>
+                    </ol>
+                    <h2>Next</h2>
+                    <p>Now you will 
+        <a href="Using_Repository_Context_Variables.htm">create a context variable in the 
+        <span class="ui-control">Repository</span></a> so that you can use it in any Job of the project.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>

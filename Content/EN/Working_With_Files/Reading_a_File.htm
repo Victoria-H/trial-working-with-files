@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Working with Files">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Reading Input</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <style>		
+			@import URL(https://fonts.googleapis.com/css?family=Noto+Sans);
+		</style>
+        <link href="../../Resources/Stylesheets/vMain.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../../Resources/Scripts/tincan.js">
+        </script>
+        <script src="../../Resources/Scripts/vicky.js">
+        </script>
+    </head>
+    <body>
+        <div class="vModuleNav" id="vNavContent">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Working with Files</a>
+                    <ul class="sub-menu">
+                        <li><a href="Overview.htm">Overview</a>
+                        </li>
+                        <li><a href="#" class="selected">Reading an Input File</a>
+                        </li>
+                        <li><a href="Transforming_Data.htm">Transforming Data</a>
+                        </li>
+                        <li><a href="Writing_Output.htm">Running the Job</a>
+                        </li>
+                        <li><a href="Combining_Columns.htm">Combining Columns</a>
+                        </li>
+                        <li><a href="Duplicating_a_Job.htm">Duplicating a Job</a>
+                        </li>
+                        <li><a href="Challenges.htm">Challenges</a>
+                        </li>
+                        <li><a href="Solutions.htm">Solutions</a>
+                        </li>
+                        <li><a href="Wrap-Up.htm">Wrap-Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="vModuleNav" id="vPresNavContent" style="display:none">
+            <ul class="moduleNav _Skins_SideMenu mc-component">
+                <li class="has-children"><a href="Description.htm">Working with Files</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="selected">Reading an Input File</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="vTopArea">
+            <p id="vTitleNav">My Title</p>
+            <img id="vLogo" src="../../Resources/Images/OtherGraphics/logo.png" alt="" />
+        </div>
+        <div id="vPrettyScroll">
+        </div>
+        <div class="closeAll">	
+			OPEN ALL<img class="shotA" id="open" src="../../Resources/Images/OtherGraphics/shot_1x1.png" alt="" style="width: 1;height: 1;" />
+			CLOSE ALL<img class="shotCloseA" id="close" src="../../Resources/Images/OtherGraphics/shotclose_1x1.png" alt="" style="width: 1;height: 1;" /></div>
+        <div class="content mySideNavContent">
+            <div id="contentBody">
+                <div class="row collapse">
+                    <div class="sideContent">
+                    </div>
+                    <h1>Reading an Input File</h1>
+                    <h2>Overview</h2>
+                    <div class="youAreGoingTo">
+                        <p>In the first lesson you already created a simple first Job. In this section you will
+			 create a new Job that reads data from a CSV delimited file containing customer data. 
+			 The Job will be created in a specific folder that will contain all Jobs related 
+			 to the Customer use case. </p>
+                    </div>
+                    <h2>Create New Job</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">CREATE A NEW FOLDER FOR YOUR JOB</p>
+                            <p>Create a new folder for your Jobs. Under <span class="ui-control">Job Designs </span>, extend the <span class="ui-control">[+]</span> sign in front of <span class="ui-control">Job Designs</span> , right click on <span class="ui-control">Standard </span>and then select <span class="ui-control"> Create folder</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/create_folder.png" alt="" />
+                            </p>
+                            <p>Set the <span class="ui-control">Label </span>to <span class="user-input-files-variables">Customers</span> and then click <span class="ui-control">Finish </span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/customers_folder.png" alt="" />
+                            </p>
+                            <p>The new folder appears under <span class="ui-control">Job Designs - Standard</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/Customers_folder_done.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">CREATE A STANDARD JOB IN THIS FOLDER</p>
+                            <p>To create the next Job, in the 
+                <span class="ui-control">Repository</span>, right-click 
+                <span class="ui-control">Customers</span>, under <span class="ui-control">Standard </span>folder from <span class="ui-control">Job Designs</span> and then click
+                <span class="ui-control">Create Standard Job</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/create_job.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">ENTER THE DETAILS</p>
+                            <p>Enter 
+                <span class="user-input-files-variables">UpperCase</span> into the 
+                <span class="ui-control">Name</span> box, and fill in the 
+                <span class="ui-control">Purpose</span> and 
+                <span class="ui-control">Description</span> boxes as follows. <br />Then click 
+              <span class="ui-control">Finish</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/create_job_name.png" alt="" />
+                            </p>
+                            <p>Remember that this Job will convert the text in the State column to upper case. While only the name is required, it is good practice to complete the remaining fields to help document the Job.</p>
+                        </li>
+                        <li value="4">The new Job opens, ready for you to build: 
+            <p><img src="../../Resources/Images/lesson2/open_job.png" alt="" /></p></li>
+                    </ol>
+                    <h2>Add Read File Component</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">CHOOSE A COMPONENT TO READ THE CSV FILE</p>
+                            <p>In the 
+                <span class="ui-control">Palette</span>, click 
+                <span class="ui-control">File</span>, followed by 
+                <span class="ui-control">Input</span>, and then scroll down until you locate the component 
+                <span class="ui-control">tFileInputDelimited</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/image311.PNG" alt="" />
+                            </p>
+                            <p>Components in the 
+                <span class="ui-control">Palette</span> are grouped by function. This particular component reads input from a delimited file.</p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">PLACE THE COMPONENT IN THE WORKSPACE</p>
+                            <p>Click 
+                <span class="ui-control">tFileInputDelimited</span> in the 
+                <span class="ui-control">Palette</span>, and then click in the design workspace to place the 
+                component.</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture4.jpg" alt="" />
+                            </p>
+                            <p>Note the yellow triangle with an exclamation point (!) above the component, indicating a warning. </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">CHECK THE WARNINGS</p>
+                            <p>Place the mouse over it to read the warnings:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/warning.png" alt="" />
+                            </p>
+                            <p>The 
+                warning specifies that the component requires a schema and should be attached to another component, items you will provide as you build the Job.</p>
+                        </li>
+                    </ol>
+                    <h2>Configure</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE COMPONENT VIEW OF <span class="ui-control">tFileInputDelimited</span> <![CDATA[ ]]></p>
+                            <p>Double-click<![CDATA[ 
+               ]]> <span class="ui-control">tFileInputDelimited</span> to open the 
+                <span class="ui-control">Component</span> view beneath the design workspace. <br />Click the button marked with an ellipsis 
+                <span class="ui-control">[...]</span> next to the 
+                <span class="ui-control">File Name / Stream</span> box, to browse for the input file:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture5.jpg" alt="" />
+                            </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles"> CHOOSE THE INPUT FILE</p>
+                            <p>Locate the file 
+               <span class="ui-control">C:/StudentFiles/Custs.csv</span> and then click <span class="ui-control">Open</span>: </p>
+                            <p>
+                                <img src="../../Resources/Images/image314.PNG" alt="" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">SELECT THE CORRECT FIELD SEPARATOR AND INDICATE THAT THE FIRST ROW CONTAINS COLUMN NAMES</p>
+                            <p>In the                 <span class="ui-control">Component</span> view, change the value in the 
+                <span class="ui-control">Field Separator</span> box to 
+                <span class="user-input-files-variables">","</span> to indicate that a comma separates column values in the file, rather than the default semicolon. Then change the value in the                 <span class="ui-control">Header</span> box to 
+                <span class="user-input-files-variables">1</span> to specify that the first row of the input file contains column names:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture7.jpg" alt="" />
+                            </p>
+                        </li>
+                        <p><span class="ui-control">Note:</span> Here is where you specify all the information necessary for the component to perform its tasks. Note the tabs along the left, such as 
+                <span class="ui-control">Advanced settings</span> and 
+                <span class="ui-control">View</span>, that allow you to access additional configuration parameters.</p>
+                        <li value="4">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE CSV FILE IN A TEXT EDITOR</p>
+                            <p>Using Windows Explorer, locate the <span class="ui-control">Custs.csv</span> file, right click on it and select <span class="ui-control">Edit with Notepad++</span> :</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture17.png" alt="" />
+                            </p>
+                        </li>
+                        <li value="5">
+                            <p data-mc-conditions="vModifs.vTitles">EXPLORE THE CONTENT</p>
+                            <p>Explore the file content:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture16.png" alt="" />
+                            </p>
+                            <p>Note that the  file separator is comma as you previously configured and that the first line contains the Header. In the Header you can see the list of fields that you'll define as the schema of your file in the following steps. </p>
+                        </li>
+                    </ol>
+                    <h2>Schema</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">OPEN THE EDIT SCHEMA WINDOW</p>
+                            <p>Near the bottom of the 
+                <span class="ui-control">Component</span> view, click the 
+                <span class="ui-control">Edit schema</span> button marked with an ellipsis <span class="ui-control">[...]</span>. The 
+                <span class="ui-control">Schema</span> window appears:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture8.jpg" alt="" />
+                            </p>
+                            <p><span class="ui-control">Note:</span> This is where you specify the format of the data in the <span class="user-input-files-variables">Custs.csv</span> file . The information about the structure of this particular file is provided for you in this lesson; in your own projects you need to know the schema for the data in your source files.
+                </p>
+                        </li>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">ADD AND CONFIGURE COLUMNS IN THE SCHEMA TO MAKE IT CORRESPOND TO THE CSV FILE</p>
+                            <p>Click the button marked with a <span class="ui-control">[+]</span> sign to add a new column to the schema. <br />Replace 
+                <span class="user-input-files-variables">newColumn</span> with 
+                <span class="user-input-files-variables">First</span> and then enter 
+                <span class="user-input-files-variables">15</span> into the
+                <span class="ui-control">Length</span> column:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture9.jpg" alt="" />
+                            </p>
+                            <p><span class="ui-control">Note:</span> This specifies that the first column of each row of data in the file <span class="user-input-files-variables">Custs.csv</span> contains a 15-character string value, corresponding to the first name of the customer.</p>
+                        </li>
+                        <li value="3">
+                            <p>Add five more columns of type 
+                <span class="ui-control">String</span> and set the Length as follows:</p>
+                            <ul>
+                                <li value="1">Last, 15</li>
+                                <li value="2">
+                                    <p>Number, 10</p>
+                                </li>
+                                <li value="3">
+                                    <p>Street, 20</p>
+                                </li>
+                                <li value="4">
+                                    <p>City, 20</p>
+                                </li>
+                                <li value="5">
+                                    <p>State, 2</p>
+                                </li>
+                            </ul>
+                            <p>When finished, your schema should look like this:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture10.jpg" class="vAlwaysOpen" alt="" />
+                            </p>
+                            <p> Then click 
+                <span class="ui-control">OK</span>.</p>
+                            <p>As you can see from this schema, the file 
+                <span class="ui-control">Custs.csv</span> contains basic identifying and address information for a fictional group of customers organized into six columns.</p>
+                        </li>
+                    </ol>
+                    <h2>Display</h2>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">LABEL THE COMPONENT</p>
+                            <p>Click the 
+                <span class="ui-control">View</span> section on the left of the <span class="ui-control">Component</span> tab  and then enter <i>Customers File</i> into the 
+                <span class="ui-control">Label format</span> box:</p>
+                            <p>
+                                <img src="../../Resources/Images/Capture11.jpg" alt="" />
+                            </p>
+                            <p><span class="ui-control">Note: </span>The set of parameters on the 
+                <span class="ui-control">View</span> tab affects how the component displays in the design workspace. Note that the text you entered here is duplicated as the component label in the design workspace. You can enter HTML tags as well as text in the format boxes to change the style of the label and hint text.</p>
+                        </li>
+                    </ol>
+                    <h2>Warnings</h2>
+                    <p data-mc-conditions="vModifs.vBoxAdditions">You can check problems with your job and component warnings.</p>
+                    <ol>
+                        <li value="1">
+                            <p data-mc-conditions="vModifs.vTitles">GO TO THE <span class="ui-control">Show View</span>: MENU</p>
+                            <p>On the 
+                <span class="ui-control">Window</span> menu, click                 <span class="ui-control">Show View</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/image322.PNG" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <p>This is where you choose which views to display in the application.</p>
+                        <li value="2">
+                            <p data-mc-conditions="vModifs.vTitles">SELECT <span class="ui-control">Problems</span></p>
+                            <p>Expand 
+                <span class="ui-control">Talend</span> and click                 <span class="ui-control">Problems</span>. Then click
+                <span class="ui-control">OK</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/lesson2/problems.png" alt="" style="border: none;" border="0" />
+                            </p>
+                        </li>
+                        <li value="3">
+                            <p data-mc-conditions="vModifs.vTitles">EXPAND <span class="ui-control">Warnings</span> <![CDATA[ ]]></p>
+                            <p>The 
+                <span class="ui-control">Problems</span> view now appears under the design workspace. </p>
+                            <p>Click to expand 
+                <span class="ui-control">Warnings</span>:</p>
+                            <p>
+                                <img src="../../Resources/Images/image324.PNG" alt="" />
+                            </p>
+                        </li>
+                        <p>Note: The <span class="ui-control">Problems</span> view is where you can find information about issues with the Job or individual components. In this case, the warning tells you that your input component needs to be linked to some kind of output. Note that one of the warnings you saw earlier is no longer displayed because you defined a schema for the component.</p>
+                    </ol>
+                    <h2>Next</h2>
+                    <p>The next step is to 
+        <a href="Transforming_Data.htm">send the data from the input file to a component </a>that performs the capitalization.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h6>Copyright © <span class="GeneralYear">2016</span> Talend Inc.</h6>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+		<script>
+		TinCan.enableDebug();
+
+//new Tincan		
+	      var tincan = new TinCan (
+	{
+		url: window.location.href,
+	}
+);
+
+
+
+
+//experienced
+tincan.sendStatement(
+	{
+		verb: {
+			id: "http://adlnet.gov/expapi/verbs/experienced",
+			display: {
+				"en-US": "experienced"
+			}
+		},
+		result: {
+			duration: "PT0S"
+		}
+	}
+);
+		
+		
+		
+		</script>
+        <script>/* <![CDATA[ */
+	
+		
+			document.onload=vPoshSideNav();
+			document.onload=vOpenClose();
+			document.onload=vQuiz();
+			
+		/* ]]> */</script>
+    </body>
+</html>
