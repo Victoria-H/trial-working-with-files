@@ -1,3 +1,5 @@
+
+https://victoria-h.github.io/trial-working-with-files/Content/EN/Working_With_Files/Overview.htm
 Tincan experimentation and correction
 =====================================
 
@@ -203,7 +205,4 @@ COMPLETED
 }
 
 
-Laurent passwords
-lvaylet
-Lvaylet2016
 
